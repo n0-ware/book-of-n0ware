@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "concepts/TOC-Concepts.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
             "mode": "preview"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/TOC-Concepts.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +99,15 @@
   },
   "active": "3bb33ff32640c6e1",
   "lastOpenFiles": [
-    "concepts/TOC-Concepts.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
+    "README.md",
     "concepts/Insecure Direct Object Reference (IDOR).md",
+    "concepts/TOC-Concepts.md",
+    "HackTheBox/README.md",
+    "TOC-Definitions.md",
     "concepts/definitions/trust.md",
     "concepts/definitions/access control.md",
     "concepts/definitions/vulnerability.md",
-    "concepts/definitions/user-supplied input.md",
-    "concepts/definitions/validate.md",
-    "Evolve-OSCP/README.md",
-    "concepts/definitions/access-control.md",
-    "concepts/Definitions.md"
+    "concepts/definitions/user-supplied input.md"
   ]
 }
