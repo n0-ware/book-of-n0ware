@@ -8,8 +8,11 @@
         "type": "leaf",
         "dimension": 58.93817204301075,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "concepts/TOC-Concepts.md",
+            "mode": "source"
+          }
         }
       },
       {
@@ -19,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+            "file": "README.md",
             "mode": "preview"
           }
         }
@@ -78,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "concepts/TOC-Concepts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +101,15 @@
   },
   "active": "3bb33ff32640c6e1",
   "lastOpenFiles": [
+    "concepts/TOC-Concepts.md",
     "concepts/Insecure Direct Object Reference (IDOR).md",
+    "concepts/definitions/access control.md",
+    "README.md",
+    "oscp/README-OSCP.md",
     "concepts/definitions/query.md",
     "HackTheBox/README-HTB.md",
     "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
     "concepts/definitions/user-supplied input.md",
-    "oscp/README-OSCP.md",
-    "README.md",
-    "Evolve-OSCP/README-Evo_OSCP.md",
-    "TryHackMe/README-THM.md",
-    "concepts/TOC-Concepts.md"
+    "Evolve-OSCP/README-Evo_OSCP.md"
   ]
 }
