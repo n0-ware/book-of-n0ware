@@ -4,10 +4,10 @@
 
 Tags [^1]
 ### Repo readme files:
-- TryHack Me [README-THM](README-THM.md)
-- OSCP [README-OSCP](README-OSCP.md)
-- HackTheBox [README-HTB](README-HTB.md)
-- Evolve OSCP [README-Evo_OSCP](README-Evo_OSCP.md)
+- TryHack Me [README-THM](TryHackMe/README-THM.md)
+- OSCP [README-OSCP](oscp/README-OSCP.md)
+- HackTheBox [README-HTB](HackTheBox/README-HTB.md)
+- Evolve OSCP [README-Evo_OSCP](Evolve-OSCP/README-Evo_OSCP.md)
 
 A collection of folders for notes on hacking adventures
 
