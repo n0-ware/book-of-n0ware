@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+            "file": "concepts/TOC-Concepts.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+                "file": "concepts/TOC-Concepts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +99,7 @@
   },
   "active": "3bb33ff32640c6e1",
   "lastOpenFiles": [
+    "concepts/TOC-Concepts.md",
     "concepts/Insecure Direct Object Reference (IDOR).md",
     "concepts/definitions/trust.md",
     "concepts/definitions/access control.md",
@@ -106,7 +107,6 @@
     "concepts/definitions/user-supplied input.md",
     "concepts/definitions/validate.md",
     "Evolve-OSCP/README.md",
-    "concepts/TOC-Concepts.md",
     "concepts/definitions/access-control.md",
     "concepts/Definitions.md"
   ]
