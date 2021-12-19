@@ -1,3 +1,6 @@
 # User-Supplied Input
+## Vulnerability
+## Protections
+The Web App must [validate](validate.md) the user input. 
 
-#userinput 
+#webapp #userinput 

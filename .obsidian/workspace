@@ -6,21 +6,20 @@
       {
         "id": "3bb33ff32640c6e1",
         "type": "leaf",
+        "dimension": 58.93817204301075,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         }
       },
       {
         "id": "8c65ebf43673ae3f",
         "type": "leaf",
+        "dimension": 41.06182795698925,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
+            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
             "mode": "preview"
           }
         }
@@ -50,8 +49,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "tag:#idor",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -79,7 +78,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +97,15 @@
   },
   "active": "3bb33ff32640c6e1",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
-    "README.md",
     "concepts/Insecure Direct Object Reference (IDOR).md",
-    "concepts/TOC-Concepts.md",
-    "HackTheBox/README.md",
-    "TOC-Definitions.md",
-    "concepts/definitions/trust.md",
-    "concepts/definitions/access control.md",
-    "concepts/definitions/vulnerability.md",
-    "concepts/definitions/user-supplied input.md"
+    "concepts/definitions/query.md",
+    "HackTheBox/README-HTB.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_TOC.md",
+    "concepts/definitions/user-supplied input.md",
+    "oscp/README-OSCP.md",
+    "README.md",
+    "Evolve-OSCP/README-Evo_OSCP.md",
+    "TryHackMe/README-THM.md",
+    "concepts/TOC-Concepts.md"
   ]
 }
