@@ -1,0 +1,113 @@
+{
+  "main": {
+    "id": "735dd72774b4cba2",
+    "type": "split",
+    "children": [
+      {
+        "id": "3bb33ff32640c6e1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "8c65ebf43673ae3f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "59627edfae105f74",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb5ed5009dc9884b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "afa9076bd8f5cf1b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "2db0183cc480f277",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5336ecc4d88fcfcd",
+    "type": "split",
+    "children": [
+      {
+        "id": "59f7168efe54db27",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "59c0c9b1b3e73b7d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "3bb33ff32640c6e1",
+  "lastOpenFiles": [
+    "concepts/Insecure Direct Object Reference (IDOR).md",
+    "concepts/definitions/trust.md",
+    "concepts/definitions/access control.md",
+    "concepts/definitions/vulnerability.md",
+    "concepts/definitions/user-supplied input.md",
+    "concepts/definitions/validate.md",
+    "Evolve-OSCP/README.md",
+    "concepts/TOC-Concepts.md",
+    "concepts/definitions/access-control.md",
+    "concepts/Definitions.md"
+  ]
+}
