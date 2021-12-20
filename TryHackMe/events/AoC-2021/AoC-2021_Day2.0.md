@@ -2,8 +2,8 @@
 
 Refs/Links:
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  
-- Flag Link
-- Tags [^1]
+-  Tags[^1]
+-  Flag[^2]
 
 </br>
 </br>
@@ -69,5 +69,5 @@ Refs/Links:
 </br>
 </br>
 
-###### Flag
-[^1]:
+[^1]: 
+[^2]: 
