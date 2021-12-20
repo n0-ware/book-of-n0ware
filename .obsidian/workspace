@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
+            "file": "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
             "mode": "source"
           }
         }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
+            "file": "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
             "mode": "preview"
           }
         }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
+                "file": "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
+                "file": "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,17 +111,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0ee7e87a064fc872",
+  "active": "25a0d1f22b1bf112",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
+    "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
+    "TryHackMe/README-THM.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
+    "oscp/README-OSCP.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/3.0 AoC-Day-1_12-19-21-Grinch-Activity-w-Reverts.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/4.0 AoC-Day-1_12-19-21-Revert-To-Flags.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/2.0 AoC-Day-1_12-19-21-Santa-Activity.png",
-    "concepts/Insecure Direct Object Reference (IDOR).md",
-    "concepts/concepts_photos/IDOR-URL--THM.png",
-    "concepts/definitions/definitions_photos/Session-ID-UID_Hard_Coded--THM.png",
-    "concepts/definitions/session id.md",
-    "concepts/definitions/cookies.md",
-    "tools/BurpSuite.md"
+    "concepts/Insecure Direct Object Reference (IDOR).md"
   ]
 }
