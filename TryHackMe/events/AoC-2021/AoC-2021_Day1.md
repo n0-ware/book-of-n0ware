@@ -20,7 +20,7 @@ https://inventory-management.thm/activity?user_id=9
 
 ![Grinch Activity](AoC-2021_Photos/3.0%20AoC-Day-1_12-19-21-Grinch-Activity-w-Reverts.png)
 
-Reverting all of the changes yielded the [flag](AoC-2021_Day1.md#Flag%20THM%20AOC_IDOR_2B34BHI3) for the box.  [Go to flag](#-flag)
+Reverting all of the changes yielded the [flag](AoC-2021_Day1.md#Flag%20THM%20AOC_IDOR_2B34BHI3) for the box.  [Go to flag](#flag)
 
 ![Flag!](AoC-2021_Photos/4.0%20AoC-Day-1_12-19-21-Revert-To-Flags.png)
 
@@ -88,5 +88,5 @@ Reverting all of the changes yielded the [flag](AoC-2021_Day1.md#Flag%20THM%20AO
 </br>
 </br>
 
-# Flag THM{AOC_IDOR_2B34BHI3}
+<a href="#flag">Flag</a> THM{AOC_IDOR_2B34BHI3}
 [^1]: #idor #webapp 
