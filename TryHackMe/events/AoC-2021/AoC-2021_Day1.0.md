@@ -7,7 +7,7 @@ Refs/Links:
 -  Tags[^1]
 -  Flag[^2]
 ## Walkthrough
-Given an [Insecure Direct Object Reference (IDOR)](../../../knowledge-base/vulnerabilities/Insecure%20Direct%20Object%20Reference%20(IDOR).md) vulnerable website. Navigating to the *Your Activity* page shows an `IDOR` vulnerable URL. 
+We are given an [IDOR](../../../knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md) vulnerable website. Navigating to the *Your Activity* page shows a vulnerable URL. 
 
 ![IDOR Vuln Spotted](AoC-2021_Photos/1.0%20AoC-Day-1_12-19-21-IDOR_Vuln.png)
 

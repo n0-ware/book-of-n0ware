@@ -4,25 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "0ee7e87a064fc872",
+        "id": "ea9588406a3701c0",
         "type": "leaf",
-        "dimension": 66.87444345503117,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/concepts/web/deserialization.md",
+            "file": "knowledge-base/concepts/web/cookies.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "25a0d1f22b1bf112",
+        "id": "afac3b3c46a91722",
         "type": "leaf",
-        "dimension": 33.12555654496883,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/concepts/web/deserialization.md",
+            "file": "knowledge-base/concepts/web/cookies.md",
             "mode": "preview"
           }
         }
@@ -81,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge-base/concepts/web/deserialization.md",
+                "file": "knowledge-base/concepts/web/cookies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge-base/concepts/web/deserialization.md",
+                "file": "knowledge-base/concepts/web/cookies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,17 +109,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0ee7e87a064fc872",
+  "active": "ea9588406a3701c0",
   "lastOpenFiles": [
-    "knowledge-base/concepts/web/deserialization.md",
-    "knowledge-base/concepts/web/http-s.md",
-    "knowledge-base/concepts/authentication.md",
-    "knowledge-base/concepts/_TOC-Concepts.md",
     "knowledge-base/concepts/web/cookies.md",
-    "knowledge-base/concepts/web/get.md",
-    "knowledge-base/concepts/web/ftp.md",
-    "knowledge-base/concepts/web/session_id.md",
-    "README.md",
-    "knowledge-base/vulnerabilities/Insecure Direct Object Reference (IDOR).md"
+    "knowledge-base/vulnerabilities/cookie_manipulation.md",
+    "knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
+    "knowledge-base/vulnerabilities/_TOC-Vulnerabilities.md",
+    "knowledge-base/concepts/_TOC-Concepts.md",
+    "knowledge-base/concepts/user-supplied_input.md",
+    "knowledge-base/concepts/web/post.md",
+    "knowledge-base/vulnerabilities/vulnerabilities_photos/IDOR-Post_Form--THM.png",
+    "knowledge-base/vulnerabilities/vulnerabilities_photos/IDOR-URL--THM.png"
   ]
 }

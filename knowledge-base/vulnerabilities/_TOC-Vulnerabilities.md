@@ -1,5 +1,6 @@
 # Table of Contents - Vulnerabilities
-[Insecure Direct Object Reference (IDOR)](Insecure%20Direct%20Object%20Reference%20(IDOR).md) #idor 
+[Insecure Direct Object Reference (IDOR)](insecure_direct_object_reference-IDOR.md) #idor 
+[Cookie Manipulation](cookie_manipulation.md)
 
-### Sub-Folders
+###### References:
 [Concepts - TOC](../concepts/_TOC-Concepts.md)

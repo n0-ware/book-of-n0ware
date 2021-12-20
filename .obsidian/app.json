@@ -10,6 +10,9 @@
   "spellcheck": true,
   "spellcheckDictionary": [
     "webserver",
-    "deserialization"
-  ]
+    "deserialization",
+    "stateful"
+  ],
+  "readableLineLength": false,
+  "fileSortOrder": "alphabetical"
 }
