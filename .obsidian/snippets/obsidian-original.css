@@ -1,7 +1,7 @@
 
 .theme-dark
 {
-  --background-primary: #014421;
+  --background-primary: #2f3136;
   --background-primary-alt: #36393f;
   --background-secondary: #202225;
   --background-secondary-alt: #000000;
@@ -63,7 +63,7 @@
 /**********************/
 
 .graph-view.color-fill {
-    color: #014421;
+    color: #fcf601;
 }
 .graph-view.color-circle {
     color: #26798c;

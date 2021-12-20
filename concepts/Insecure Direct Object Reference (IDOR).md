@@ -8,10 +8,32 @@ Change user supplied data to get access you should not have
 
 ## Vulnerability
 
+Product, user, service, or other unique identifier in a URL is a **must test**. IDOR can reveal sensitive information and potentially give usually restricted access to certain functions. 
 
-### Finding
+### Locating IDOR 
 
-*Three places*
-- [query](query.md) component
+#### **Three places**
+##### In a [query](query.md) component
+Data is passed in the URL when making a request to a website
 
-[^1]: #idor #accesscontrol #userinput #query 
+![IDOR in a URL](concepts_photos/IDOR-URL.png)
+
+**Protocol**: https://
+**Domain**: website.thm
+**Page**: /profile
+**Query Component:** id=23
+
+The `/profile` page is being requested, and the parameter id with the value of `23` is being passed in the query component. This page could potentially be showing us personal user information, and by changing the `id` parameter to another value, we could view other users data.
+
+##### Post Variables
+Forms that [post](definitions/post.md) on a website can reveal vulnerable fields if inspected. Often, in hidden fields. If able, changing the field in the `POST` request can give access elsewhere. 
+![IDOR in a hidden field on a POST form](concepts_photos/IDOR-Post_Form.png)
+
+Use a `POST` editor such as [BurpSuite](../tools/BurpSuite.md) to modify the request as you send it
+
+##### Cookies
+Cookies are often used to save sessions/logins. Usually, it involves a [session id](definitions/session%20id.md). Sometimes, these session id's can be hard coded using the *User ID* and offer an exploit path. 
+
+![Hard Coded User ID in Cookie](definitions_photos/Session-ID-UID_Hard_Coded--THM.png)
+
+[^1]: #idor #accesscontrol #userinput #query #queries #post

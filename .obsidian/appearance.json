@@ -1,6 +1,8 @@
 {
   "baseFontSize": 16,
   "enabledCssSnippets": [
-    "obsidian"
-  ]
+    "obsidian",
+    "obsidian-original"
+  ],
+  "theme": "obsidian"
 }

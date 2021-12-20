@@ -2,4 +2,4 @@
 [Insecure Direct Object Reference (IDOR)](Insecure%20Direct%20Object%20Reference%20(IDOR).md) #idor 
 
 ### Sub-Folders
-[TOC-Definitions](definitions/TOC-Definitions.md)
+[_TOC-Definitions](definitions/_TOC-Definitions.md)

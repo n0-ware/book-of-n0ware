@@ -4,26 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "3bb33ff32640c6e1",
+        "id": "0ee7e87a064fc872",
         "type": "leaf",
-        "dimension": 74.16490486257928,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "concepts/TOC-Concepts.md",
+            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "0ee7e87a064fc872",
+        "id": "25a0d1f22b1bf112",
         "type": "leaf",
-        "dimension": 25.83509513742072,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "concepts/definitions/TOC-Definitions.md",
-            "mode": "source"
+            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+            "mode": "preview"
           }
         }
       }
@@ -81,13 +79,25 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/TOC-Concepts.md",
+                "file": "concepts/Insecure Direct Object Reference (IDOR).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8fce8c642a44234d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -99,17 +109,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3bb33ff32640c6e1",
+  "active": "0ee7e87a064fc872",
   "lastOpenFiles": [
-    "concepts/TOC-Concepts.md",
-    "concepts/definitions/TOC-Definitions.md",
     "concepts/Insecure Direct Object Reference (IDOR).md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
-    "README.md",
-    "concepts/definitions/access control.md",
-    "oscp/README-OSCP.md",
+    "concepts/definitions/session id.md",
+    "concepts/definitions/cookies.md",
+    "tools/BurpSuite.md",
+    "concepts/definitions/post.md",
+    "concepts/_TOC-Concepts.md",
+    "concepts/definitions/_TOC-Definitions.md",
     "concepts/definitions/query.md",
-    "HackTheBox/README-HTB.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_TOC.md"
+    "concepts/definitions/access control.md",
+    "README.md"
   ]
 }
