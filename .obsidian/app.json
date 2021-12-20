@@ -2,5 +2,14 @@
   "useMarkdownLinks": true,
   "alwaysUpdateLinks": true,
   "newLinkFormat": "relative",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "showLineNumber": true,
+  "showFrontmatter": false,
+  "spellcheck": true,
+  "spellcheckDictionary": [
+    "webserver",
+    "deserialization"
+  ]
 }

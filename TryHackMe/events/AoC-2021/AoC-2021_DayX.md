@@ -1,4 +1,6 @@
 # AoC-2021_DayX
+> Edward Hartmann
+> DATE
 
 Refs/Links:
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  

@@ -6,11 +6,11 @@
       {
         "id": "0ee7e87a064fc872",
         "type": "leaf",
-        "dimension": 50.23411371237459,
+        "dimension": 66.87444345503117,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools/autorecon.md",
+            "file": "knowledge-base/concepts/web/deserialization.md",
             "mode": "source"
           }
         }
@@ -18,11 +18,11 @@
       {
         "id": "25a0d1f22b1bf112",
         "type": "leaf",
-        "dimension": 49.76588628762541,
+        "dimension": 33.12555654496883,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools/autorecon.md",
+            "file": "knowledge-base/concepts/web/deserialization.md",
             "mode": "preview"
           }
         }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/autorecon.md",
+                "file": "knowledge-base/concepts/web/deserialization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tools/autorecon.md",
+                "file": "knowledge-base/concepts/web/deserialization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -113,15 +113,15 @@
   },
   "active": "0ee7e87a064fc872",
   "lastOpenFiles": [
-    "tools/autorecon.md",
-    "tools/_Tools_TOC.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
-    "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
-    "TryHackMe/README-THM.md",
-    "oscp/README-OSCP.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/3.0 AoC-Day-1_12-19-21-Grinch-Activity-w-Reverts.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/4.0 AoC-Day-1_12-19-21-Revert-To-Flags.png"
+    "knowledge-base/concepts/web/deserialization.md",
+    "knowledge-base/concepts/web/http-s.md",
+    "knowledge-base/concepts/authentication.md",
+    "knowledge-base/concepts/_TOC-Concepts.md",
+    "knowledge-base/concepts/web/cookies.md",
+    "knowledge-base/concepts/web/get.md",
+    "knowledge-base/concepts/web/ftp.md",
+    "knowledge-base/concepts/web/session_id.md",
+    "README.md",
+    "knowledge-base/vulnerabilities/Insecure Direct Object Reference (IDOR).md"
   ]
 }

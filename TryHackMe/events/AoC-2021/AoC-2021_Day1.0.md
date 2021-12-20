@@ -1,11 +1,13 @@
 # AoC-2021_Day1
+> Edward Hartmann
+> December 19, 2021
 
 Refs/Links:
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  
 -  Tags[^1]
 -  Flag[^2]
 ## Walkthrough
-Given an [Insecure Direct Object Reference (IDOR)](../../../concepts/Insecure%20Direct%20Object%20Reference%20(IDOR).md) vulnerable website. Navigating to the *Your Activity* page shows an `IDOR` vulnerable URL. 
+Given an [Insecure Direct Object Reference (IDOR)](../../../knowledge-base/vulnerabilities/Insecure%20Direct%20Object%20Reference%20(IDOR).md) vulnerable website. Navigating to the *Your Activity* page shows an `IDOR` vulnerable URL. 
 
 ![IDOR Vuln Spotted](AoC-2021_Photos/1.0%20AoC-Day-1_12-19-21-IDOR_Vuln.png)
 
