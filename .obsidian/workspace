@@ -6,10 +6,11 @@
       {
         "id": "0ee7e87a064fc872",
         "type": "leaf",
+        "dimension": 50.22278803309994,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
             "mode": "source"
           }
         }
@@ -17,10 +18,11 @@
       {
         "id": "25a0d1f22b1bf112",
         "type": "leaf",
+        "dimension": 49.77721196690006,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
             "mode": "preview"
           }
         }
@@ -63,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217
+    "width": 293
   },
   "right": {
     "id": "5336ecc4d88fcfcd",
@@ -79,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "concepts/Insecure Direct Object Reference (IDOR).md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,15 +113,15 @@
   },
   "active": "0ee7e87a064fc872",
   "lastOpenFiles": [
+    "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/2.0 AoC-Day-1_12-19-21-Santa-Activity.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/3.0 AoC-Day-1_12-19-21-Grinch-Activity-w-Reverts.png",
     "concepts/Insecure Direct Object Reference (IDOR).md",
+    "concepts/concepts_photos/IDOR-URL--THM.png",
     "concepts/definitions/definitions_photos/Session-ID-UID_Hard_Coded--THM.png",
     "concepts/definitions/session id.md",
     "concepts/definitions/cookies.md",
     "tools/BurpSuite.md",
-    "concepts/definitions/post.md",
-    "concepts/_TOC-Concepts.md",
-    "concepts/definitions/_TOC-Definitions.md",
-    "concepts/definitions/query.md",
-    "concepts/definitions/access control.md"
+    "concepts/definitions/post.md"
   ]
 }
