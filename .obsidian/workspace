@@ -6,7 +6,7 @@
       {
         "id": "3bb33ff32640c6e1",
         "type": "leaf",
-        "dimension": 58.93817204301075,
+        "dimension": 74.16490486257928,
         "state": {
           "type": "markdown",
           "state": {
@@ -16,21 +16,9 @@
         }
       },
       {
-        "id": "8c65ebf43673ae3f",
-        "type": "leaf",
-        "dimension": 20.530913978494624,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "concepts/TOC-Concepts.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
         "id": "0ee7e87a064fc872",
         "type": "leaf",
-        "dimension": 20.530913978494624,
+        "dimension": 25.83509513742072,
         "state": {
           "type": "markdown",
           "state": {
@@ -111,7 +99,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8c65ebf43673ae3f",
+  "active": "3bb33ff32640c6e1",
   "lastOpenFiles": [
     "concepts/TOC-Concepts.md",
     "concepts/definitions/TOC-Definitions.md",
