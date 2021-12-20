@@ -46,6 +46,16 @@ Attribution: [TryHackMe](https://tryhackme.com)
 
 ![Cookies in a Browser](../concepts_photos/Cookie-In-Browser.png)
 
+## Values
+Cookie values are encoded, not random strings. The values can be decoded into non-arbitrary values such as `JSON` or Javascript objects. 
+
+Attackers can decode cookies to identify the underlying objects. Once identified, it can be modified, re-encoded in the same way, and submitted. 
+
+An example decoded cookie:
+```
+{firstName:'n0ware', lastName:"s0mewhere", age:1337, eyecolor:"blue"}
+```
+
 ## Uses
 
 1. Personalization
