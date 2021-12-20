@@ -142,3 +142,4 @@ global plugin arguments:
                         The domain to use (if known). Used for DNS and/or Active Directory. Default: None
 ```
 
+#enumeration #automate

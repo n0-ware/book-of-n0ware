@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#idor",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +114,7 @@
   "active": "0ee7e87a064fc872",
   "lastOpenFiles": [
     "tools/autorecon.md",
-    "tools/Tools_TOC.md",
+    "tools/_Tools_TOC.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
