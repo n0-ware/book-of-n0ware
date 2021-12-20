@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
             "mode": "source"
           }
         }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -113,10 +113,10 @@
   },
   "active": "0ee7e87a064fc872",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
     "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
     "TryHackMe/README-THM.md",
     "oscp/README-OSCP.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/3.0 AoC-Day-1_12-19-21-Grinch-Activity-w-Reverts.png",
