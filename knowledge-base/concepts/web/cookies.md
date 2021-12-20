@@ -44,6 +44,8 @@ Attackers are really only concerned with the `Name` and `Value` of a cookie. The
 
 Attribution: [TryHackMe](https://tryhackme.com)
 
+![Cookies in a Browser](../concepts_photos/Cookie-In-Browser.png)
+
 ## Uses
 
 1. Personalization
