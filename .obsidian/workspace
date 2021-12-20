@@ -112,6 +112,7 @@
   "active": "0ee7e87a064fc872",
   "lastOpenFiles": [
     "concepts/Insecure Direct Object Reference (IDOR).md",
+    "concepts/definitions/definitions_photos/Session-ID-UID_Hard_Coded--THM.png",
     "concepts/definitions/session id.md",
     "concepts/definitions/cookies.md",
     "tools/BurpSuite.md",
@@ -119,7 +120,6 @@
     "concepts/_TOC-Concepts.md",
     "concepts/definitions/_TOC-Definitions.md",
     "concepts/definitions/query.md",
-    "concepts/definitions/access control.md",
-    "README.md"
+    "concepts/definitions/access control.md"
   ]
 }

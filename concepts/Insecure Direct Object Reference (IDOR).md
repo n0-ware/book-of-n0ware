@@ -27,6 +27,7 @@ The `/profile` page is being requested, and the parameter id with the value of `
 
 ##### Post Variables
 Forms that [post](definitions/post.md) on a website can reveal vulnerable fields if inspected. Often, in hidden fields. If able, changing the field in the `POST` request can give access elsewhere. 
+
 ![IDOR in a hidden field on a POST form](concepts_photos/IDOR-Post_Form.png)
 
 Use a `POST` editor such as [BurpSuite](../tools/BurpSuite.md) to modify the request as you send it
@@ -34,6 +35,6 @@ Use a `POST` editor such as [BurpSuite](../tools/BurpSuite.md) to modify the req
 ##### Cookies
 Cookies are often used to save sessions/logins. Usually, it involves a [session id](definitions/session%20id.md). Sometimes, these session id's can be hard coded using the *User ID* and offer an exploit path. 
 
-![Hard Coded User ID in Cookie](definitions_photos/Session-ID-UID_Hard_Coded--THM.png)
+![Hard Coded User ID in Cookie](definitions/definitions_photos/Session-ID-UID_Hard_Coded--THM.png)
 
 [^1]: #idor #accesscontrol #userinput #query #queries #post
