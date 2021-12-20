@@ -114,14 +114,14 @@
   "active": "0ee7e87a064fc872",
   "lastOpenFiles": [
     "TryHackMe/events/AoC-2021/AoC-2021_Day1.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/2.0 AoC-Day-1_12-19-21-Santa-Activity.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/3.0 AoC-Day-1_12-19-21-Grinch-Activity-w-Reverts.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/4.0 AoC-Day-1_12-19-21-Revert-To-Flags.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/2.0 AoC-Day-1_12-19-21-Santa-Activity.png",
     "concepts/Insecure Direct Object Reference (IDOR).md",
     "concepts/concepts_photos/IDOR-URL--THM.png",
     "concepts/definitions/definitions_photos/Session-ID-UID_Hard_Coded--THM.png",
     "concepts/definitions/session id.md",
     "concepts/definitions/cookies.md",
-    "tools/BurpSuite.md",
-    "concepts/definitions/post.md"
+    "tools/BurpSuite.md"
   ]
 }
