@@ -6,4 +6,7 @@
 
 - [Day 1](AoC-2021_Day1.0.md)
 	- [IDOR](../../../knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md)
+	- Accessing restricted accounts
 - [Day 2](AoC-2021_Day2.0.md)
+	- [Cookie Manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md)
+	- Fooling server into allowing admin login

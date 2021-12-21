@@ -11,7 +11,8 @@
   "spellcheckDictionary": [
     "webserver",
     "deserialization",
-    "stateful"
+    "stateful",
+    "walkthrough"
   ],
   "readableLineLength": false,
   "fileSortOrder": "alphabetical"

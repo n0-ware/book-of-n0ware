@@ -7,3 +7,7 @@
 ## WebApps
 
 [BurpSuite](BurpSuite.md)
+
+## CLI Utilities
+### Text and Files
+[sed](cli_utilities/sed.md)

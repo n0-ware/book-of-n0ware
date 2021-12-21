@@ -5,7 +5,7 @@
 Refs/Links:
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  
 -  Tags[^1]
--  Flag[^2]
+
 ## Walkthrough
 We are given a website and told it is vulnerable to [cookie manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md). 
 
@@ -23,7 +23,7 @@ While we could not create an account, we were given a cookie named `user-auth` w
 
 ![User-Auth Cookie](AoC-2021_Photos/8.0%20AoC-Day-2_12-20-21-User-Auth-Cookie.png)
 
-To identify this cookies encoding we will use [CyberChef](https://gchq.github.io/CyberChef/) on GitHub. Paste the cookie into the `Input` box and drag `Magic` from the left menu into the `Recipe` pane. The output field informs us this encoded with `hexadecimal`. This can be verified by removing `Magic` and replacing it with `From Hex` to achieve the same result. 
+To identify this cookies [encoding](../../../knowledge-base/concepts/encoding_decoding.md) we will use [CyberChef](https://gchq.github.io/CyberChef/) on GitHub. Paste the cookie into the `Input` box and drag `Magic` from the left menu into the `Recipe` pane. The output field informs us this encoded with `hexadecimal`. This can be verified by removing `Magic` and replacing it with `From Hex` to achieve the same result. 
 
 ![CyberChef Magic Decoding](AoC-2021_Photos/9.0%20AoC-Day-2_12-20-21-Magic-Decoding.png)
 
@@ -33,9 +33,38 @@ Verified with `From Hex`
 
 At a glance, it is also easy to note that this is `hexadecimal` due to the type of values in the string. It is entirely alphanumeric, and there are no characters except `a-f`. 
 
-Our decoded value is in `JSON` format, and easily editable type of object we can modify to our needs. The cookie also contains little identifiable information to prevent us from using another username to attempt to login. Let's give it a try with the username `admin`. Using CyberChef, simply replace `From Hex` with `To Hex` and put the modified `JSON` in the `Input` field. 
+Our decoded value is in  format, and easily editable type of object we can modify to our needs. The cookie also contains little identifiable information to prevent us from using another username to attempt to login. Let's give it a try with the username `admin`. Using *CyberChef*, simply replace `From Hex` with `To Hex` and put the modified `JSON` in the `Input` field. 
 
+![Modified Admin Cookie](AoC-2021_Photos/11.0%20AoC-Day-2_12-21-21-Modified-Admin-Cookie.png)
 
+With the new `JSON` cookie encoded back to *hex*, it is time to action the cookie in the vulnerable website. 
+
+Back in the developer tab of the website, replace the current cookie with the new one and refresh the page. After some trial and error, removing the spaces in the new *hex* code worked. 
+
+The spaces can be removed using [sed](../../../tools/cli_utilities/sed.md). 
+
+```
+echo "7b 63 6f 6d 70 61 6e 79 3a 20 22 54 68 65 20 42 65 73 74 20 46 65 73 74 69 76 61 6c 20 43 6f 6d 70 61 6e 79 22 2c 20 69 73 72 65 67 69 73 74 65 72 65 64 3a 22 54 72 75 65 22 2c 20 75 73 65 72 6e 61 6d 65 3a 22 61 64 6d 69 6e 22 7d" > cookie.txt     
+
+cat cookie.txt                                          
+7b 63 6f 6d 70 61 6e 79 3a 20 22 54 68 65 20 42 65 73 74 20 46 65 73 74 69 76 61 6c 20 43 6f 6d 70 61 6e 79 22 2c 20 69 73 72 65 67 69 73 74 65 72 65 64 3a 22 54 72 75 65 22 2c 20 75 73 65 72 6e 61 6d 65 3a 22 61 64 6d 69 6e 22 7d
+
+cat cookie.txt | sed -r 's/\s+//g' > modified_cookie.txt
+
+cat modified_cookie.txt                                 
+7b636f6d70616e793a2022546865204265737420466573746976616c20436f6d70616e79222c206973726567697374657265643a2254727565222c20757365726e616d653a2261646d696e227d
+```
+
+_Formatted Admin Cookie_
+```
+7b636f6d70616e793a2022546865204265737420466573746976616c20436f6d70616e79222c206973726567697374657265643a2254727565222c20757365726e616d653a2261646d696e227d
+```
+
+![Admin Dashboard Access](AoC-2021_Photos/12.0%20AoC-Day-2_12-21-21-Relload-Admin-Cookie.png)
+
+From the dashboard, it is clear the *HR* team is not responding, or at least has not for 7 hours. It is also clear there is a network warning on the *Application* team.
+
+That concludes the walkthrough!
 </br>
 </br>
 </br>
@@ -100,5 +129,5 @@ Our decoded value is in `JSON` format, and easily editable type of object we can
 </br>
 </br>
 
-[^1]: #cookies #authentication #webapp
+[^1]: #cookies #authentication #webapp #encoding #hexe
 [^2]: 
