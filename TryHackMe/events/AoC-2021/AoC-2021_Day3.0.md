@@ -13,11 +13,30 @@ We are given a website vulnerable to enumeration to attempt directory busting an
 
 ![Landing Page](AoC-2021_Photos/13.0%20AoC-Day-3_12-22-21-Landing-Page.png)
 
-The first thing we are going to do is attempt to enumerate hidden directories to [discover hidden content](../../../knowledge-base/concepts/web/content_discovery.md). Using [dirbuster](../../../tools/dirbuster.md) and [Seclists](../../../tools/sec_lists.md) is our attack path. 
+The first thing we are going to do is attempt to enumerate hidden directories to [discover hidden content](../../../knowledge-base/vulnerabilities/content_discovery.md). Using [dirbuster](../../../tools/dirbuster.md) and [Seclists](../../../tools/sec_lists.md) is our attack path. 
 
 ```
-dirb http://10.10.150.97 /usr/share/wordlists/seclists
+dirb http://10.10.150.97 /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
 ```
+
+Quickly, `dirb` identifies the directory `/admin` as the admin dashboard. 
+![Directory Busting](AoC-2021_Photos/14.0%20AoC-Day-3_12-22-21-dirb.png)
+
+![Admin Dashboard](AoC-2021_Photos/15.0%20AoC-Day-3_12-22-21-Admin-Dashboard.png)
+
+Some basic manual guessing and we are able to find a valid admin login using the combination `administrator:administrator`. 
+
+![](AoC-2021_Photos/16.0%20AoC-Day-3_12-22-21-admin-login-default-creds.png)
+
+While inspecting the target with [BurpSuite's](../../../tools/BurpSuite.md), we can also identify that when loading the `/admin` page, it also calls a `javascript` function `/admin/loginpage.js`. Investigating this script plainly gives out the administrator username and password. 
+
+![Admin Page Calling Javascript](AoC-2021_Photos/18.0%20oC-Day-3_12-22-21-Admin-Calling-Javascript.png)
+
+![Javascript Giving Away Login Info](AoC-2021_Photos/19.0%20AoC-Day-3_12-22-21-Admin-JS-Vuln.png)
+
+Once we are successfully authenticated, we have access to the Admin dashboard and the Flag for the box. . 
+
+![Welcome, Admin!](AoC-2021_Photos/17.0%20AoC-Day-3_12-22-21-admin-dashboard-authenticated.png)
 </br>
 </br>
 </br>
@@ -83,4 +102,4 @@ dirb http://10.10.150.97 /usr/share/wordlists/seclists
 </br>
 
 [^1]: #authentication #brokenaccesscontrol #insecuredesign #contentdiscovery #webapp 
-[^2]: 
+[^2]: THM{ADM1N_AC3SS}

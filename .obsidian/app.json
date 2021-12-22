@@ -12,7 +12,8 @@
     "webserver",
     "deserialization",
     "stateful",
-    "walkthrough"
+    "walkthrough",
+    "BurpSuite"
   ],
   "readableLineLength": false,
   "fileSortOrder": "alphabetical",

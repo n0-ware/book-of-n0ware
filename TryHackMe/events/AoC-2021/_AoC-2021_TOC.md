@@ -11,4 +11,6 @@
 	- [Cookie Manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md)
 	- Fooling server into allowing admin login
 - [Day 3](AoC-2021_Day3.0.md)
-- 
+	- [Content Discovery](../../../knowledge-base/vulnerabilities/content_discovery.md)
+	- Default usernames and passwords
+	- Insecure calling of `javascript` divulged login information
