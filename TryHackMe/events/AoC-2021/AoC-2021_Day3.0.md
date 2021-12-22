@@ -30,13 +30,13 @@ Some basic manual guessing and we are able to find a valid admin login using the
 
 While inspecting the target with [BurpSuite's](../../../tools/BurpSuite.md), we can also identify that when loading the `/admin` page, it also calls a `javascript` function `/admin/loginpage.js`. Investigating this script plainly gives out the administrator username and password. 
 
-![Admin Page Calling Javascript](AoC-2021_Photos/18.0%20oC-Day-3_12-22-21-Admin-Calling-Javascript.png)
+![Admin Page Calling Javascript](AoC-2021_Photos/17.0%20oC-Day-3_12-22-21-Admin-Calling-Javascript.png)
 
-![Javascript Giving Away Login Info](AoC-2021_Photos/19.0%20AoC-Day-3_12-22-21-Admin-JS-Vuln.png)
+![Javascript Giving Away Login Info](AoC-2021_Photos/18.0%20AoC-Day-3_12-22-21-Admin-JS-Vuln.png)
 
 Once we are successfully authenticated, we have access to the Admin dashboard and the Flag for the box. . 
 
-![Welcome, Admin!](AoC-2021_Photos/17.0%20AoC-Day-3_12-22-21-admin-dashboard-authenticated.png)
+![Welcome, Admin!](AoC-2021_Photos/19.0%20AoC-Day-3_12-22-21-admin-dashboard-authenticated.png)
 </br>
 </br>
 </br>
