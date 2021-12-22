@@ -15,5 +15,7 @@
     "walkthrough"
   ],
   "readableLineLength": false,
-  "fileSortOrder": "alphabetical"
+  "fileSortOrder": "alphabetical",
+  "legacyEditor": false,
+  "livePreview": true
 }

@@ -10,3 +10,5 @@
 - [Day 2](AoC-2021_Day2.0.md)
 	- [Cookie Manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md)
 	- Fooling server into allowing admin login
+- [Day 3](AoC-2021_Day3.0.md)
+- 

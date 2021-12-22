@@ -1,4 +1,5 @@
-# AoC-2021_Day1
+# TryHackMe - Advent of Cyber 2021 - Day 1
+## Save the Gifts
 > Edward Hartmann
 > December 19, 2021
 

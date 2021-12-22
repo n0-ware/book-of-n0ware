@@ -1,4 +1,5 @@
-# AoC-2021_Day2
+# TryHackMe - Advent of Cyber 2021 - Day 2
+## Elf HR Problems
 > Edward Hartmann
 > December 20, 2021
 
