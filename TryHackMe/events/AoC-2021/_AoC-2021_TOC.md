@@ -14,3 +14,6 @@
 	- [Content Discovery](../../../knowledge-base/vulnerabilities/content_discovery.md)
 	- Default usernames and passwords
 	- Insecure calling of `javascript` divulged login information
+- [Day 4](AoC-2021_Day4.0.md)
+	- [Fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../tools/BurpSuite.md)
+	- Weak passwords

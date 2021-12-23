@@ -131,5 +131,5 @@ When attacking software applications, fuzzing for unexpected behavior, wordlists
 </br>
 </br>
 
-[^1]: #authentication #fuzzing #burp #webapp #brokenaccesscontrol 
+[^1]: #authentication #fuzzing #burp #webapp #weakpasswords #clusterbomb
 [^2]: THM{SANTA_DELIVERS}
