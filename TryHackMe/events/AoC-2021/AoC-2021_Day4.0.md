@@ -44,7 +44,8 @@ Returning to the login screen, the username and password combination `santa:cook
 Congratulations on finishing this box!
 
 #### Note
-***A note on Cluster Bomb and Exponential Combinations***
+***A note on Cluster Bomb and Exponential Combinations***   </br>
+
 When it comes to using this utility, think of it as if we had four items in our list:
 ```
 1
