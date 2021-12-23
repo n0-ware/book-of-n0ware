@@ -5,8 +5,12 @@
 
 ***<u>Refs/Links:</u>***
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  
--  Tags[^1]
+-  Tags[^1] 
 -  Flag[^2]
+
+[^1]: #idor #webapp 
+[^2]: THM{AOC_IDOR_2B34BHI3}
+
 ## Walkthrough
 We are given an [IDOR](../../../knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md) vulnerable website. Navigating to the *Your Activity* page shows a vulnerable URL. 
 
@@ -30,6 +34,7 @@ Reverting all of the changes yielded the [flag](AoC-2021_Day1.0.md#Flag%20THM%20
 
 ![Flag!](AoC-2021_Photos/4.0%20AoC-Day-1_12-19-21-Revert-To-Flags.png)
 
+Congratulations on completing the box!
 </br>
 </br>
 </br>
@@ -95,5 +100,3 @@ Reverting all of the changes yielded the [flag](AoC-2021_Day1.0.md#Flag%20THM%20
 </br>
 
 
-[^1]: #idor #webapp 
-[^2]: THM{AOC_IDOR_2B34BHI3}

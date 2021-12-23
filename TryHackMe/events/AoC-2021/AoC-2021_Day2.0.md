@@ -7,6 +7,10 @@
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  
 -  Tags[^1]
 
+
+[^1]: #cookies #authentication #webapp #encoding #hexe
+[^2]: 
+
 ## Walkthrough
 We are given a website and told it is vulnerable to [cookie manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md). 
 
@@ -129,6 +133,3 @@ That concludes the walkthrough!
 </br>
 </br>
 </br>
-
-[^1]: #cookies #authentication #webapp #encoding #hexe
-[^2]: 

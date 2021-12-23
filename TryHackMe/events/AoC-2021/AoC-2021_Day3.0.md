@@ -8,6 +8,10 @@
 -  Tags[^1]
 -  Flag[^2]
 
+
+[^1]: #authentication #brokenaccesscontrol #insecuredesign #contentdiscovery #webapp 
+[^2]: THM{ADM1N_AC3SS}
+
 ## Walkthrough
 We are given a website vulnerable to enumeration to attempt directory busting and authentication brute forcing. 
 
@@ -100,6 +104,3 @@ Once we are successfully authenticated, we have access to the Admin dashboard an
 </br>
 </br>
 </br>
-
-[^1]: #authentication #brokenaccesscontrol #insecuredesign #contentdiscovery #webapp 
-[^2]: THM{ADM1N_AC3SS}

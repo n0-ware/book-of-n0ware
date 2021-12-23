@@ -6,8 +6,10 @@
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  
 -  Tags[^1]
 -  Flag[^2]
--  A [note](#Note) on Cluster Bomb. [GH Anchor](#cluster-bomb-note)
+-  A [note](#Note) on Cluster Bomb.
 
+[^1]: #authentication #fuzzing #burp #webapp #weakpasswords #clusterbomb
+[^2]: THM{SANTA_DELIVERS}
 ## Walkthrough
 >If you would prefer to use a personal machine for this lab, simply copy (with the built in clipboard) or re-type the short the wordlist provided for you on the attack box at `/root/Rooms/AoC3/Day4/passwords.txt` into a file on your local machine and ensure your VPN is on. 
 
@@ -45,7 +47,6 @@ Congratulations on finishing this box!
 
 #### Note
 ***A note on Cluster Bomb and Exponential Combinations***   </br>
-#cluster-bomb-note 
 When it comes to using this utility, think of it as if we had four items in our list:
 ```
 1
@@ -131,6 +132,3 @@ When attacking software applications, fuzzing for unexpected behavior, wordlists
 </br>
 </br>
 </br>
-
-[^1]: #authentication #fuzzing #burp #webapp #weakpasswords #clusterbomb
-[^2]: THM{SANTA_DELIVERS}

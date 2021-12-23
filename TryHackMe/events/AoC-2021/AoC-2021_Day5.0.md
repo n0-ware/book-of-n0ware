@@ -7,6 +7,8 @@
 -  Tags[^1]
 -  Flag[^2]
 
+[^1]: #xss #webapp #injection #owasp
+[^2]: 
 ## Walkthrough
 </br>
 </br>
@@ -71,6 +73,3 @@
 </br>
 </br>
 </br>
-
-[^1]: 
-[^2]: 

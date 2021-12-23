@@ -8,6 +8,7 @@
 - [content discovery](web/content_discovery.md)
 - [cookies](web/cookies.md)
 - [deserialization](web/deserialization.md)
+- [document object model](web/dom.md)
 - [directory busting](web/directory_busting.md)
 - [ftp](web/ftp.md)
 - [get](web/get.md)
