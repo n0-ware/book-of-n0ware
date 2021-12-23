@@ -11,11 +11,11 @@
 - [document object model](web/dom.md)
 - [directory busting](web/directory_busting.md)
 - [ftp](web/ftp.md)
-- [get](web/get.md)
+- [GET](web/GET.md)
 - [HTTP request](web/http_request.md)
 - [HTTP response](web/http_response.md)
 - [HTTP(S)](web/http-s.md)
-- [post](web/post.md)
+- [POST](web/POST.md)
 - [protocol states](web/protocol_states.md)
 - [session_id](web/session_id.md)
 

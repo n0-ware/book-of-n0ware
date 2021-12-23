@@ -18,5 +18,5 @@ Beyond discovering content available outside of protections, default passwords a
 
 ## Example
 1. You run a blog and want to host reviews on recipes. However, you want to hide unfinished recipes not up for review yet. You hide the *admin panel* so that you are the only one that is able to access the core configurations of your web server, but the pages are still accessible via [[enumeration]] and [directory_busting](directory_busting.md).
-2. A page designed to be secure calls insecure `javascript` functions that divulge information, and this function is visible by inspecting [get](get.md) and [post](post.md) requests. 
+2. A page designed to be secure calls insecure `javascript` functions that divulge information, and this function is visible by inspecting [GET](GET.md) and [POST](POST.md) requests. 
 

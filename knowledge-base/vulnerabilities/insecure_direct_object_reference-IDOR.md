@@ -23,7 +23,7 @@ Data is passed in the URL when making a request to a website
 The `/profile` page is being requested, and the parameter id with the value of `23` is being passed in the query component. This page could potentially be showing us personal user information, and by changing the `id` parameter to another value, we could view other users data.
 
 ##### Post Variables
-Forms that [post](../concepts/web/post.md) on a website can reveal vulnerable fields if inspected. Often, in hidden fields. If able, changing the field in the `POST` request can give access elsewhere. 
+Forms that [POST](../concepts/web/POST.md) on a website can reveal vulnerable fields if inspected. Often, in hidden fields. If able, changing the field in the `POST` request can give access elsewhere. 
 
 ![IDOR in a hidden field on a POST form](vulnerabilities_photos/IDOR-Post_Form--THM.png)
 
