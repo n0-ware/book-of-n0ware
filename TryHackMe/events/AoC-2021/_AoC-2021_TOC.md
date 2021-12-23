@@ -17,3 +17,7 @@
 - [Day 4](AoC-2021_Day4.0.md)
 	- [Fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../tools/BurpSuite.md)
 	- Weak passwords
+- [Day 5](AoC-2021_Day5.0.md)
+	- [Cross Site Scripting](../../../knowledge-base/vulnerabilities/cross_site_scripting_xss.md)
+	- Stored XSS
+	- Password change

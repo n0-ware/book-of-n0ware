@@ -102,5 +102,11 @@ The web page renders the code as
 
 If the website does not process the data in any way, attackers could submit data  such as `comment=%3Cscript%3E%2FBad%2BInjection%2Bhere%2B*%2F%3C%2Fscript%3E` that would render as `<p><script>/Bad injection here/</script>`.
 
+An example of changing user passwords on a comment board could look like this, where `/settings` is the URL where users reset their password, and this page is also vulnerable to XSS in the URL. 
+
+`<script>fetch('/settings?new_password=gotcha');</script>`
+
+When a user views this comment, their browser will execute the request. If the website happened to be `www.vulnsite.com`, the browser will execute the request `https://vulnsite.com/settings?new_password=gotcha`. At any time, the attacker can brute force potential user names with the password `gotcha` and compromise their account. 
+
 ### Example Blind XSS
 An attacker submits a stored XSS payload in a contact request or help desk ticket that is later ran by a user working for the company. In this context, the attacker may be able to acquire privileged credentials only accessible to internal members of the organization managing the application. Consider the attack pattern as similar to an [example Stored XSS](#Example%20Stored%20XSS)
