@@ -13,7 +13,7 @@ Product, user, service, or other unique identifier in a URL is a **must test**. 
 ### Locating IDOR 
 
 #### **Three places**
-##### In a [query](../concepts/query.md) component
+##### In a [queries](../concepts/queries.md) component
 Data is passed in the URL when making a request to a website
 
 ![IDOR in a URL](vulnerabilities_photos/IDOR-URL--THM.png)

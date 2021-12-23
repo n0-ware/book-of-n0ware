@@ -17,6 +17,6 @@
   ],
   "readableLineLength": false,
   "fileSortOrder": "alphabetical",
-  "legacyEditor": false,
+  "legacyEditor": true,
   "livePreview": true
 }

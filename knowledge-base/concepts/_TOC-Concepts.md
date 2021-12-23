@@ -1,11 +1,14 @@
 # Definitions Table of Contents
 ## Security Concepts
-- [trust](trust.md)  
-- [validate](validate.md)  
-- [vulnerability](vulnerability.md) 
+- [trust](trust.md)  **Empty**
+- [validate](validate.md)  **Empty**
+- [vulnerability](vulnerability.md) **Empty**
+
 ## Web
+- [content discovery](web/content_discovery.md)
 - [cookies](web/cookies.md)
 - [deserialization](web/deserialization.md)
+- [directory busting](web/directory_busting.md)
 - [ftp](web/ftp.md)
 - [get](web/get.md)
 - [HTTP(S)](web/http-s.md)
@@ -14,8 +17,10 @@
 - [session_id](web/session_id.md)
 
 ## Unsorted
-- [access control](access%20control.md)  
-- [authentication](authentication.md)
-- [user supplied input](user_supplied_input.md)  
+- [access control](access%20control.md)  **Empty**
+- [authentication](authentication.md) **Empty**
+- [fuzzing](fuzzing.md)
+- [user supplied input](user_supplied_input.md)  **Empty**
+- [queries](queries.md) **Empty**
 
 

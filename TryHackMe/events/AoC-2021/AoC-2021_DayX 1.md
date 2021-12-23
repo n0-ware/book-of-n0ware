@@ -1,6 +1,6 @@
-# TryHackMe - Advent of Cyber 2021 - Day X
+# TryHackMe - Advent of Cyber 2021 - Day 5
 > Edward Hartmann
-> DATE
+> December 23, 2021
 
 ***<u>Refs/Links:</u>***
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  

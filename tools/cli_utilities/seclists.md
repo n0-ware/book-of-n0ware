@@ -1,4 +1,4 @@
-# Sec Lists
+# Seclists
 An excellent collection of wordlists to use in enumeration, password guessing, file searching, etc. 
 
 ```
@@ -18,4 +18,4 @@ _GitHub Links_
 
 
 
-#enumeration #wordlist
+#enumeration #wordlist #fuzzing #bruteforce

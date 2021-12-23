@@ -3,7 +3,7 @@
 > Edward Hartmann
 > December 19, 2021
 
-<u>Refs/Links:</u>
+***<u>Refs/Links:</u>***
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  
 -  Tags[^1]
 -  Flag[^2]

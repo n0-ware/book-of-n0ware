@@ -9,9 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX 1.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "b9d2a138c7dc76c4",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
             "file": "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
-            "mode": "source",
-            "source": false
+            "mode": "source"
           }
         }
       }
@@ -69,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -101,15 +111,15 @@
   },
   "active": "ea9588406a3701c0",
   "lastOpenFiles": [
+    "TryHackMe/events/AoC-2021/AoC-2021_DayX 1.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
-    "tools/BurpSuite.md",
-    "tools/dirbuster.md",
-    "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day3.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
+    "knowledge-base/concepts/web/directory_busting.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/23.0 AoC-Day-4_12-22-21-Configure-Payload.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/23.0 AoC-Day-4_12-22-21-Configure-Payload.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/22.0 AoC-Day-4_12-22-21-Configure-Cluster-Bomb.png"
+    "knowledge-base/concepts/_TOC-Concepts.md",
+    "knowledge-base/concepts/web/cookies.md",
+    "knowledge-base/concepts/web/deserialization.md",
+    "knowledge-base/concepts/web/content_discovery.md"
   ]
 }

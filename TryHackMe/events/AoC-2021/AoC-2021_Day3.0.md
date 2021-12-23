@@ -13,7 +13,7 @@ We are given a website vulnerable to enumeration to attempt directory busting an
 
 ![Landing Page](AoC-2021_Photos/13.0%20AoC-Day-3_12-22-21-Landing-Page.png)
 
-The first thing we are going to do is attempt to enumerate hidden directories to [discover hidden content](../../../knowledge-base/vulnerabilities/content_discovery.md). Using [dirbuster](../../../tools/dirbuster.md) and [Seclists](../../../tools/sec_lists.md) is our attack path. 
+The first thing we are going to do is attempt to enumerate hidden directories to [discover hidden content](../../../knowledge-base/concepts/web/content_discovery.md). Using [dirbuster](../../../tools/dirbuster.md) and [Seclists](../../../tools/cli_utilities/seclists.md) is our attack path. 
 
 ```
 dirb http://10.10.150.97 /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
