@@ -2,9 +2,19 @@
 - Tags[^1]
 
 [^1]: #owasp #xss #injection #webapp 
-## TOC
 
+## TOC-GH
 - [Document Object Model DOM](#Document-Object-Model-DOM)
+	- [Example DOM XSS](#Example-0DOM-XSS)
+- [Reflected](#Reflected)
+	- [Example Reflected XSS](#Example-Reflected-XSS)
+- [Stored](#Stored)
+	- [Example Stored XSS](#Example-Stored-XSS)
+- [Blind](#Blind)
+	- [Example Blind XSS](#Example-Blind-XSS)
+## TOC-Local
+
+- [Document Object Model DOM](#Document%20Object%20Model%20DOM)
 	- [Example DOM XSS](#Example%20DOM%20XSS)
 - [Reflected](#Reflected)
 	- [Example Reflected XSS](#Example%20Reflected%20XSS)
