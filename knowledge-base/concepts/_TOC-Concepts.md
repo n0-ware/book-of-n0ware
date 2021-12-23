@@ -12,6 +12,8 @@
 - [directory busting](web/directory_busting.md)
 - [ftp](web/ftp.md)
 - [get](web/get.md)
+- [HTTP request](web/http_request.md)
+- [HTTP response](web/http_response.md)
 - [HTTP(S)](web/http-s.md)
 - [post](web/post.md)
 - [protocol states](web/protocol_states.md)
@@ -20,6 +22,7 @@
 ## Unsorted
 - [access control](access%20control.md)  **Empty**
 - [authentication](authentication.md) **Empty**
+- [encoding and decoding](encoding_decoding.md) **Empty**
 - [fuzzing](fuzzing.md)
 - [user supplied input](user_supplied_input.md)  **Empty**
 - [queries](queries.md) **Empty**

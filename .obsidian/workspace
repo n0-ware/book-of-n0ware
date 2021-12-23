@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
+            "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
             "mode": "source"
           }
         }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
+            "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
             "mode": "preview"
           }
         }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
+                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
+                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -113,15 +113,15 @@
   },
   "active": "ea9588406a3701c0",
   "lastOpenFiles": [
+    "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+    "knowledge-base/vulnerabilities/cryptographic_failures.md",
+    "knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md",
+    "knowledge-base/vulnerabilities/injection.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
-    "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
-    "knowledge-base/vulnerabilities/cross_site_scripting_xss.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day3.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
-    "knowledge-base/concepts/web/http_response.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/1.0 AoC-Day-1_12-19-21-IDOR_Vuln.png",
-    "knowledge-base/concepts/web/http_request.md"
+    "knowledge-base/vulnerabilities/Untitled.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+    "knowledge-base/concepts/_TOC-Concepts.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md"
   ]
 }

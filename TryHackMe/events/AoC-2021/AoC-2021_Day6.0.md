@@ -1,5 +1,5 @@
-# TryHackMe - Advent of Cyber 2021 - Day X
-## Title
+# TryHackMe - Advent of Cyber 2021 - Day 6
+## Patch Management is Hard
 > Edward Hartmann
 > DATE
 
