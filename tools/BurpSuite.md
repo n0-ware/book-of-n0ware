@@ -79,7 +79,7 @@ You are now prepared to use BurpSuite with Firefox
 ### Intruder
 #### Sniper 
 #### Cluster Bomb
-_**A note on Cluster Bomb and Exponential Combinations**_   
+***A note on Cluster Bomb and Exponential Combinations***   
 
 When it comes to using this utility, think of it as if we had four items in our list:
 
