@@ -4,7 +4,7 @@
 [^1]: #owasp #xss #injection #webapp 
 ## TOC
 
-- [Document Object Model DOM](#Document%20Object%20Model%20DOM)
+- [Document Object Model DOM](#Document-Object-Model-DOM)
 	- [Example DOM XSS](#Example%20DOM%20XSS)
 - [Reflected](#Reflected)
 	- [Example Reflected XSS](#Example%20Reflected%20XSS)
