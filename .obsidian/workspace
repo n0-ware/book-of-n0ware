@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day3.0.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day3.0.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day3.0.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -101,15 +101,15 @@
   },
   "active": "ea9588406a3701c0",
   "lastOpenFiles": [
+    "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day3.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/119.0 AoC-Day-3_12-22-21-admin-dashboard-authenticated.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/119.0 AoC-Day-3_12-22-21-admin-dashboard-authenticated.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/16.0 AoC-Day-3_12-22-21-admin-login-default-creds.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/15.0 AoC-Day-3_12-22-21-Admin-Dashboard.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/17.0 oC-Day-3_12-22-21-Admin-Calling-Javascript.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/18.0 AoC-Day-3_12-22-21-Admin-JS-Vuln.png",
-    "knowledge-base/vulnerabilities/content_discovery.md",
-    "knowledge-base/concepts/web/directory_busting.md",
-    "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
+    "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/23.0 AoC-Day-4_12-22-21-Configure-Payload.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/23.0 AoC-Day-4_12-22-21-Configure-Payload.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/22.0 AoC-Day-4_12-22-21-Configure-Cluster-Bomb.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/121.0 AoC-Day-4_12-22-21-Send-To-Intruder.png",
+    "knowledge-base/concepts/fuzzing.md"
   ]
 }

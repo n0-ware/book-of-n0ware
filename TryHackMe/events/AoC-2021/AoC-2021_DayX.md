@@ -1,4 +1,4 @@
-# AoC-2021_DayX
+# TryHackMe - Advent of Cyber 2021 - Day X
 > Edward Hartmann
 > DATE
 
