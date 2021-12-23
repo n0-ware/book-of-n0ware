@@ -8,8 +8,10 @@
 -  Flag[^2]
 
 [^1]: #xss #webapp #injection #owasp
-[^2]: 
+[^2]: **
+
 ## Walkthrough
+
 </br>
 </br>
 </br>

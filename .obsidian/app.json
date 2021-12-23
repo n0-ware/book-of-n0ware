@@ -13,7 +13,9 @@
     "deserialization",
     "stateful",
     "walkthrough",
-    "BurpSuite"
+    "BurpSuite",
+    "backend",
+    "untrusted"
   ],
   "readableLineLength": false,
   "fileSortOrder": "alphabetical",

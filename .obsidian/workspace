@@ -114,14 +114,14 @@
   "active": "ea9588406a3701c0",
   "lastOpenFiles": [
     "knowledge-base/vulnerabilities/cross_site_scripting_xss.md",
-    "knowledge-base/concepts/_TOC-Concepts.md",
-    "knowledge-base/concepts/web/dom.md",
-    "knowledge-base/vulnerabilities/session_hijacking.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day3.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
-    "knowledge-base/vulnerabilities/injection.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
+    "knowledge-base/concepts/web/http_response.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/1.0 AoC-Day-1_12-19-21-IDOR_Vuln.png",
+    "knowledge-base/concepts/web/http_request.md",
+    "knowledge-base/concepts/_TOC-Concepts.md"
   ]
 }
