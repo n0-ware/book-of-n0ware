@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
+            "file": "tools/BurpSuite.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
+                "file": "tools/BurpSuite.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
+                "file": "tools/BurpSuite.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -101,6 +101,8 @@
   },
   "active": "ea9588406a3701c0",
   "lastOpenFiles": [
+    "tools/BurpSuite.md",
+    "tools/dirbuster.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
     "TryHackMe/events/AoC-2021/_AoC-2021_TOC.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day3.0.md",
@@ -108,8 +110,6 @@
     "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/23.0 AoC-Day-4_12-22-21-Configure-Payload.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/23.0 AoC-Day-4_12-22-21-Configure-Payload.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/22.0 AoC-Day-4_12-22-21-Configure-Cluster-Bomb.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/121.0 AoC-Day-4_12-22-21-Send-To-Intruder.png",
-    "knowledge-base/concepts/fuzzing.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/22.0 AoC-Day-4_12-22-21-Configure-Cluster-Bomb.png"
   ]
 }
