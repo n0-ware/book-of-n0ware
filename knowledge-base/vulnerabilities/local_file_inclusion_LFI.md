@@ -20,7 +20,7 @@ This is the attackers main point of interest to see if they can manipulate the p
 
 Once an entry point for potential **LFI** is identified, you need to understand how the data could be processed inside the application. Once found, specific testing for vulnerability types begins manually or with automation. 
 
-Below is some `PHP` that is vulnerable to **LFI**
+*Below is some `PHP` that is vulnerable to **LFI***
 
 ```
 <?PHP
@@ -28,7 +28,7 @@ Below is some `PHP` that is vulnerable to **LFI**
 ?>
 ```
 
-This code uses a `GET` request via a URL parameter `file` to include that file on the page. Sending an HTTP request that mirrors this `PHP` code could load the content of any file, such as `welcome.txt`, as long as the file is available in that directory.
+This code uses a `GET` request via the URL parameter `file` to include that file on the page. Sending an HTTP request that mirrors this `PHP` code could load the content of any file, such as `welcome.txt`, as long as the file is available in that directory.
 
 `http://vulnsite.io/index.php?file=welcome.txt`
 
@@ -38,9 +38,9 @@ This code uses a `GET` request via a URL parameter `file` to include that file o
 > - `include_once`
 > - `require_once`
 
-There are many entry points, others include &mdash; User-Agent, Cookies, session, and other HTTP headers. 
+There are many entry points, others including &mdash; User-Agent, Cookies, session, and other HTTP headers. 
 
-Valuable files to try and read include
+*Valuable files to try and read include:*
 - `/etc/shadow`
 - `/etc/passwd`
 - `/etc/issue`
