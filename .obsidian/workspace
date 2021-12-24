@@ -6,11 +6,11 @@
       {
         "id": "ea9588406a3701c0",
         "type": "leaf",
-        "dimension": 50.635451505016725,
+        "dimension": 67.2291296625222,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
             "mode": "source"
           }
         }
@@ -18,11 +18,11 @@
       {
         "id": "b9d2a138c7dc76c4",
         "type": "leaf",
-        "dimension": 49.364548494983275,
+        "dimension": 32.770870337477795,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
             "mode": "preview"
           }
         }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,17 +111,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ea9588406a3701c0",
+  "active": "b9d2a138c7dc76c4",
   "lastOpenFiles": [
-    "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
-    "knowledge-base/concepts/queries.md",
-    "knowledge-base/vulnerabilities/remote_code_execution_rce.md",
-    "knowledge-base/vulnerabilities/cryptographic_failures.md",
-    "knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md",
-    "knowledge-base/vulnerabilities/injection.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
-    "knowledge-base/vulnerabilities/Untitled.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md"
+    "knowledge-base/vulnerabilities/log_poisoning.md",
+    "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+    "knowledge-base/vulnerabilities/cookie_manipulation.md",
+    "knowledge-base/concepts/encoding_decoding.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/9.0_AoC-Day-6_12-23-21-Flag2-Decoded.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/4.0_AoC-Day-6_12-23-21-Basic-Path-Traversal.png",
+    "knowledge-base/vulnerabilities/path_traversal.md",
+    "knowledge-base/concepts/trust.md"
   ]
 }
