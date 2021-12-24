@@ -12,7 +12,7 @@
 
 ## TOC-GH
 - [Finding and Testing](#Finding-and-Testing)
-	- [Entry Point - HTTP Query Parameters](#Entry-Point-HTTP-Query-Parameters)
+	- [Entry Point - HTTP Query Parameters](#Entry-Point-in-HTTP-Query-Parameters)
 	- [Testing in HTTP Query Parameters](#Testing-in-HTTP-Query-Parameters)
 - [Examples](#Examples)
 	- [Basic Path Traversal](#Basic-Path-Traversal-path_traversal-md)
@@ -33,7 +33,7 @@ Once discovered, if the file has the right permissions, the attacker can read th
 Further, if we can inject or write to a file on the system, we can use **LFI** to obtain [**remote code execution (RCE)**](remote_code_execution_rce.md).
 ## Finding and Testing
 
-###  Entry Point - HTTP Query Parameters
+###  Entry Point in HTTP Query Parameters
 An attackers main point of interest is often to see if they can manipulate the parameters of an `HTTP` [query](../concepts/queries.md) to input and inject attack payloads. Studying how the application responds can indicate an *entry point*. 
 
 Often these are `HTTP` [GET](../concepts/web/GET.md) and [POST](../concepts/web/POST.md) parameters that pass arguments and data to a web app to perform a specific operation. 

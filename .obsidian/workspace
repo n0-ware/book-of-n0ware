@@ -35,7 +35,7 @@
           "type": "markdown",
           "state": {
             "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
