@@ -6,24 +6,36 @@
       {
         "id": "ea9588406a3701c0",
         "type": "leaf",
-        "dimension": 67.2291296625222,
+        "dimension": 67.22912966252221,
         "state": {
           "type": "markdown",
           "state": {
             "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       },
       {
         "id": "b9d2a138c7dc76c4",
         "type": "leaf",
-        "dimension": 32.770870337477795,
+        "dimension": 16.3854351687389,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
-            "mode": "preview"
+            "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "349fd3bd420a9b03",
+        "type": "leaf",
+        "dimension": 16.3854351687389,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "knowledge-base/vulnerabilities/log_poisoning.md",
+            "mode": "source"
           }
         }
       }
@@ -111,17 +123,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b9d2a138c7dc76c4",
+  "active": "ea9588406a3701c0",
   "lastOpenFiles": [
     "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
-    "knowledge-base/vulnerabilities/log_poisoning.md",
     "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+    "knowledge-base/vulnerabilities/log_poisoning.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Encoding-the-Shell.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Editing-PHP-Shell.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/16.0_AoC-Day-6_12-24-21-Confirming-Access-To-Logs.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Getting-Local-IP.png",
     "knowledge-base/vulnerabilities/cookie_manipulation.md",
     "knowledge-base/concepts/encoding_decoding.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/9.0_AoC-Day-6_12-23-21-Flag2-Decoded.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/4.0_AoC-Day-6_12-23-21-Basic-Path-Traversal.png",
-    "knowledge-base/vulnerabilities/path_traversal.md",
-    "knowledge-base/concepts/trust.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/9.0_AoC-Day-6_12-23-21-Flag2-Decoded.png"
   ]
 }

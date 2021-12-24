@@ -19,6 +19,12 @@ Attackers can control the `User-Agent` field when interacting with a web applica
 > `curl` has a bit of a learning code, but it allows you to entirely customize an `HTTP` request. 
 
 `curl -A "Testing for RCE" https://vulnsite.io/login.php`
+
+You can also attempt a proof of concept with a piece of code, such as `PHP`. 
+ 
+ `curl -A "<?php phpinfo()?>" https://10-10-54-138.p.thmlabs.com/index.php`
+ 
+ If you see no `User-Agent` rendered, you know the server is executing your code on the server side. This is a successful proof of concept
 ## Finding
 
 ## Examples

