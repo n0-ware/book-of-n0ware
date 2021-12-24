@@ -16,8 +16,9 @@ The prerequisites mean we need good enumeration and proof of concept skills befo
 
 ## Testing
 
-Once you have determined you can view an applications log files, testing what you can control in the log file is the first step. 
+Once you have determined you can view an applications log files, testing what you can control in the log file is the first step. If the malicious log is captured, we simply need to be able to access the log file to run the script. How you access the log and run the code varies from method to method
 
+### With Curl
 For example, a log that captures the `User-Agent` field may be vulnerable to [injection](injection.md) through a modified `User-Agent` field. Attackers can modify a `curl` command to submits a custom `User-Agent` field with the `-A` flag.  This custom field can contain a payload, sent via `HTTP` request with `curl`. An *Apache* server will then attempt to read the log file, potentially executing any code you submitted. 
 
 `curl -A "Testing for RCE" https://vulnsite.io/index.html`
@@ -26,9 +27,8 @@ Following the `curl` request, we then verify the custom `User-Agent` field was r
 
 > `curl` has a bit of a learning code, but it allows you to entirely customize an `HTTP` request. 
 
+### SSH
 If you are attacking `SSH`, this can be done via the username. Both require poor [user input](../concepts/user_supplied_input.md) sanitation. 
-
-Once the malicious log is captured, we simply need to be able to access the log file to run the script. 
 
 ## Exploiting
 

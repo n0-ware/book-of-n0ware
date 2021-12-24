@@ -9,20 +9,22 @@
 	- [PHP](#abusing%20PHP)
 		- [PHP Filter](#PHP%20Filter)
 	- [Remote Code Execution](#Remote%20Code%20Execution)
+	- [Log Poisoning](#Log%20Poisoning)
 
 ## TOC-GH
 - [Finding and Testing](#Finding-and-Testing)
 	- [Entry Point - HTTP Query Parameters](#Entry-Point-in-HTTP-Query-Parameters)
 	- [Testing in HTTP Query Parameters](#Testing-in-HTTP-Query-Parameters)
 - [Examples](#Examples)
-	- [Basic Path Traversal](#Path-Traversal)
+	- [Path Traversal](#Path-Traversal)
 	- [Abusing PHP](#abusing-PHP)
 		- [PHP Filter](#PHP-Filter)
 	- [Remote Code Execution](#Remote-Code-Execution)
+		- [Log Poisoning](#Log-Poisoning)
 
 Tags [^1]
 
-[^1]: #webapp #lfi #get #post #query #insecuredesign #encoding #userinput #rce #php #injection 
+[^1]: #webapp #lfi #get #post #query #insecuredesign #encoding #userinput #rce #php #injection #logs
 ## Description
 Local File Inclusion (LFI) vulnerabilities can be found in web applications. **LFI** allows attackers to "include" and read local files on the server, such as cryptographic keys, passwords, API's, and other sensitive data. **LFI** can result in sensitive data exposure, a former [*Owasp Top Ten*](https://owasp.org/www-project-top-ten/) vulnerability, now included in the number two spot with [*Cryptographic Failures*](cryptographic_failures.md)
 
@@ -133,18 +135,12 @@ There is even potential to paste **encoded** `PHP` code and use a wrapper to dec
 > More wrappers can be found here &mdash; [PHP Documentation - Wrappers](https://www.php.net/manual/en/wrappers.php.php) 
 
 ### Remote Code Execution
-**LFI** can be used to generate [remote code execution](remote_code_execution_rce.md) depending on the type of files we have access to. 
+**LFI** can be used to generate [remote code execution](remote_code_execution_rce.md) in a variety of ways and to different degrees of severity depending on the type of files we have access to. 
 
-In the case of log files, this is called [log poisoning](log_poisoning.md) , a technique used to gain **RCE** on a web server. 
+#### Log Poisoning
+In the case of log files, this is called [log poisoning](log_poisoning.md) , a technique used to gain **RCE** on a web server.  
 
 > See the link for log poisoning for more detail. 
 
-Testing log poisoning is as easy as sending a crafted `curl` request, such as a modified `User-Agent`
 
-`curl -A "Testing for RCE" https://vulnsite.io/login.php`
- 
- You can also attempt a proof of concept with a piece of code, such as `PHP`. 
- 
- `curl -A "<?php phpinfo()?>" https://10-10-54-138.p.thmlabs.com/index.php`
- 
- If you see no `User-Agent` rendered, you know the server is executing your code on the server side. This is a successful proof of concept
+
