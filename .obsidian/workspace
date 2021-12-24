@@ -4,38 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "ea9588406a3701c0",
-        "type": "leaf",
-        "dimension": 67.22912966252221,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
         "id": "b9d2a138c7dc76c4",
         "type": "leaf",
-        "dimension": 16.3854351687389,
+        "dimension": 48.48484848484848,
         "state": {
           "type": "markdown",
           "state": {
             "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       },
       {
         "id": "349fd3bd420a9b03",
         "type": "leaf",
-        "dimension": 16.3854351687389,
+        "dimension": 48.48484848484848,
         "state": {
           "type": "markdown",
           "state": {
             "file": "knowledge-base/vulnerabilities/log_poisoning.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "f9938f389616fec7",
+        "type": "leaf",
+        "dimension": 3.03030303030303,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+            "mode": "preview"
           }
         }
       }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
+                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
+                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,17 +123,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ea9588406a3701c0",
+  "active": "f9938f389616fec7",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
     "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
     "knowledge-base/vulnerabilities/log_poisoning.md",
+    "knowledge-base/vulnerabilities/path_traversal.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Encoding-the-Shell.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Editing-PHP-Shell.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/16.0_AoC-Day-6_12-24-21-Confirming-Access-To-Logs.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Getting-Local-IP.png",
     "knowledge-base/vulnerabilities/cookie_manipulation.md",
-    "knowledge-base/concepts/encoding_decoding.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/9.0_AoC-Day-6_12-23-21-Flag2-Decoded.png"
+    "knowledge-base/concepts/encoding_decoding.md"
   ]
 }

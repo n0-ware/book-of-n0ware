@@ -1,30 +1,49 @@
 # Log Poisoning
 
+<u>***Refs***</u>
+[Local File Inclusion](local_file_inclusion_LFI.md)
+
 ## Description
 
-*Referenced in [local_file_inclusion_LFI](local_file_inclusion_LFI.md) under Remote Code Execution*
+**Log Poisoning** refers to an attack where an applications log files manipulated to produce a negative result. Typically, the log is injected with malicious code that can do anything from divulge information to producing  [remote code execution](remote_code_execution_rce.md) depending on the type of [user supplied input](../concepts/user_supplied_input.md) we can inject into the log. 
 
-**LFI** can be used to generate [remote code execution](remote_code_execution_rce.md) depending on the type of files we have access to. 
+***This attack has two prerequisites to be effective::**
 
-In the case of log files, this is called log poisoning, a technique used to gain **RCE** on a web server. The attack needs a malicious payload injected into a services log files, such as *Apache, SSH*, or others. Once there, the **LFI** vulnerability is used to call the injected log file, executing the malicious payload. This vulnerability requires multiple variables to align, meaning we need good enumeration beforehand to identify the vulnerability. It also requires some knowledge of how web applications work. 
+1. We have ability to inject a malicious payload into a services log files, such as *Apache*  or *SSH*. 
+2. We have access to the log file, either directly or via some other vulnerability such as [local file inclusion (LFI)](local_file_inclusion_LFI.md), so we may view the executed code and/or add to the corrupted log file with more code.  the we access the vulnerability is used to call the injected log file, executing the malicious payload. 
 
-For example, a user that can include a malicious payload in an Apache log file via a `User-Agent` header sent via an `HTTP` request. Via `SSH`, this can be done via the username. Both require poor [user input](../concepts/user_supplied_input.md) sanitation. 
+The prerequisites mean we need good enumeration and proof of concept skills beforehand to identify the vulnerability. It also requires some knowledge of how web applications work, such as when code is executed on the server-side and how that effects what we see on the client-side.
 
-Once the malicious log is captured, we simply need to be able to access the log file to run the script. 
+## Testing
 
-Let's say we can access a log file, and we are able to pull a log that tells us precisely what the log stores. We identify that the log stores four headers &mdash; username, IP address, `User-Agent`, and the page visited. 
+Once you have determined you can view an applications log files, testing what you can control in the log file is the first step. 
 
-Attackers can control the `User-Agent` field when interacting with a web application, editing it with a crafted `HTTP` request using the `curl` command with the `-A` flag. Since we can control what `User-Agent` is sent to the log file, sending a test to the web application allows us to confirm if it works
+For example, a log that captures the `User-Agent` field may be vulnerable to [injection](injection.md) through a modified `User-Agent` field. Attackers can modify a `curl` command to submits a custom `User-Agent` field with the `-A` flag.  This custom field can contain a payload, sent via `HTTP` request with `curl`. An *Apache* server will then attempt to read the log file, potentially executing any code you submitted. 
+
+`curl -A "Testing for RCE" https://vulnsite.io/index.html`
+
+Following the `curl` request, we then verify the custom `User-Agent` field was recorded and confirm the vulnerability. 
 
 > `curl` has a bit of a learning code, but it allows you to entirely customize an `HTTP` request. 
 
-`curl -A "Testing for RCE" https://vulnsite.io/login.php`
+If you are attacking `SSH`, this can be done via the username. Both require poor [user input](../concepts/user_supplied_input.md) sanitation. 
 
-You can also attempt a proof of concept with a piece of code, such as `PHP`. 
- 
- `curl -A "<?php phpinfo()?>" https://10-10-54-138.p.thmlabs.com/index.php`
- 
- If you see no `User-Agent` rendered, you know the server is executing your code on the server side. This is a successful proof of concept
-## Finding
+Once the malicious log is captured, we simply need to be able to access the log file to run the script. 
 
-## Examples
+## Exploiting
+
+### PHP
+We identify a log that stores four headers &mdash; username, IP address, `User-Agent`, and the page visited
+
+Since we can control the `User-Agent` field when interacting with a web application, we send a custom request to the web application on a page we know is logged. 
+
+`curl -A "Testing for RCE" https://vulnsite.io/index.php`
+
+We then inspect the log file to see if the custom `User-Agent` was recorded in the log. 
+
+Next we send a "proof of concept" request injected with `PHP` code to see how the server/client renders the code. 
+ 
+ `curl -A "<?php phpinfo()?>" https://www.vulnsite.io/index.php`
+ 
+ Depending on how you access the log file, you will either see no `User-Agent` or the code will render information on the `PHP` backend. This is proof of [RCE](remote_code_execution_rce.md) and you may continue to exploit the service, whether through additional information disclosure or full compromise. 
+
