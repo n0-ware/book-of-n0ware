@@ -5,8 +5,8 @@
 	- [Entry Point - HTTP Query Parameters](#Entry%20Point%20-%20HTTP%20Query%20Parameters)
 	- [Testing in HTTP Query Parameters](#Testing%20in%20HTTP%20Query%20Parameters)
 - [Examples](#Examples)
-	- [Basic Path Traversal](#Basic%20Path%20Traversal%20path_traversal%20md)
-	- [PHP](#PHP)
+	- [Path Traversal](#Path%20Traversal)
+	- [PHP](#abusing%20PHP)
 		- [PHP Filter](#PHP%20Filter)
 	- [Remote Code Execution](#Remote%20Code%20Execution)
 
@@ -15,8 +15,8 @@
 	- [Entry Point - HTTP Query Parameters](#Entry-Point-in-HTTP-Query-Parameters)
 	- [Testing in HTTP Query Parameters](#Testing-in-HTTP-Query-Parameters)
 - [Examples](#Examples)
-	- [Basic Path Traversal](#Basic-Path-Traversal-path_traversal-md)
-	- [PHP](#PHP)
+	- [Basic Path Traversal](#Path-Traversal)
+	- [Abusing PHP](#abusing-PHP)
 		- [PHP Filter](#PHP-Filter)
 	- [Remote Code Execution](#Remote-Code-Execution)
 
@@ -95,7 +95,8 @@ Your success in exploiting **LFI** fully depends on the type of web application 
 
 ## Examples
 
-### Basic [Path Traversal](path_traversal.md)
+### Path Traversal
+> See the note on [Path Traversal](path_traversal.md)]. 
 Path traversal involves escaping upward or drilling down from the web root to access files we should not be able to. 
 
 ```
@@ -107,7 +108,7 @@ https://vulnsite.io/status.php?file=%252e%252e%252fetc%252fpasswd
 ```
 > The last example here is URL double-encoded. Try it in [CyberChef!](https://gchq.github.io/CyberChef/#recipe=URL_Decode()URL_Decode()&input=JTI1MmUlMjUyZSUyNTJmZXRjJTI1MmY)
 
-### PHP 
+### Abusing PHP
 When dealing with `PHP`, you can use *PHP-supported wrappers* combined with an entry point. `PHP` provides several methods for transmitting data (input/output) that enable `PHP` to read the data. 
 
 #### PHP Filter
