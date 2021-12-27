@@ -4,21 +4,9 @@
     "type": "split",
     "children": [
       {
-        "id": "349fd3bd420a9b03",
-        "type": "leaf",
-        "dimension": 33.0489447687472,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day7.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "e41ac30c79ec7180",
         "type": "leaf",
-        "dimension": 33.90211046250561,
+        "dimension": 25.31857813547954,
         "state": {
           "type": "markdown",
           "state": {
@@ -28,9 +16,21 @@
         }
       },
       {
+        "id": "b91cf31f612f8f66",
+        "type": "leaf",
+        "dimension": 25.31857813547954,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day7.0.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
         "id": "3d7591e5e49ff18b",
         "type": "leaf",
-        "dimension": 33.0489447687472,
+        "dimension": 49.36284372904092,
         "state": {
           "type": "markdown",
           "state": {
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge-base/concepts/nosql.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day7.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge-base/concepts/nosql.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day7.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,17 +123,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e41ac30c79ec7180",
+  "active": "b91cf31f612f8f66",
   "lastOpenFiles": [
+    "TryHackMe/events/AoC-2021/AoC-2021_Day7.0.md",
     "knowledge-base/concepts/nosql.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day7.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_7/14.0_AoC-Day-7_12-27-21-Mcskidy-Record-Test.png",
     "knowledge-base/vulnerabilities/nosql_injection.md",
     "tools_and_tricks/tools/BurpSuite.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_7/1.0_AoC-Day-7_12-27-21-Landing-Page.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_7/4.0_AoC-Day-7_12-27-21-Landing-Page.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
     "knowledge-base/concepts/concepts_photos/HTTP_Query_Parameters.png",
     "knowledge-base/vulnerabilities/injection.md",
-    "tools_and_tricks/cli_utilities/curl.md",
-    "tools_and_tricks/cli_utilities/sed.md"
+    "tools_and_tricks/cli_utilities/curl.md"
   ]
 }
