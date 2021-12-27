@@ -1,5 +1,5 @@
 # NoSQL
-###### *This example is based on the common **MongoDB** database system. *
+###### *This example is based on the common **MongoDB** database system.*
 Tags[^2] 
 
 ## TOC
