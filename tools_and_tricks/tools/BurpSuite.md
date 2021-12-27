@@ -2,8 +2,11 @@
 ## TOC
 - [Description](#Description)
 - [Configuration](#Configuration)
-	- [Importing Certificate to Chrome](#Importing%20Certificate%20to%20Chrome)
-	- [Importing Certificate to FireFox](#Importing%20Certificate%20to%20FireFox)
+		- [Importing Certificate to Chrome](#Importing%20Certificate%20to%20Chrome)
+		- [Importing Certificate to FireFox](#Importing%20Certificate%20to%20FireFox)
+	- [Target](#Target)
+		- [Site Map](#Site%20Map)
+		- [Scope](#Scope)
 - [Modules](#Modules)
 	- [Intruder](#Intruder)
 		- [Sniper](#Sniper)
@@ -44,8 +47,8 @@ Alternatively, you can go to `127.0.0.1:8080` in your browser and click `CA Cert
 
 Take note of where you save the certificate for the next step. 
 
-
-### Importing Certificate to Chrome
+### Certificates
+#### Importing Certificate to Chrome
 In *Chrome*, head to `Settings` and search for `Security`. 
 
 ![Search for Security](tools/tools_photos/BurpSuite-Chrome-Cert-Import-1.png)
@@ -61,7 +64,7 @@ Click the `Authorities` tab and `Import` your certificate. Choose only the first
 
 You are now configured for BurpSuite on Chrome!
 
-### Importing Certificate to FireFox
+#### Importing Certificate to FireFox
 
 In *FireFox* head to `Settings` , search for `Certificates` in the search bar, then click `View Certificates`. 
 
@@ -75,6 +78,10 @@ Select the checkbox to *"Trust this CA to identify websites"* and click `Ok`
 
 You are now prepared to use BurpSuite with Firefox
 
+
+### Target
+#### Site Map
+#### Scope
 ## Modules
 ### Intruder
 #### Sniper 
@@ -106,6 +113,9 @@ When attacking software applications, fuzzing for unexpected behavior, wordlists
 #### Pitchfork
 #### Battering Ram
 ### Repeater
+The "Repeater" tool allows us to take an [HTTP Request](../../knowledge-base/concepts/web/http_request.md) and use it as a template with small modifications, viewing the different responses. This is a great tool for testing for [injection](../../knowledge-base/vulnerabilities/injection.md) attacks, manual brute-force attacks, [cookie manipulation](../../knowledge-base/vulnerabilities/cookie_manipulation.md), etc. 
+
+Simple select your base HTTP request, right-click, and choose "Send to repeater" to begin using the utility. 
 ### Sequencer
 ### Decoder
 ### Comparer
