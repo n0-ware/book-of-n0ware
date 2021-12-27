@@ -2,6 +2,14 @@
 ###### *This example is based on the common **MongoDB** database system. *
 Tags[^2] 
 
+## TOC
+- [Description](#Description)
+- [SQL vs NoSQL](#SQL%20vs%20NoSQL)
+- [Structure](#Structure)
+- [Commands](#Commands)
+	- [Command Usage](#Command%20Usage)
+
+
 [^2]: #rdbms #nosql #sql #database
 
 ## Description
@@ -80,9 +88,11 @@ To start interacting with a local **MongoDB** server, simply type `mongo` or `mo
 - `db.COLLECTION.remove({key:"value"})` &mdash; removes the selected `key:value`
 - `db.COLLECTION.drop()` &mdash; ends the session with the current collection.
 
+#### Command Usage
 *Creating a DB and Collection*
 - `use test_db;`
 - `db.createCollection("test_users")`
+
 ![Creating DB and Collection](concepts_photos/NoSQL-Creating-DB-and-Collection.png)
 
 *Creating and Finding Documents*
@@ -91,17 +101,22 @@ WriteResult({ "nInserted" : 1 })`
 - `db.test_users.insert({id:"1", username: "admin", email: "n0_ware@hacks.io", password: "badpass123"})
 WriteResult({ "nInserted" : 1 })`
 - `db.test_users.find()`
+
 ![Creating and Finding Documents](concepts_photos/NoSQL-Creating-and-Finding-Documents.png)
 
 *Updating a Document*
-![Updating a Document](concepts_photos/NoSQL-Update-a-Document.png)
 - `db.test_users.update({id:"2"}, {$set: {username: "harder_target", password: "AmucHb3tt3rp4ssw0rd!##&"}});
 WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })`
 
+![Updating a Document](concepts_photos/NoSQL-Update-a-Document.png)
+
+
 *Finding a Specific Document*
 - `db.test_users.find({id:"2"})`
+
 ![Finding a Specific Document](concepts_photos/NoSQL-Finding-A-Specific-Document.png)
 
 *Remove a Document*
 - `db.test_users.remove({id:"2"})`
+
 ![Remove a Document](concepts_photos/NoSQL-Remove-a-Document.png)
