@@ -10,9 +10,9 @@
 
 [^1]: #nosql #injection #webapp #database #burp 
 [^2]: *Flag 1:* THM{8814a5e6662a9763f7df23ee59d944f9}   
-					*Flag 2:* THM{b6b304f5d5834a4d089b570840b467a8}
-					*Flag 3:* THM{2ec099f2d602cc4968c5267970be1326}
-					*Flag 4:* ID:6184f516ef6da50433f100f4:mcskidy:admin
+					*Flag 2:* THM{b6b304f5d5834a4d089b570840b467a8}  
+					*Flag 3:* THM{2ec099f2d602cc4968c5267970be1326}  
+					*Flag 4:* ID:6184f516ef6da50433f100f4:mcskidy:admin  
 
 ## TOC
 - [Question-1](#Question-1)
