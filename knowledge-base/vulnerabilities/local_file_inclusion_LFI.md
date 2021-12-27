@@ -142,5 +142,3 @@ In the case of log files, this is called [log poisoning](log_poisoning.md) , a t
 
 > See the link for log poisoning for more detail. 
 
-
-

@@ -8,7 +8,7 @@ Cookies are found within the *Developer Tools* section of your browser using <kb
 - Chrome: Locate in the `Application` tab. Select `Cookies` from the dropdown menu in the left side.
 
 ## Types
-- session - Identify you and your access level for stateful communication with a webserver. Often called a  ([session_id](session_id.md)) and used for [authentication](../authentication.md)
+- session - Identify you and your access level for stateful communication with a webserver. Often called a  ([session](session.md)) and used for [authentication](../authentication.md)
 - persistent
 - secure
 - HTTP-only

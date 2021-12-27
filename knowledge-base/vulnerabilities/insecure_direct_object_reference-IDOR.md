@@ -30,7 +30,7 @@ Forms that [POST](../concepts/web/POST.md) on a website can reveal vulnerable fi
 Use a `POST` editor such as [BurpSuite](../../tools/BurpSuite.md) to modify the request as you send it
 
 ##### Cookies
-[Cookies](../concepts/web/cookies.md) are often used to save sessions/logins. Usually, it involves a [session_id](../concepts/web/session_id.md). Sometimes, these session id's can be hard coded using the *User ID* and offer an exploit path. 
+[Cookies](../concepts/web/cookies.md) are often used to save sessions/logins. Usually, it involves a [session](../concepts/web/session.md). Sometimes, these session id's can be hard coded using the *User ID* and offer an exploit path. 
 
 ![Hard Coded User ID in Cookie](../concepts/concepts_photos/Session-ID-UID_Hard_Coded--THM.png)
 

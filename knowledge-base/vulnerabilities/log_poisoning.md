@@ -45,5 +45,24 @@ Next we send a "proof of concept" request injected with `PHP` code to see how th
  
  `curl -A "<?php phpinfo()?>" https://www.vulnsite.io/index.php`
  
- Depending on how you access the log file, you will either see no `User-Agent` or the code will render information on the `PHP` backend. This is proof of [RCE](remote_code_execution_rce.md) and you may continue to exploit the service, whether through additional information disclosure or full compromise. 
+ Accessing the corrupted file will likely take some of [local file inclusion vulnerability](local_file_inclusion_LFI.md). Depending on how you access the log file, you will either see no `User-Agent` or the code will render the information on screen. You may have to attempt to access the file in several ways to render the code where on the client side. 
+ 
+ Regardless, if you don't see your code rendered but also don't see the code itself, this is proof of [RCE](remote_code_execution_rce.md) and you may continue to exploit the service.
+ 
+ > Not seeing the code you type in is a good sign because that means the code ran on the server. You may not be able to disclose information without visual representation of the code on your screen, but you can still run code on he server, possibly writing files to an accessible location or simple generating a backdoor for you to access and gain a foothold on the server. 
 
+### Corrupting Sessions
+
+If an attacker is able to access the  location [session](../concepts/web/session.md) information is stored on a server and poor [user input](../concepts/user_supplied_input.md) sanitation is in place, we can corrupt a session with some sort of malicious code, such as with `PHP` if the server is running a `PHP` backend. 
+
+Session information is often stored in common locations, such as 
+- `c:\Windows\Temp`
+- `/tmp/`
+- `/var/lib/php5`
+- `/var/lib/php/session`
+
+Consider a login screen where the username is stored. An attacker can submit a username such as `<?php phpinfo(); ?>` and navigate to where the sessions are stored to identify if the code is executed on the server side. To find the correct `session_id`, simply use your browsers developer tools and locate the `PHPSESSID` or other relevant session (such as `JESSIONID` with Java) and access that file via the directory the sessions are stored in, such as `/tmp/sess_9lmhiq5msgbg2nbiha3tecjki2`. 
+
+![PHPSESSID](vulnerabilities_photos/LFI-PHPSESSIONID.png)
+
+Proceed to poison the session with malicious code, then access that file on the server through a browser to verify you have successful execution. Accessing the file will likely require some kind of [local file inclusion vulnerability](local_file_inclusion_LFI.md)
