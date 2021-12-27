@@ -21,3 +21,8 @@
 	- [Cross Site Scripting](../../../knowledge-base/vulnerabilities/cross_site_scripting_xss.md)
 	- Stored XSS
 	- Password change
+- [AoC-2021_Day6.0](AoC-2021_Day6.0.md)
+	- [Local File Inclusion](../../../knowledge-base/vulnerabilities/local_file_inclusion_LFI.md)
+	- [Log Poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md)
+	- [php_in_url](../../../tools_and_tricks/tricks/php_in_url.md)
+	- 

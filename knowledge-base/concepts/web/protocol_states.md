@@ -6,6 +6,6 @@ In contrast, a **stateful protocol** is a communication protocol in which the re
 ## Examples
 An [http-s](http-s.md) server interprets requests independent of each other request. 
 
-Contrast this with an [ftp](ftp.md) server. The session is interactive, and within each session, the user is authenticated and given a set of variables (working directory, transfer mode, etc), all stored on the server as part of the session state.
+Contrast this with an [FTP](FTP.md) server. The session is interactive, and within each session, the user is authenticated and given a set of variables (working directory, transfer mode, etc), all stored on the server as part of the session state.
 
 #protocol #state #session
