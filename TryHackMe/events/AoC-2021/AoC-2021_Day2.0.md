@@ -46,7 +46,7 @@ With the new `JSON` cookie encoded back to *hex*, it is time to action the cooki
 
 Back in the developer tab of the website, replace the current cookie with the new one and refresh the page. After some trial and error, removing the spaces in the new *hex* code worked. 
 
-The spaces can be removed using [sed](../../../tools/cli_utilities/sed.md). 
+The spaces can be removed using [sed](../../../tools_and_tricks/cli_utilities/sed.md). 
 
 ```
 echo "7b 63 6f 6d 70 61 6e 79 3a 20 22 54 68 65 20 42 65 73 74 20 46 65 73 74 69 76 61 6c 20 43 6f 6d 70 61 6e 79 22 2c 20 69 73 72 65 67 69 73 74 65 72 65 64 3a 22 54 72 75 65 22 2c 20 75 73 65 72 6e 61 6d 65 3a 22 61 64 6d 69 6e 22 7d" > cookie.txt     

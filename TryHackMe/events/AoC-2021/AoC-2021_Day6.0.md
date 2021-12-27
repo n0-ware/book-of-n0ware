@@ -9,7 +9,7 @@
 -  Answers[^2]
 
 
-[^1]: #lfi 
+[^1]: #lfi #logpoisoning #php #session #rce
 [^2]: *Entry Point*: `err`
 					*Flag 1*: `THM{d29e08941cf7fe41df55f1a7da6c4c06} `
 					*Flag 2*: `THM{791d43d46018a0d89361dbf60d5d9eb8}`
@@ -25,6 +25,8 @@
 - [Question-4](#Question-4)
 - [Question-5](#Question-5)
 - [Question-6](#Question-6)
+- [Bonus](#Bonus)
+- [Interactive Shell](#Interactive%20Shell)
 
 ## Walkthrough
 

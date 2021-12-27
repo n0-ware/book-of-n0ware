@@ -2,11 +2,11 @@
 
 ## Enumeration
 
-[autorecon](autorecon.md)
+[autorecon](tools/autorecon.md)
 
 ## WebApps
 
-[BurpSuite](BurpSuite.md)
+[BurpSuite](tools/BurpSuite.md)
 
 ## CLI Utilities
 ### Text and Files

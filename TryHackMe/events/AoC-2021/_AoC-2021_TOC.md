@@ -15,7 +15,7 @@
 	- Default usernames and passwords
 	- Insecure calling of `javascript` divulged login information
 - [Day 4](AoC-2021_Day4.0.md)
-	- [Fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../tools/BurpSuite.md)
+	- [Fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../tools_and_tricks/tools/BurpSuite.md)
 	- Weak passwords
 - [Day 5](AoC-2021_Day5.0.md)
 	- [Cross Site Scripting](../../../knowledge-base/vulnerabilities/cross_site_scripting_xss.md)

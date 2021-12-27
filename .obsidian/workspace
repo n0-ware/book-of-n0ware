@@ -20,8 +20,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
-            "mode": "preview"
+            "file": "tools_and_tricks/tricks/php_in_url.md",
+            "mode": "source"
           }
         }
       },
@@ -131,6 +131,7 @@
   "active": "349fd3bd420a9b03",
   "lastOpenFiles": [
     "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
+    "tools_and_tricks/tricks/php_in_url.md",
     "knowledge-base/vulnerabilities/log_poisoning.md",
     "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/23.0_AoC-Day-6_12-26-21-Corrupting-Session-Username.png",
@@ -138,7 +139,6 @@
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Encoding-the-Shell.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/AoC-Day-6_12-24-21-Editing-PHP-Shell.png",
     "knowledge-base/concepts/web/session.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/26.0_AoC-Day-6_12-24-21-whoami.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/7.0_AoC-Day-6_12-23-21-Filter-Read-String.png"
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_6/26.0_AoC-Day-6_12-24-21-whoami.png"
   ]
 }

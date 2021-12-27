@@ -16,7 +16,7 @@ We are given a website vulnerable to enumeration to attempt directory busting an
 
 ![Landing Page](AoC-2021_Photos/Day_3/1.0_AoC-Day-3_12-22-21-Landing-Page.png)
 
-The first thing we are going to do is attempt to enumerate hidden directories to [discover hidden content](../../../knowledge-base/concepts/web/content_discovery.md). Using [dirbuster](../../../tools/dirbuster.md) and [Seclists](../../../tools/cli_utilities/seclists.md) is our attack path. 
+The first thing we are going to do is attempt to enumerate hidden directories to [discover hidden content](../../../knowledge-base/concepts/web/content_discovery.md). Using [dirbuster](../../../tools_and_tricks/tools/dirbuster.md) and [Seclists](../../../tools_and_tricks/cli_utilities/seclists.md) is our attack path. 
 
 ```
 dirb http://10.10.150.97 /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
@@ -32,7 +32,7 @@ Some basic manual guessing and we are able to find a valid admin login using the
 
 ![Successful Login](AoC-2021_Photos/Day_3/4.0_AoC-Day-3_12-22-21-admin-login-default-creds.png)
 
-While inspecting the target with [BurpSuite's](../../../tools/BurpSuite.md), we can also identify that when loading the `/admin` page, it also calls a `javascript` function `/admin/loginpage.js`. Investigating this script plainly gives out the administrator username and password. 
+While inspecting the target with [BurpSuite's](../../../tools_and_tricks/tools/BurpSuite.md), we can also identify that when loading the `/admin` page, it also calls a `javascript` function `/admin/loginpage.js`. Investigating this script plainly gives out the administrator username and password. 
 
 ![Admin Page Calling JavaScript](AoC-2021_Photos/Day_3/5.0_AoC-Day-3_12-22-21-Admin-Calling-Javascript.png)
 
