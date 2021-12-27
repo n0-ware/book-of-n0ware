@@ -14,6 +14,12 @@
 					*Flag 3:* THM{2ec099f2d602cc4968c5267970be1326}
 					*Flag 4:* ID:6184f516ef6da50433f100f4:mcskidy:admin
 
+## TOC
+- [Question-1](#Question-1)
+- [Question-2](#Question-2)
+- [Question-3](#Question-3)
+- [Question-4](#Question-4)
+
 ## Walkthrough
 
 In this box are are going to be exploring [NoSQL Injection](../../../knowledge-base/vulnerabilities/nosql_injection.md) via a **MongoDB** [NoSQL](../../../knowledge-base/concepts/nosql.md) server. Begin by accessing the URL in your browser and starting an `nmap` against the server with the standard enumeration flags.
@@ -161,7 +167,7 @@ Bingo! `mcskidy` has a role of `admin` and the username `mcskidy`. Paste this en
 
 ![McSkidy Flag](AoC-2021_Photos/Day_7/15.0_AoC-Day-7_12-27-21-McSkidy-Flag.png)
 
-Congrats on completing this box!
+Congrats on completing this box! Consider trying out some of the other commands such as `$exists` with a value of `true` for the field and `$regex` with a value of `.*` to match "anything that is there" and see what else you can get. 
 </br>
 </br>
 </br>
