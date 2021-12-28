@@ -14,4 +14,4 @@ The directory tree for this is as follows
 
 ## Boxes
 ## Events
-- [Advent of Cyber 3 - 2021](events/AoC-2021/1.0_AoC-2021_TOC.md)
+- [Advent of Cyber 3 - 2021](events/AoC-2021/Advent%20of%20Cyber%20Table%20of%20Contents.md)
