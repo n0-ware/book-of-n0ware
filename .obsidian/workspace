@@ -4,23 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "b91cf31f612f8f66",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "tools_and_tricks/tools/nmap.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
         "id": "2e741b5a8b8eb8f8",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day10.0.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX 1.md",
             "mode": "source"
           }
         }
@@ -79,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day10.0.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day10.0.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,15 +100,15 @@
   },
   "active": "2e741b5a8b8eb8f8",
   "lastOpenFiles": [
+    "TryHackMe/events/AoC-2021/AoC-2021_DayX 1.md",
+    "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+    "TryHackMe/README-THM.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day10.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day9.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day8.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day7.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day3.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day2.0.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day1.0.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md"
   ]
 }

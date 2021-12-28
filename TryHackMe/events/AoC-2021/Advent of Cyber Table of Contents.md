@@ -46,3 +46,6 @@
 	- Basic data mining from packets
 	- DNS, FTP, and HTTP
 - [Day 10](AoC-2021_Day10.0.md)
+	- [Nmap](../../../tools_and_tricks/tools/nmap_usage.md)
+	- Service enumeration
+- 
