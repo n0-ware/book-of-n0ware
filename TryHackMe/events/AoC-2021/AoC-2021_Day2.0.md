@@ -69,7 +69,9 @@ _Formatted Admin Cookie_
 
 From the dashboard, it is clear the *HR* team is not responding, or at least has not for 7 hours. It is also clear there is a network warning on the *Application* team.
 
-Congratulations on completing the box!
+***Congratulations on completing this box!***  
+
+See you at the next one &mdash; [Advent of Cyber 3 Day 3](AoC-2021_Day3.0.md)
 </br>
 </br>
 </br>

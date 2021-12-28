@@ -1,7 +1,7 @@
 # TryHackMe - Advent of Cyber 2021 - Day 9
-## Title
+## Where is All This Data Going
 > Edward Hartmann
-> DATE
+> December 28, 2021
 
 ***<u>Refs/Links:</u>***
 - [Advent of Cyber 2021 TOC](_AoC-2021_TOC.md)  
@@ -17,6 +17,13 @@
 					*Question 6:* `STOR`  
 					*Question 7:* `123^-^321`  
 
+## TOC
+- [Question 1](#Question-1)
+- [Question 2](#Question-2)
+- [Question 3](#Question-3)
+- [Question 4](#Question-4)
+- [Questions 5](#Questions-5-6)
+- [Question 7](#Question-7)
 ## Walkthrough
 
 In this task, we are asked to analyze a `pcap` file using [Wireshark](../../../tools_and_tricks/tools/wireshark.md). The file is available for download at the start of the lab if you want to work on this locally, or you may use the Attack Box from TryHackMe. 
@@ -131,7 +138,9 @@ The final question asks us for the actual data stored in `secret.txt`. You can e
 
 ![FTP Flag](AoC-2021_Photos/Day_9/11.0_AoC-Day-9_12-28-21-Final-Flag.png)
 
-Congratulations on completing this box!
+***Congratulations on completing this box!***  
+
+See you at the next one &mdash; [Advent of Cyber 3 Day 10](AoC-2021_Day10.0.md)
 </br>
 </br>
 </br>

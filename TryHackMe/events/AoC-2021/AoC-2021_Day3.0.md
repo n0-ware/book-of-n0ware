@@ -42,6 +42,10 @@ Once we are successfully authenticated, we have access to the Admin dashboard an
 
 ![Welcome, Admin!](AoC-2021_Photos/Day_3/7.0_AoC-Day-3_12-22-21-admin-dashboard-authenticated.png)
 
+
+***Congratulations on completing this box!***  
+
+See you at the next one &mdash; [Advent of Cyber 3 Day 4](AoC-2021_Day4.0.md)
 </br>
 </br>
 </br>

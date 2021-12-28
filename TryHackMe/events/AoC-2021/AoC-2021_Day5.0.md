@@ -48,7 +48,9 @@ After waiting a minute or two for Grinch to view our comment, attempt to login w
 
 ![Flag!](AoC-2021_Photos/Day_5/6.0_AoC-Day-5_12-23-21-Malicious-Plugin.png)
 
-Congratulations on completing the room!
+***Congratulations on completing this box!***  
+
+See you at the next one &mdash; [Advent of Cyber 3 Day 6](AoC-2021_Day6.0.md)
 </br>
 </br>
 </br>

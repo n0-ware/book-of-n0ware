@@ -43,3 +43,6 @@
 	- Incident Response
 - [Day 9](AoC-2021_Day9.0.md)
 	- [Wireshark](../../../tools_and_tricks/tools/wireshark.md)
+	- Basic data mining from packets
+	- DNS, FTP, and HTTP
+- [Day 10](AoC-2021_Day10.0.md)

@@ -34,7 +34,9 @@ Reverting all of the changes yielded the [flag](AoC-2021_Day1.0.md#Flag%20THM%20
 
 ![Flag!](AoC-2021_Photos/Day_1/4.0_AoC-Day-1_12-19-21-Revert-To-Flags.png)
 
-Congratulations on completing the box!
+***Congratulations on completing this box!***  
+
+See you at the next one &mdash; [Advent of Cyber 3 Day 2](AoC-2021_Day2.0.md)
 </br>
 </br>
 </br>

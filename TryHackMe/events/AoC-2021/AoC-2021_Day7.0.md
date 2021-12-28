@@ -15,10 +15,10 @@
 					*Flag 4:* ID:6184f516ef6da50433f100f4:mcskidy:admin  
 
 ## TOC
-- [Question-1](#Question-1)
-- [Question-2](#Question-2)
-- [Question-3](#Question-3)
-- [Question-4](#Question-4)
+- [Question 1](#Question-1)
+- [Question 2](#Question-2)
+- [Question 3](#Question-3)
+- [Question 4](#Question-4)
 
 ## Walkthrough
 
@@ -30,6 +30,7 @@ Nothing of note except for a secondary `ssh` service running on port `2222` and 
 > I have altered my `/etc/hosts` file to set the IP equal to `aoc7.com`
 
 ### Question-1
+[Top](#TOC)
 
 First, we need to connect to the remote server via `ssh` on port `2222` with the credentials `thm : tryhackme`. 
 
@@ -55,6 +56,8 @@ You will see the flag returned from the collection.
 
 
 ### Question-2
+###### [Top](#TOC)
+
 For flag two, we need to gain access via the browser. The first thing we see is a login page. 
 
 ![Landing Page](AoC-2021_Photos/Day_7/4.0_AoC-Day-7_12-27-21-Landing-Page.png)
@@ -121,6 +124,7 @@ Right-click this response, select `Request in browser > In original session`, co
 Since know this method of injection worked, another way of accessing the page is to simply intercept the original login request, modify the intercepted request with the `[$ne]` function, and forward the request on. This will also give us admin access to the dashboard. 
 
 ### Question-3
+[Top](#TOC)
 
 > To accomplish question 2, you must have gotten browser access to the admin dashboard. See [Question-1](#Question-1) if you skipped over the steps that involved [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md) to gain access via the browser. 
 
@@ -139,6 +143,7 @@ Easy as that! The webserver responded by providing results for **all** the usern
 ![Flag 3](AoC-2021_Photos/Day_7/13.0_AoC-Day-7_12-27-21-Flag3.png)
 
 ### Question-4
+[Top](#TOC)
 
 For the final question, we want the `mcskidy` record returned. Immediately, we know that he is not associated with the `guest` role or he would have shown up in the last search. Trying to search for  `mcskidy` does not return anything. Looking at the image of our successful `guest` role query, it looks like we have three fields we can search for. 
 - ID
@@ -167,7 +172,9 @@ Bingo! `mcskidy` has a role of `admin` and the username `mcskidy`. Paste this en
 
 ![McSkidy Flag](AoC-2021_Photos/Day_7/15.0_AoC-Day-7_12-27-21-McSkidy-Flag.png)
 
-Congrats on completing this box! Consider trying out some of the other commands such as `$exists` with a value of `true` for the field and `$regex` with a value of `.*` to match "anything that is there" and see what else you can get. 
+***Congratulations on completing this box!***   Consider trying out some of the other commands such as `$exists` with a value of `true` for the field and `$regex` with a value of `.*` to match "anything that is there" and see what else you can get. 
+
+See you at the next one &mdash; [Advent of Cyber 3 Day 8](AoC-2021_Day8.0.md)
 </br>
 </br>
 </br>

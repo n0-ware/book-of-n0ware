@@ -42,7 +42,9 @@ Returning to the login screen, the username and password combination `santa:cook
 
 ![Login Successful](AoC-2021_Photos/Day_4/6.0_AoC-Day-4_12-22-21-Santas-Itinerary.png)
 
-Congratulations on finishing this box!
+***Congratulations on completing this box!***  
+
+See you at the next one &mdash; [Advent of Cyber 3 Day 5](AoC-2021_Day5.0.md)
 
 #### Note
 ***A note on Cluster Bomb and Exponential Combinations***   </br>

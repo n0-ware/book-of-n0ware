@@ -18,13 +18,13 @@
 					*Server Hostname*: `lfi-aoc-awesome-59aedca683fff9261263bb084880c965`
 
 
-**Questions**
-- [Question-1](#Question-1)
-- [Question-2](#Question-2)
-- [Question-3](#Question-3)
-- [Question-4](#Question-4)
-- [Question-5](#Question-5)
-- [Question-6](#Question-6)
+## TOC
+- [Question 1](#Question-1)
+- [Question 2](#Question-2)
+- [Question 3](#Question-3)
+- [Question 4](#Question-4)
+- [Question 5](#Question-5)
+- [Question 6](#Question-6)
 - [Bonus](#Bonus)
 - [Interactive Shell](#Interactive%20Shell)
 
@@ -43,6 +43,7 @@ Test with a ping or by going to the domain.
 
 ![Ping Custom Domain](AoC-2021_Photos/Day_6/0.5_AoC-Day-6_12-24-21-Ping-Custom-Domain.png)
 ### Question-1
+[Top](#TOC)
 In this scenario, we have a website vulnerable to [Local File Inclusion (LFI)](../../../knowledge-base/vulnerabilities/local_file_inclusion_LFI.md) that is running `PHP` on the backend. How do we know it is `PHP`? When we first access the URL provided, the browser gives it away by showing us an error on the page `index.php`. We also know it is using `err` as a query parameter, and that `error.txt` is present in the current working directory. 
 
 > `err` is the "entry point" for this **LFI**
@@ -50,6 +51,7 @@ In this scenario, we have a website vulnerable to [Local File Inclusion (LFI)](.
 ![URL Disclosing PHP Backend](AoC-2021_Photos/Day_6/1.0_AoC-Day-6_12-23-21.png)
 
 ### Question-2
+[Top](#TOC)
 Attempting to replace the current file `error.txt` with something of our own produces a very verbose error. 
 
 ![PHP Error](AoC-2021_Photos/Day_6/2.0_AoC-Day-6_12-23-21-PHP-Error.png)
@@ -79,6 +81,7 @@ We are asked to get the `/etc/flag` file using **LFI**. Submit a similar request
 ![First Flag](AoC-2021_Photos/Day_6/5.0_AoC-Day-6_12-23-21-Flag-1.png)
 
 ### Question-3
+[Top](#TOC)
 We are then asked to find the flag within the source code of `index.php` attempting to read this in the same manner produces an error. This is because the file we are trying to read *is* code and the web page will try to execute it rather than displaying it. 
 
 ![Error Reading index.php](AoC-2021_Photos/Day_6/6.0_AoC-Day-6_12-23-21-Error-Reading-index-php.png)
@@ -106,6 +109,8 @@ The `rot13` string simply reproduces the standard message on the screen. Using [
 > You can even paste in **encoded** `PHP` code and use a wrapper to decode it on the web page, possible leading to [Remote Code Execution](remote_code_execution_rce.md) using a piece of code like `page.php?file=data://text/plain;base64,SSBhbSBhbiBSQ0UK==`
 
 ### Question-4
+[Top](#TOC)
+
 Next, we are told McSkidy lost his password. If you look again at the decoded `index.php` file from earlier, you can see a line under the flag that hints at a credentials file:
 
 `include("./includes/creds.php");`
@@ -123,11 +128,14 @@ Viola! We have `base64` encoded credentials. Running this on the CLI returns som
 ![Decoded Creds](AoC-2021_Photos/Day_6/13.0_AoC-Day-6_12-23-21-Decoded-Creds.png)
 
 ### Question-5
+[Top](#TOC)
+
 Heading back to the *Home* page and logging in with McSkidy's credentials, we are given the final flag for the box when we attempt to reset his credentials. 
 
 ![Third Flag](AoC-2021_Photos/Day_6/14.0_AoC-Day-6_12-23-21-Flag-3.png)
 
 ### Question-6
+[Top](#TOC)
 
 For the last task, we are asked to retrieve the hostname of the webserver. To help, we are given the location of web app logs all reminded that the application logs all user requests, and only those that are authorized can read the log file. To get the hotsname, we need to combine **LFI** with an **RCE** to access the log files page. The location of the log file is `./includes/logs/app_access.log`. 
 
@@ -190,9 +198,15 @@ There's our code! Use a <kbd>ctrl</kbd>+<kbd>f</kbd> to find the `hostname` fiel
 
 ![Server Hostname](AoC-2021_Photos/Day_6/21.0_AoC-Day-6_12-24-21-Server-Hostname.png)
 
-That's it! All that is left is the bonus or attempt to exploit the box further and get an  on the box. 
+That's it! All that is left is the bonus or attempt to exploit the box further and get an shell on the box. 
+
+***Congratulations on completing this box!***  
+
+See you at the next one &mdash; [Advent of Cyber 3 Day 7](AoC-2021_Day7.0.md)
 
 ### Bonus
+[Top](#TOC)
+
 As a bonus quesiton, we are asked if we can access the current [session](../../../knowledge-base/concepts/web/session.md) using **LFI** and achieve **RCE** by poisoning the *session* that corresponds with our browser. This is another form of [log poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md) and **RCE**. 
 
 To start with, we are told where the sessions are stored on this browser &mdash; in the `/tmp` folder. This helps, as we would likely have to enumerate this on our own otherwise. 
@@ -214,6 +228,7 @@ And here we find our `PHP` code executed.
 Well done! 
 
 #### Interactive Shell
+[Top](#TOC)
 
 Jumping in right where we tested the `phpinfo()?` code in [Question-6](#Question-6), we are going to build on the malicious `User-Agent` poisoning to see if we can get full, on demand [RCE](../../../knowledge-base/vulnerabilities/remote_code_execution_rce.md) via the web browser on the server. 
 
