@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools_and_tricks/cli_utilities/powershell.md",
+            "file": "tools_and_tricks/cli_utilities/living_off_the_land_binaries_lolbas.md",
             "mode": "source"
           }
         }
@@ -114,14 +114,14 @@
   "active": "b91cf31f612f8f66",
   "lastOpenFiles": [
     "TryHackMe/events/AoC-2021/AoC-2021_Day8.0.md",
-    "tools_and_tricks/cli_utilities/powershell.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_8/6.0_AoC-Day-8_12-27-21-Parsed-UsrClass.png",
+    "knowledge-base/concepts/shellbags.md",
     "tools_and_tricks/cli_utilities/living_off_the_land_binaries_lolbas.md",
+    "tools_and_tricks/cli_utilities/powershell.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_8/3.0_AoC-Day-8_12-27-21-Add-Backdoor-User.png",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_8/1.0_AoC-Day-8_12-27-21-OS-Name.png",
     "knowledge-base/concepts/windows_registry.md",
     "tools_and_tricks/cli_utilities/seclists.md",
-    "tools_and_tricks/cli_utilities/sed.md",
-    "tools_and_tricks/tricks/php_in_url.md",
-    "tools_and_tricks/tools/dirbuster.md"
+    "tools_and_tricks/cli_utilities/sed.md"
   ]
 }
