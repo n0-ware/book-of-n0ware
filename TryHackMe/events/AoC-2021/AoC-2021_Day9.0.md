@@ -9,7 +9,7 @@
 -  Flag[^2]
 
 [^1]: #wireshark #networking
-[^2]: *Question 1:* `/admin`  
+[^2]: *Question 1:* `login`  
 					*Question 2:* `McSkidy:Christmas2021!`   
 					*Question 3:* `TryHackMe-UserAgent-THM{d8ab1be969825f2c5c937aec23d55bc9}`  
 					*Question 4:*  `THM{dd63a80bf9fdd21aabbf70af7438c257}`  
