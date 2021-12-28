@@ -14,14 +14,26 @@
 					*Flag 3:* `C:\Users\santa\AppData\Local\Microsoft\Windows\UsrClass.dat`  
 					*Flag 4:* `certutil.exe`  
 					*Flag 5:* `.github`  
+					*Flag 6:* `bag_of_toys.zip`  
+					*Flag 7:* `Grinchiest` 
+					*Flag 8:* `operation-bag-of-toys`  
+					*Flag 9:* `uharc-cmd-install.exe`  
+					*Flag 10:* `GRINCHMAS`
+					*Flag 11:* `TheGrinchiestGrinchmasOfAll`
+					*Flag 12:* 
 					
 ## TOC
 - [Question-1](#Question-1)
 - [Question-2](#Question-2)
 - [Question-3](#Question-3)
 - [Question-4](#Question-4)
-- [Questions-5 and 6](#Questions-5%20and%206)
--
+- [Questions-5-6](#Questions-5-6)
+- [Question-7](#Question-7)
+- [Question-8](#Question-8)
+- [Question-9](#Question-9)
+- [Question-10](#Question-10)
+- [Question-11](#Question-11)
+- [Question-12](#Question-12)
 ## Walkthrough
 
 In this scenario, Santa's laptop has gone missing, and all we have access to are some [PowerShell](../../../tools_and_tricks/cli_utilities/powershell.md) transcription logs and an analysis machine. 
@@ -68,7 +80,7 @@ Simply search for the `.exe` file used shortly after the copy and you'll find th
 
 ![LOLBAS Executable](AoC-2021_Photos/Day_8/5.0_AoC-Day-8_12-27-21-Certutil-Encode.png)
 
-### Questions-5 and 6
+### Questions-5-6
 
 It looks like our attacker base64 [encoded](../../../knowledge-base/concepts/encoding_decoding.md) the `UsrClass.dat` file. We can user CyberChef locally to decode this (it is on the Desktop). 
 
@@ -92,7 +104,58 @@ We also see Santa's `Bag of Toys` folder. Looking at the `Desktop`, I don't see 
 
 ![SantaRat!](AoC-2021_Photos/Day_8/7.0_AoC-Day-8_12-27-21-SantaRat-Located.png)
 
-I can tell from the files in SantaRat > SantaRat-main that the files were assible via a popular internet code repository &mdash; GitHub. 
+I can tell from the files in `SantaRat` > `SantaRat-main` that the files were accessible via a popular internet code repository &mdash; GitHub. 
+
+We are also able to see a particular `.zip` file located in `Bag of Toys` we are asked to identify. 
+
+### Question-7
+
+Once you've identified [GitHub](https://github.com/) as the source of the malicious file, you should be able to locate the owner of the repository it was downloaded from. On your host machine (not the TryHackMe attack box) search for `SantaRat`. 
+
+![Grinchiest GitHub Repo](AoC-2021_Photos/Day_8/8.0_AoC-Day-8_12-27-21-SantaRat-GitHub.png)
+
+### Question-8
+
+There are several other repositories owned by this user, but one in particular contains a `README.md` file that hints at a clandestine operation being committed against Santa on behalf of the Grinch and his cronies. Finding the name of this operation gives is the flag for this question. 
+
+![The Grinch's Operation](AoC-2021_Photos/Day_8/9.0_AoC-Day-8_12-27-21-Operation-Bag-Of-Toys.png)
+
+### Question-9
+
+Now that we have found the malicious actor, we are moving back to the log files to see how the extraction took place. In the next log file we see evidence of a downloaded `exe` file installed and ran on the Laptop. The executable looks like a compression tool that creates `UHA` archives, and the name of the `exe` file is the answer to this question. 
+
+![Downloaded Executable](AoC-2021_Photos/Day_8/10.0_AoC-Day-8_12-27-21-Download-uharc.png)
+
+Unfortunately, we do not have the password the actor used, but we can attempt to gain other information from the information we have on the GitHub file and PowerShell logs. 
+
+![Compressed with Password](AoC-2021_Photos/Day_8/11.0_AoC-Day-8_12-27-21-Compressed-with-Password.png)
+
+On the Desktop, we can see the password protected `UHA` archive. 
+
+![Password Protected UHA](AoC-2021_Photos/Day_8/13.0_AoC-Day-8_12-27-21-Grinch-Gift-List.png)
+
+### Question-10
+
+We can also see where the Grinch deleted Santa's original copy of `Bag of Toys` and began adding his own list, files like `coal` and `mold` all with the same contents that is the answer to this question. 
+
+![The Grinch's Gifts](AoC-2021_Photos/Day_8/13.0_AoC-Day-8_12-27-21-Grinch-Gift-List.png)
+
+### Question-11
+
+With no hope of password cracking the archive, we have to hope that the Grinch broke OPSEC somewhere and leaked a possible password. We can view the GitHub `commits` for this repository and see if maybe Grinch got excited and sent a message he regrets. Find it [here](https://github.com/Grinchiest/operation-bag-of-toys/commits/main)
+
+Looking closely at all the commits, we can see the Grinch got sloppy on one of his commits and saved the password for himself. Don't be Grinch, don't commit your private information! 
+
+![Password Commit](AoC-2021_Photos/Day_8/14.0_AoC-Day-8_12-27-21-UHA-Password.png)
+
+### Question-12
+
+Finally, with the recovered password from Grinch's commit, we can open the compressed `bag_of_toys.uha` file and recover our original data. The number of files contained in this archive is the answer to the final question. 
+
+![Recovered Bag of Toys](AoC-2021_Photos/Day_8/15.0_AoC-Day-8_12-27-21-Revoered-Bag-of-Toys.png)
+
+Congratulations on completing this box!
+
 </br>
 </br>
 </br>
