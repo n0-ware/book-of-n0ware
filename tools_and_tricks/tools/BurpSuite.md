@@ -122,4 +122,4 @@ Simple select your base HTTP request, right-click, and choose "Send to repeater"
 ### Logger
 ### Extender
 
-#burp #webapp #hacking #burp 
+#burp #webapp #hacking #enumeration 

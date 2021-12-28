@@ -12,7 +12,7 @@ Tags [^1]
 ### Repo TOC's
 - [Vulnerabilities](knowledge-base/vulnerabilities/_TOC-Vulnerabilities.md)
 - [Concepts](knowledge-base/concepts/_TOC-Concepts.md)
-- [Tools](tools_and_tricks/_TOC-Tools.md)
+- [Tools](tools_and_tricks/_TOC-Tools_and_Tricks.md)
 
 A collection of folders for notes on hacking adventures
 

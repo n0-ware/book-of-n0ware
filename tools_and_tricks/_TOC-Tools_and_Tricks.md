@@ -1,4 +1,4 @@
-# List of Tools
+# TOC - Tools and Tricks
 
 ## Enumeration
 
@@ -12,6 +12,12 @@
 ### Text and Files
 
 [sed](cli_utilities/sed.md)
+
 ### Wordlists
 
 [seclists](cli_utilities/seclists.md)
+
+## Windows
+
+### PowerShell
+[powershell](cli_utilities/powershell.md)

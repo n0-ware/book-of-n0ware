@@ -21,8 +21,16 @@
 	- [Cross Site Scripting](../../../knowledge-base/vulnerabilities/cross_site_scripting_xss.md)
 	- Stored XSS
 	- Password change
-- [AoC-2021_Day6.0](AoC-2021_Day6.0.md)
+- [Day 6](AoC-2021_Day6.0.md)
 	- [Local File Inclusion](../../../knowledge-base/vulnerabilities/local_file_inclusion_LFI.md)
 	- [Log Poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md)
 	- [php_in_url](../../../tools_and_tricks/tricks/php_in_url.md)
-	- 
+	- [Path Traversal](../../../knowledge-base/vulnerabilities/path_traversal.md)
+	- [python_reverse_shell](../../../exploits/reverse_shells/python/python_reverse_shell.py)
+- [Day 7](AoC-2021_Day7.0.md)
+	- [injection](../../../knowledge-base/vulnerabilities/injection.md)
+	- [NoSQL Injection](../../../knowledge-base/vulnerabilities/nosql_injection.md)
+	- [BurpSuite](../../../tools_and_tricks/tools/BurpSuite.md)
+	- Databases
+	- Poor user input sanitation
+- 
