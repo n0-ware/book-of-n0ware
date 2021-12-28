@@ -3,9 +3,15 @@
 
 Read more here &mdash; [Windows ShellBags - Part 1](https://shehackske.medium.com/windows-shellbags-part-1-9aae3cfaf17)
 
-ShellBags can be explored using a tool by Eric Zimmerman available here. [Shellbags Explorer](https://ericzimmerman.github.io/#!index.md)
+ShellBags can be explored using a tool by **Eric Zimmerman** available here. [Shellbags Explorer](https://ericzimmerman.github.io/#!index.md)
 
-## What are ShellBags?
+
+[^1]: https://shehackske.medium.com/windows-shellbags-part-1-9aae3cfaf17
+[^2]: https://www.shehackske.com/
+
+
+### What are ShellBags?[^2]
+Credit To Shehacks Kenya[^1]
 
 Microsoft Windows registry keeps track of folder settings in order to enhance the user experience using ShellBags. Windows ShellBags primary purpose is to improve user experience and “remember” preferences while browsing folders. Information stored in ShellBags can be critical during forensic investigation.
 
@@ -17,14 +23,16 @@ There are many sources of digital evidence and they are divided into three major
 
 Windows Shellbags artefact can be used to answer the difficult questions of data enumeration in intrusion cases, identify the contents of long-gone removable devices, and show the contents of previously mounted encrypted volumes.
 
-## Why are ShellBags Important in Digital Forensics Investigations?
+### Why are ShellBags Important in Digital Forensics Investigations?[^2]
+Credit To Shehacks Kenya[^1]
 
 For any digital forensic investigator, it is crucial to note the following:
 
 -   If any directory is mentioned in Windows ShellBags, it must have been present on the system at some point in time (even if it is not present anymore). This is valid for local filesystems including compressed archives, as well as for network locations e.g., remote mapped shares and removable devices e.g., USB flash drive.
 -   As these actions and viewing preferences are tied to the user’s registry hives, we can connect specific user accounts and specific folders. Moreover, we can get information about when the folder has been last accessed from MAC timestamps contained in ShellBags.
 
-## Where Do We Get ShellBags From?
+### Where Do We Get ShellBags From?[^2]
+Credit To Shehacks Kenya[^1]
 
 It is buried deep in the system; it is a user specific file.
 

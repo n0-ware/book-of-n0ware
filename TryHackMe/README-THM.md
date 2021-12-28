@@ -9,4 +9,9 @@ The directory tree for this is as follows
   - event1
   - event2
 - general # General notes applying globally
-- vpn # OpenVPN Pack
+
+***
+
+## Boxes
+## Events
+- [Advent of Cyber 3 - 2021](events/AoC-2021/_AoC-2021_TOC.md)

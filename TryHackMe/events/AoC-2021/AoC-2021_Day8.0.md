@@ -1,3 +1,4 @@
+
 # TryHackMe - Advent of Cyber 2021 - Day 8
 ## Santa's Bag of Toys
 > Edward Hartmann
@@ -8,7 +9,7 @@
 -  Tags[^1]
 -  Flag[^2]
 
-[^1]: #powershell #windows #logs #lolbas
+[^1]: #powershell #windows #logs #lolbas #shellbags #ir
 [^2]: *Flag 1:* `Microsoft Windows 11 Pro`  
 					*Flag 2:* `grinchstolechristmas`  
 					*Flag 3:* `C:\Users\santa\AppData\Local\Microsoft\Windows\UsrClass.dat`  
@@ -219,6 +220,3 @@ Congratulations on completing this box!
 </br>
 </br>
 </br>
-
-[^1]: 
-[^2]: 

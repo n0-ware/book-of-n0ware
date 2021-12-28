@@ -8,6 +8,9 @@
 -  Tags[^1]
 -  Flag[^2]
 
+[^1]: Note
+[^2]: Note
+
 ## Walkthrough
 </br>
 </br>
@@ -72,6 +75,3 @@
 </br>
 </br>
 </br>
-
-[^1]: 
-[^2]: 

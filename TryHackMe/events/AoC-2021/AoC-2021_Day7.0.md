@@ -59,7 +59,7 @@ For flag two, we need to gain access via the browser. The first thing we see is 
 
 ![Landing Page](AoC-2021_Photos/Day_7/4.0_AoC-Day-7_12-27-21-Landing-Page.png)
 
-To bypass the login page via [injection](../../../knowledge-base/vulnerabilities/injection.md), we are going to need a tool such as [BurpSuite](../../../tools_and_tricks/tools/BurpSuite.md) to iterate requests more easily, track responses, and take advantage of various utilities built in to the tool. Remember to turn on your proxy. 
+To bypass the login page via [injection](../../../knowledge-base/vulnerabilities/injection.md), we are going to need a tool such as [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md) to iterate requests more easily, track responses, and take advantage of various utilities built in to the tool. Remember to turn on your proxy. 
 
 To start, we'll send a test login request via a `POST` to the system and observe the response. Use any combination of `username:password`. Our attempt fails, and in the browser, you will see a simple message stating `{"msg":"Bad Creds"}`. What we have here is a *NoSQL* structured response in `JSON` notation. A better view of this comes from BurpSuite in the `Proxy > HTTP history` view.
 
@@ -75,7 +75,7 @@ Here we confirm some assumptions:
 
 Let's try logging in as admin. Right-click the HTTP request we sent and choose `Send to repeater`. You'll find the `Repeater` utility in the top menu bar. If you are confident in your injection, you can simply try and modify an intercepted request.
 
-> See the note on [BurpSuite](../../../tools_and_tricks/tools/BurpSuite.md) for additional information on `Repeater`
+> See the note on [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md) for additional information on `Repeater`
 
 Here, we can quickly send requests using the same template requests but with small modifications, and view the history of those requests and the responses we received. For example, I changed the username to `admin` and received a similar message as before. 
 
@@ -122,7 +122,7 @@ Since know this method of injection worked, another way of accessing the page is
 
 ### Question-3
 
-> To accomplish question 2, you must have gotten browser access to the admin dashboard. See [Question-1](#Question-1) if you skipped over the steps that involved [BurpSuite](../../../tools_and_tricks/tools/BurpSuite.md) to gain access via the browser. 
+> To accomplish question 2, you must have gotten browser access to the admin dashboard. See [Question-1](#Question-1) if you skipped over the steps that involved [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md) to gain access via the browser. 
 
 For question three we are asked to enumerate the `gift search page` to list all usernames that have the `guest` role. On the request app with intercept running, send a test search query.
 
@@ -231,6 +231,3 @@ Congrats on completing this box! Consider trying out some of the other commands 
 </br>
 </br>
 </br>
-
-[^1]: 
-[^2]: 

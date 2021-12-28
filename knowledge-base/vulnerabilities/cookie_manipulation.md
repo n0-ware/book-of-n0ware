@@ -19,6 +19,6 @@ A brief summary of cookie maniuplation:
 5. Re-encode the cookie and insert it into the `value` space
 6. Cause an action on the cookie, such as by refreshing the page or logging in. 
 
-> You can also modify cookies in browser requests using tools like [BurpSuite](../../tools_and_tricks/tools/BurpSuite.md)
+> You can also modify cookies in browser requests using tools like [BurpSuite](../../tools_and_tricks/tools/red/BurpSuite.md)
 
 [^1]: #cookies #encoding

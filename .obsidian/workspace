@@ -6,23 +6,21 @@
       {
         "id": "b91cf31f612f8f66",
         "type": "leaf",
-        "dimension": 54.11471321695761,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day8.0.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day9.0.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "13229abb12e4f1f3",
+        "id": "5b6c0ad058075c78",
         "type": "leaf",
-        "dimension": 45.885286783042396,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day8.0.md",
+            "file": "tools_and_tricks/tools/wireshark.md",
             "mode": "source"
           }
         }
@@ -81,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day8.0.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day9.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day8.0.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day9.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -113,15 +111,15 @@
   },
   "active": "b91cf31f612f8f66",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_Day8.0.md",
-    "tools_and_tricks/cli_utilities/living_off_the_land_binaries_lolbas.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_8/6.0_AoC-Day-8_12-27-21-Parsed-UsrClass.png",
-    "knowledge-base/concepts/shellbags.md",
-    "tools_and_tricks/cli_utilities/powershell.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_8/3.0_AoC-Day-8_12-27-21-Add-Backdoor-User.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_8/1.0_AoC-Day-8_12-27-21-OS-Name.png",
-    "knowledge-base/concepts/windows_registry.md",
-    "tools_and_tricks/cli_utilities/seclists.md",
-    "tools_and_tricks/cli_utilities/sed.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day9.0.md",
+    "tools_and_tricks/tools/wireshark.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_9/5.0_AoC-Day-9_12-28-21-Follow-Stream.png",
+    "TryHackMe/README-THM.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day4.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day5.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day6.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day7.0.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day8.0.md"
   ]
 }

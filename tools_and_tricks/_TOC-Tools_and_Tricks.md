@@ -2,11 +2,11 @@
 
 ## Enumeration
 
-[autorecon](tools/autorecon.md)
+[autorecon](tools/red/autorecon.md)
 
 ## WebApps
 
-[BurpSuite](tools/BurpSuite.md)
+[BurpSuite](tools/red/BurpSuite.md)
 
 ## CLI Utilities
 ### Text and Files
@@ -21,3 +21,6 @@
 
 ### PowerShell
 [powershell](cli_utilities/powershell.md)
+
+## Networking
+
