@@ -9,10 +9,10 @@
 -  Flag[^2]
 
 [^1]: #powershell #windows #logs #lolbas
-[^2]: *Flag 1:* `Microsoft Windows 11 Pro`
-					*Flag 2:* `grinchstolechristmas`
-					*Flag 3:* `C:\Users\santa\AppData\Local\Microsoft\Windows\UsrClass.dat`
-					*Flag 4:* `certutil.exe`
+[^2]: *Flag 1:* `Microsoft Windows 11 Pro`  
+					*Flag 2:* `grinchstolechristmas`  
+					*Flag 3:* `C:\Users\santa\AppData\Local\Microsoft\Windows\UsrClass.dat`  
+					*Flag 4:* `certutil.exe`  
 					
 
 ## Walkthrough
