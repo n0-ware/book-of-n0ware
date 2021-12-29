@@ -29,8 +29,9 @@ The **Invoices** table shares information from both, referring to a single custo
 
 ***For example***
 
-&emsp;&emsp;**customers**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **produce**  
+
 ###### These are two separate tables  
+&emsp;&emsp;`customers`**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; `produce`  
 | id | name | `next table` |  id | name |   
 | --- | --- | :---: | --- | --- |   
 | 101 | Michael | `next table` | 1 | Lettuce |   
