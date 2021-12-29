@@ -41,30 +41,30 @@ The **Invoices** table shares information from both, referring to a single custo
 	</thead>
 	<tbody>
 		<tr>
-			<td><br>id</br></td>
-			<td><br>name</br></td>
-			<td><br>...next table...</br></td>
-			<td><br>id</br></td>
+			<td><br>id</b></td>
+			<td><br>name</b></td>
+			<td><br>...next table...</b></td>
+			<td><br>id</b></td>
 			<td><br>name</br></td>
 		</tr>
 		<tr>
 			<td>101</td>
 			<td>Michael</td>
-			<td><br>...next table...</br></td>
+			<td><br>...next table...</b></td>
 			<td>1</td>
 			<td>Lettuce</td>
 		</tr>
 		<tr>
 			<td>102</td>
 			<td>Katrina</td>
-			<td><br>...next table...</br></td>
+			<td><br>...next table...</b></td>
 			<td>2</td>
 			<td>Tomato</td>
 		</tr>
 		<tr>
 			<td>103</td>
 			<td>John</td>
-			<td><br>...next table...</br></td>
+			<td><br>...next table...</b></td>
 			<td>3</td>
 			<td>Banana</td>
 		</tr>
