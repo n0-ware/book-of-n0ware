@@ -40,6 +40,32 @@ The **Invoices** table shares information from both, referring to a single custo
 			<th colspan=2><b>produce</b></th>
 		</tr>
 	</thead>
+	<tbody>
+		<tr>
+			<td><br>id</br></td>
+			<td><br>name</br></td>
+			<td><br>id</br></td>
+			<td><br>name</br></td>
+		</tr>
+		<tr>
+			<td>101</td>
+			<td>Michael</td>
+			<td>1</td>
+			<td>Lettuce</td>
+		</tr>
+		<tr>
+			<td>102</td>
+			<td>Katrina</td>
+			<td>2</td>
+			<td>Tomato</td>
+		</tr>
+		<tr>
+			<td>103</td>
+			<td>John</td>
+			<td>3</td>
+			<td>Banana</td>
+		</tr>
+	</tbody>
 <table>
 
 | id | name | `next table` |  id | name |   
