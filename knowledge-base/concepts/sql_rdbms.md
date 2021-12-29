@@ -32,7 +32,7 @@ For example
 &emsp;&emsp;**customers**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **produce**
 **These are two separate tables**
 
-| **id** | **name** | `next table` |  **id** | **name** | 
+| id | name | `next table` |  id | name | 
 | :: | :: | :-: | :: | :: | 
 | 101 | Michael | `next table` | 1 | Lettuce | 
 | 102 | Katrina | `next table` | 2 | Tomato | 
