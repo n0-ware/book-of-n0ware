@@ -28,8 +28,6 @@ Consider an online grocery store database with three tables.
 The **Invoices** table shares information from both, referring to a single customer per row with one  or more produce items. This table refers to another table using its ID. In this way, we only need to have the customer details and the invoice written once instead of copying them each to a new invoice.
 
 ***For example***
-
-
 ###### These are two separate tables  
 <table>
 	<thead>
