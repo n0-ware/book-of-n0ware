@@ -28,10 +28,8 @@ Consider an online grocery store database with three tables.
 The **Invoices** table shares information from both, referring to a single customer per row with one  or more produce items. This table refers to another table using its ID. In this way, we only need to have the customer details and the invoice written once instead of copying them each to a new invoice.
 
 For example
-
-&emsp;&emsp;**customers**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **produce**  
 **These are two separate tables**
-
+&emsp;&emsp;**customers**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **produce**  
 | id | name | `next table` |  id | name |   
 | --- | --- | :---: | --- | --- |   
 | 101 | Michael | `next table` | 1 | Lettuce |   
@@ -39,8 +37,7 @@ For example
 | 103 | John | `next table` | 3 | Banana |   
 
 **Invoice**
-Contains the `ID` from **Customer** and the `ID` from **Produce**
-
+###### Contains the `ID` from **Customer** and the `ID` from **Produce**
 | id_customer | id_produce |   
 | --- | --- |   
 | 101 | 3, 1 |   
