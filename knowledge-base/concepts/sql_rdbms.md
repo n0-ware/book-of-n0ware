@@ -32,6 +32,16 @@ The **Invoices** table shares information from both, referring to a single custo
 
 ###### These are two separate tables  
 &emsp;&emsp;`customers`&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; `produce`  
+
+<table>
+	<thead>
+		<tr>
+			<th colspan=2><b>customers</b></th>
+			<th colspan=2><b>produce</b></th>
+		</tr>
+	</thead>
+<table>
+
 | id | name | `next table` |  id | name |   
 | --- | --- | :---: | --- | --- |   
 | 101 | Michael | `next table` | 1 | Lettuce |   
