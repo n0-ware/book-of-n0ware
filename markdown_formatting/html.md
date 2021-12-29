@@ -37,31 +37,36 @@
 	<thead>
 		<tr>
 			<th colspan=2><b>customers</b></th>
+			<th><b>...next table...</b></th>
 			<th colspan=2><b>produce</b></th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td><br>id</br></td>
-			<td><br>name</br></td>
-			<td><br>id</br></td>
-			<td><br>name</br></td>
+			<td><b>id</b></td>
+			<td><b>name</b></td>
+			<td><b>...next table...</b></td>
+			<td><b>id</b></td>
+			<td><b>name</b></td>
 		</tr>
 		<tr>
 			<td>101</td>
 			<td>Michael</td>
+			<td><b>...next table...</b></td>
 			<td>1</td>
 			<td>Lettuce</td>
 		</tr>
 		<tr>
 			<td>102</td>
 			<td>Katrina</td>
+			<td><b>...next table...</b></td>
 			<td>2</td>
 			<td>Tomato</td>
 		</tr>
 		<tr>
 			<td>103</td>
 			<td>John</td>
+			<td><b>...next table...</b></td>
 			<td>3</td>
 			<td>Banana</td>
 		</tr>

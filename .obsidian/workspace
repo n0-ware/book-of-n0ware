@@ -15,7 +15,18 @@
         }
       },
       {
-        "id": "f880491dfe51c57e",
+        "id": "fdd1b8d51098c48c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day11.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "1656629bc5100230",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -109,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f880491dfe51c57e",
+  "active": "1656629bc5100230",
   "lastOpenFiles": [
     "knowledge-base/concepts/sql_rdbms.md",
-    "markdown_formatting/html.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day11.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day10.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/01_AoC-Day-11_12-28-21-Finding-the-Service-Port.png",
     "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day10.md",
+    "markdown_formatting/html.md",
     "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
     "TryHackMe/README-THM.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day09.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day08.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day07.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day08.md"
   ]
 }

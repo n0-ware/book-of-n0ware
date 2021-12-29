@@ -2,11 +2,14 @@
 
 ###### MS SQL as an example
 
-# Description
+# Directory
+- [Description](#Description)
+- [Structure](#Structure)
+- [Basic Commands](#Basic%20Commands)
+## Description
 A RDBMS , such as Microsoft SQL (Structured Query Language) can be visualized as a group of tables that all have relationships. 
 
-## Example
-
+## Structure
 Consider an online grocery store database with three tables.
 
 1. Produce
@@ -67,7 +70,7 @@ The **Invoices** table shares information from both, referring to a single custo
 			<td>Banana</td>
 		</tr>
 	</tbody>
-<table>
+</table>
 
 **Invoice**
 ###### Contains the `ID` from **Customer** and the `ID` from **Produce**
@@ -77,6 +80,7 @@ The **Invoices** table shares information from both, referring to a single custo
 | 102 | 1 |   
 | 103 | 2, 3 |   
 
-
-
-
+## Basic Commands
+### MySQL
+#### Enumerating
+- `show databases;` - Shows all available databasaes
