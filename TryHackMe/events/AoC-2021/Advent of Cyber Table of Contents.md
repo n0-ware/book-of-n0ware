@@ -48,4 +48,8 @@
 - [Day 10](AoC-2021_Day10.md)
 	- [Nmap](../../../tools_and_tricks/tools/nmap_usage.md)
 	- Service enumeration
-- 
+- [Day 11](AoC-2021_Day11.md)
+	- [Relational Database Management Systems (RDBMS)](../../../knowledge-base/concepts/sql_rdbms.md)
+	- `sqsh` and `xp_cmdshell`
+	- SQL Database Interaction
+	- Local system enumeration with built in tools

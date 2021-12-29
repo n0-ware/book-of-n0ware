@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+            "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+                "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+                "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -100,13 +100,13 @@
   },
   "active": "2e741b5a8b8eb8f8",
   "lastOpenFiles": [
+    "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
     "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day11.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day10.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_11/09_AoC-Day-11_12-28-21-Secret-Found.png",
     "knowledge-base/concepts/sql_rdbms.md",
     "tools_and_tricks/tools/database/microsoft_sql_server_mssql.md",
-    "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/01_AoC-Day-11_12-28-21-Finding-the-Service-Port.png",
     "markdown_formatting/html.md",
     "TryHackMe/README-THM.md"
