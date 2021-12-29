@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day11.md",
+                "file": "knowledge-base/concepts/sql_rdbms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day11.md",
+                "file": "knowledge-base/concepts/sql_rdbms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,10 +109,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2e741b5a8b8eb8f8",
+  "active": "f880491dfe51c57e",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_Day11.md",
     "knowledge-base/concepts/sql_rdbms.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day11.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day10.md",
     "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
     "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
