@@ -10,9 +10,9 @@ Tags [^1]
 - [Evolve OSCP Course](Evolve-OSCP/README-Evo_OSCP.md)
 
 ### Repo TOC's
-- [Vulnerabilities](knowledge-base/vulnerabilities/_TOC-Vulnerabilities.md)
-- [Concepts](knowledge-base/concepts/_TOC-Concepts.md)
-- [Tools](tools_and_tricks/_TOC-Tools_and_Tricks.md)
+- [Vulnerabilities](knowledge-base/vulnerabilities/01_Vulnerabilities-TOC.md)
+- [Concepts](knowledge-base/concepts/01_Concepts-TOC.md)
+- [Tools](tools_and_tricks/01_Tools_and_Tricks-TOC.md)
 
 A collection of folders for notes on hacking adventures
 

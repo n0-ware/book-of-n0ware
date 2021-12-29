@@ -4,12 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "2e741b5a8b8eb8f8",
+        "id": "cff314406d8928db",
         "type": "leaf",
+        "dimension": 33.33333333333333,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+            "file": "knowledge-base/vulnerabilities/privesc.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "7c09924d47ab03c9",
+        "type": "leaf",
+        "dimension": 33.33333333333333,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day13.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "0a4dacdc13895559",
+        "type": "leaf",
+        "dimension": 33.33333333333333,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day13.md",
             "mode": "source"
           }
         }
@@ -68,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,17 +123,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2e741b5a8b8eb8f8",
+  "active": "7c09924d47ab03c9",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day11.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day10.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_11/09_AoC-Day-11_12-28-21-Secret-Found.png",
-    "knowledge-base/concepts/sql_rdbms.md",
-    "tools_and_tricks/tools/database/microsoft_sql_server_mssql.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/01_AoC-Day-11_12-28-21-Finding-the-Service-Port.png",
-    "markdown_formatting/html.md",
-    "TryHackMe/README-THM.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day13.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day14.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_13/10_AoC_Day_13_12-29-21-THEGRINCH.png",
+    "knowledge-base/vulnerabilities/privesc.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_13/14_AoC_Day_13_12-29-21-THEGRINCH.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_13/13_AoC_Day_13_12-29-21-wmic-Iperius.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_13/03_AoC_Day_13_12-29-21-Destination.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_13/02_AoC_Day_13_12-29-21-Backup-Path.png",
+    "knowledge-base/concepts/dll.md",
+    "knowledge-base/concepts/domain_AD.md"
   ]
 }

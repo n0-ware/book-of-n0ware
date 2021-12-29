@@ -46,10 +46,15 @@
 	- Basic data mining from packets
 	- DNS, FTP, and HTTP
 - [Day 10](AoC-2021_Day10.md)
-	- [Nmap](../../../tools_and_tricks/tools/nmap_usage.md)
+	- [Nmap](../../../tools_and_tricks/tools/Nmap.md)
 	- Service enumeration
 - [Day 11](AoC-2021_Day11.md)
 	- [Relational Database Management Systems (RDBMS)](../../../knowledge-base/concepts/sql_rdbms.md)
 	- `sqsh` and `xp_cmdshell`
 	- SQL Database Interaction
 	- Local system enumeration with built in tools
+- [Day 12](AoC-2021_Day12.md)
+	- [Nmap](../../../tools_and_tricks/tools/Nmap.md)
+	- [Network File SYstem (NFS)](../../../knowledge-base/concepts/network_file_system_nfs.md)
+	- Mounting and reading shares
+- 

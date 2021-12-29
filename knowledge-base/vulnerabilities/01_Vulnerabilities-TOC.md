@@ -12,5 +12,5 @@
 
 
 ###### References:
-[Concepts - TOC](../concepts/_TOC-Concepts.md)
-[Tools and Tricks - TOC](../../tools_and_tricks/_TOC-Tools_and_Tricks.md)
+[Concepts - TOC](../concepts/01_Concepts-TOC.md)
+[Tools and Tricks - TOC](../../tools_and_tricks/01_Tools_and_Tricks-TOC.md)
