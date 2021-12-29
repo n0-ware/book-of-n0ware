@@ -5,7 +5,7 @@
 # Directory
 - [Description](#Description)
 - [Structure](#Structure)
-- [Basic Commands](#Basic%20Commands)
+- [Commands](#Commands)
 ## Description
 A RDBMS , such as Microsoft SQL (Structured Query Language) can be visualized as a group of tables that all have relationships. 
 
@@ -80,7 +80,7 @@ The **Invoices** table shares information from both, referring to a single custo
 | 102 | 1 |   
 | 103 | 2, 3 |   
 
-## Basic Commands
+## Commands
 ### MySQL
 #### Enumerating
 - `show databases;` - Shows all available databasaes
