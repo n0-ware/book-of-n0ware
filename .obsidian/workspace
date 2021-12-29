@@ -112,6 +112,7 @@
   "active": "f880491dfe51c57e",
   "lastOpenFiles": [
     "knowledge-base/concepts/sql_rdbms.md",
+    "markdown_formatting/html.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day11.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day10.md",
     "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
@@ -119,7 +120,6 @@
     "TryHackMe/README-THM.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day09.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day08.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day07.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day06.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day07.md"
   ]
 }
