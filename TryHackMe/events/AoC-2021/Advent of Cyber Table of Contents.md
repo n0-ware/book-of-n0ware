@@ -4,24 +4,24 @@
 
 ***<u>Days</u>***
 
-- [Day 1](AoC-2021_Day1.0.md)
+- [Day 1](AoC-2021_Day01.md)
 	- [IDOR](../../../knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md)
 	- Accessing restricted accounts
-- [Day 2](AoC-2021_Day2.0.md)
+- [Day 2](AoC-2021_Day02.md)
 	- [Cookie Manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md)
 	- Fooling server into allowing admin login
-- [Day 3](AoC-2021_Day3.0.md)
+- [Day 3](AoC-2021_Day03.md)
 	- [Content Discovery](../../../knowledge-base/concepts/web/content_discovery.md)
 	- Default usernames and passwords
 	- Insecure calling of `javascript` divulged login information
-- [Day 4](AoC-2021_Day4.0.md)
+- [Day 4](AoC-2021_Day04.md)
 	- [Fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md)
 	- Weak passwords
-- [Day 5](AoC-2021_Day5.0.md)
+- [Day 5](AoC-2021_Day05.md)
 	- [Cross Site Scripting](../../../knowledge-base/vulnerabilities/cross_site_scripting_xss.md)
 	- Stored XSS
 	- Password change
-- [Day 6](AoC-2021_Day6.0.md)
+- [Day 6](AoC-2021_Day06.md)
 	- [Local File Inclusion](../../../knowledge-base/vulnerabilities/local_file_inclusion_LFI.md)
 	- [Log Poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md)
 	- [PHP in the URL](../../../tools_and_tricks/tricks/php_in_url.md)
@@ -29,23 +29,23 @@
 	- [python_reverse_shell](../../../exploits/reverse_shells/python/python_reverse_shell.py)
 	- [RCE](../../../knowledge-base/vulnerabilities/remote_code_execution_rce.md)
 	- Manipulating poor website design to access files
-- [Day 7](AoC-2021_Day7.0.md)
+- [Day 7](AoC-2021_Day07.md)
 	- [injection](../../../knowledge-base/vulnerabilities/injection.md)
 	- [NoSQL Injection](../../../knowledge-base/vulnerabilities/nosql_injection.md)
 	- [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md)
 	- Databases
 	- Poor user input sanitation
-- [Day 8](AoC-2021_Day8.0.md)
+- [Day 8](AoC-2021_Day08.md)
 	- [PowerShell](../../../tools_and_tricks/cli_utilities/powershell.md)
 	- [ShellBags](../../../knowledge-base/concepts/shellbags.md)
 	- [Windows Registry](../../../knowledge-base/concepts/windows_registry.md)
 	- Logs
 	- Incident Response
-- [Day 9](AoC-2021_Day9.0.md)
+- [Day 9](AoC-2021_Day09.md)
 	- [Wireshark](../../../tools_and_tricks/tools/wireshark.md)
 	- Basic data mining from packets
 	- DNS, FTP, and HTTP
-- [Day 10](AoC-2021_Day10.0.md)
+- [Day 10](AoC-2021_Day10.md)
 	- [Nmap](../../../tools_and_tricks/tools/nmap_usage.md)
 	- Service enumeration
 - 
