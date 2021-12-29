@@ -29,20 +29,20 @@ The **Invoices** table shares information from both, referring to a single custo
 
 For example
 
-&emsp;&emsp;**customers**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **produce**
+&emsp;&emsp;**customers**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **produce**  
 **These are two separate tables**
 
-| id | name | `next table` |  id | name | 
-| :: | :: | :-: | :: | :: | 
-| 101 | Michael | `next table` | 1 | Lettuce | 
-| 102 | Katrina | `next table` | 2 | Tomato | 
-| 103 | John | `next table` | 3 | Banana | 
+| id | name | `next table` |  id | name |   
+| --- | --- | :---: | --- | --- |   
+| 101 | Michael | `next table` | 1 | Lettuce |   
+| 102 | Katrina | `next table` | 2 | Tomato |   
+| 103 | John | `next table` | 3 | Banana |   
 
 **Invoice**
 Contains the `ID` from **Customer** and the `ID` from **Produce**
 
-| id_customer | id_produce | 
-| :: | :: | 
-| 101 | 3, 1 | 
-| 102 | 1 | 
-| 103 | 2, 3 | 
+| id_customer | id_produce |   
+| --- | --- |   
+| 101 | 3, 1 |   
+| 102 | 1 |   
+| 103 | 2, 3 |   
