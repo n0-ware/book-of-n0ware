@@ -57,4 +57,11 @@
 	- [Nmap](../../../tools_and_tricks/tools/Nmap.md)
 	- [Network File SYstem (NFS)](../../../knowledge-base/concepts/network_file_system_nfs.md)
 	- Mounting and reading shares
-- 
+- [Day 13](AoC-2021_Day13.md)
+	- [Windows Privesc](../../../knowledge-base/vulnerabilities/privesc.md#Windows)
+	- Abusing service misconfigurations
+- [Day 14](AoC-2021_Day14.md)
+	- [CI/CD](../../../knowledge-base/concepts/cicd.md)
+	- Vulnerable web app
+	- Bad permissions
+	- Script abuse
