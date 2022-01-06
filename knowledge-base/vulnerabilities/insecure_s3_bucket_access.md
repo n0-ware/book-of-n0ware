@@ -12,8 +12,8 @@ or
 `http://s3.amazonaws.com/BUCKETNAME/FILENAME.ext`
 
 ## Reconnaissance
-Some basic commands for recon on a bucket are:
-- Match the Account ID belonging to an access key &mdash;  `aws sts get-access-key-info --access-key-id AKIAEXAMPLE` 
+Some basic commands for recon on a bucket are below. To do this, you need to have a `profile` created with `aws configure`, meaning you need to have compromised both the `access key` and `secret access key`. 
+- Match the Account ID belonging to an access key &mdash;  `aws sts get-access-key-info --access-key-id AKIAEXAMPLE --profile PROFILENAME` 
 - Enumerate the Username belonging to an access key &mdash; `aws sts get-caller-identity --profile PROFILENAME`
 - List all the EC2 instances running in an account &mdash; `aws ec2 describe-instances --output text --profile PROFILENAME`
 - List all the EC2 instances running in an account in a different region &mdash; `aws ec2 describe-instances --output text --region us-east-1 --profile PROFILENAME`
@@ -23,7 +23,7 @@ If you want to list the contents of a bucket to test if it is open, you can atte
 
 Practice with a bucket the IRS makes available with all the tax filings of Tax-Exempt corporations that file 990s that is world readable.
 
-> The trailing argument `--no-sign-in-request` allows you to request the data without being an AWS customer or logging in. Authenticated users do not require this.
+> The trailing argument `--no-sign-request` allows you to request the data without being an AWS customer or logging in. Authenticated users do not require this.
 
 **List with:**
 ```
@@ -36,7 +36,7 @@ aws s3 ls s3://irs-form-990/ --no-sign-request
 curl http://irs-form-990.s3.amazonaws.com/201101319349101615_public.xml
 aws s3 cp s3://irs-form-990/201101319349101615_public.xml . --no-sign-request
 ```
-
+> Note the `.` in the AWS command that designates that path to copy the file to. This designates the current path, but it can be another path you specify. 
 ## Using Credentials
 If you located credentials, you can add them to your `aws` CLI configuration file:
 ```
