@@ -65,3 +65,7 @@
 	- Vulnerable web app
 	- Bad permissions
 	- Script abuse
+- Day 15 was a break day
+- [Day 16](AoC-2021_Day16.md)
+	- [OSINT](../../../knowledge-base/concepts/OSINT.md)
+- 
