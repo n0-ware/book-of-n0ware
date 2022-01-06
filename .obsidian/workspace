@@ -123,14 +123,14 @@
   "active": "a05e244107cde100",
   "lastOpenFiles": [
     "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
-    "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
-    "knowledge-base/concepts/authentication.md",
+    "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+    "knowledge-base/concepts/access_control.md",
     "knowledge-base/concepts/web/content_discovery.md",
+    "knowledge-base/concepts/authentication.md",
+    "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day13.md",
     "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
     "tools_and_tricks/cli_utilities/aws_cli_install.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day16.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_16/03_AoC_Day_14_01-03-22-Account-Located.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_16/02_AoC_Day_14_01-03-22-User-on-Reddit.png"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day16.md"
   ]
 }

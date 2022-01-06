@@ -68,4 +68,9 @@
 - Day 15 was a break day
 - [Day 16](AoC-2021_Day16.md)
 	- [OSINT](../../../knowledge-base/concepts/OSINT.md)
-- 
+- [Day 17](AoC-2021_Day17.md)
+	- [Insecure S3 Buckts](../../../knowledge-base/vulnerabilities/insecure_s3_bucket_access.md)
+		- [AWS Reconnaissance](../../../knowledge-base/vulnerabilities/insecure_s3_bucket_access.md#Reconnaissance)
+	- [Authentication](../../../knowledge-base/concepts/authentication.md)
+	- [Content discovery](../../../knowledge-base/concepts/web/content_discovery.md)
+	- Poor [access control](../../../knowledge-base/concepts/access_control.md)
