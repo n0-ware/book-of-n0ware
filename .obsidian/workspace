@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e41b78b56a94d0e3",
+        "id": "a05e244107cde100",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools_and_tricks/cli_utilities/powershell.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293
+    "width": 117
   },
   "right": {
     "id": "5336ecc4d88fcfcd",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools_and_tricks/cli_utilities/powershell.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tools_and_tricks/cli_utilities/powershell.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,17 +98,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e41b78b56a94d0e3",
+  "active": "a05e244107cde100",
   "lastOpenFiles": [
-    "tools_and_tricks/cli_utilities/powershell.md",
-    "tools_and_tricks/cli_utilities/curl.md",
-    "tools_and_tricks/cli_utilities/sed.md",
-    "tools_and_tricks/cli_utilities/living_off_the_land_binaries_lolbas.md",
-    "tools_and_tricks/cli_utilities/aws_cli_install.md",
-    "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
-    "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+    "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
+    "tools_and_tricks/cli_utilities/aws_cli_install.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day16.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_16/03_AoC_Day_14_01-03-22-Account-Located.png"
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_16/03_AoC_Day_14_01-03-22-Account-Located.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_16/02_AoC_Day_14_01-03-22-User-on-Reddit.png",
+    "knowledge-base/concepts/OSINT.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day14.md",
+    "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_14/10_AoC_Day_14_01-02-22-Reading-Scripts.png"
   ]
 }
