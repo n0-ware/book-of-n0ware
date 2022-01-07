@@ -10,6 +10,10 @@ Containers are stored in "registries." Running `docker images` on a local system
 - Created
 - Size
 
+Once an image is built, running the container image will always result in the same configuration state as specified at build-time. This is a great benefit for the software development lifecycle, ensuring that a packaged images runs as expected on any system prepared to run Docker and with the necessary resources. The application is essentially "frozen" in time. 
+
+The `Dockerfiles` that make up an image are a set of "new-line separated" instructions that tell the Docker daemon how to create the image. 
+
 ## Installation
 ### Kali
 ```
