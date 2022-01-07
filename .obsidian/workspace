@@ -9,29 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
-            "mode": "preview"
-          }
-        }
-      },
-      {
-        "id": "4c08463cf2aa76c3",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
+            "file": "knowledge-base/concepts/docker.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "2c8864e7cbc3d073",
+        "id": "d225bc4855521b55",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day18.md",
             "mode": "source"
           }
         }
@@ -90,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
+                "file": "knowledge-base/concepts/docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
+                "file": "knowledge-base/concepts/docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,15 +111,15 @@
   },
   "active": "a05e244107cde100",
   "lastOpenFiles": [
+    "knowledge-base/concepts/docker.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day18.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
+    "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
     "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
     "knowledge-base/concepts/access_control.md",
     "knowledge-base/concepts/web/content_discovery.md",
     "knowledge-base/concepts/authentication.md",
-    "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day13.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
-    "tools_and_tricks/cli_utilities/aws_cli_install.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day16.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day13.md"
   ]
 }
