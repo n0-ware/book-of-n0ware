@@ -3,12 +3,13 @@
 ## Description
 "Docker" generally refers to a compute solution known as a "container." Containers are an excellent choice for deploying infrastructure to to their lightweight and cross functionality via baked in dependencies. Containers in Docker are essentially `.tar` files that contain all the information the container needs to run. 
 
-Containers are stored in "registries." Running `docker images` on a local system will return the information related to any containers on the system that `docker` knows about
+Containers are stored in "registries." Running `docker images` on a local system will return the information related to any containers on the system that `docker` knows about. The container itself can be referenced using the name or tag.
 - Repository (Name)
 - Tag
 - Image ID
 - Created
 - Size
+
 
 Once an image is built, running the container image will always result in the same configuration state as specified at build-time. This is a great benefit for the software development lifecycle, ensuring that a packaged images runs as expected on any system prepared to run Docker and with the necessary resources. The application is essentially "frozen" in time. 
 
@@ -40,3 +41,16 @@ docker run -it public.ecr.<CONTAINER_ADDRESSS>:<TAG>
 ```
 
 Once inside a container, you may interact with it based on the operating system it is running. 
+
+## Vulnerabilities
+
+### Artifacts
+The problem with docker containers is that artifacts can be left behind that were not intended, items such as
+- Passwords and API Keys
+	- Check in config files, profiles, and enrironment variables (`printenv`)
+
+### Dockerfile
+Various layers in the Dockerfile can have vulnerabilities inside them as well depending on the type of information contained in the image or in the layers. 
+
+### Container Images
+See [container images](../vulnerabilities/container_images.md)

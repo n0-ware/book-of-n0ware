@@ -6,10 +6,11 @@
       {
         "id": "a05e244107cde100",
         "type": "leaf",
+        "dimension": 33.33333333333333,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/concepts/docker.md",
+            "file": "knowledge-base/vulnerabilities/container_images.md",
             "mode": "source"
           }
         }
@@ -17,10 +18,23 @@
       {
         "id": "d225bc4855521b55",
         "type": "leaf",
+        "dimension": 33.33333333333333,
         "state": {
           "type": "markdown",
           "state": {
             "file": "TryHackMe/events/AoC-2021/AoC-2021_Day18.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "000804189616df56",
+        "type": "leaf",
+        "dimension": 33.33333333333333,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "knowledge-base/concepts/docker.md",
             "mode": "source"
           }
         }
@@ -112,14 +126,14 @@
   "active": "d225bc4855521b55",
   "lastOpenFiles": [
     "TryHackMe/events/AoC-2021/AoC-2021_Day18.md",
+    "knowledge-base/vulnerabilities/container_images.md",
     "knowledge-base/concepts/docker.md",
+    "tools_and_tricks/cli_utilities/jq.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day17.md",
     "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
     "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
     "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
     "knowledge-base/concepts/access_control.md",
-    "knowledge-base/concepts/web/content_discovery.md",
-    "knowledge-base/concepts/authentication.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day13.md"
+    "knowledge-base/concepts/web/content_discovery.md"
   ]
 }
