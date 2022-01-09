@@ -79,4 +79,11 @@
 	- [Docker](../../../knowledge-base/concepts/docker.md)
 	- [Content discovery](../../../knowledge-base/concepts/web/content_discovery.md)
 	- Discovering hidden data inside a docker image
-- 
+- [Day 19](AoC-2021_Day19.md)
+	- [phishing](../../../knowledge-base/concepts/phishing.md)
+	- social engineering
+- [Day 20](AoC-2021_Day20.md)
+	- Malware Analysis
+	- [strings_cli](../../../tools_and_tricks/cli_utilities/strings_cli.md) tool
+	- Virus Total
+- [Day 21](AoC-2021_Day21.md)

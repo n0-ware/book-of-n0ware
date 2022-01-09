@@ -9,18 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools_and_tricks/cli_utilities/grep_egrep.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "eebb0616bb844529",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day19.md",
+            "file": "knowledge-base/concepts/yara_rules.md",
             "mode": "source"
           }
         }
@@ -31,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/concepts/phishing.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
             "mode": "source"
           }
         }
@@ -90,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day19.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day19.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,17 +109,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "eebb0616bb844529",
+  "active": "8d335c3ed05b9b84",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_Day19.md",
-    "tools_and_tricks/cli_utilities/grep_egrep.md",
-    "knowledge-base/concepts/regex.md",
-    "knowledge-base/concepts/phishing.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_19/01_AoC_Day_19_01-08-22-Sent-To.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
+    "knowledge-base/concepts/yara_rules.md",
     "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day18.md",
-    "knowledge-base/vulnerabilities/container_images.md",
-    "knowledge-base/concepts/docker.md",
-    "tools_and_tricks/cli_utilities/jq.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day01.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day20.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_20/01_AoC_Day_20_01-08-22-Testfile-type.png",
+    "knowledge-base/concepts/phishing.md",
+    "tools_and_tricks/cli_utilities/strings_cli.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day19.md"
   ]
 }
