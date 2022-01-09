@@ -4,24 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "d225bc4855521b55",
+        "id": "8d335c3ed05b9b84",
         "type": "leaf",
+        "dimension": 25.151924375422013,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/concepts/yara_rules.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "8d335c3ed05b9b84",
+        "id": "4f51919cf23a52dd",
         "type": "leaf",
+        "dimension": 25.151924375422013,
         "state": {
           "type": "markdown",
           "state": {
             "file": "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
             "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "4e098420972a8d3d",
+        "type": "leaf",
+        "dimension": 49.696151249155974,
+        "state": {
+          "type": "image",
+          "state": {
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_22/04_AoC_Day_20_01-09-22-Code-Exposed.png"
           }
         }
       }
@@ -79,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
+                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,15 +124,15 @@
   },
   "active": "8d335c3ed05b9b84",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
-    "knowledge-base/concepts/yara_rules.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
     "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day01.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_DayX.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day20.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_20/01_AoC_Day_20_01-08-22-Testfile-type.png",
-    "knowledge-base/concepts/phishing.md",
-    "tools_and_tricks/cli_utilities/strings_cli.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day19.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day22.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_22/04_AoC_Day_20_01-09-22-Code-Exposed.png",
+    "knowledge-base/concepts/encoding_decoding.md",
+    "tools_and_tricks/tools/oledump.md",
+    "knowledge-base/concepts/yara_rules.md",
+    "knowledge-base/concepts/fuzzing.md"
   ]
 }

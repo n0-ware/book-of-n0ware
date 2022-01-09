@@ -75,4 +75,5 @@ Adding `-n` returns rules that did not match. Good for testing
 - `-m` &mdash; Returns the metadata on the rule with a hit. 
 - `-s` &mdash; Returns information on the strings that match
 - `-c` &mdash; Print only matches
+- `-n` &mdash; Print only non-matches
  

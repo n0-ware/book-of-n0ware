@@ -4,24 +4,24 @@
 
 ***<u>Days</u>***
 
-- [Day 1](AoC-2021_Day01.md)
+- [Day-1](AoC-2021_Day01.md)
 	- [IDOR](../../../knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md)
 	- Accessing restricted accounts
-- [Day 2](AoC-2021_Day02.md)
+- [Day-2](AoC-2021_Day02.md)
 	- [Cookie Manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md)
 	- Fooling server into allowing admin login
-- [Day 3](AoC-2021_Day03.md)
+- [Day-3](AoC-2021_Day03.md)
 	- [Content Discovery](../../../knowledge-base/concepts/web/content_discovery.md)
 	- Default usernames and passwords
 	- Insecure calling of `javascript` divulged login information
-- [Day 4](AoC-2021_Day04.md)
+- [Day-4](AoC-2021_Day04.md)
 	- [Fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md)
 	- Weak passwords
-- [Day 5](AoC-2021_Day05.md)
+- [Day-5](AoC-2021_Day05.md)
 	- [Cross Site Scripting](../../../knowledge-base/vulnerabilities/cross_site_scripting_xss.md)
 	- Stored XSS
 	- Password change
-- [Day 6](AoC-2021_Day06.md)
+- [Day-6](AoC-2021_Day06.md)
 	- [Local File Inclusion](../../../knowledge-base/vulnerabilities/local_file_inclusion_LFI.md)
 	- [Log Poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md)
 	- [PHP in the URL](../../../tools_and_tricks/tricks/php_in_url.md)
@@ -29,61 +29,68 @@
 	- [python_reverse_shell](../../../exploits/reverse_shells/python/python_reverse_shell.py)
 	- [RCE](../../../knowledge-base/vulnerabilities/remote_code_execution_rce.md)
 	- Manipulating poor website design to access files
-- [Day 7](AoC-2021_Day07.md)
+- [Day-7](AoC-2021_Day07.md)
 	- [injection](../../../knowledge-base/vulnerabilities/injection.md)
 	- [NoSQL Injection](../../../knowledge-base/vulnerabilities/nosql_injection.md)
 	- [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md)
 	- Databases
 	- Poor user input sanitation
-- [Day 8](AoC-2021_Day08.md)
+- [Day-8](AoC-2021_Day08.md)
 	- [PowerShell](../../../tools_and_tricks/cli_utilities/powershell.md)
 	- [ShellBags](../../../knowledge-base/concepts/shellbags.md)
 	- [Windows Registry](../../../knowledge-base/concepts/windows_registry.md)
 	- Logs
 	- Incident Response
-- [Day 9](AoC-2021_Day09.md)
+- [Day-9](AoC-2021_Day09.md)
 	- [Wireshark](../../../tools_and_tricks/tools/wireshark.md)
 	- Basic data mining from packets
 	- DNS, FTP, and HTTP
-- [Day 10](AoC-2021_Day10.md)
+- [Day-10](AoC-2021_Day10.md)
 	- [Nmap](../../../tools_and_tricks/tools/Nmap.md)
 	- Service enumeration
-- [Day 11](AoC-2021_Day11.md)
+- [Day-11](AoC-2021_Day11.md)
 	- [Relational Database Management Systems (RDBMS)](../../../knowledge-base/concepts/sql_rdbms.md)
 	- `sqsh` and `xp_cmdshell`
 	- SQL Database Interaction
 	- Local system enumeration with built in tools
-- [Day 12](AoC-2021_Day12.md)
+- [Day-12](AoC-2021_Day12.md)
 	- [Nmap](../../../tools_and_tricks/tools/Nmap.md)
 	- [Network File SYstem (NFS)](../../../knowledge-base/concepts/network_file_system_nfs.md)
 	- Mounting and reading shares
-- [Day 13](AoC-2021_Day13.md)
+- [Day-13](AoC-2021_Day13.md)
 	- [Windows Privesc](../../../knowledge-base/vulnerabilities/privesc.md#Windows)
 	- Abusing service misconfigurations
-- [Day 14](AoC-2021_Day14.md)
+- [Day-14](AoC-2021_Day14.md)
 	- [CI/CD](../../../knowledge-base/concepts/cicd.md)
 	- Vulnerable web app
 	- Bad permissions
 	- Script abuse
-- Day 15 was a break day
-- [Day 16](AoC-2021_Day16.md)
+- Day-15 was a break day
+- [Day-16](AoC-2021_Day16.md)
 	- [OSINT](../../../knowledge-base/concepts/OSINT.md)
-- [Day 17](AoC-2021_Day17.md)
+- [Day-17](AoC-2021_Day17.md)
 	- [Insecure S3 Buckts](../../../knowledge-base/vulnerabilities/insecure_s3_bucket_access.md)
 		- [AWS Reconnaissance](../../../knowledge-base/vulnerabilities/insecure_s3_bucket_access.md#Reconnaissance)
 	- [Authentication](../../../knowledge-base/concepts/authentication.md)
 	- [Content discovery](../../../knowledge-base/concepts/web/content_discovery.md)
 	- Poor [access control](../../../knowledge-base/concepts/access_control.md)
-- [Day 18](AoC-2021_Day18.md)
+- [Day-18](AoC-2021_Day18.md)
 	- [Container images](../../../knowledge-base/vulnerabilities/container_images.md)
 	- [Docker](../../../knowledge-base/concepts/docker.md)
 	- [Content discovery](../../../knowledge-base/concepts/web/content_discovery.md)
 	- Discovering hidden data inside a docker image
-- [Day 19](AoC-2021_Day19.md)
+- [Day-19](AoC-2021_Day19.md)
 	- [phishing](../../../knowledge-base/concepts/phishing.md)
 	- social engineering
-- [Day 20](AoC-2021_Day20.md)
+- [Day-20](AoC-2021_Day20.md)
 	- Malware Analysis
 	- [strings_cli](../../../tools_and_tricks/cli_utilities/strings_cli.md) tool
 	- Virus Total
-- [Day 21](AoC-2021_Day21.md)
+- [Day-21](AoC-2021_Day21.md)
+	- [YARA Rules](../../../knowledge-base/concepts/yara_rules.md)
+	- Detection
+- [Day-22](AoC-2021_Day22.md)
+	- [Encoding/Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
+	- [powershell](../../../tools_and_tricks/cli_utilities/powershell.md)
+	- Data Exfiltration
+- 
