@@ -93,4 +93,7 @@
 	- [Encoding/Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
 	- [powershell](../../../tools_and_tricks/cli_utilities/powershell.md)
 	- Data Exfiltration
-- 
+- [AoC-2021_Day23](AoC-2021_Day23.md)
+	- [PowerShell](../../../tools_and_tricks/cli_utilities/powershell.md)
+	- [[encoding_decoding|Encoding and Decoding]]
+	- 

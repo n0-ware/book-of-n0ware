@@ -6,35 +6,22 @@
       {
         "id": "8d335c3ed05b9b84",
         "type": "leaf",
-        "dimension": 25.151924375422013,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
+            "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "4f51919cf23a52dd",
+        "id": "3ade8d3a3256daff",
         "type": "leaf",
-        "dimension": 25.151924375422013,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
+            "file": "tools_and_tricks/cli_utilities/powershell.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "4e098420972a8d3d",
-        "type": "leaf",
-        "dimension": 49.696151249155974,
-        "state": {
-          "type": "image",
-          "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_22/04_AoC_Day_20_01-09-22-Code-Exposed.png"
           }
         }
       }
@@ -92,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
+                "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
+                "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,15 +111,15 @@
   },
   "active": "8d335c3ed05b9b84",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
     "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day01.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day22.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_22/04_AoC_Day_20_01-09-22-Code-Exposed.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
     "knowledge-base/concepts/encoding_decoding.md",
-    "tools_and_tricks/tools/oledump.md",
-    "knowledge-base/concepts/yara_rules.md",
-    "knowledge-base/concepts/fuzzing.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_23/07_AoC_Day_23_01-09-22-Editing-Decryptor.png",
+    "tools_and_tricks/cli_utilities/powershell.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day22.md",
+    "knowledge-base/concepts/windows_event_log.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_22/04_AoC_Day_22_01-09-22-Code-Exposed.png",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day01.md"
   ]
 }
