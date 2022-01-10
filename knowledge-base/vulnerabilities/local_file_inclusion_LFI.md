@@ -38,7 +38,7 @@ Further, if we can inject or write to a file on the system, we can use **LFI** t
 ###  Entry Point in HTTP Query Parameters
 An attackers main point of interest is often to see if they can manipulate the parameters of an `HTTP` [query](../concepts/queries.md) to input and inject attack payloads. Studying how the application responds can indicate an *entry point*. 
 
-Often these are `HTTP` [GET](../concepts/web/GET.md) and [POST](../concepts/web/POST.md) parameters that pass arguments and data to a web app to perform a specific operation. 
+Often these are `HTTP` [GET](../concepts/web_tech/GET.md) and [POST](../concepts/web_tech/POST.md) parameters that pass arguments and data to a web app to perform a specific operation. 
 
 ![HTTP Query Parameters](../concepts/concepts_photos/HTTP_Query_Parameters.png)
 

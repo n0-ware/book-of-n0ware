@@ -46,14 +46,14 @@ DOM-based XSS is where malicious JavaScript is executed directly in a users brow
 [Example DOM XSS](#Example%20DOM%20XSS)
 
 ### Reflected
-Reflected XSS occurs when some [user supplied input](../concepts/user_supplied_input.md)  or other data is sent in an [`HTTP` request](../concepts/web/http_request.md) to an application and the application includes that data in a response in a way that is unsafe. 
+Reflected XSS occurs when some [user supplied input](../concepts/user_supplied_input.md)  or other data is sent in an [`HTTP` request](../concepts/web_tech/http_request.md) to an application and the application includes that data in a response in a way that is unsafe. 
 
 [Example Reflected XSS](#Example%20Reflected%20XSS)
 
 ### Stored
-Also known as *persistent XSS* occurs when an application receives data from an [untrusted](../concepts/trust.md) source and *stores* that data in later [HTTP responses](../concepts/web/http_response.md) in an unsafe manner. The data can be stored in the database that feeds the applicaiton, for example. 
+Also known as *persistent XSS* occurs when an application receives data from an [untrusted](../concepts/trust.md) source and *stores* that data in later [HTTP responses](../concepts/web_tech/http_response.md) in an unsafe manner. The data can be stored in the database that feeds the applicaiton, for example. 
 
-This is very common with comment boards, where users are able to submit input and that input is sent via an [HTTP POST request](../concepts/web/POST.md). Any user viewing the comment will execute the malicious JavaScript.
+This is very common with comment boards, where users are able to submit input and that input is sent via an [HTTP POST request](../concepts/web_tech/POST.md). Any user viewing the comment will execute the malicious JavaScript.
 
 ### Blind
 Similar to stored in that it is stored in the web application, perhaps in a databse, that is viewed later by another user, such as a help desk technician. The difference here between typical stored XSS is that the attacker cannot confirm that the attack was successful because they do not have access to the location the script was stored. 
@@ -86,7 +86,7 @@ The page will then render my script after the `?`
 If someone were to click this link, the attackers payload would be executed in the victim browser within the context of that session
 
 ### Example Stored XSS
-Imagine a scenario where a blog allows users to submit comments. The [POST](../concepts/web/POST.md) request might look something like this:
+Imagine a scenario where a blog allows users to submit comments. The [POST](../concepts/web_tech/POST.md) request might look something like this:
 
 ```
 POST /post/comment HTTP/1.1  

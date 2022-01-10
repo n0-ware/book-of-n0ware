@@ -1,7 +1,7 @@
 # Authentication
 ## Description
 Essentially the processes of verifying a user's identity to confirm without a doubt (ideally) that the user is who they say they are. Identity for authentication can be proven in a number of ways, including:
-1. Using a known set of credentials sent to a server, such as a username and password
+1. Using a known set of credentials sent to a server or a local database, such as a username and password
 2. Token authentication (i.e., unique pieces of encrypted text like cookies, pre-generated API tokens, etc.)
 3. Biometric authentication (fingerprints, voices, etc. )
 
@@ -15,12 +15,20 @@ Often conflated with authorization, but it is very different. Being *authorized*
 ![](concepts_photos/Cookie-In-HTTP-Request--THM.png)
 
 The authentication processes can be as follows:
-1. A request such as a login usually made as a [POST](web/POST.md)
+1. A request such as a login usually made as a [POST](web_tech/POST.md)
 2. Server verifies it received data and sets a unique cookie
 	- Type of value determined by either best-practices or the web developer.
-3. Once assigned, as as long as it lives in your browser, all future GET requests will use that cookie to identify you and your access using [deserialization](web/deserialization.md).
+3. Once assigned, as as long as it lives in your browser, all future GET requests will use that cookie to identify you and your access using [deserialization](web_tech/deserialization.md).
 
 #authentication #authorization #webapp #tokens #cookies 
 
-## AWS
-[insecure_s3_bucket_access](../vulnerabilities/insecure_s3_bucket_access.md)
+### AWS-CLI
+AWS uses an *Access Key* and a *Secret Access Key* to authenticate users over the command line. 
+For vulnerable S3, see [Insecure S3 Bucket Access](../vulnerabilities/insecure_s3_bucket_access.md)
+
+## Windows
+<meta name="windows-authentication" description="Explanation of Windows authentication methods">
+### SAM
+Windows stores various credentials in the Security Accounts Manager database. They are typically stored as [hashes](hashing.md) of one of two kinds. 
+- **LAN Manager (LM)** &mdash; the oldest form of password storage used in Windows and kept around for legacy systems. The algorithm is weak, using a limited character set as input, making it possible to attempt all possible combinations rather easily.
+- **NT Lan Manager (NTLM)** &mdash' The modern system of hashing used to store passwords.

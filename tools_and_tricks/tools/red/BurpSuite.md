@@ -113,7 +113,7 @@ When attacking software applications, fuzzing for unexpected behavior, wordlists
 #### Pitchfork
 #### Battering Ram
 ### Repeater
-The "Repeater" tool allows us to take an [HTTP Request](../../../knowledge-base/concepts/web/http_request.md) and use it as a template with small modifications, viewing the different responses. This is a great tool for testing for [injection](../../../knowledge-base/vulnerabilities/injection.md) attacks, manual brute-force attacks, [cookie manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md), etc. 
+The "Repeater" tool allows us to take an [HTTP Request](../../../knowledge-base/concepts/web_tech/http_request.md) and use it as a template with small modifications, viewing the different responses. This is a great tool for testing for [injection](../../../knowledge-base/vulnerabilities/injection.md) attacks, manual brute-force attacks, [cookie manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md), etc. 
 
 Simple select your base HTTP request, right-click, and choose "Send to repeater" to begin using the utility. 
 ### Sequencer

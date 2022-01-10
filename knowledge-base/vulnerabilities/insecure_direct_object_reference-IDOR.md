@@ -23,14 +23,14 @@ Data is passed in the URL when making a request to a website
 The `/profile` page is being requested, and the parameter id with the value of `23` is being passed in the query component. This page could potentially be showing us personal user information, and by changing the `id` parameter to another value, we could view other users data.
 
 ##### Post Variables
-Forms that [POST](../concepts/web/POST.md) on a website can reveal vulnerable fields if inspected. Often, in hidden fields. If able, changing the field in the `POST` request can give access elsewhere. 
+Forms that [POST](../concepts/web_tech/POST.md) on a website can reveal vulnerable fields if inspected. Often, in hidden fields. If able, changing the field in the `POST` request can give access elsewhere. 
 
 ![IDOR in a hidden field on a POST form](vulnerabilities_photos/IDOR-Post_Form--THM.png)
 
 Use a `POST` editor such as [BurpSuite](../../tools_and_tricks/tools/red/BurpSuite.md) to modify the request as you send it
 
 ##### Cookies
-[Cookies](../concepts/web/cookies.md) are often used to save sessions/logins. Usually, it involves a [session](../concepts/web/session.md). Sometimes, these session id's can be hard coded using the *User ID* and offer an exploit path. 
+[Cookies](../concepts/web_tech/cookies.md) are often used to save sessions/logins. Usually, it involves a [session](../concepts/web_tech/session.md). Sometimes, these session id's can be hard coded using the *User ID* and offer an exploit path. 
 
 ![Hard Coded User ID in Cookie](../concepts/concepts_photos/Session-ID-UID_Hard_Coded--THM.png)
 

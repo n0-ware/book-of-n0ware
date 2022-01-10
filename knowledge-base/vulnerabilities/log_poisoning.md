@@ -53,7 +53,7 @@ Next we send a "proof of concept" request injected with `PHP` code to see how th
 
 ### Corrupting Sessions
 
-If an attacker is able to access the  location [session](../concepts/web/session.md) information is stored on a server and poor [user input](../concepts/user_supplied_input.md) sanitation is in place, we can corrupt a session with some sort of malicious code, such as with `PHP` if the server is running a `PHP` backend. 
+If an attacker is able to access the  location [session](../concepts/web_tech/session.md) information is stored on a server and poor [user input](../concepts/user_supplied_input.md) sanitation is in place, we can corrupt a session with some sort of malicious code, such as with `PHP` if the server is running a `PHP` backend. 
 
 Session information is often stored in common locations, such as 
 - `c:\Windows\Temp`

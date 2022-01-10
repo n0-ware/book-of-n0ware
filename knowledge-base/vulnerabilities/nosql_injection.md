@@ -63,7 +63,7 @@ This same concept is applicable to the `username` field. Consider this as well, 
 It is up to you to identify where the injection can take place, such as in the URL bar or the actual input field. Enumeration is key. 
 
 ### Injecting URLs
-When dealing with [GET](../concepts/web/GET.md) and [POST](../concepts/web/POST.md) requests, you must match the `key:value` parameters of the URL and `[]` instead of `{}` is most circumstances. 
+When dealing with [GET](../concepts/web_tech/GET.md) and [POST](../concepts/web_tech/POST.md) requests, you must match the `key:value` parameters of the URL and `[]` instead of `{}` is most circumstances. 
 
 *For example:*
 - `http://vulnsitecom/search?username=ben&role=user` &mdash; Normal URL NoSQL query

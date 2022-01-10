@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+            "file": "knowledge-base/concepts/hashing.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "3ade8d3a3256daff",
+        "id": "430e5e38808c64ec",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
+            "file": "knowledge-base/concepts/authentication.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+                "file": "knowledge-base/concepts/authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+                "file": "knowledge-base/concepts/authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,17 +109,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8d335c3ed05b9b84",
+  "active": "430e5e38808c64ec",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+    "knowledge-base/concepts/authentication.md",
+    "knowledge-base/vulnerabilities/password_cracking.md",
+    "knowledge-base/concepts/hashing.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
-    "tools_and_tricks/cli_utilities/powershell.md",
-    "knowledge-base/concepts/encoding_decoding.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_23/07_AoC_Day_23_01-09-22-Editing-Decryptor.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
+    "knowledge-base/methodology/post_exploitation.md",
+    "knowledge-base/concepts/persistence.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day24.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day22.md",
-    "knowledge-base/concepts/windows_event_log.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_22/04_AoC_Day_22_01-09-22-Code-Exposed.png",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day01.md"
+    "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
+    "TryHackMe/events/AoC-2021/AoC-2021_Day20.md"
   ]
 }
