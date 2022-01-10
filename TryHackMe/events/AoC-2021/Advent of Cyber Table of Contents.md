@@ -95,5 +95,7 @@
 	- Data Exfiltration
 - [AoC-2021_Day23](AoC-2021_Day23.md)
 	- [PowerShell](../../../tools_and_tricks/cli_utilities/powershell.md)
-	- [[encoding_decoding|Encoding and Decoding]]
-	- 
+		- [powershell](../../../tools_and_tricks/cli_utilities/powershell.md#command-lets)
+	- [Encoding and Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
+	- [Windows Event Log](../../../knowledge-base/concepts/windows_event_log.md)
+	- Data Exfiltration

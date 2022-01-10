@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools_and_tricks/cli_utilities/powershell.md",
+            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
             "mode": "source"
           }
         }
@@ -113,9 +113,9 @@
   "lastOpenFiles": [
     "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
+    "tools_and_tricks/cli_utilities/powershell.md",
     "knowledge-base/concepts/encoding_decoding.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_23/07_AoC_Day_23_01-09-22-Editing-Decryptor.png",
-    "tools_and_tricks/cli_utilities/powershell.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day21.md",
     "TryHackMe/events/AoC-2021/AoC-2021_Day22.md",
     "knowledge-base/concepts/windows_event_log.md",
