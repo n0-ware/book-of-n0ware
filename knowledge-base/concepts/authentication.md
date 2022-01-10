@@ -30,6 +30,12 @@ For vulnerable S3, see [Insecure S3 Bucket Access](../vulnerabilities/insecure_s
 <meta name="windows-authentication" description="Explanation of Windows authentication methods">
 
 ### SAM
-Windows stores various credentials in the Security Accounts Manager database. They are typically stored as [hashes](hashing.md) of one of two kinds. 
+Windows stores various credentials in the *Security Accounts Manager* database. They are typically stored as [hashes](hashing.md) of one of two kinds:
+
 - **LAN Manager (LM)** &mdash; the oldest form of password storage used in Windows and kept around for legacy systems. The algorithm is weak, using a limited character set as input, making it possible to attempt all possible combinations rather easily.
-- **NT Lan Manager (NTLM)** &mdash' The modern system of hashing used to store passwords.
+- **NT Lan Manager (NTLM)** &mdash; The modern system of hashing used to store passwords.
+
+### LSASS
+The process Local Security Authority Subsystem Service (LSASS) steps in to retrieve the user's credentials from the [SAM](#SAM) database when a user logs in. It compares the provided credentials against the hashed form of the users password. If they match, the user is logged in. 
+
+LSASS stores the credentials in memory after this is successful. The is designed to be convenient, such as allowing them to user another resource without having to enter the credentials again. LSASS itself uses these credentials in-memory for other reasons, making it vulnerable to credential dumping. 

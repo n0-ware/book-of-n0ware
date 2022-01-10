@@ -16,10 +16,14 @@ Passwords are typically stored *hashed* on secure, modern systems. This means th
 
 ### Authentication
 #### Windows
-Windows stores various credentials in the
+Windows stores various credentials in the [SAM](authentication.md#SAM) databases and uses [LSASS](authentication.md#LSASS) for authentication in a variety of ways.
 
-## Cracking
+## Abusing
+### Cracking
 ###### See the note on [password cracking](../vulnerabilities/password_cracking.md) for detailed information
 Cracking passwords hashes several things
 - Brute forcing a list of known password hashes against a compromised hash to find a match
 - Recovering a cleartext password in a situation where the hash can be matched
+-
+### Dumping-Hashes
+The concept of "dumping hashes" refers to stealing credentials from memory, usually from a service such as [LSASS](authentication.md#LSASS)

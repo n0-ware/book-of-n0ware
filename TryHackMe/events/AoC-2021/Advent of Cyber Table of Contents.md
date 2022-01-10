@@ -36,7 +36,7 @@
 	- Databases
 	- Poor user input sanitation
 - [Day 8](AoC-2021_Day08.md)
-	- [PowerShell](../../../tools_and_tricks/cli_utilities/powershell.md)
+	- [PowerShell](../../../tools_and_tricks/tools/powershell.md)
 	- [ShellBags](../../../knowledge-base/concepts/shellbags.md)
 	- [Windows Registry](../../../knowledge-base/concepts/windows_registry.md)
 	- Logs
@@ -84,18 +84,18 @@
 	- social engineering
 - [Day 20](AoC-2021_Day20.md)
 	- Malware Analysis
-	- [Strings CLI](../../../tools_and_tricks/cli_utilities/strings_cli.md) tool
+	- [Strings CLI](../../../tools_and_tricks/useful_binaries/strings_cli.md) tool
 	- Virus Total
 - [Day 21](AoC-2021_Day21.md)
 	- [YARA Rules](../../../knowledge-base/concepts/yara_rules.md)
 	- Detection
 - [Day 22](AoC-2021_Day22.md)
 	- [Encoding/Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
-	- [PowerShell](../../../tools_and_tricks/cli_utilities/powershell.md)
+	- [PowerShell](../../../tools_and_tricks/tools/powershell.md)
 	- Data Exfiltration
 - [Day 23](AoC-2021_Day23.md)
-	- [PowerShell](../../../tools_and_tricks/cli_utilities/powershell.md)
-		- [cmdlets](../../../tools_and_tricks/cli_utilities/powershell.md#command-lets)
+	- [PowerShell](../../../tools_and_tricks/tools/powershell.md)
+		- [cmdlets](../../../tools_and_tricks/tools/powershell.md#command-lets)
 	- [Encoding and Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
 	- [Windows Event Log](../../../knowledge-base/concepts/windows_event_log.md)
 	- Data Exfiltration

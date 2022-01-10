@@ -11,16 +11,16 @@
 ## CLI Utilities
 ### Text and Files
 
-[sed](cli_utilities/sed.md)
+[sed](useful_binaries/sed.md)
 
 ### Wordlists
 
-[seclists](cli_utilities/seclists.md)
+[seclists](wordlists/seclists.md)
 
 ## Windows
 
 ### PowerShell
-[powershell](cli_utilities/powershell.md)
+[powershell](tools/powershell.md)
 
 ## Networking
 
