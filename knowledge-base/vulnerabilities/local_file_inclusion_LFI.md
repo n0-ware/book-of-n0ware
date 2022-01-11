@@ -8,7 +8,7 @@
 - [Examples](#Examples)
 	- [Path-Traversal](#Path-Traversal)
 	- [Abusing-PHP](#Abusing-PHP)
-		- [PHP Filter](#PHP%20Filter)
+		- [PHP Filter](#PHP-Filter)
 	- [RCE](#RCE)
 		- [Log-Poisoning](#Log-Poisoning)
 
@@ -105,7 +105,7 @@ https://vulnsite.io/status.php?file=%252e%252e%252fetc%252fpasswd
 ### Abusing-PHP
 When dealing with `PHP`, you can use *PHP-supported wrappers* combined with an entry point. `PHP` provides several methods for transmitting data (input/output) that enable `PHP` to read the data. 
 
-#### PHP Filter
+#### PHP-Filter
 The `PHP` wrapper *filter*  is used in **LFI** to read the actual `PHP` page content. In normal circumstances, you cannot read the contents of  `PHP` file as it is executed on the **server** side when called, never displaying the underlying text on the **client** side. The **PHP Filter** is used to so that we can process this code in some way. We can use this to our advantage for reading files, such as with `php://filter/resources=/etc/passwd`. 
 
 With `/etc/passwd`, we are dealing with text, **not** `PHP` code, so it should render on the **client-side** for us without issue. If you want to read *actual* source-code, you'll need to encode it while filtering. Otherwise, the server will either produce an error as it tries to run it, or just run the code, or maybe both. See this example from [TryHackMe's Advent of Cyber 3 Day 6 challenge](https://tryhackme.com/room/adventofcyber3)
