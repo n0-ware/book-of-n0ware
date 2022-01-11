@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/concepts/web_tech/sessions.md",
+            "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
             "mode": "source"
           }
         }
@@ -120,9 +120,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "430e5e38808c64ec",
+  "active": "33ebab0f68a1987f",
   "lastOpenFiles": [
     "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+    "knowledge-base/concepts/web_tech/sessions.md",
     "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
     "knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md",
     "knowledge-base/vulnerabilities/injection.md",
@@ -130,7 +131,6 @@
     "knowledge-base/vulnerabilities/cross_site_scripting_xss.md",
     "knowledge-base/vulnerabilities/cookie_manipulation.md",
     "knowledge-base/concepts/01_Concepts-TOC.md",
-    "knowledge-base/concepts/container_images.md",
-    "knowledge-base/concepts/yara_rules.md"
+    "knowledge-base/concepts/container_images.md"
   ]
 }

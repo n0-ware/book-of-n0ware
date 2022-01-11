@@ -1,26 +1,16 @@
 # Local File Inclusion
-[PHP Filter](#PHP%20Filter)
-## TOC-Local
-- [Finding and Testing](#Finding%20and%20Testing)
-	- [Entry Point - HTTP Query Parameters](#Entry%20Point%20-%20HTTP%20Query%20Parameters)
-	- [Testing in HTTP Query Parameters](#Testing%20in%20HTTP%20Query%20Parameters)
-- [Examples](#Examples)
-	- [Path Traversal](#Path%20Traversal)
-	- [PHP](#abusing%20PHP)
-		- [PHP Filter](#PHP%20Filter)
-	- [Remote Code Execution](#Remote%20Code%20Execution)
-	- [Log Poisoning](#Log%20Poisoning)
 
-## TOC-GH
-- [Finding and Testing](#Finding-and-Testing)
-	- [Entry Point - HTTP Query Parameters](#Entry-Point-in-HTTP-Query-Parameters)
-	- [Testing in HTTP Query Parameters](#Testing-in-HTTP-Query-Parameters)
+## TOC-Local
+- [Testing](#Testing)
+	- [Entry-Points](#Entry-Points)
+		- [HTTP-Query-Parameters](#HTTP-Query-Parameters)
+		- [Testing-HTTP-Query-Parameters](#Testing-HTTP-Query-Parameters)
 - [Examples](#Examples)
-	- [Path Traversal](#Path-Traversal)
-	- [Abusing PHP](#abusing-PHP)
-		- [PHP Filter](#PHP-Filter)
-	- [Remote Code Execution](#Remote-Code-Execution)
-		- [Log Poisoning](#Log-Poisoning)
+	- [Path-Traversal](#Path-Traversal)
+	- [Abusing-PHP](#Abusing-PHP)
+		- [PHP Filter](#PHP%20Filter)
+	- [RCE](#RCE)
+		- [Log-Poisoning](#Log-Poisoning)
 
 Tags [^1]
 
@@ -33,11 +23,11 @@ This type of vulnerability occurs when developer's lack security awareness and i
 Once discovered, if the file has the right permissions, the attacker can read the file. This can include both files sensitive to the application **and** files holding sensitive user information. 
 
 Further, if we can inject or write to a file on the system, we can use **LFI** to obtain [**remote code execution (RCE)**](remote_code_execution_rce.md).
-## Finding and Testing
+## Testing
 
-###  Entry-Point
+###  Entry-Points
 
-### HTTP-Query-Parameters
+#### HTTP-Query-Parameters
 An attackers main point of interest is often to see if they can manipulate the parameters of an `HTTP` [query](../concepts/queries.md) to input and inject attack payloads. Studying how the application responds can indicate an *entry point*. 
 
 Often these are `HTTP` [GET](../concepts/web_tech/GET.md) and [POST](../concepts/web_tech/POST.md) parameters that pass arguments and data to a web app to perform a specific operation. 
@@ -86,7 +76,7 @@ There are many entry points, others including &mdash; `User-Agent`, Cookies, ses
 - /proc/cmdline
 
 
-### Testing-HTTP-Query-Parameters
+#### Testing-HTTP-Query-Parameters
 Once the entry point for **LFI** is found, we start looking for files that are nearly *guaranteed* to be on the system, such as OS files. For example, trying to find `/etc/passwd` on Linux systems as it is guaranteed to be readable. Once you find one file, you know you can probably find others.
 
 Most files of interest are unlikely to be located in the same directory as the web page we are on, such as `index.html`. More likely, we have to try some creative relative file references. 
