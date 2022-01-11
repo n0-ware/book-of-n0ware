@@ -32,7 +32,7 @@ See [NoSQL Injection](../vulnerabilities/nosql_injection.md)
 ## SQL vs NoSQL
 
 ### Structure
-In a RDBMS (relational database management system), data is modeled in tables. In *NoSQL*, data are likely stored as *objects* in a format such as `JSON`. A NoSQL database such as **MongoDB** will have collections, documents, and fields. 
+In an RDBMS (relational database management system), data is modeled in tables. In *NoSQL*, data are likely stored as *objects* in a format such as `JSON`. A NoSQL database such as **MongoDB** will have collections, documents, and fields. 
 
 In a situation where we want to store a database of *users* and *hobbies*,  the data will be stored differently depending on the type of database. 
 
@@ -136,5 +136,5 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })`
 
 When using a query in a *NoSQL* command, you can simply provide the exact document you are looking for via a `key`, typically the `id`, such as with `{id: "1"}` to return the document with the `id` equal to one. 
 
-However, you can use various commands in the query structure to get different results. When doing so, wrap the query in `{}` inside of the value you are searching for. For example, if we wanted all documents with an `id` less than `3`, we would use a query such as `db.test_users.find({id:{"$lt" : "3"}})`. The structure of a query goes like:
+However, you can use various commands in the query structure to get different results. When doing so, wrap the query in `{}` inside of the value you are searching for. For example, if we wanted all documents with an `id` less than `3`, we would use a query such as `db.test_users.find({id:{"$lt" : "3"}})`. The structure of a query goes like this:
 - `{Key:{"$operator" : "value"}})`

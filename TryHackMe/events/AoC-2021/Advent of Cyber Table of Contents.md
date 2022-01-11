@@ -75,7 +75,7 @@
 	- [Content discovery](../../../knowledge-base/concepts/web_tech/content_discovery.md)
 	- Poor [access control](../../../knowledge-base/concepts/access_control.md)
 - [Day 18](AoC-2021_Day18.md)
-	- [Container images](../../../knowledge-base/vulnerabilities/container_images.md)
+	- [Container images](../../../knowledge-base/concepts/container_images.md)
 	- [Docker](../../../knowledge-base/concepts/docker.md)
 	- [Content discovery](../../../knowledge-base/concepts/web_tech/content_discovery.md)
 	- Discovering hidden data inside a docker image

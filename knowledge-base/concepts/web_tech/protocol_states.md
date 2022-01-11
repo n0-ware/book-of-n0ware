@@ -1,5 +1,5 @@
 # Protocols - Stateful vs Stateless
-A **stateless protocol** is a [communication protocol](https://en.wikipedia.org/wiki/Communication_protocol "Communication protocol") in which the receiver must not retain [session](https://en.wikipedia.org/wiki/Session_(computer_science) "Session (computer science)") state from previous requests. The sender transfers relevant session state to the receiver in such a way that every request can be understood in isolation, that is without [reference](https://en.wikipedia.org/wiki/Reference "Reference") to session state from previous requests retained by the receiver.
+A **stateless protocol** is a [communication protocol](https://en.wikipedia.org/wiki/Communication_protocol "Communication protocol") in which the receiver must not retain [session](https://en.wikipedia.org/wiki/Session_(computer_science) "Session (computer science)") state from previous requests. The sender transfers the relevant session state to the receiver in such a way that every request can be understood in isolation, that is without [reference](https://en.wikipedia.org/wiki/Reference "Reference") to session state from previous requests retained by the receiver.
 
 In contrast, a **stateful protocol** is a communication protocol in which the receiver may retain session state from previous requests.
 

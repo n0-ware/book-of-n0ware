@@ -1,7 +1,7 @@
 # Hashing
-"Hashing" refers to the one-way crpytographic function by which a string of data is converted to a (seemingly) random string of characters of a fixed length based on the algorithm used. This is always accomplished through cryptographic algorithm, and the resulting hash length and complexity are determined by the choice of algorithm, such as **MD5** or the **SHA** family. 
+"Hashing" refers to the one-way cryptographic function by which a string of data is converted to a (seemingly) random string of characters of a fixed length based on the algorithm used. This is always accomplished through a cryptographic algorithm, and the resulting hash length and complexity are determined by the choice of algorithms, such as **MD5** or the **SHA** family. 
 
-Regardless of the length of input, a *hash* is always the same length when using a particular algorithm. The Bible and your grocery list, when hashed via **MD5**, will return the same 128-bit, 32-byte character string. The strength of hashing is in its ease of use one-way, and near impossibility the other way. For example, if you change one letter in The Bible and hash it again, the result will be different than the first. 
+Regardless of the length of the input, a *hash* is always the same length when using a particular algorithm. The Bible and your grocery list, when hashed via **MD5**, will return the same 128-bit, 32-byte character string. The strength of hashing is in its ease of use one-way, and near impossibility the other way. For example, if you change one letter in The Bible and hash it again, the result will be different than the first. 
 
 A lot can be said about hashing, various algorithms, their strengths, known collisions (where two values output the same hash value), and so on. 
 

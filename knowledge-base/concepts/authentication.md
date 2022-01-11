@@ -1,6 +1,6 @@
 # Authentication
 ## Description
-Essentially the processes of verifying a user's identity to confirm without a doubt (ideally) that the user is who they say they are. Identity for authentication can be proven in a number of ways, including:
+Essentially the processes of verifying a user's identity to confirm without a doubt (ideally) that the user is who they say they are. Identity for authentication can be proven in several ways, including:
 1. Using a known set of credentials sent to a server or a local database, such as a username and password
 2. Token authentication (i.e., unique pieces of encrypted text like cookies, pre-generated API tokens, etc.)
 3. Biometric authentication (fingerprints, voices, etc. )
@@ -15,10 +15,10 @@ Often conflated with authorization, but it is very different. Being *authorized*
 ![](concepts_photos/Cookie-In-HTTP-Request--THM.png)
 
 The authentication processes can be as follows:
-1. A request such as a login usually made as a [POST](web_tech/POST.md)
+1. A request such as a login is usually made as a [POST](web_tech/POST.md)
 2. Server verifies it received data and sets a unique cookie
 	- Type of value determined by either best-practices or the web developer.
-3. Once assigned, as as long as it lives in your browser, all future GET requests will use that cookie to identify you and your access using [deserialization](web_tech/deserialization.md).
+3. Once assigned, as long as it lives in your browser, all future [GET](web_tech/GET.md) requests will use that cookie to identify you and your access using [deserialization](web_tech/deserialization.md).
 
 #authentication #authorization #webapp #tokens #cookies 
 
@@ -36,6 +36,6 @@ Windows stores various credentials in the *Security Accounts Manager* database. 
 - **NT Lan Manager (NTLM)** &mdash; The modern system of hashing used to store passwords.
 
 ### LSASS
-The process Local Security Authority Subsystem Service (LSASS) steps in to retrieve the user's credentials from the [SAM](#SAM) database when a user logs in. It compares the provided credentials against the hashed form of the users password. If they match, the user is logged in. 
+The process Local Security Authority Subsystem Service (LSASS) steps in to retrieve the user's credentials from the [SAM](#SAM) database when a user logs in. It compares the provided credentials against the hashed form of the user's password. If they match, the user is logged in. 
 
-LSASS stores the credentials in memory after this is successful. The is designed to be convenient, such as allowing them to user another resource without having to enter the credentials again. LSASS itself uses these credentials in-memory for other reasons, making it vulnerable to credential dumping. 
+LSASS stores the credentials in memory after this is successful. The is designed to be convenient, such as allowing them to use another resource without having to enter the credentials again. LSASS itself uses these credentials in-memory for other reasons, making it vulnerable to credential dumping. 

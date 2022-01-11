@@ -1,20 +1,20 @@
 # Open Source Intelligence (OSINT)
 
 ## Description
-OSINT, or open source intelligence, refers to the information (intelligence) available to the public in some way or another. OSINT is often used in conjunction with the actual process of gathering information on a target, whether as an attacker, defender, or third-party such as a government agency for the purpose of developing a profile on the target(s). OSINT is both an art and a learned skill, and while there are tools and resources available, much of OSINT involves being creative, digging deep, and having the patience to complete the task with diligence and a keen eye for detail. 
+OSINT, or open-source intelligence, refers to the information (intelligence) available to the public in some way or another. OSINT is often used in conjunction with the actual process of gathering information on a target, whether as an attacker, defender, or third-party such as a government agency to develop a profile on the target(s). OSINT is both an art and a learned skill, and while there are tools and resources available, much of OSINT involves being creative, digging deep, and having the patience to complete the task with diligence and a keen eye for detail. 
 
 The core of OSINT revolves around information available on the internet in two distinct places
-- The ***clearnet***, or the internet, on social media sites, company websites, GitHub, personal pages, etc. 
+- The ***Clearnet***, or the internet, on social media sites, company websites, GitHub, personal pages, etc. 
 - The ***darknet***, home of the "internet underground" and only accessible through the *TOR* network or other similar software. This is where the more valuable and less available information will be found and is most used by criminals, journalists, government, whistleblowers, and other types that need to keep themselves and their information hidden. 
 
 ## OSINT Tactics
-Each individual or team that conducts OSINT will develop their own methodology. 
+Each individual or team that conducts OSINT will develop its own methodology. 
 ### Models
-There are many models available for OSINT
+There are many models available for OSINT and they serve as excellent repositories for learning the craft and developing your own methodology. 
 
 #### OSINT Framework
 
-The [OSINT Framework](https://osintframework.com/), and they serve as excellent repositories for learning the craft and developing your own methodology. 
+The [OSINT Framework](https://osintframework.com/)
 
 #### RIS OSINT 
 ###### Credit to [Arno Reuser](https://www.linkedin.com/in/reuser/?originalSubdomain=nl)
@@ -22,7 +22,7 @@ The RIS OSINT Data-information model" follows this approach to information gathe
 
 ![RIS OSINT Flow](concepts_photos/RIS_OSINT_FLOW.png)
 
-Essentially, **Intelligence** is obtained from **Information** that is obtained from **Data**. Intelligence will inevitable lead to a **Decision** that requires you to determine what to do next and **Change** accordingly. 
+Essentially, **Intelligence** is obtained from **Information** that is obtained from **Data**. Intelligence will inevitably lead to a **Decision** that requires you to determine what to do next and **Change** accordingly. 
 
 The RIS OSINT Roller coaster details what a potential flow may look like when acting on an objective. 
 
@@ -31,20 +31,20 @@ The RIS OSINT Roller coaster details what a potential flow may look like when ac
 
 ### Sources
 #### Accounts
-In the internet age, individuals and their data are often tied to various accounts. These accounts tend to sprawl, resulting in large and poorly curated (and guarded) centers of intelligence. Locating, parsing, and identifying the useful within a targets account is a sometimes painstaking process, but can be very useful. Facebook, Twitter, Reddit, Google, etc., are all viable sources of intelligence. Once identified, the username can be leverage further to identify accounts of other lesser-known services such as unique forums and comment boards. 
+In the internet age, individuals and their data are often tied to various accounts. These accounts tend to sprawl, resulting in large and poorly curated (and guarded) centers of intelligence. Locating, parsing, and identifying the useful information within a target's account is a sometimes painstaking process, but can be very useful. Facebook, Twitter, Reddit, Google, etc., are all viable sources of intelligence. Once identified, the username can be leveraged further to identify accounts of other lesser-known services such as unique forums and comment boards. 
 
 When analyzing an account, we are often attempting to accomplish the following objectives. 
 
 | Objective | Purpose | 
 | :- | :- | 
-| Real or Persona | An account can belong to either a real person by name or a persona. In either case, we want to identify the persons real name, link it to a persona, and leverage that into further information on the target | 
+| Real or Persona | An account can belong to either a real person by name or a persona. In either case, we want to identify the person's real name, link it to a persona, and leverage that into further information on the target | 
 | Email | While harder to find openly, the email is often the key to further information gathering | 
 | Linked accounts | Once the first account in the trail is found, connecting the dots to other accounts is easier and a valuable step | 
 | History |  Building a "case-file" on the target is only as important as the objective, but can lead to valuable information for the objective and hint at other avenues for information via mentions, photos, etc. | 
-| Information in Posts | Leveraging history, you can gain insight into the targets personal characteristics, location, other accounts, real name, etc.  | 
+| Information in Posts | Leveraging history, you can gain insight into the target's personal characteristics, location, other accounts, real name, etc.  | 
 
 #### Google
-Believe it or not, Google is powerful. Even more powerful than just Googling, is using Google's built-in features to hone your search. "Google-dorking" as it is known is a valuable skill to learn, even if you never memorize all of the commands. Some of the more valuable search techniques to learn are:
+Believe it or not, Google is powerful. Even more powerful than just Googling, is using Google's built-in features to hone your search. "Google-Dorking" as it is known is a valuable skill to learn, even if you never memorize all of the commands. Some of the more valuable search techniques to learn are:
 
 | Term | Purpose | Example | 
 | :- | :- | :- | 

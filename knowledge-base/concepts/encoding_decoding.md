@@ -4,7 +4,7 @@
 
 Firstly, encoding **is not** encryption. It is the process of changing the format of a message into another format, generally to use a data string from one source as input for another where the original string was not in the proper format for the receiving service. On occasion, it is used for obfuscation of code. Given that it is not encryption, the information is not truly confidential. 
 
-Encoding relies on using well-known systems to convert data into another type of data, usually for the purpose of sending complex data objects, such as `JSON`, through a medium that requires a specific set of *ASCII* characters, a specific data format, etc. Cookies, for example, are often encoded in `base64` to allow `JSON` notation for user credentials to pass to a browser, for example
+Encoding relies on using well-known systems to convert data into another type of data, usually to send complex data objects, such as `JSON`, through a medium that requires a specific set of *ASCII* characters, a specific data format, etc. Cookies, for example, are often encoded in `base64` to allow `JSON` notation for user credentials to pass to a browser, for example
 
 
 ## Types
@@ -14,7 +14,7 @@ These encoding schemes are commonly used when there is a need to encode binary d
 Each digit represents exactly 6 bits of data, meaning three bytes (24 bits) can be represented by four 60bit base64 digits. 
 
 ### Rot13
-Commonly referred to as a "rotation" or "Caesar" cipher, these rely on shifting the letters of the alphabet by a number of "rotations." Rot13 refers to 13 rotations. For example:
+Commonly referred to as a "rotation" or "Caesar" cipher, these rely on shifting the letters of the alphabet by a specified number of "rotations." Rot13 refers to 13 rotations. For example:
 
 ```
 ABCDEFGHIJKMNOPQRSTUVWXYZ
@@ -41,7 +41,7 @@ NOPQRSTUVWXZABCDEFGHIJKLM
 #### Base64
 On the CLI run, pipe information into `base64` to encode and add `-d` to decode. 
 ### CyberChef
-The online tool used to "bake" recipes from or to an encoding format. 
+This online (or local) tool is used to "bake" recipes from or to an encoding format. 
 [CyberChef](https://gchq.github.io/CyberChef/)
 
 

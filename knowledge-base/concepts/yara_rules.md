@@ -1,10 +1,10 @@
 # YARA Rules
 ## Description
-YARA rules are like small pieces of a programming language, but instead of "doing something" like producing a program, they define rules against which various systems check for malware. These rules are included in an organizations IPS, IDS, or other detection system actively defending against and alterting to potential malware. 
+YARA rules are like small pieces of a programming language, but instead of "doing something" like producing a program, they define rules against which various systems check for malware. These rules are included in an organization's IPS, IDS, or other detection systems actively defending against and altering to potential malware. 
 
 These rules **define unique patterns and strings** within malware of any type that will match the suspected file against a threat group and/or malware family the original sample is attributed to. 
 
-By developing YARA rules, **threat researches can begin building a profile of malware**, and through several samples of the same family, even identify multiple pieces of malware from the same campaign or threat actor. 
+By developing YARA rules, **threat researchers can begin building a profile of malware**, and through several samples of the same family, even identify multiple pieces of malware from the same campaign or threat actor. 
 
 Read more [here](https://blog.malwarebytes.com/security-world/technology/2017/09/explained-yara-rules/)
 
@@ -62,7 +62,7 @@ When a rule is a hit, it will return with the name of the rule. Consider this ex
 
 ![Test File Hit](concepts_photos/YARA-Rules-Testing.png)
 
-Adding `-m` returns the Meatadata, which is why this is important.
+Adding `-m` returns the Metadata, which is why this is important.
 
 ![Metadata Returned](concepts_photos/YARA-Rules-Testing-Meatdata.png)
 

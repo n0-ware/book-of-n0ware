@@ -10,14 +10,14 @@
 - Folders
 - Pathways
 
-*Content Discovery* is the process of gaining access to this content through [[enumeration]], testing, and probing. Webservers are designed to simply serve files and folders as long as you link to or know the name of the file or folder you are looking for. There are no native protections, it is simply a directory. 
+*Content Discovery* is the process of gaining access to this content through [enumeration](../enumeration.md), testing, and probing. Webservers are designed to simply serve files and folders as long as you link to or know the name of the file or folder you are looking for. There are no native protections, it is simply a directory. 
 
-Searching for content via [[directory_busting]] manual [[enumeration]] works well for both files and folders, and searching for specific file extensions and speed of and prioritize your discovery. Common file and folder names such as `admin`, `config.txt`, `assets`, `passwords.txt`, and others are great places to start. Many of these names are available in custom wordlists. 
+Searching for content via [directory_busting](directory_busting.md) manual [enumeration](../enumeration.md)works well for both files and folders, and searching for specific file extensions and speed of and prioritize your discovery. Common file and folder names such as `admin`, `config.txt`, `assets`, `passwords.txt`, and others are great places to start. Many of these names are available in custom wordlists. 
 
 Beyond discovering content available outside of protections, default passwords are potentially available if the developer did not disable them. Wordlists such as [Seclists](../../../tools_and_tricks/wordlists/seclists.md) are great for identifying these potential gaps in security. 
 
 ## Example
-1. You run a blog and want to host reviews on recipes. However, you want to hide unfinished recipes not up for review yet. You hide the *admin panel* so that you are the only one that is able to access the core configurations of your web server, but the pages are still accessible via [[enumeration]] and [directory_busting](directory_busting.md).
+1. You run a blog and want to host reviews on recipes. However, you want to hide unfinished recipes not up for review yet. You hide the *admin panel* so that you are the only one that can access the core configurations of your web server, but the pages are still accessible via [enumeration](../enumeration.md) and [directory_busting](directory_busting.md).
 2. A page designed to be secure calls insecure `javascript` functions that divulge information, and this function is visible by inspecting [GET](GET.md) and [POST](POST.md) requests. 
 3. Discovering an [Insecure AWS S3 Bucket](../../vulnerabilities/insecure_s3_bucket_access.md)
 

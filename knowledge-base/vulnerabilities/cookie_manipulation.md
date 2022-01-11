@@ -1,7 +1,9 @@
 # Cookie Manipulation
-###### Tags[^1]
+
+[^1]: #cookies #encoding 
+
 [Cookie](../concepts/web_tech/cookies.md) manipulation involves modifying it to cause unintended behavior the web developer did not intend. Cookie manipulation is possible because they are stored locally, giving you complete control. 
-> This does not mean you can simply write "give me admin" in the cookie. You must understand how the web server will interpret the cookie. 
+> This does not mean you can simply write "give me admin" in the cookie. You must understand how the webserver will interpret the cookie. 
 
 ## Method
 Because cookies are encoded, they must be decoded, modified, and re-encoded in the same way to achieve successful manipulation.
@@ -11,7 +13,7 @@ An example decoded cookie:
 {firstName:'n0ware', lastName:"s0mewhere", age:1337, eyecolor:"blue"}
 ```
 
-A brief summary of cookie maniuplation:
+A brief summary of cookie manipulation:
 1. Obtain a cookie value
 2. Decode the cookie value
 3. Identify the object notation/structure
@@ -21,4 +23,3 @@ A brief summary of cookie maniuplation:
 
 > You can also modify cookies in browser requests using tools like [BurpSuite](../../tools_and_tricks/tools/red/BurpSuite.md)
 
-[^1]: #cookies #encoding

@@ -7,7 +7,7 @@ Injection[^1] attacks are #3 on the [*OWASP Top Ten*](https://owasp.org/www-proj
 
 In general, applications become vulnerable to injection when
 - [User-Supplied Input](../concepts/user_supplied_input.md) is trusted without validation, filtering, or sanitizing by the application
-- An interpreter uses dynamic queries directly on non-paramterized cells without any safeguards, such as context-aware escaping
+- An interpreter uses dynamic queries directly on non-parameterized cells without any safeguards, such as context-aware escaping
 - Hostile data is used in object-relational mapping search parameters to extract additional, and often sensitive, records
 - Hostile data is directly used or concatenated, such as when a SQL command contains the structure and malicious data in dynamic [queries](../concepts/queries.md), commands, or stored procedures.
 

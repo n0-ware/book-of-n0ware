@@ -4,28 +4,18 @@
 [^1]: #owasp #xss #injection #webapp 
 
 ## TOC-GH
-- [Document Object Model DOM](#Document-Object-Model-DOM)
-	- [Example DOM XSS](#Example-0DOM-XSS)
+- [Document Object Model DOM](#DOM)
+	- [Example DOM XSS](#Example-DOM)
 - [Reflected](#Reflected)
-	- [Example Reflected XSS](#Example-Reflected-XSS)
+	- [Example Reflected XSS](#Example-Reflected)
 - [Stored](#Stored)
-	- [Example Stored XSS](#Example-Stored-XSS)
+	- [Example Stored XSS](#Example-Stored)
 - [Blind](#Blind)
-	- [Example Blind XSS](#Example-Blind-XSS)
-## TOC-Local
-
-- [Document Object Model DOM](#Document%20Object%20Model%20DOM)
-	- [Example DOM XSS](#Example%20DOM%20XSS)
-- [Reflected](#Reflected)
-	- [Example Reflected XSS](#Example%20Reflected%20XSS)
-- [Stored](#Stored)
-	- [Example Stored XSS](#Example%20Stored%20XSS)
-- [Blind](#Blind)
-	- [Example Blind XSS](#Example%20Blind%20XSS)
+	- [Example Blind XSS](#Example-Blind)
 
 
 ## Description
-[Cross-Site Scripting](cross_site_scripting_xss.md), or *XSS*, is classified as an injection attack according to the [*OWASP Top 10 2021*](https://owasp.org/www-project-top-ten/). XSS involves *injecting* malicious JavaScript into web application with the hope that it is executed by other users. 
+[Cross-Site Scripting](cross_site_scripting_xss.md), or *XSS*, is classified as an injection attack according to the [*OWASP Top 10 2021*](https://owasp.org/www-project-top-ten/). XSS involves *injecting* malicious JavaScript into a web application with the hope that it is executed by other users. 
 
 Achieving XSS on a target can lead to multiple outcomes, including:
 - Stealing cookies for [session hijacking](session_hijacking.md)
@@ -38,10 +28,10 @@ Achieving XSS on a target can lead to multiple outcomes, including:
 ## Types
 There are four different types of XSS
 
-### Document Object Model (DOM)
-DOM is a programming interface for `HTML` and `XML` documents. DOM represents the page in a way that other programs can alter the document structure, style, and content. Since a web page is just a document, it can be rendered in multiple ways, most commonly either in a browser or as the `HTML` source-code. 
+### DOM
+[Document Object Model](../concepts/web_tech/document_objet_model_dom.md), or DOM, is a programming interface for `HTML` and `XML` documents. DOM represents the page in a way that other programs can alter the document structure, style, and content. Since a web page is just a document, it can be rendered in multiple ways, most commonly either in a browser or as the `HTML` source code. 
 
-DOM-based XSS is where malicious JavaScript is executed directly in a users browser without the need for a new page to load or data to be submitted to backend code. This is 100% contained in the browser, and execution occurs when the JavaScript code in the website acts on input or user interaction
+DOM-based XSS is where malicious JavaScript is executed directly in a user's browser without the need for a new page to load or data to be submitted to backend code. This is 100% contained in the browser, and execution occurs when the JavaScript code in the website acts on input or user interaction
 
 [Example DOM XSS](#Example%20DOM%20XSS)
 
@@ -51,22 +41,22 @@ Reflected XSS occurs when some [user supplied input](../concepts/user_supplied_i
 [Example Reflected XSS](#Example%20Reflected%20XSS)
 
 ### Stored
-Also known as *persistent XSS* occurs when an application receives data from an [untrusted](../concepts/trust.md) source and *stores* that data in later [HTTP responses](../concepts/web_tech/http_response.md) in an unsafe manner. The data can be stored in the database that feeds the applicaiton, for example. 
+Also known as *persistent XSS* occurs when an application receives data from an [untrusted](../concepts/trust.md) source and *stores* that data in later [HTTP responses](../concepts/web_tech/http_response.md) in an unsafe manner. The data can be stored in the database that feeds the application, for example. 
 
 This is very common with comment boards, where users are able to submit input and that input is sent via an [HTTP POST request](../concepts/web_tech/POST.md). Any user viewing the comment will execute the malicious JavaScript.
 
 ### Blind
-Similar to stored in that it is stored in the web application, perhaps in a databse, that is viewed later by another user, such as a help desk technician. The difference here between typical stored XSS is that the attacker cannot confirm that the attack was successful because they do not have access to the location the script was stored. 
+Similar to stored in that it is stored in the web application, perhaps in a database, that is viewed later by another user, such as a help desk technician. The difference here between typical stored XSS is that the attacker cannot confirm that the attack was successful because they do not have access to the location the script was stored. 
 
 ## Finding
 
 ## Examples
-### Example DOM XSS
-A websites JavaScript gets contents from the `window.locaiton.hash` and writes that information to the current page. The contents of this hash are not checked for malicious content, enabling the attacker to to inject whatever JavaScript they would like onto the web page. 
+### Example-DOM
+A website's JavaScript gets contents from the `window.location.hash` and writes that information to the current page. The contents of this hash are not checked for malicious content, enabling the attacker to inject whatever JavaScript they would like onto the web page. 
 
 These are often passed in the URL portion of a link to an unsuspecting user. 
 
-### Example Reflected XSS
+### Example-Reflected 
 Suppose a website includes a text input form that is immediately echoed on the page and the search is reflected in the browser. Take this for example
 
 `https://vulnsite.com/search?term=banana`
@@ -83,9 +73,9 @@ The page will then render my script after the `?`
 
 `<p>You searched for <script>/My-Bad-Payload/</script></p>`
 
-If someone were to click this link, the attackers payload would be executed in the victim browser within the context of that session
+If someone were to click this link, the attacker's payload would be executed in the victim browser within the context of that session
 
-### Example Stored XSS
+### Example-Stored
 Imagine a scenario where a blog allows users to submit comments. The [POST](../concepts/web_tech/POST.md) request might look something like this:
 
 ```
@@ -108,5 +98,5 @@ An example of changing user passwords on a comment board could look like this, w
 
 When a user views this comment, their browser will execute the request. If the website happened to be `www.vulnsite.com`, the browser will execute the request `https://vulnsite.com/settings?new_password=gotcha`. At any time, the attacker can brute force potential user names with the password `gotcha` and compromise their account. 
 
-### Example Blind XSS
-An attacker submits a stored XSS payload in a contact request or help desk ticket that is later ran by a user working for the company. In this context, the attacker may be able to acquire privileged credentials only accessible to internal members of the organization managing the application. Consider the attack pattern as similar to an [example Stored XSS](#Example%20Stored%20XSS)
+### Example-Blind
+An attacker submits a stored XSS payload in a contact request or helpdesk ticket that is later ran by a user working for the company. In this context, the attacker may be able to acquire privileged credentials only accessible to internal members of the organization managing the application. Consider the attack pattern as similar to an [example Stored XSS](#Example%20Stored%20XSS)

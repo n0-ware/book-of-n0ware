@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/AoC-2021_Day24.md",
+            "file": "knowledge-base/concepts/web_tech/sessions.md",
             "mode": "source"
           }
         }
@@ -31,7 +31,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tools_and_tricks/tools/red/john.md",
+            "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
             "mode": "source"
           }
         }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lsass",
+                "query": "enumeration",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317
+    "width": 312
   },
   "right": {
     "id": "5336ecc4d88fcfcd",
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day24.md",
+                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/AoC-2021_Day24.md",
+                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "33ebab0f68a1987f",
+  "active": "430e5e38808c64ec",
   "lastOpenFiles": [
-    "TryHackMe/events/AoC-2021/AoC-2021_Day24.md",
-    "tools_and_tricks/tools/red/john.md",
-    "knowledge-base/concepts/hashing.md",
-    "knowledge-base/concepts/authentication.md",
-    "tools_and_tricks/useful_binaries/strings_cli.md",
-    "tools_and_tricks/tools/red/mimikatz.md",
-    "tools_and_tricks/tools/powershell.md",
-    "knowledge-base/vulnerabilities/password_cracking.md",
-    "TryHackMe/events/AoC-2021/AoC-2021_Day23.md",
-    "knowledge-base/methodology/post_exploitation.md"
+    "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+    "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
+    "knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md",
+    "knowledge-base/vulnerabilities/injection.md",
+    "knowledge-base/vulnerabilities/cryptographic_failures.md",
+    "knowledge-base/vulnerabilities/cross_site_scripting_xss.md",
+    "knowledge-base/vulnerabilities/cookie_manipulation.md",
+    "knowledge-base/concepts/01_Concepts-TOC.md",
+    "knowledge-base/concepts/container_images.md",
+    "knowledge-base/concepts/yara_rules.md"
   ]
 }

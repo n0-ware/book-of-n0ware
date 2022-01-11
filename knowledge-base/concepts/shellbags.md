@@ -13,15 +13,15 @@ ShellBags can be explored using a tool by **Eric Zimmerman** available here. [Sh
 ### What are ShellBags?[^2]
 Credit To Shehacks Kenya[^1]
 
-Microsoft Windows registry keeps track of folder settings in order to enhance the user experience using ShellBags. Windows ShellBags primary purpose is to improve user experience and “remember” preferences while browsing folders. Information stored in ShellBags can be critical during forensic investigation.
+Microsoft Windows registry keeps track of folder settings to enhance the user experience using ShellBags. Windows ShellBags primary purpose is to improve user experience and “remember” preferences while browsing folders. Information stored in ShellBags can be critical during a forensic investigation.
 
-Windows ShellBags were introduced into Microsoft’s operating system Windows XP, and are still present on all Windows 10 system releases. When you open, close or change viewing options of any folder on your computer, either from Windows Explorer, or from the Desktop (even by right-clicking or renaming the folder), a ShellBag record is created or updated.
+Windows ShellBags were introduced into Microsoft’s operating system Windows XP, and are still present on all Windows 10 system releases. When you open, close or change viewing options of any folder on your computer, either from Windows Explorer or from the Desktop (even by right-clicking or renaming the folder), a ShellBag record is created or updated.
 
 **Ever noticed when a user in a windows operating system modifies a folder size by e.g., resizing the window itself.** Then going back to that folder at a later date, the customization remains? That is shellbags in action!
 
-There are many sources of digital evidence and they are divided into three major forensic categories of devices where evidence can be found: Internet-based, stand-alone computers/devices and mobile devices. In this article, we will focus on stand-alone computers. **Digital artifacts** in digital **forensics** are pieces of data that can be used as good information when **digital** crimes occur so that they can be used as evidence for re-analysis by **forensic** teams.
+There are many sources of digital evidence and they are divided into three major forensic categories of devices where evidence can be found: Internet-based, stand-alone computers/devices, and mobile devices. In this article, we will focus on stand-alone computers. **Digital artifacts** in digital **forensics** are pieces of data that can be used as good information when **digital** crimes occur so that they can be used as evidence for re-analysis by **forensic** teams.
 
-Windows Shellbags artefact can be used to answer the difficult questions of data enumeration in intrusion cases, identify the contents of long-gone removable devices, and show the contents of previously mounted encrypted volumes.
+Windows Shellbags artifact can be used to answer the difficult questions of data enumeration in intrusion cases, identify the contents of long-gone removable devices, and show the contents of previously mounted encrypted volumes.
 
 ### Why are ShellBags Important in Digital Forensics Investigations?[^2]
 Credit To Shehacks Kenya[^1]
@@ -34,7 +34,7 @@ For any digital forensic investigator, it is crucial to note the following:
 ### Where Do We Get ShellBags From?[^2]
 Credit To Shehacks Kenya[^1]
 
-It is buried deep in the system; it is a user specific file.
+It is buried deep in the system; it is a user-specific file.
 
 Follow the path:
 

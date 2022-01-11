@@ -7,7 +7,7 @@
 - [Structure](#Structure)
 - [Commands](#Commands)
 ## Description
-A RDBMS , such as Microsoft SQL (Structured Query Language) can be visualized as a group of tables that all have relationships. 
+An RDBMS , such as Microsoft SQL (Structured Query Language) can be visualized as a group of tables that all have relationships. 
 
 ## Structure
 Consider an online grocery store database with three tables.
@@ -22,13 +22,13 @@ Consider an online grocery store database with three tables.
 - Price
 - Quantity
 
-*Each **Cutomer** table has the columns*
+*Each **Customer** table has the columns*
 - ID
 - Name
 - Price
 - Quantity
 
-The **Invoices** table shares information from both, referring to a single customer per row with one  or more produce items. This table refers to another table using its ID. In this way, we only need to have the customer details and the invoice written once instead of copying them each to a new invoice.
+The **Invoices** table shares information from both, referring to a single customer per row with one or more produce items. This table refers to another table using its ID. In this way, we only need to have the customer details and the invoice written once instead of copying them each to a new invoice.
 
 ***For example***
 ###### These are two separate tables  

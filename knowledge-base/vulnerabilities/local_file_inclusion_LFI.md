@@ -1,5 +1,5 @@
 # Local File Inclusion
-
+[PHP Filter](#PHP%20Filter)
 ## TOC-Local
 - [Finding and Testing](#Finding%20and%20Testing)
 	- [Entry Point - HTTP Query Parameters](#Entry%20Point%20-%20HTTP%20Query%20Parameters)
@@ -35,7 +35,9 @@ Once discovered, if the file has the right permissions, the attacker can read th
 Further, if we can inject or write to a file on the system, we can use **LFI** to obtain [**remote code execution (RCE)**](remote_code_execution_rce.md).
 ## Finding and Testing
 
-###  Entry Point in HTTP Query Parameters
+###  Entry-Point
+
+### HTTP-Query-Parameters
 An attackers main point of interest is often to see if they can manipulate the parameters of an `HTTP` [query](../concepts/queries.md) to input and inject attack payloads. Studying how the application responds can indicate an *entry point*. 
 
 Often these are `HTTP` [GET](../concepts/web_tech/GET.md) and [POST](../concepts/web_tech/POST.md) parameters that pass arguments and data to a web app to perform a specific operation. 
@@ -84,7 +86,7 @@ There are many entry points, others including &mdash; `User-Agent`, Cookies, ses
 - /proc/cmdline
 
 
-### Testing in HTTP Query Parameters
+### Testing-HTTP-Query-Parameters
 Once the entry point for **LFI** is found, we start looking for files that are nearly *guaranteed* to be on the system, such as OS files. For example, trying to find `/etc/passwd` on Linux systems as it is guaranteed to be readable. Once you find one file, you know you can probably find others.
 
 Most files of interest are unlikely to be located in the same directory as the web page we are on, such as `index.html`. More likely, we have to try some creative relative file references. 
@@ -97,7 +99,7 @@ Your success in exploiting **LFI** fully depends on the type of web application 
 
 ## Examples
 
-### Path Traversal
+### Path-Traversal
 > See the note on [Path Traversal](path_traversal.md)]. 
 Path traversal involves escaping upward or drilling down from the web root to access files we should not be able to. 
 
@@ -110,7 +112,7 @@ https://vulnsite.io/status.php?file=%252e%252e%252fetc%252fpasswd
 ```
 > The last example here is URL double-encoded. Try it in [CyberChef!](https://gchq.github.io/CyberChef/#recipe=URL_Decode()URL_Decode()&input=JTI1MmUlMjUyZSUyNTJmZXRjJTI1MmY)
 
-### Abusing PHP
+### Abusing-PHP
 When dealing with `PHP`, you can use *PHP-supported wrappers* combined with an entry point. `PHP` provides several methods for transmitting data (input/output) that enable `PHP` to read the data. 
 
 #### PHP Filter
@@ -134,10 +136,10 @@ There is even potential to paste **encoded** `PHP` code and use a wrapper to dec
 
 > More wrappers can be found here &mdash; [PHP Documentation - Wrappers](https://www.php.net/manual/en/wrappers.php.php) 
 
-### Remote Code Execution
+### RCE
 **LFI** can be used to generate [remote code execution](remote_code_execution_rce.md) in a variety of ways and to different degrees of severity depending on the type of files we have access to. 
 
-#### Log Poisoning
+#### Log-Poisoning
 In the case of log files, this is called [log poisoning](log_poisoning.md) , a technique used to gain **RCE** on a web server.  
 
 > See the link for log poisoning for more detail. 
