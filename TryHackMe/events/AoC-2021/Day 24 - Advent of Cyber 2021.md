@@ -9,14 +9,9 @@
 -  Flag[^2]
 
 [^1]: #hashing  #cracking #lsass #windows #postexploitation #mimikatz
-[^2]: *Question 1:* ` `  
-					*Question 2:* ` `  
-					*Question 3:* ` `  
-					*Question 4:* ` `  
-					*Question 5:* ` `  
-					*Question 6:* ` `  
-					*Question 7:* ` `  
-					*Question 8:* ` `  
+[^2]: *Question 1:* `emily`  
+					*Question 2:* `8af326aa4850225b75c592d4ce19ccf5`  
+					*Question 3:* `1234567890`  
 
 ## TOC
 - [Questions 1-2](#Questions-1-2)

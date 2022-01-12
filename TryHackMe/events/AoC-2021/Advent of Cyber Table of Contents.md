@@ -99,3 +99,7 @@
 	- [Encoding and Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
 	- [Windows Event Log](../../../knowledge-base/concepts/windows_event_log.md)
 	- Data Exfiltration
+- [Day 24](Day%2024%20-%20Advent%20of%20Cyber%202021.md)
+	- [Hashing](../../../knowledge-base/concepts/hashing.md)
+	- [mimikatz](../../../tools_and_tricks/tools/red/mimikatz.md)
+	- [authentication](../../../knowledge-base/concepts/authentication.md#Windows)
