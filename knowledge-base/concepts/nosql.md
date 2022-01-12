@@ -105,31 +105,31 @@ To start interacting with a local **MongoDB** server, simply type `mongo` or `mo
 - `use test_db;`
 - `db.createCollection("test_users")`
 
-![Creating DB and Collection](concepts_photos/NoSQL-Creating-DB-and-Collection.png)
+![Creating DB and Collection](Photos%20(Concepts)/NoSQL-Creating-DB-and-Collection.png)
 
 *Creating and Finding Documents*
 - `db.test_users.insert({id:"1", username: "admin", email: "n0_ware@hacks.io", password: "badpass123"})`
 - `db.test_users.insert({id:"2", username: "lowpriv", email: "easy@target.io", password: "passpass"})`
 - `db.test_users.find()`
 
-![Creating and Finding Documents](concepts_photos/NoSQL-Creating-and-Finding-Documents.png)
+![Creating and Finding Documents](Photos%20(Concepts)/NoSQL-Creating-and-Finding-Documents.png)
 
 *Updating a Document*
 - `db.test_users.update({id:"2"}, {$set: {username: "harder_target", password: "AmucHb3tt3rp4ssw0rd!##&"}});
 WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })`
 
-![Updating a Document](concepts_photos/NoSQL-Update-a-Document.png)
+![Updating a Document](Photos%20(Concepts)/NoSQL-Update-a-Document.png)
 
 
 *Finding a Specific Document*
 - `db.test_users.find({id:"2"})`
 
-![Finding a Specific Document](concepts_photos/NoSQL-Finding-A-Specific-Document.png)
+![Finding a Specific Document](Photos%20(Concepts)/NoSQL-Finding-A-Specific-Document.png)
 
 *Remove a Document*
 - `db.test_users.remove({id:"2"})`
 
-![Remove a Document](concepts_photos/NoSQL-Remove-a-Document.png)
+![Remove a Document](Photos%20(Concepts)/NoSQL-Remove-a-Document.png)
 
 
 #### Query Structure

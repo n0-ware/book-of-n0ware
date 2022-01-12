@@ -2,7 +2,7 @@
 
 [^1]: #cookies #encoding 
 
-[Cookie](../concepts/web_tech/cookies.md) manipulation involves modifying it to cause unintended behavior the web developer did not intend. Cookie manipulation is possible because they are stored locally, giving you complete control. 
+[Cookie](../concepts/Web%20Technologies/cookies.md) manipulation involves modifying it to cause unintended behavior the web developer did not intend. Cookie manipulation is possible because they are stored locally, giving you complete control. 
 > This does not mean you can simply write "give me admin" in the cookie. You must understand how the webserver will interpret the cookie. 
 
 ## Method

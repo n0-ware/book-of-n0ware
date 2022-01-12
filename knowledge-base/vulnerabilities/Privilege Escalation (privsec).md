@@ -21,7 +21,7 @@ For this reason, all accounts that can be should be low privileged, as there is 
 
 ### Accounts
 The typical accounts/groups on a Windows machine can be summarized as:
-- **Domain/Enterprise Administrator** &mdash; Usually the highest account level found in an enterprise using Active Directory. Usually able to manage all accounts in an organization, control their access levels, and manage the largest amount of resources and assets within the [domain](../concepts/domain_AD.md). The domain refers to the central registry that manages all of the users, computers, and other "objects" in the domain 
+- **Domain/Enterprise Administrator** &mdash; Usually the highest account level found in an enterprise using Active Directory. Usually able to manage all accounts in an organization, control their access levels, and manage the largest amount of resources and assets within the [domain](../concepts/Domain%20(Active%20Directory.md). The domain refers to the central registry that manages all of the users, computers, and other "objects" in the domain 
 - **Services** &mdash; Typically assigned to software so that it may perform the assigned tasks such as backup, antivirus scanning, etc. 
 - **Domain Users**  &mdash; Accounts typically assigned to employees. They should abide by "least privilege," meaning they only have the access required to do their job. 
 - **Local Accounts**  &mdash; Only available on a local system and not considered on the domain. 

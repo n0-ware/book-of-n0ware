@@ -8,7 +8,7 @@ Cookies are found within the *Developer Tools* section of your browser using <kb
 - Chrome: Locate in the `Application` tab. Select `Cookies` from the dropdown menu on the left side.
 
 ## Types
-- session - Identify you and your access level for stateful communication with a webserver. Often called a  ([sessions](sessions.md)) and used for [authentication](../authentication.md)
+- session - Identify you and your access level for stateful communication with a webserver. Often called a  ([sessions](sessions.md)) and used for [Authentication](../Authentication.md)
 - persistent
 - secure
 - HTTP-only
@@ -44,7 +44,7 @@ Attackers are mstly concerned with the `Name` and `Value` of a cookie. The owebs
 
 Attribution: [TryHackMe](https://tryhackme.com)
 
-![Cookies in a Browser](../concepts_photos/Cookie-In-Browser.png)
+![Cookies in a Browser](../Photos%20(Concepts)/Cookie-In-Browser.png)
 
 ## Values
 Cookie values are encoded, not random strings. The values can be decoded into non-arbitrary values such as `JSON` or Javascript objects. 

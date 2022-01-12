@@ -20,8 +20,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/vulnerabilities/Password Cracking.md",
-            "mode": "source"
+            "file": "knowledge-base/concepts/Container Images.md",
+            "mode": "preview"
           }
         }
       }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge-base/vulnerabilities/Password Cracking.md",
+                "file": "knowledge-base/concepts/Container Images.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge-base/vulnerabilities/Password Cracking.md",
+                "file": "knowledge-base/concepts/Container Images.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,15 +111,15 @@
   },
   "active": "9a7194cb3340f02f",
   "lastOpenFiles": [
+    "knowledge-base/concepts/Container Images.md",
+    "knowledge-base/concepts/Continuous Integration Continuous Delivery (CICD).md",
+    "Tools, Binaries, and Programs/CLI Utilities/Scratch.md",
     "knowledge-base/vulnerabilities/Password Cracking.md",
     "knowledge-base/vulnerabilities/Injection.md",
     "knowledge-base/vulnerabilities/Cookie Manipulation.md",
     "Tools, Binaries, and Programs/Information Gathering/Network Reconnaissance/Nmap.md",
-    "Tools, Binaries, and Programs/CLI Utilities/Scratch.md",
     "Tools, Binaries, and Programs/Databases/Microsoft SQL Server (MSSQL).md",
     "Tools and Binaries/Untitled.md",
-    "TryHackMe/events/AoC-2021/Day 24 - Advent of Cyber 2021.md",
-    "Tools and Binaries/tools_photos/Untitled.md",
-    "Tools and Binaries/database/Untitled.md"
+    "TryHackMe/events/AoC-2021/Day 24 - Advent of Cyber 2021.md"
   ]
 }

@@ -29,7 +29,7 @@
 - [Question 8](#Question-8)
 
 ## Walkthrough
-In this box we are tasked with investigated how The Grinch gained access to employee personal information. We know that HR recently made available an HR portal via an [Insecure AWS S3 Bucket](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md) and we suspect that it is the source of the leak the Grinch used for some extreme [content discovery](../../../knowledge-base/concepts/web_tech/content_discovery.md). 
+In this box we are tasked with investigated how The Grinch gained access to employee personal information. We know that HR recently made available an HR portal via an [Insecure AWS S3 Bucket](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md) and we suspect that it is the source of the leak the Grinch used for some extreme [content discovery](../../../knowledge-base/concepts/Web%20Technologies/content_discovery.md). 
 
 ### Question-1
 [Top](#TOC)
@@ -92,7 +92,7 @@ aws s3 cp s3://images.bestfestivalcompany.com/<FILE_TO_DOWNLOAD> . --no-sign-req
 
 > If you are ever on a system without `wget` but with `curl`, you can pipe the output of `curl` into another file using the *redirect* function `>`. e.g., `curl <COMMAND> > somefile.txt`
 
-Inside this file are a huge number of folders and files. We know we are looking for an AWS Access Key. These keys are for both [access_control](../../../knowledge-base/concepts/access_control.md) and [authentication](../../../knowledge-base/concepts/authentication.md) with AWS resources, including S3. 
+Inside this file are a huge number of folders and files. We know we are looking for an AWS Access Key. These keys are for both [Access Control](../../../knowledge-base/concepts/Access%20Control.md) and [Authentication](../../../knowledge-base/concepts/Authentication.md) with AWS resources, including S3. 
 
 Since we don't know off hand what file may contain a string we are looking for, we can start by using `cat` on all of the available files and piping the output into `grep` with the filter `AKIA` to return potential keys. 
 

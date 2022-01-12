@@ -43,7 +43,7 @@ Content-Length: 98
 HTTP(S) is a [stateless](protocol_states.md) protocol. [Cookies](cookies.md) are used to manage states, identify users, and control access. This allows for a stateful connection. 
 
 ###### References:
-[authentication](../authentication.md)
+[Authentication](../Authentication.md)
 
 
 

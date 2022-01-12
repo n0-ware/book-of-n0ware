@@ -8,7 +8,7 @@ A lot can be said about hashing, various algorithms, their strengths, known coll
 ## Example
 As mentioned, any two values, when hashed with the same algorithm, output the same, fixed length. The example below is using `md5sum`, a CLI tool built into most operating systems. 
 
-![Hashing Two Passwords](concepts_photos/HASHING-MD5-Example.png)
+![Hashing Two Passwords](Photos%20(Concepts)/HASHING-MD5-Example.png)
 
 ## Uses
 ### Passwords
@@ -16,7 +16,7 @@ Passwords are typically stored *hashed* on secure, modern systems. This means th
 
 ### Authentication
 #### Windows
-Windows stores various credentials in the [SAM](authentication.md#SAM) databases and uses [LSASS](authentication.md#LSASS) for authentication in a variety of ways.
+Windows stores various credentials in the [SAM](Authentication.md#SAM) databases and uses [LSASS](Authentication.md#LSASS) for authentication in a variety of ways.
 
 ## Abusing
 ### Cracking
@@ -26,4 +26,4 @@ Cracking passwords hashes several things
 - Recovering a cleartext password in a situation where the hash can be matched
 -
 ### Dumping-Hashes
-The concept of "dumping hashes" refers to stealing credentials from memory, usually from a service such as [LSASS](authentication.md#LSASS)
+The concept of "dumping hashes" refers to stealing credentials from memory, usually from a service such as [LSASS](Authentication.md#LSASS)

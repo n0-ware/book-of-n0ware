@@ -21,7 +21,7 @@
 - [Question 4](#Question-4)
 
 ## Walkthrough
-In this box we are learning about [CI/CD (Continuous Integration/Continuous Delivery)](../../../knowledge-base/concepts/cicd.md) and the potential risks involved. The Grinch has installed his own *CI/CD* pipeline and we need to investigate what is happening. He has used a variety of `BASH` scripts to facilitate his pipeline. 
+In this box we are learning about [CI/CD (Continuous Integration/Continuous Delivery)](../../../knowledge-base/concepts/Continuous%20Integration%20Continuous%20Delivery%20(CICD).md) and the potential risks involved. The Grinch has installed his own *CI/CD* pipeline and we need to investigate what is happening. He has used a variety of `BASH` scripts to facilitate his pipeline. 
 
 ### Question-1
 [Top](#TOC)

@@ -53,4 +53,4 @@ The problem with Docker containers is that artifacts can be left behind that wer
 Various layers in the Dockerfile can have vulnerabilities inside them as well depending on the type of information contained in the image or inside the layers. 
 
 ### Container Images
-See [container images](container_images.md)
+See [container images](Container%20Images.md)

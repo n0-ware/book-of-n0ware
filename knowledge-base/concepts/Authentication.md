@@ -14,13 +14,13 @@ Often conflated with authorization, but it is very different. Being *authorized*
 ### Cookies
 *<u>Cookie used for authentication</u>*
 
-![](concepts_photos/Cookie-In-HTTP-Request--THM.png)
+![](Photos%20(Concepts)/Cookie-In-HTTP-Request--THM.png)
 
 The authentication processes can be as follows:
-1. A request such as a login is usually made as a [POST](web_tech/POST.md)
+1. A request such as a login is usually made as a [POST](Web%20Technologies/POST.md)
 2. Server verifies it received data and sets a unique cookie
 	- Type of value determined by either best-practices or the web developer.
-3. Once assigned, as long as it lives in your browser, all future [GET](web_tech/GET.md) requests will use that cookie to identify you and your access using [deserialization](web_tech/deserialization.md).
+3. Once assigned, as long as it lives in your browser, all future [GET](Web%20Technologies/GET.md) requests will use that cookie to identify you and your access using [deserialization](Web%20Technologies/deserialization.md).
 
 #authentication #authorization #webapp #tokens #cookies 
 

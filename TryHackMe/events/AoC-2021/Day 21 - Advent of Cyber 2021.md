@@ -21,11 +21,11 @@
 - [Question 4](#Question-4)
 
 ## Walkthrough
-In this scenario, we are tasked with using [YARA rules](../../../knowledge-base/concepts/yara_rules.md) to automate some detection tools against ongoing attacks against. We are provided some sample files and instruction on how to create YARA rules.
+In this scenario, we are tasked with using [YARA rules](../../../knowledge-base/concepts/YARA%20Rules.md) to automate some detection tools against ongoing attacks against. We are provided some sample files and instruction on how to create YARA rules.
 
 > This lab takes place on the attack box, but the `YARA` command is easily installed with `sudo apt install yara` and you may copy the contents of the `testfile.txt` onto your system if you choose to do so. 
 
-This box is more of "how to use YARA" than anything and has rather simple tasks. Considering writing some rules yourself against test files like I have done in my description of [YARA rules](../../../knowledge-base/concepts/yara_rules.md) and you will learn a lot more!
+This box is more of "how to use YARA" than anything and has rather simple tasks. Considering writing some rules yourself against test files like I have done in my description of [YARA rules](../../../knowledge-base/concepts/YARA%20Rules.md) and you will learn a lot more!
 
 My simple test rule is:
 ```
@@ -48,13 +48,13 @@ Hello world
 ```
 
 **Basic**
-![Test File Hit](concepts_photos/YARA-Rules-Testing.png)
+![Test File Hit](../../../knowledge-base/concepts/Photos%20(Concepts)/YARA-Rules-Testing.png)
 
 **Metadata Returned**
-![Metadata Returned](concepts_photos/YARA-Rules-Testing-Meatdata.png)
+![Metadata Returned](../../../knowledge-base/concepts/Photos%20(Concepts)/YARA-Rules-Testing-Meatdata.png)
 
 **Strings Matched**
-![Matched Strings](concepts_photos/YARA-Rules-Testing-Matched-Strings.png)
+![Matched Strings](../../../knowledge-base/concepts/Photos%20(Concepts)/YARA-Rules-Testing-Matched-Strings.png)
 
 ### Question-1
 [Top](#TOC)
@@ -64,7 +64,7 @@ Read  the guide provided to your, mine or THMs, and consider the correct boolean
 ### Question-2
 [Top](#TOC)
 
-The meatadata is a valuable portion of the YARA rule. Read the guide, and find out which [YARA flag](../../../knowledge-base/concepts/yara_rules.md#Arguments) you need for this 
+The meatadata is a valuable portion of the YARA rule. Read the guide, and find out which [YARA flag](../../../knowledge-base/concepts/YARA%20Rules.md#Arguments) you need for this 
 
 ### Question-3
 [Top](#TOC)

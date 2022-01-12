@@ -12,6 +12,6 @@ Often, *sessions* are maintained via [cookies](cookies.md) to preserve sessions 
 
 Less experienced developers may store user information in the cookie its self, such as the user's ID. Changing the value of this cookie could result in displaying another user's information. See below for an example of how this might look.
 
-![Hard Coded User ID in Cookie](../concepts_photos/Session-ID-UID_Hard_Coded--THM.png)
+![Hard Coded User ID in Cookie](../Photos%20(Concepts)/Session-ID-UID_Hard_Coded--THM.png)
 
 #cookies #session #state

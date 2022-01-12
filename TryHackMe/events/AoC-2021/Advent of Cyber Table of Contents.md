@@ -11,7 +11,7 @@
 	- [Cookie Manipulation](../../../knowledge-base/vulnerabilities/Cookie%20Manipulation.md)
 	- Fooling server into allowing admin login
 - [Day 3](Day%2003%20%20-%20Advent%20of%20Cyber%202021.md)
-	- [Content Discovery](../../../knowledge-base/concepts/web_tech/content_discovery.md)
+	- [Content Discovery](../../../knowledge-base/concepts/Web%20Technologies/content_discovery.md)
 	- Default usernames and passwords
 	- Insecure calling of `javascript` divulged login information
 - [Day 4](Day%2004%20%20-%20Advent%20of%20Cyber%202021.md)
@@ -38,7 +38,7 @@
 - [Day 8](Day%2008%20-%20Advent%20of%20Cyber%202021.md)
 	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md)
 	- [ShellBags](../../../knowledge-base/concepts/shellbags.md)
-	- [Windows Registry](../../../knowledge-base/concepts/windows_registry.md)
+	- [Windows Registry](../../../knowledge-base/concepts/Windows/Windows%20Registry.md)
 	- Logs
 	- Incident Response
 - [Day 9](Day%2009%20-%20Advent%20of%20Cyber%202021.md)
@@ -61,7 +61,7 @@
 	- [Windows Privesc](../../../knowledge-base/vulnerabilities/Privilege%20Escalation%20(privsec).md#Windows)
 	- Abusing service misconfigurations
 - [Day 14](Day%2014%20-%20Advent%20of%20Cyber%202021.md)
-	- [CI/CD](../../../knowledge-base/concepts/cicd.md)
+	- [CI/CD](../../../knowledge-base/concepts/Continuous%20Integration%20Continuous%20Delivery%20(CICD).md)
 	- Vulnerable web app
 	- Bad permissions
 	- Script abuse
@@ -71,13 +71,13 @@
 - [Day 17](Day%2017%20-%20Advent%20of%20Cyber%202021.md)
 	- [Insecure S3 Buckts](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md)
 		- [AWS Reconnaissance](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance)
-	- [Authentication](../../../knowledge-base/concepts/authentication.md)
-	- [Content discovery](../../../knowledge-base/concepts/web_tech/content_discovery.md)
-	- Poor [access control](../../../knowledge-base/concepts/access_control.md)
+	- [Authentication](../../../knowledge-base/concepts/Authentication.md)
+	- [Content discovery](../../../knowledge-base/concepts/Web%20Technologies/content_discovery.md)
+	- Poor [access control](../../../knowledge-base/concepts/Access%20Control.md)
 - [Day 18](Day%2018%20-%20Advent%20of%20Cyber%202021.md)
-	- [Container images](../../../knowledge-base/concepts/container_images.md)
-	- [Docker](../../../knowledge-base/concepts/docker.md)
-	- [Content discovery](../../../knowledge-base/concepts/web_tech/content_discovery.md)
+	- [Container images](../../../knowledge-base/concepts/Container%20Images.md)
+	- [Docker](../../../knowledge-base/concepts/Docker.md)
+	- [Content discovery](../../../knowledge-base/concepts/Web%20Technologies/content_discovery.md)
 	- Discovering hidden data inside a docker image
 - [Day 19](Day%2019%20-%20Advent%20of%20Cyber%202021.md)
 	- [phishing](../../../knowledge-base/concepts/phishing.md)
@@ -87,7 +87,7 @@
 	- [Strings CLI](../../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/strings.md) tool
 	- Virus Total
 - [Day 21](Day%2021%20-%20Advent%20of%20Cyber%202021.md)
-	- [YARA Rules](../../../knowledge-base/concepts/yara_rules.md)
+	- [YARA Rules](../../../knowledge-base/concepts/YARA%20Rules.md)
 	- Detection
 - [Day 22](Day%2022%20-%20Advent%20of%20Cyber%202021.md)
 	- [Encoding/Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
@@ -97,9 +97,9 @@
 	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md)
 		- [cmdlets](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md#command-lets)
 	- [Encoding and Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
-	- [Windows Event Log](../../../knowledge-base/concepts/windows_event_log.md)
+	- [Windows Event Log](../../../knowledge-base/concepts/Windows/Windows%20Event%20Log.md)
 	- Data Exfiltration
 - [Day 24](Day%2024%20-%20Advent%20of%20Cyber%202021.md)
 	- [Hashing](../../../knowledge-base/concepts/hashing.md)
 	- [mimikatz](../../../Tools,%20Binaries,%20and%20Programs/Post-Exploitation/Password%20Harvetsing%20and%20Cracking/mimikatz.md)
-	- [authentication](../../../knowledge-base/concepts/authentication.md#Windows)
+	- [Authentication](../../../knowledge-base/concepts/Authentication.md#Windows)

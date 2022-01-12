@@ -30,9 +30,9 @@ Further, if we can inject or write to a file on the system, we can use **LFI** t
 #### HTTP-Query-Parameters
 An attackers main point of interest is often to see if they can manipulate the parameters of an `HTTP` [query](../concepts/queries.md) to input and inject attack payloads. Studying how the application responds can indicate an *entry point*. 
 
-Often these are `HTTP` [GET](../concepts/web_tech/GET.md) and [POST](../concepts/web_tech/POST.md) parameters that pass arguments and data to a web app to perform a specific operation. 
+Often these are `HTTP` [GET](../concepts/Web%20Technologies/GET.md) and [POST](../concepts/Web%20Technologies/POST.md) parameters that pass arguments and data to a web app to perform a specific operation. 
 
-![HTTP Query Parameters](../concepts/concepts_photos/HTTP_Query_Parameters.png)
+![HTTP Query Parameters](../concepts/Photos%20(Concepts)/HTTP_Query_Parameters.png)
 
 Once an entry point **LFI** is identified, you need to understand how the data could be processed inside the application. Enter specific testing for vulnerability types, manually or with automation. 
 

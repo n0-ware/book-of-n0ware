@@ -16,7 +16,7 @@ We are given a website and told it is vulnerable to [cookie manipulation](../../
 
 ![Vulnerable Landing Page](AoC-2021_Photos/Day_02/1.0_AoC-Day-2_12-19-21-Lading-Page.png)
 
-With no initial access to the website, we are going to create an account. Before we do this, will inspect the [cookies](../../../knowledge-base/concepts/web_tech/cookies.md) to see what changes when we do. No cookies are present before creating an account or logging in. 
+With no initial access to the website, we are going to create an account. Before we do this, will inspect the [cookies](../../../knowledge-base/concepts/Web%20Technologies/cookies.md) to see what changes when we do. No cookies are present before creating an account or logging in. 
 
 ![No Cookies](AoC-2021_Photos/Day_02/2.0_AoC-Day-2_12-20-21-No-Cookies.png)
 

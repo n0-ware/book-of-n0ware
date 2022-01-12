@@ -60,15 +60,15 @@ yara [options] rule_file [target]
 
 When a rule is a hit, it will return with the name of the rule. Consider this example below of a test rule looking for `Hello world` in a file
 
-![Test File Hit](concepts_photos/YARA-Rules-Testing.png)
+![Test File Hit](Photos%20(Concepts)/YARA-Rules-Testing.png)
 
 Adding `-m` returns the Metadata, which is why this is important.
 
-![Metadata Returned](concepts_photos/YARA-Rules-Testing-Meatdata.png)
+![Metadata Returned](Photos%20(Concepts)/YARA-Rules-Testing-Meatdata.png)
 
 Adding `-s` returns the matched strings
 
-![Matched Strings](concepts_photos/YARA-Rules-Testing-Matched-Strings.png)
+![Matched Strings](Photos%20(Concepts)/YARA-Rules-Testing-Matched-Strings.png)
 
 Adding `-n` returns rules that did not match. Good for testing
 ### Arguments

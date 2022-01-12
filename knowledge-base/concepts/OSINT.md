@@ -20,13 +20,13 @@ The [OSINT Framework](https://osintframework.com/)
 ###### Credit to [Arno Reuser](https://www.linkedin.com/in/reuser/?originalSubdomain=nl)
 The RIS OSINT Data-information model" follows this approach to information gathering
 
-![RIS OSINT Flow](concepts_photos/RIS_OSINT_FLOW.png)
+![RIS OSINT Flow](Photos%20(Concepts)/RIS_OSINT_FLOW.png)
 
 Essentially, **Intelligence** is obtained from **Information** that is obtained from **Data**. Intelligence will inevitably lead to a **Decision** that requires you to determine what to do next and **Change** accordingly. 
 
 The RIS OSINT Roller coaster details what a potential flow may look like when acting on an objective. 
 
-![RIS OSINT Roller Coaster](concepts_photos/RIS_OSINT_ROLLERCOASTER.png)
+![RIS OSINT Roller Coaster](Photos%20(Concepts)/RIS_OSINT_ROLLERCOASTER.png)
 
 
 ### Sources
