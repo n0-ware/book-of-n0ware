@@ -14,8 +14,8 @@ In general, applications become vulnerable to injection when
 ## Finding
 
 ## Examples
-- [Cross-Site Scripting (XSS)](cross_site_scripting_xss.md)
-- [NoSQL Injection](nosql_injection.md)
+- [Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md)
+- [NoSQL Injection](NoSQL%20Injection.md)
 
 
 ## Prevention

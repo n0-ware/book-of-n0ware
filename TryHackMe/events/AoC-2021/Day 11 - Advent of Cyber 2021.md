@@ -26,14 +26,14 @@
 - [Question 6](#Question-6)
 
 ## Walkthrough
-In this box, we are told that we have lost access to Santa's Reindeer Schedule stored in a [Relational Database Management System (RDBMS)](../../../knowledge-base/concepts/sql_rdbms.md) and need to not only regain access, but first find it on the system using [Nmap](../../../tools_and_tricks/tools/Nmap.md).
+In this box, we are told that we have lost access to Santa's Reindeer Schedule stored in a [Relational Database Management System (RDBMS)](../../../knowledge-base/concepts/sql_rdbms.md) and need to not only regain access, but first find it on the system using [Nmap](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md).
 
 > **Note:** If you are familiar with `MySQL` commands, those will not apply here. You are using `MS SQL` over `sqsh`.
 
 ### Question-1
 [Top](#TOC)
 
-Firstly, we need to find the server. Since we don't know what port the service is running on, we'll need to version scan. Also, because we know it is a Windows system that won't respond to `ping`, we need a "*pingless*" [Nmap](../../../tools_and_tricks/tools/Nmap.md) on the top 1000 ports (default Nmap setting). Run the command `nmap -Pn -sV -v <TARGET_IP>`
+Firstly, we need to find the server. Since we don't know what port the service is running on, we'll need to version scan. Also, because we know it is a Windows system that won't respond to `ping`, we need a "*pingless*" [Nmap](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md) on the top 1000 ports (default Nmap setting). Run the command `nmap -Pn -sV -v <TARGET_IP>`
 
 ![Locating the Service](AoC-2021_Photos/Day_11/01_AoC-Day-11_12-28-21-Finding-the-Service-Port.png)
 
@@ -49,7 +49,7 @@ With the service located, we need to login. Using an interactive database shell 
 ### Question-3
 [Top](#TOC)
 
-Now that we have access and confirmed it is a [Microsoft SQL Server (MS SQL)l](../../../tools_and_tricks/tools/database/microsoft_sql_server_mssql.md) server, let's get some information. Note that after each query we type, you must follow it with `go` and that each query itself ends with a `;`. Otherwise, it will continue expecting more on the same query. 
+Now that we have access and confirmed it is a [Microsoft SQL Server (MS SQL)l](../../../Tools,%20Binaries,%20and%20Programs/Databases/Microsoft%20SQL%20Server%20(MSSQL).md) server, let's get some information. Note that after each query we type, you must follow it with `go` and that each query itself ends with a `;`. Otherwise, it will continue expecting more on the same query. 
 
 First, the DB Admin told us the `reindeer` database contains three tables &mdash; 
 - `mames`

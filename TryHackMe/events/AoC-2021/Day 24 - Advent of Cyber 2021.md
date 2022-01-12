@@ -19,7 +19,7 @@
 - [Question 3](#Question-3)
 
 ## Walkthrough
-In this final box, we are exploring [post exploitation](../../../knowledge-base/methodology/post_exploitation.md) techniques using [mimikatz](../../../tools_and_tricks/tools/red/mimikatz.md) to pull credentials from the memory of [LSASS](../../../knowledge-base/concepts/authentication.md#LSASS). 
+In this final box, we are exploring [post exploitation](../../../knowledge-base/methodology/Post%20Exploitation.md) techniques using [mimikatz](../../../Tools,%20Binaries,%20and%20Programs/Post-Exploitation/Password%20Harvetsing%20and%20Cracking/mimikatz.md) to pull credentials from the memory of [LSASS](../../../knowledge-base/concepts/authentication.md#LSASS). 
 
 ### Questions-1-2
 [Top](#TOC)
@@ -41,7 +41,7 @@ Once you find her, answer the first two questions.
 ### Question-3
 [Top](#TOC)
 
-Now that you've located her `NTML` hash, we need to find the password this hash represents. For this, we need a password cracking tool such as [john](../../../tools_and_tricks/tools/red/john.md) the ripper. Using either your local virtual machine or the attack box, we are going to attempt to crack this password. 
+Now that you've located her `NTML` hash, we need to find the password this hash represents. For this, we need a password cracking tool such as [John the Ripper](../../../Tools,%20Binaries,%20and%20Programs/Post-Exploitation/Password%20Harvetsing%20and%20Cracking/John%20the%20Ripper.md) the ripper. Using either your local virtual machine or the attack box, we are going to attempt to crack this password. 
 
 Copy the `NTLM` hash and paste it to a text file with the command:
 

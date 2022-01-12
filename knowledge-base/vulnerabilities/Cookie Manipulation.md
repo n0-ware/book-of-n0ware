@@ -21,5 +21,5 @@ A brief summary of cookie manipulation:
 5. Re-encode the cookie and insert it into the `value` space
 6. Cause an action on the cookie, such as by refreshing the page or logging in. 
 
-> You can also modify cookies in browser requests using tools like [BurpSuite](../../tools_and_tricks/tools/red/BurpSuite.md)
+> You can also modify cookies in browser requests using tools like [BurpSuite](../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md)
 

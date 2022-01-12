@@ -12,7 +12,7 @@
 [^2]: THM{AOC_IDOR_2B34BHI3}
 
 ## Walkthrough
-We are given an [IDOR](../../../knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md) vulnerable website. Navigating to the *Your Activity* page shows a vulnerable URL. 
+We are given an [IDOR](../../../knowledge-base/vulnerabilities/Insecure%20Direct%20Object%20Reference%20(IDOR).md) vulnerable website. Navigating to the *Your Activity* page shows a vulnerable URL. 
 
 ![IDOR Vuln Spotted](AoC-2021_Photos/Day_01/1.0_AoC-Day-1_12-19-21-IDOR_Vuln.png)
 

@@ -2,7 +2,7 @@
 ## Description
 "*Windows PowerShell is an interactive object-oriented command environment with scripting language features that utilizes small programs called "cmdlets" to simplify configuration, administration, and management of heterogeneous environments in both standalone and networked typologies by utilizing standards-based remoting protocols.*" - **Ed Wilson**
 
-PowerShell comes baked into the Windows OS and is a very useful tool for Windows System Administrators to automate may of the day-to-day tasks they must accomplish, including manage Active Directory. PowerShell is also a favorite tool that allows adversaries to perform nerarious activities, a concept related to [living off the land](living_off_the_land_binaries_lolbas.md).
+PowerShell comes baked into the Windows OS and is a very useful tool for Windows System Administrators to automate may of the day-to-day tasks they must accomplish, including manage Active Directory. PowerShell is also a favorite tool that allows adversaries to perform nerarious activities, a concept related to [living off the land](../Post-Exploitation/Living%20off%20the%20Land%20(LOLBAS).md).
 
 The website definition of PowerShell is &mdash; *"PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. PowerShell runs on Windows, Linux, and macOS."*
 

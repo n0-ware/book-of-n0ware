@@ -26,7 +26,7 @@ The authentication processes can be as follows:
 
 ### AWS-CLI
 AWS uses an *Access Key* and a *Secret Access Key* to authenticate users over the command line. 
-For vulnerable S3, see [Insecure S3 Bucket Access](../vulnerabilities/insecure_s3_bucket_access.md)
+For vulnerable S3, see [Insecure S3 Bucket Access](../vulnerabilities/Insecure%20S3%20Buckets.md)
 
 ## Windows Authentication Methods
 <a id="windows-authentication" description="Explanation of Windows authentication methods">

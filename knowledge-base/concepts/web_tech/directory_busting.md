@@ -6,5 +6,5 @@ A common term for using automated tools to seek our directories on a web page th
 ## Tools
 There are many tools available for directory busting, but common ones are
 
-- [dirbuster](../../../tools_and_tricks/tools/red/dirbuster.md)
+- [dirbuster](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/dirbuster.md)
 - [[gobuster]] **Empty**

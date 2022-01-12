@@ -9,18 +9,18 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/concepts/authentication.md",
+            "file": "Tools, Binaries, and Programs/CLI Utilities/Scratch.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "c0f04e1ff3367a26",
+        "id": "9a7194cb3340f02f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/Day 24 - Advent of Cyber 2021.md",
+            "file": "knowledge-base/vulnerabilities/Password Cracking.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge-base/concepts/authentication.md",
+                "file": "knowledge-base/vulnerabilities/Password Cracking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge-base/concepts/authentication.md",
+                "file": "knowledge-base/vulnerabilities/Password Cracking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,13 +109,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "73d9c74afef44838",
+  "active": "9a7194cb3340f02f",
   "lastOpenFiles": [
-    "knowledge-base/concepts/authentication.md",
-    "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
+    "knowledge-base/vulnerabilities/Password Cracking.md",
+    "knowledge-base/vulnerabilities/Injection.md",
+    "knowledge-base/vulnerabilities/Cookie Manipulation.md",
+    "Tools, Binaries, and Programs/Information Gathering/Network Reconnaissance/Nmap.md",
+    "Tools, Binaries, and Programs/CLI Utilities/Scratch.md",
+    "Tools, Binaries, and Programs/Databases/Microsoft SQL Server (MSSQL).md",
+    "Tools and Binaries/Untitled.md",
     "TryHackMe/events/AoC-2021/Day 24 - Advent of Cyber 2021.md",
-    "TryHackMe/events/AoC-2021/Day 01 - Advent of Cyber 2021.md",
-    "TryHackMe/TryHackMe - Glossary.md",
-    "TryHackMe/events/AoC-2021/Day 02  - Advent of Cyber 2021.md"
+    "Tools and Binaries/tools_photos/Untitled.md",
+    "Tools and Binaries/database/Untitled.md"
   ]
 }

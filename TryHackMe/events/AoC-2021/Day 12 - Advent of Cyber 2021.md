@@ -29,7 +29,7 @@ In this box, we are instructed that there is a need to analyze some unusual netw
 ### Questions-1-2
 [Top](#TOC)
 
-Our first task  is identifying the services on our target IP with [Nmap](../../../tools_and_tricks/tools/Nmap.md). It is a windows host, so it will block scans with a ping. Run the following `Nmap`
+Our first task  is identifying the services on our target IP with [Nmap](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md). It is a windows host, so it will block scans with a ping. Run the following `Nmap`
 
 ```
 nmap -Pn -sV 10.10.113.135

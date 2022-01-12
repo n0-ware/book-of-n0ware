@@ -26,7 +26,7 @@
 - [Question 7](#Question-7)
 ## Walkthrough
 
-In this task, we are asked to analyze a `pcap` file using [Wireshark](../../../tools_and_tricks/tools/wireshark.md). The file is available for download at the start of the lab if you want to work on this locally, or you may use the Attack Box from TryHackMe. 
+In this task, we are asked to analyze a `pcap` file using [Wireshark](../../../Tools,%20Binaries,%20and%20Programs/Traffic%20Analysis/Wireshark.md). The file is available for download at the start of the lab if you want to work on this locally, or you may use the Attack Box from TryHackMe. 
 
 I will be using it locally. To start Wireshark, either find it in the *Kali* menu bar or type `sudo wireshark &` into the command line. 
 
@@ -90,7 +90,7 @@ Here we see the packets collected into a "stream" of data for us to review. Righ
 
 ![Flag in TCP Stream](AoC-2021_Photos/Day_09/6.0_AoC-Day-9_12-28-21-Flag-1.png)
 
-> Given the `session_id` [cookie](../../../knowledge-base/concepts/web_tech/cookies.md) of *McSkidy*, we could potentially perform some [session hijacking](../../../knowledge-base/vulnerabilities/session_hijacking.md). 
+> Given the `session_id` [cookie](../../../knowledge-base/concepts/web_tech/cookies.md) of *McSkidy*, we could potentially perform some [session hijacking](../../../knowledge-base/vulnerabilities/Session%20Hijacking.md). 
 
 Copy this flag and enter it for question 3
 

@@ -1,16 +1,16 @@
 # Log Poisoning
 
 <u>***Refs***</u>
-[Local File Inclusion](local_file_inclusion_LFI.md)
+[Local File Inclusion](Local%20File%20Inclusion%20(LFI).md)
 
 ## Description
 
-**Log Poisoning** refers to an attack where an application's log files are manipulated to produce a negative result. Typically, the log is injected with malicious code that can do anything from divulging information to producing  [remote code execution](remote_code_execution_rce.md) depending on the type of [user supplied input](../concepts/user_supplied_input.md) we can inject into the log. 
+**Log Poisoning** refers to an attack where an application's log files are manipulated to produce a negative result. Typically, the log is injected with malicious code that can do anything from divulging information to producing  [remote code execution](Remote%20Code%20Execution.md) depending on the type of [user supplied input](../concepts/user_supplied_input.md) we can inject into the log. 
 
 ***This attack has two prerequisites to be effective::**
 
 1. We can inject a malicious payload into a service's log files, such as *Apache*  or *SSH*. 
-2. We have access to the log file, either directly or via some other vulnerability such as [local file inclusion (LFI)](local_file_inclusion_LFI.md), so we can view the executed code and/or add to the corrupted log file with more code.  
+2. We have access to the log file, either directly or via some other vulnerability such as [local file inclusion (LFI)](Local%20File%20Inclusion%20(LFI).md), so we can view the executed code and/or add to the corrupted log file with more code.  
 
 The prerequisites mean we need good enumeration and proof of concept skills beforehand to identify the vulnerability. It also requires some knowledge of how web applications work, such as when code is executed on the server-side and how that affects what we see on the client-side.
 
@@ -19,7 +19,7 @@ The prerequisites mean we need good enumeration and proof of concept skills befo
 Once you have determined you can view an application's log files, testing what you can control in the log file is the first step. If the malicious log is captured, we simply need to be able to access the log file to run the script. How you access the log and run the code varies from method to method
 
 ### With Curl
-For example, a log that captures the `User-Agent` field may be vulnerable to [injection](injection.md) through a modified `User-Agent` field. Attackers can modify a `curl` command to submit a custom `User-Agent` field with the `-A` flag.  This custom field can contain a payload, sent via `HTTP` request with `curl`. An *Apache* server will then attempt to read the log file, potentially executing any code you submitted. 
+For example, a log that captures the `User-Agent` field may be vulnerable to [Injection](Injection.md) through a modified `User-Agent` field. Attackers can modify a `curl` command to submit a custom `User-Agent` field with the `-A` flag.  This custom field can contain a payload, sent via `HTTP` request with `curl`. An *Apache* server will then attempt to read the log file, potentially executing any code you submitted. 
 
 `curl -A "Testing for RCE" https://vulnsite.io/index.html`
 
@@ -45,9 +45,9 @@ Next, we send a "proof of concept" request injected with `PHP` code to see how t
  
  `curl -A "<?php phpinfo()?>" https://www.vulnsite.io/index.php`
  
- Accessing the corrupted file will likely take some of [local file inclusion vulnerability](local_file_inclusion_LFI.md). Depending on how you access the log file, you will either see no `User-Agent` or the code will render the information on the screen. You may have to attempt to access the file in several ways to render the code where on the client-side. 
+ Accessing the corrupted file will likely take some of [local file inclusion vulnerability](Local%20File%20Inclusion%20(LFI).md). Depending on how you access the log file, you will either see no `User-Agent` or the code will render the information on the screen. You may have to attempt to access the file in several ways to render the code where on the client-side. 
  
- Regardless, if you don't see your code rendered but also don't see the code itself, this is proof of [RCE](remote_code_execution_rce.md) and you may continue to exploit the service.
+ Regardless, if you don't see your code rendered but also don't see the code itself, this is proof of [RCE](Remote%20Code%20Execution.md) and you may continue to exploit the service.
  
  > Not seeing the code you type in is a good sign because that means the code ran on the server. You may not be able to disclose information without a visual representation of the code on your screen, but you can still run code on the server, possibly writing files to an accessible location or simple generating a backdoor for you to access and gain a foothold on the server. 
 
@@ -65,4 +65,4 @@ Consider a login screen where the username is stored. An attacker can submit a u
 
 ![PHPSESSID](vulnerabilities_photos/LFI-PHPSESSIONID.png)
 
-Proceed to poison the session with malicious code, then access that file on the server through a browser to verify you have successful execution. Accessing the file will likely require some kind of [local file inclusion vulnerability](local_file_inclusion_LFI.md)
+Proceed to poison the session with malicious code, then access that file on the server through a browser to verify you have successful execution. Accessing the file will likely require some kind of [local file inclusion vulnerability](Local%20File%20Inclusion%20(LFI).md)

@@ -43,7 +43,7 @@ file testfile
 
 Some Google searching tells us this is a legitimate filetype, developed to test the responsiveness of antivirus systems without actually containing real malware. Read more [here](https://en.wikipedia.org/wiki/EICAR_test_file)
 
-But, this could be incorrect. Let's see if we can find some identifieable data contained in the file with the [strings](../../../tools_and_tricks/useful_binaries/strings_cli.md) command. Run this on the file now. 
+But, this could be incorrect. Let's see if we can find some identifieable data contained in the file with the [strings](../../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/strings.md) command. Run this on the file now. 
 
 ```
 strings testfile

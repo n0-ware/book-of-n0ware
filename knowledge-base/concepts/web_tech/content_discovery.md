@@ -14,10 +14,10 @@
 
 Searching for content via [directory_busting](directory_busting.md) manual [enumeration](../enumeration.md)works well for both files and folders, and searching for specific file extensions and speed of and prioritize your discovery. Common file and folder names such as `admin`, `config.txt`, `assets`, `passwords.txt`, and others are great places to start. Many of these names are available in custom wordlists. 
 
-Beyond discovering content available outside of protections, default passwords are potentially available if the developer did not disable them. Wordlists such as [Seclists](../../../tools_and_tricks/wordlists/seclists.md) are great for identifying these potential gaps in security. 
+Beyond discovering content available outside of protections, default passwords are potentially available if the developer did not disable them. Wordlists such as [Seclists](../../../Tools,%20Binaries,%20and%20Programs/Wordlists/Seclists.md) are great for identifying these potential gaps in security. 
 
 ## Example
 1. You run a blog and want to host reviews on recipes. However, you want to hide unfinished recipes not up for review yet. You hide the *admin panel* so that you are the only one that can access the core configurations of your web server, but the pages are still accessible via [enumeration](../enumeration.md) and [directory_busting](directory_busting.md).
 2. A page designed to be secure calls insecure `javascript` functions that divulge information, and this function is visible by inspecting [GET](GET.md) and [POST](POST.md) requests. 
-3. Discovering an [Insecure AWS S3 Bucket](../../vulnerabilities/insecure_s3_bucket_access.md)
+3. Discovering an [Insecure AWS S3 Bucket](../../vulnerabilities/Insecure%20S3%20Buckets.md)
 

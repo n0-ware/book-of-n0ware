@@ -20,7 +20,7 @@ Windows stores various credentials in the [SAM](authentication.md#SAM) databases
 
 ## Abusing
 ### Cracking
-###### See the note on [password cracking](../vulnerabilities/password_cracking.md) for detailed information
+###### See the note on [password cracking](../vulnerabilities/Password%20Cracking.md) for detailed information
 Cracking passwords hashes several things
 - Brute forcing a list of known password hashes against a compromised hash to find a match
 - Recovering a cleartext password in a situation where the hash can be matched

@@ -27,7 +27,7 @@ Forms that [POST](../concepts/web_tech/POST.md) on a website can reveal vulnerab
 
 ![IDOR in a hidden field on a POST form](vulnerabilities_photos/IDOR-Post_Form--THM.png)
 
-Use a `POST` editor such as [BurpSuite](../../tools_and_tricks/tools/red/BurpSuite.md) to modify the request as you send it
+Use a `POST` editor such as [BurpSuite](../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md) to modify the request as you send it
 
 ##### Cookies
 [Cookies](../concepts/web_tech/cookies.md) are often used to save sessions/logins. Usually, it involves a [sessions](../concepts/web_tech/sessions.md). Sometimes, these session id's can be hard coded using the *User ID* and offer an exploit path. 

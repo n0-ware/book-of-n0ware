@@ -16,13 +16,13 @@ Tags [^1]
 
 [^1]: #webapp #lfi #get #post #query #insecuredesign #encoding #userinput #rce #php #injection #logs
 ## Description
-Local File Inclusion (LFI) vulnerabilities can be found in web applications. **LFI** allows attackers to "include" and read local files on the server, such as cryptographic keys, passwords, API's, and other sensitive data. **LFI** can result in sensitive data exposure, a former [*Owasp Top Ten*](https://owasp.org/www-project-top-ten/) vulnerability, now included in the number two spot with [*Cryptographic Failures*](cryptographic_failures.md)
+Local File Inclusion (LFI) vulnerabilities can be found in web applications. **LFI** allows attackers to "include" and read local files on the server, such as cryptographic keys, passwords, API's, and other sensitive data. **LFI** can result in sensitive data exposure, a former [*Owasp Top Ten*](https://owasp.org/www-project-top-ten/) vulnerability, now included in the number two spot with [*Cryptographic Failures*](Cryptographic%20Failures.md)
 
 This type of vulnerability occurs when developer's lack security awareness and instead focus solely on convenience. Developers need to read local files within a specific page, on occasion. If they include those files without the right input validation, an **LFI** vulnerability exists as an attacker can call the file with malicious [user-supplied input](../concepts/user_supplied_input.md)
 
 Once discovered, if the file has the right permissions, the attacker can read the file. This can include both files sensitive to the application **and** files holding sensitive user information. 
 
-Further, if we can inject or write to a file on the system, we can use **LFI** to obtain [**remote code execution (RCE)**](remote_code_execution_rce.md).
+Further, if we can inject or write to a file on the system, we can use **LFI** to obtain [**remote code execution (RCE)**](Remote%20Code%20Execution.md).
 ## Testing
 
 ###  Entry-Points
@@ -58,7 +58,7 @@ Further, code such as the line below further expose the attack surface:
 
 `include("./includes/user_access.php");`
 
-With code like this on our page, there is potential for [path traversal](path_traversal.md) both up and down, and we know for sure that the `user_access.php` file is available to us
+With code like this on our page, there is potential for [path traversal](Path%20Traversal.md) both up and down, and we know for sure that the `user_access.php` file is available to us
 
 There are many entry points, others including &mdash; `User-Agent`, Cookies, sessions, and other `HTTP` headers. 
 
@@ -85,12 +85,12 @@ Most files of interest are unlikely to be located in the same directory as the w
 - We can bypass basic filtering that will strip sets of `../` by "wrapping" it in another set with `....//`. The inner set is stripped, leaving the outer set intact. 
 - URL [encoding](../concepts/encoding_decoding.md) such as double encoding. 
 
-Your success in exploiting **LFI** fully depends on the type of web application server configuration. Depending on this, we can get anything from a complete failure to full [RCE](remote_code_execution_rce.md).
+Your success in exploiting **LFI** fully depends on the type of web application server configuration. Depending on this, we can get anything from a complete failure to full [RCE](Remote%20Code%20Execution.md).
 
 ## Examples
 
 ### Path-Traversal
-> See the note on [Path Traversal](path_traversal.md)]. 
+> See the note on [Path Traversal](Path%20Traversal.md)]. 
 Path traversal involves escaping upward or drilling down from the web root to access files we should not be able to. 
 
 ```
@@ -120,17 +120,17 @@ Below is another example from the same TryHackMe room referenced above.
 
 ![Filter with Read String](../../TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_06/7.0_AoC-Day-6_12-23-21-Filter-Read-String.png)
 
-There is even potential to paste **encoded** `PHP` code and use a wrapper to decode it on the web page, possibly leading to [Remote Code Execution](remote_code_execution_rce.md) using a piece of code like `page.php?file=data://text/plain;base64,SSBhbSBhbiBSQ0UK==`
+There is even potential to paste **encoded** `PHP` code and use a wrapper to decode it on the web page, possibly leading to [Remote Code Execution](Remote%20Code%20Execution.md) using a piece of code like `page.php?file=data://text/plain;base64,SSBhbSBhbiBSQ0UK==`
 
 ![PHP Encoded RCE](../../TryHackMe/events/AoC-2021/AoC-2021_Photos/Day_06/11.0_AoC-Day-6_12-23-21-PHP-Encoded-RCE.png)
 
 > More wrappers can be found here &mdash; [PHP Documentation - Wrappers](https://www.php.net/manual/en/wrappers.php.php) 
 
 ### RCE
-**LFI** can be used to generate [remote code execution](remote_code_execution_rce.md) in a variety of ways and to different degrees of severity depending on the type of files we have access to. 
+**LFI** can be used to generate [remote code execution](Remote%20Code%20Execution.md) in a variety of ways and to different degrees of severity depending on the type of files we have access to. 
 
 #### Log-Poisoning
-In the case of log files, this is called [log poisoning](log_poisoning.md) , a technique used to gain **RCE** on a web server.  
+In the case of log files, this is called [log poisoning](Log%20Poisoning.md) , a technique used to gain **RCE** on a web server.  
 
 > See the link for log poisoning for more detail. 
 

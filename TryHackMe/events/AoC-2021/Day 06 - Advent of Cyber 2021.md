@@ -44,7 +44,7 @@ Test with a ping or by going to the domain.
 ![Ping Custom Domain](AoC-2021_Photos/Day_06/0.5_AoC-Day-6_12-24-21-Ping-Custom-Domain.png)
 ### Question-1
 [Top](#TOC)
-In this scenario, we have a website vulnerable to [Local File Inclusion (LFI)](../../../knowledge-base/vulnerabilities/local_file_inclusion_LFI.md) that is running `PHP` on the backend. How do we know it is `PHP`? When we first access the URL provided, the browser gives it away by showing us an error on the page `index.php`. We also know it is using `err` as a query parameter, and that `error.txt` is present in the current working directory. 
+In this scenario, we have a website vulnerable to [Local File Inclusion (LFI)](../../../knowledge-base/vulnerabilities/Local%20File%20Inclusion%20(LFI).md) that is running `PHP` on the backend. How do we know it is `PHP`? When we first access the URL provided, the browser gives it away by showing us an error on the page `index.php`. We also know it is using `err` as a query parameter, and that `error.txt` is present in the current working directory. 
 
 > `err` is the "entry point" for this **LFI**
 
@@ -68,7 +68,7 @@ More on `PHP` wrappers here &mdash; [PHP Documentation - Wrappers](https://www.p
 
 ![Reading /etc/passwd with PHP filter](AoC-2021_Photos/Day_06/3.0_AoC-Day-6_12-23-21-etc-passwd.png)
 
-Ironically, this `PHP` function is not required. All we needed was some [path_traversal](../../../knowledge-base/vulnerabilities/path_traversal.md) to make this work as well. Knowing we are in the `/var/www/html` directory, lets swap `error.txt` with `../../../etc/passwd` and see if that works as well. 
+Ironically, this `PHP` function is not required. All we needed was some [Path Traversal](../../../knowledge-base/vulnerabilities/Path%20Traversal.md) to make this work as well. Knowing we are in the `/var/www/html` directory, lets swap `error.txt` with `../../../etc/passwd` and see if that works as well. 
 
 `https://aoc6.com/index.php?err=../../../etc/passwd`
 
@@ -106,7 +106,7 @@ The `rot13` string simply reproduces the standard message on the screen. Using [
 
 ![Second Flag CyberChef Decode](AoC-2021_Photos/Day_06/9.0_AoC-Day-6_12-23-21-Flag2-Decoded.png)
 
-> You can even paste in **encoded** `PHP` code and use a wrapper to decode it on the web page, possible leading to [Remote Code Execution](remote_code_execution_rce.md) using a piece of code like `page.php?file=data://text/plain;base64,SSBhbSBhbiBSQ0UK==`
+> You can even paste in **encoded** `PHP` code and use a wrapper to decode it on the web page, possible leading to [Remote Code Execution](../../../knowledge-base/vulnerabilities/Remote%20Code%20Execution.md) using a piece of code like `page.php?file=data://text/plain;base64,SSBhbSBhbiBSQ0UK==`
 
 ### Question-4
 [Top](#TOC)
@@ -139,11 +139,11 @@ Heading back to the *Home* page and logging in with McSkidy's credentials, we ar
 
 For the last task, we are asked to retrieve the hostname of the webserver. To help, we are given the location of web app logs all reminded that the application logs all user requests, and only those that are authorized can read the log file. To get the hotsname, we need to combine **LFI** with an **RCE** to access the log files page. The location of the log file is `./includes/logs/app_access.log`. 
 
-In the case of log files, this is called [log poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md), a technique used to gain **RCE** on a web server by injecting a malicious payload into a log then accessing that log file to run the payload. 
+In the case of log files, this is called [log poisoning](../../../knowledge-base/vulnerabilities/Log%20Poisoning.md), a technique used to gain **RCE** on a web server by injecting a malicious payload into a log then accessing that log file to run the payload. 
 
 > See the link for more details
 
-First, lets confirm access to the log file with **LFI**. We can do this via *McSkidy's* login page, [path_traversal](../../../knowledge-base/vulnerabilities/path_traversal.md) or the **PHP Filter** from before, modified with the location of the logs. 
+First, lets confirm access to the log file with **LFI**. We can do this via *McSkidy's* login page, [Path Traversal](../../../knowledge-base/vulnerabilities/Path%20Traversal.md) or the **PHP Filter** from before, modified with the location of the logs. 
 
 ##### McSkidy's Log Access
 Log in as *McSkidy* and head to the log page. 
@@ -164,7 +164,7 @@ Log out and try the other two.
 
 First, note that the format of the log file  &mdash; `user:ip:USER-Agent:Page`. **This is important**. We need to know what the log file is capturing. We can control certain aspects of our interaction with the server, and anything we can customize is to our advantage.
 
-WIth that settled let's try some log manipulation. Let's see what happens if we use [log poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md) to send a custom `curl` request with a modified `User-Agent` field to the server. Login again as *McSkidy* (his logs are easy to read on the log access page). Reset the logs, then run a command like the following with whatever text you choose.
+WIth that settled let's try some log manipulation. Let's see what happens if we use [log poisoning](../../../knowledge-base/vulnerabilities/Log%20Poisoning.md) to send a custom `curl` request with a modified `User-Agent` field to the server. Login again as *McSkidy* (his logs are easy to read on the log access page). Reset the logs, then run a command like the following with whatever text you choose.
 
 > Remember that I changed the IP TryHackMe gave me to `www.aoc6.com`
 
@@ -207,7 +207,7 @@ See you at the next one &mdash; [Advent of Cyber 3 Day 7](Day%2007%20-%20Advent%
 ### Bonus
 [Top](#TOC)
 
-As a bonus quesiton, we are asked if we can access the current [sessions](../../../knowledge-base/concepts/web_tech/sessions.md) using **LFI** and achieve **RCE** by poisoning the *session* that corresponds with our browser. This is another form of [log poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md) and **RCE**. 
+As a bonus quesiton, we are asked if we can access the current [sessions](../../../knowledge-base/concepts/web_tech/sessions.md) using **LFI** and achieve **RCE** by poisoning the *session* that corresponds with our browser. This is another form of [log poisoning](../../../knowledge-base/vulnerabilities/Log%20Poisoning.md) and **RCE**. 
 
 To start with, we are told where the sessions are stored on this browser &mdash; in the `/tmp` folder. This helps, as we would likely have to enumerate this on our own otherwise. 
 
@@ -219,7 +219,7 @@ When ready, enter the username `<?php phpinfo();?>` with some password and hit e
 
 ![Corrputing a Session](AoC-2021_Photos/Day_06/23.0_AoC-Day-6_12-26-21-Corrupting-Session-Username.png)
 
-Next, use any of the **LFI** techniques, such as [path traversal](../../../knowledge-base/vulnerabilities/path_traversal.md), to access our current session in `/tmp`. My **LFI** is `http://aoc6.com/index.php?err=../../../../../tmp/sess_oikujh0aqooipcrt10e6e89at3`. 
+Next, use any of the **LFI** techniques, such as [path traversal](../../../knowledge-base/vulnerabilities/Path%20Traversal.md), to access our current session in `/tmp`. My **LFI** is `http://aoc6.com/index.php?err=../../../../../tmp/sess_oikujh0aqooipcrt10e6e89at3`. 
 
 And here we find our `PHP` code executed. 
 
@@ -230,7 +230,7 @@ Well done!
 #### Interactive Shell
 [Top](#TOC)
 
-Jumping in right where we tested the `phpinfo()?` code in [Question-6](#Question-6), we are going to build on the malicious `User-Agent` poisoning to see if we can get full, on demand [RCE](../../../knowledge-base/vulnerabilities/remote_code_execution_rce.md) via the web browser on the server. 
+Jumping in right where we tested the `phpinfo()?` code in [Question-6](#Question-6), we are going to build on the malicious `User-Agent` poisoning to see if we can get full, on demand [RCE](../../../knowledge-base/vulnerabilities/Remote%20Code%20Execution.md) via the web browser on the server. 
 
 This will happen in stages. First, we want to ensure the backdoor will work. Start with some more `PHP` code we can try and find on the server. Run the following command to test how the system renders more `PHP` code on the log files. 
 
@@ -263,7 +263,7 @@ So how about full compromise? Since we have access to the command line via a bro
 
 ![which python](AoC-2021_Photos/Day_06/27.0_AoC-Day-6_12-24-21-Which-Python.png)
 
-[Payload all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python) has some great tools on there, one of them being a [python_reverse_shell](../../../exploits/reverse_shells/python/python_reverse_shell.py) that works on this system (after several tries). With some quick modifications, and a listener on our hots machine, we can obtain a semi-stable shell. 
+[Payload all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python) has some great tools on there, one of them being a [python_reverse_shell](../../../Exploitation/Reverse%20Shells/Python/python_reverse_shell.py) that works on this system (after several tries). With some quick modifications, and a listener on our hots machine, we can obtain a semi-stable shell. 
 
 ***On your host machine***
 ```

@@ -29,7 +29,7 @@ The landing page of our target IP address gives us an image of The Grinch waitin
 
 ![Landing Page](AoC-2021_Photos/Day_14/01_AoC_Day_14_01-02-22-Landing.png)
 
-From here, with nothing else visible on the page, enumeration is the next logical step. For locating hidden directories on websites, we can use [dirbuster](../../../tools_and_tricks/tools/red/dirbuster.md) via the `dirb` command and use a basic word list. I am using one of the many built in *Kali* word lists in the `dirb` folder &mdash; `common.txt`. Run the following command. 
+From here, with nothing else visible on the page, enumeration is the next logical step. For locating hidden directories on websites, we can use [dirbuster](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/dirbuster.md) via the `dirb` command and use a basic word list. I am using one of the many built in *Kali* word lists in the `dirb` folder &mdash; `common.txt`. Run the following command. 
 
 ```
 dirb https://<TARGET_IP> /usr/share/wordlists/dirb/common.txt
@@ -48,7 +48,7 @@ Let this continue to run through the entire list so you can answer *Question 1* 
 
 Now that we've found an entry point, let's investigate. A good practice when investigating a web application is to check the source code. Immediately, we notice an `<iframe>` that calls to a source, `ls.html`, that looks a lot like it is *listing* the contents of a directory, much like the Linux `ls` command. 
 
-> To verify this is running on Linux, check the Operating Stem with [Nmap](../../../tools_and_tricks/tools/Nmap.md) and the `-O` flag. 
+> To verify this is running on Linux, check the Operating Stem with [Nmap](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md) and the `-O` flag. 
 
 ![OS Guesses](AoC-2021_Photos/Day_14/04_AoC_Day_14_01-02-22-OS-Guesses.png)
 
