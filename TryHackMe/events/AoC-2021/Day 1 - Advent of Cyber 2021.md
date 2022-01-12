@@ -36,7 +36,7 @@ Reverting all of the changes yielded the [flag](AoC_2021_Day01.md#Flag%20THM%20A
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 2](AoC_2021_Day02.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 2](Day%202%20%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>
