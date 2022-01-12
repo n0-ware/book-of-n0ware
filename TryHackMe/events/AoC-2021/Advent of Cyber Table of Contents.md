@@ -4,7 +4,7 @@
 
 ***<u>Days</u>***
 
-- [Day 1](AoC_2021_Day01.md)
+- [Day 1](AoC%202021%20Day%201.md)
 	- [IDOR](../../../knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md)
 	- Accessing restricted accounts
 - [Day 2](AoC_2021_Day02.md)
