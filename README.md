@@ -4,7 +4,7 @@
 
 Tags [^1]
 ### Repo readme files:
-- [TryHackMe](TryHackMe/README-THM.md)
+- [TryHackMe](TryHackMe/TryHackMe%20-%20Glossary.md)
 - [PEN200/PWK/OSCP](oscp/README-OSCP.md)
 - [Hack The Box](HackTheBox/README-HTB.md)
 - [Evolve OSCP Course](Evolve-OSCP/README-Evo_OSCP.md)

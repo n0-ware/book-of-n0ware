@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TryHackMe/events/AoC-2021/Day 02  - Advent of Cyber 2021.md",
-            "mode": "source"
+            "file": "TryHackMe/TryHackMe - Glossary.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/Day 02  - Advent of Cyber 2021.md",
+                "file": "TryHackMe/TryHackMe - Glossary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/events/AoC-2021/Day 02  - Advent of Cyber 2021.md",
+                "file": "TryHackMe/TryHackMe - Glossary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -100,6 +100,7 @@
   },
   "active": "73d9c74afef44838",
   "lastOpenFiles": [
+    "TryHackMe/TryHackMe - Glossary.md",
     "TryHackMe/events/AoC-2021/Day 02  - Advent of Cyber 2021.md",
     "TryHackMe/events/AoC-2021/Advent of Cyber Table of Contents.md",
     "TryHackMe/events/AoC-2021/Day 01 - Advent of Cyber 2021.md"
