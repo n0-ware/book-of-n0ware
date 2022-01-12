@@ -1,6 +1,6 @@
 # Authentication
 
-<a id="windows-authentication">Windows Auth Methods</a>
+<a href="windows-authentication">Windows Auth Methods</a>
 ## Description
 Essentially the processes of verifying a user's identity to confirm without a doubt (ideally) that the user is who they say they are. Identity for authentication can be proven in several ways, including:
 1. Using a known set of credentials sent to a server or a local database, such as a username and password
@@ -29,7 +29,7 @@ AWS uses an *Access Key* and a *Secret Access Key* to authenticate users over th
 For vulnerable S3, see [Insecure S3 Bucket Access](../vulnerabilities/insecure_s3_bucket_access.md)
 
 ## Windows Authentication Methods
-<meta name="#windows-authentication" description="Explanation of Windows authentication methods">
+<meta id="#windows-authentication" description="Explanation of Windows authentication methods">
 
 ### SAM
 Windows stores various credentials in the *Security Accounts Manager* database. They are typically stored as [hashes](hashing.md) of one of two kinds:
