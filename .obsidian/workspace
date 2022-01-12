@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+            "file": "TryHackMe/events/AoC-2021/AoC_2021_Day01.md",
             "mode": "source"
           }
         }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+                "file": "TryHackMe/events/AoC-2021/AoC_2021_Day01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
+                "file": "TryHackMe/events/AoC-2021/AoC_2021_Day01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,15 +122,15 @@
   },
   "active": "33ebab0f68a1987f",
   "lastOpenFiles": [
-    "knowledge-base/vulnerabilities/local_file_inclusion_LFI.md",
-    "knowledge-base/concepts/web_tech/sessions.md",
-    "knowledge-base/vulnerabilities/insecure_s3_bucket_access.md",
-    "knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md",
-    "knowledge-base/vulnerabilities/injection.md",
-    "knowledge-base/vulnerabilities/cryptographic_failures.md",
-    "knowledge-base/vulnerabilities/cross_site_scripting_xss.md",
-    "knowledge-base/vulnerabilities/cookie_manipulation.md",
-    "knowledge-base/concepts/01_Concepts-TOC.md",
-    "knowledge-base/concepts/container_images.md"
+    "TryHackMe/events/AoC-2021/AoC_2021_Day01.md",
+    "tools_and_tricks/useful_binaries/strings_cli.md",
+    "tools_and_tricks/useful_binaries/sed.md",
+    "tools_and_tricks/useful_binaries/jq.md",
+    "tools_and_tricks/useful_binaries/grep_egrep.md",
+    "tools_and_tricks/useful_binaries/living_off_the_land_binaries_lolbas.md",
+    "tools_and_tricks/useful_binaries/curl.md",
+    "tools_and_tricks/useful_binaries/aws_cli_install.md",
+    "tools_and_tricks/tools/wireshark.md",
+    "tools_and_tricks/tools/red/dirbuster.md"
   ]
 }
