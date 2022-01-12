@@ -4,10 +4,10 @@
 
 ***<u>Days</u>***
 
-- [Day 1](Day%201%20-%20Advent%20of%20Cyber%202021.md)
+- [Day 1](Day%2001%20-%20Advent%20of%20Cyber%202021.md)
 	- [IDOR](../../../knowledge-base/vulnerabilities/insecure_direct_object_reference-IDOR.md)
 	- Accessing restricted accounts
-- [Day 2](Day%202%20%20-%20Advent%20of%20Cyber%202021.md)
+- [Day 2](Day%2002%20%20-%20Advent%20of%20Cyber%202021.md)
 	- [Cookie Manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md)
 	- Fooling server into allowing admin login
 - [Day 3](Day%203%20%20-%20Advent%20of%20Cyber%202021.md)
