@@ -89,7 +89,7 @@ After nearly 10 minutes, the scan completed, exposing a single high port service
  
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 11](AoC-2021_Day11.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 11](Day%2011%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

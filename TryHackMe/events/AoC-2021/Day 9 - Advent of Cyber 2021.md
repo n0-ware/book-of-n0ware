@@ -140,7 +140,7 @@ The final question asks us for the actual data stored in `secret.txt`. You can e
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 10](AoC-2021_Day10.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 10](Day%2010%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

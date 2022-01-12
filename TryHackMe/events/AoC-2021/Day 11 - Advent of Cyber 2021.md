@@ -127,7 +127,7 @@ There's our flag!
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 12](AoC-2021_Day12.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 12](Day%2012%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

@@ -202,7 +202,7 @@ That's it! All that is left is the bonus or attempt to exploit the box further a
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 7](AoC_2021_Day07.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 7](Day%207%20-%20Advent%20of%20Cyber%202021.md)
 
 ### Bonus
 [Top](#TOC)

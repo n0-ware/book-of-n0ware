@@ -17,11 +17,11 @@
 - [Day 4](Day%204%20%20-%20Advent%20of%20Cyber%202021.md)
 	- [Fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md)
 	- Weak passwords
-- [Day 5](AoC_2021_Day05.md)
+- [Day 5](Day%205%20-%20Advent%20of%20Cyber%202021.md)
 	- [Cross Site Scripting](../../../knowledge-base/vulnerabilities/cross_site_scripting_xss.md)
 	- Stored XSS
 	- Password change
-- [Day 6](AoC_2021_Day06.md)
+- [Day 6](Day%206%20-%20Advent%20of%20Cyber%202021.md)
 	- [Local File Inclusion](../../../knowledge-base/vulnerabilities/local_file_inclusion_LFI.md)
 	- [Log Poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md)
 	- [PHP in the URL](../../../tools_and_tricks/tricks/php_in_url.md)
@@ -29,31 +29,31 @@
 	- [python_reverse_shell](../../../exploits/reverse_shells/python/python_reverse_shell.py)
 	- [RCE](../../../knowledge-base/vulnerabilities/remote_code_execution_rce.md)
 	- Manipulating poor website design to access files
-- [Day 7](AoC_2021_Day07.md)
+- [Day 7](Day%207%20-%20Advent%20of%20Cyber%202021.md)
 	- [injection](../../../knowledge-base/vulnerabilities/injection.md)
 	- [NoSQL Injection](../../../knowledge-base/vulnerabilities/nosql_injection.md)
 	- [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md)
 	- Databases
 	- Poor user input sanitation
-- [Day 8](AoC-2021_Day08.md)
+- [Day 8](Day%208%20-%20Advent%20of%20Cyber%202021.md)
 	- [PowerShell](../../../tools_and_tricks/tools/powershell.md)
 	- [ShellBags](../../../knowledge-base/concepts/shellbags.md)
 	- [Windows Registry](../../../knowledge-base/concepts/windows_registry.md)
 	- Logs
 	- Incident Response
-- [Day 9](AoC-2021_Day09.md)
+- [Day 9](Day%209%20-%20Advent%20of%20Cyber%202021.md)
 	- [Wireshark](../../../tools_and_tricks/tools/wireshark.md)
 	- Basic data mining from packets
 	- DNS, FTP, and HTTP
-- [Day 10](AoC-2021_Day10.md)
+- [Day 10](Day%2010%20-%20Advent%20of%20Cyber%202021.md)
 	- [Nmap](../../../tools_and_tricks/tools/Nmap.md)
 	- Service enumeration
-- [Day 11](AoC-2021_Day11.md)
+- [Day 11](Day%2011%20-%20Advent%20of%20Cyber%202021.md)
 	- [Relational Database Management Systems (RDBMS)](../../../knowledge-base/concepts/sql_rdbms.md)
 	- `sqsh` and `xp_cmdshell`
 	- SQL Database Interaction
 	- Local system enumeration with built in tools
-- [Day 12](AoC-2021_Day12.md)
+- [Day 12](Day%2012%20-%20Advent%20of%20Cyber%202021.md)
 	- [Nmap](../../../tools_and_tricks/tools/Nmap.md)
 	- [Network File SYstem (NFS)](../../../knowledge-base/concepts/network_file_system_nfs.md)
 	- Mounting and reading shares
