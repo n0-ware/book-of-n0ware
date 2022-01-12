@@ -9,14 +9,14 @@ Tags[^1]
 	- [Common Injection Operators](#Common%20Injection%20Operators)
 	- [Bypassing Logins](#Bypassing%20Logins)
 ## Description
-A web security vulnerability that allows attackers to control a [NoSQL](../concepts/nosql.md) database. Usually the result of unfiltered and untrusted [user supplied input](../concepts/user_supplied_input.md) through an application, this can lead to unauthorized information disclosure and/or the alteration of a database.
+A web security vulnerability that allows attackers to control a [NoSQL](../concepts/nosql.md) database, usually the result of unfiltered and untrusted [user supplied input](../concepts/user_supplied_input.md) through an application. This can lead to unauthorized information disclosure and/or the alteration of a database.
 
 ## Examples
 
 ### Entry Point
 The key to any injection is finding an unsanitized entry point, such as a URL bar.
 
-For example, if you are able to read a NoSQL query in a URL, you know that you can inject at that point. 
+For example, if you can read a NoSQL query in a URL, you know that you can inject at that point. 
 
 ### Common Injection Operators
 
@@ -32,7 +32,7 @@ For example, if you are able to read a NoSQL query in a URL, you know that you c
 
 ### Bypassing Logins
 Login page logic is similar in most databases. 
-- First, connect to database
+- First, connect to the database
 - Then, look for the supplied `username` and see if it matches the supplied `password`. 
 - If this evaluates to true, then the entry is valid and the login is granted.
 
@@ -52,7 +52,7 @@ An example evaluated to true [query](../concepts/queries.md) may be:
 
 If the query is sent to the DB returns `true` it is successful and the server responds with  `JSON` back. If not, we get a `null` value.
 
-***Remember, all we need to do is have the query evaluate to `true`, and without proper filtering this can easily be accomplished.***
+***Remember, all we need to do is have the query evaluate to `true`, and without proper filtering, this can easily be accomplished.***
 
 In the above example, we can still evaluate to `true` with the user `admin` if the `password` key itself provides a true value. 
 

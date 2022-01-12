@@ -2,15 +2,15 @@
 
 ## TOC-Local
 - [Testing](#Testing)
-	- [Entry-Points](#Entry-Points)
-		- [HTTP-Query-Parameters](#HTTP-Query-Parameters)
-		- [Testing-HTTP-Query-Parameters](#Testing-HTTP-Query-Parameters)
+	- [Entry Points](#Entry-Points)
+		- [HTTP Query Parameters](#HTTP-Query-Parameters)
+		- [Testing HTTP Query Parameters](#Testing-HTTP-Query-Parameters)
 - [Examples](#Examples)
 	- [Path-Traversal](#Path-Traversal)
-	- [Abusing-PHP](#Abusing-PHP)
+	- [Abusing PHP](#Abusing-PHP)
 		- [PHP Filter](#PHP-Filter)
 	- [RCE](#RCE)
-		- [Log-Poisoning](#Log-Poisoning)
+		- [Log Poisoning](#Log-Poisoning)
 
 Tags [^1]
 

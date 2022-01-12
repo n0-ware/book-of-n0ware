@@ -5,21 +5,21 @@
 
 ## Description
 
-**Log Poisoning** refers to an attack where an applications log files manipulated to produce a negative result. Typically, the log is injected with malicious code that can do anything from divulge information to producing  [remote code execution](remote_code_execution_rce.md) depending on the type of [user supplied input](../concepts/user_supplied_input.md) we can inject into the log. 
+**Log Poisoning** refers to an attack where an application's log files are manipulated to produce a negative result. Typically, the log is injected with malicious code that can do anything from divulging information to producing  [remote code execution](remote_code_execution_rce.md) depending on the type of [user supplied input](../concepts/user_supplied_input.md) we can inject into the log. 
 
 ***This attack has two prerequisites to be effective::**
 
-1. We have ability to inject a malicious payload into a services log files, such as *Apache*  or *SSH*. 
-2. We have access to the log file, either directly or via some other vulnerability such as [local file inclusion (LFI)](local_file_inclusion_LFI.md), so we may view the executed code and/or add to the corrupted log file with more code.  the we access the vulnerability is used to call the injected log file, executing the malicious payload. 
+1. We can inject a malicious payload into a service's log files, such as *Apache*  or *SSH*. 
+2. We have access to the log file, either directly or via some other vulnerability such as [local file inclusion (LFI)](local_file_inclusion_LFI.md), so we can view the executed code and/or add to the corrupted log file with more code.  
 
-The prerequisites mean we need good enumeration and proof of concept skills beforehand to identify the vulnerability. It also requires some knowledge of how web applications work, such as when code is executed on the server-side and how that effects what we see on the client-side.
+The prerequisites mean we need good enumeration and proof of concept skills beforehand to identify the vulnerability. It also requires some knowledge of how web applications work, such as when code is executed on the server-side and how that affects what we see on the client-side.
 
 ## Testing
 
-Once you have determined you can view an applications log files, testing what you can control in the log file is the first step. If the malicious log is captured, we simply need to be able to access the log file to run the script. How you access the log and run the code varies from method to method
+Once you have determined you can view an application's log files, testing what you can control in the log file is the first step. If the malicious log is captured, we simply need to be able to access the log file to run the script. How you access the log and run the code varies from method to method
 
 ### With Curl
-For example, a log that captures the `User-Agent` field may be vulnerable to [injection](injection.md) through a modified `User-Agent` field. Attackers can modify a `curl` command to submits a custom `User-Agent` field with the `-A` flag.  This custom field can contain a payload, sent via `HTTP` request with `curl`. An *Apache* server will then attempt to read the log file, potentially executing any code you submitted. 
+For example, a log that captures the `User-Agent` field may be vulnerable to [injection](injection.md) through a modified `User-Agent` field. Attackers can modify a `curl` command to submit a custom `User-Agent` field with the `-A` flag.  This custom field can contain a payload, sent via `HTTP` request with `curl`. An *Apache* server will then attempt to read the log file, potentially executing any code you submitted. 
 
 `curl -A "Testing for RCE" https://vulnsite.io/index.html`
 
@@ -41,19 +41,19 @@ Since we can control the `User-Agent` field when interacting with a web applicat
 
 We then inspect the log file to see if the custom `User-Agent` was recorded in the log. 
 
-Next we send a "proof of concept" request injected with `PHP` code to see how the server/client renders the code. 
+Next, we send a "proof of concept" request injected with `PHP` code to see how the server/client renders the code. 
  
  `curl -A "<?php phpinfo()?>" https://www.vulnsite.io/index.php`
  
- Accessing the corrupted file will likely take some of [local file inclusion vulnerability](local_file_inclusion_LFI.md). Depending on how you access the log file, you will either see no `User-Agent` or the code will render the information on screen. You may have to attempt to access the file in several ways to render the code where on the client side. 
+ Accessing the corrupted file will likely take some of [local file inclusion vulnerability](local_file_inclusion_LFI.md). Depending on how you access the log file, you will either see no `User-Agent` or the code will render the information on the screen. You may have to attempt to access the file in several ways to render the code where on the client-side. 
  
  Regardless, if you don't see your code rendered but also don't see the code itself, this is proof of [RCE](remote_code_execution_rce.md) and you may continue to exploit the service.
  
- > Not seeing the code you type in is a good sign because that means the code ran on the server. You may not be able to disclose information without visual representation of the code on your screen, but you can still run code on he server, possibly writing files to an accessible location or simple generating a backdoor for you to access and gain a foothold on the server. 
+ > Not seeing the code you type in is a good sign because that means the code ran on the server. You may not be able to disclose information without a visual representation of the code on your screen, but you can still run code on the server, possibly writing files to an accessible location or simple generating a backdoor for you to access and gain a foothold on the server. 
 
 ### Corrupting Sessions
 
-If an attacker is able to access the  location [sessions](../concepts/web_tech/sessions.md) information is stored on a server and poor [user input](../concepts/user_supplied_input.md) sanitation is in place, we can corrupt a session with some sort of malicious code, such as with `PHP` if the server is running a `PHP` backend. 
+If an attacker can access the location [session](../concepts/web_tech/sessions.md) information is stored on a server and poor [user input](../concepts/user_supplied_input.md) sanitation is in place, we can corrupt a session with some sort of malicious code, such as with `PHP` if the server is running a `PHP` backend. 
 
 Session information is often stored in common locations, such as 
 - `c:\Windows\Temp`
@@ -61,7 +61,7 @@ Session information is often stored in common locations, such as
 - `/var/lib/php5`
 - `/var/lib/php/session`
 
-Consider a login screen where the username is stored. An attacker can submit a username such as `<?php phpinfo(); ?>` and navigate to where the sessions are stored to identify if the code is executed on the server side. To find the correct `session_id`, simply use your browsers developer tools and locate the `PHPSESSID` or other relevant session (such as `JESSIONID` with Java) and access that file via the directory the sessions are stored in, such as `/tmp/sess_9lmhiq5msgbg2nbiha3tecjki2`. 
+Consider a login screen where the username is stored. An attacker can submit a username such as `<?php phpinfo(); ?>` and navigate to where the sessions are stored to identify if the code is executed on the server-side. To find the correct `session_id`, simply use your browser's developer tools and locate the `PHPSESSID` or another relevant session (such as `JESSIONID` with Java) and access that file via the directory the sessions are stored in, such as `/tmp/sess_9lmhiq5msgbg2nbiha3tecjki2`. 
 
 ![PHPSESSID](vulnerabilities_photos/LFI-PHPSESSIONID.png)
 

@@ -6,11 +6,11 @@
 	- [Accounts](#Accounts)
 	- [Escalation-Vectors](#Escalation-Vectors)
 ## Description
-"Privesc" refers to the act of elevating the privileges of a normal, unprivileged user to that of a privileged user, often administrative or superuser, for the purpose of exploiting a target machine. 
+"Privesc" refers to the act of elevating the privileges of a normal, unprivileged user to that of a privileged user, often administrative or superuser, to exploit a target machine. 
 
-Whether for extracting information unavailable to the low privilege user or performing actions available only to a privileged user, this is a necessary skill to learn for attackers and and defenders alike. 
+Whether for extracting information unavailable to the low privilege user or performing actions available only to a privileged user, this is a necessary skill to learn for attackers and defenders alike. 
 
-For this reason, all accounts that can be should be low privileged, as there is no reason to make an attackers life any easier than it should be. An example is ensuring that the standard Apache web server users, `www-data`, has the most limited access possible, up to and including a limited shell. 
+For this reason, all accounts that can be should be low privileged, as there is no reason to make an attacker's life any easier than it should be. An example is ensuring that the standard Apache webserver user, `www-data`, has the most limited access possible, up to and including a limited shell. 
 
 ## Linux
 [Top](#Directory)
@@ -33,9 +33,9 @@ The best practice is to manage these accounts in groups to better control access
 - **Windows Kernel Exploit** &mdash; Any unpatched vulnerability on the local system that can be abused by an attacker. 
 - **Insecure File and Folder Permissions** &mdash; On occasion, for either good reasons or due to neglect, a normal user may be able to read/write sensitive files
 - **Insecure Services Permissions** &mdash; Similar to insecure file/folder permissions, low privilege users may have access to services with their own permissions sets. Anything from starting/stopping services to querying system/domain information can be the result. Good for both full exploitation or chaining an exploit through incremental access.
-- **DLL Hijacking** &mdash; [DLLs](../concepts/dynamic_link_library_dll.md) or *Dynamic Link Libraries* are often used to hijack legitimate processes. In the event a DLL was deleted or otherwise not  present, attackers can replace it with one of their own if they are able to put it where the application expects the missing one to be. The result can include privilege escalation, information disclosure, etc. 
+- **DLL Hijacking** &mdash; [DLLs](../concepts/dynamic_link_library_dll.md) or *Dynamic Link Libraries* are often used to hijack legitimate processes. In the event a DLL was deleted or otherwise not present, attackers can replace it with one of their own if they can put it where the application expects the missing one to be. The result can include privilege escalation, information disclosure, etc. 
 - **Unquoted Service Path** &mdash; Paths that contain spaces and are not enclosed in quotes allow hackers to submit their own executable and hijack the path the service attempts to run. 
-- **Always Install Elevated** &mdash; `MSI` packages use the Microsoft installer often for ease of use. These can be set with a policy to *AlwaysInstallElevated* that ensures the install process runs with administrator-level privileges without the need for the user to actually have these privileges. A malicious executable packaged as an `MSI` can therefore be installed with admin privileges. 
+- **Always Install Elevated** &mdash; `MSI` packages use the Microsoft installer often for ease of use. These can be set with a policy to *AlwaysInstallElevated* that ensures the install process runs with administrator-level privileges without the need for the user to have these privileges. A malicious executable packaged as an `MSI` can therefore be installed with admin privileges. 
 - **Other Software** &mdash; Third-party software introduces a wide variety of escalation vectors that can be exploited. 
 
 ### Identifying
