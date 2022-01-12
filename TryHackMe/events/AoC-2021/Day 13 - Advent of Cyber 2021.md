@@ -167,7 +167,7 @@ And there you have it!
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 14](AoC-2021_Day14.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 14](Day%2014%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

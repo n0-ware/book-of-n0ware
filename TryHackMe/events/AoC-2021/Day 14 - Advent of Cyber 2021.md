@@ -122,7 +122,7 @@ Edit the `loot.sh` file to read the contents of `/home/thegrinch/Desktop/flag.tx
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 16](AoC-2021_Day16.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 16](Day%2016%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

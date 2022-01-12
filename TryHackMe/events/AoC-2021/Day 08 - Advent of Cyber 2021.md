@@ -168,7 +168,7 @@ Finally, with the recovered password from Grinch's commit, we can open the compr
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 9](Day%209%20-%20Advent%20of%20Cyber%202021.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 9](Day%2009%20-%20Advent%20of%20Cyber%202021.md)
 
 </br>
 </br>

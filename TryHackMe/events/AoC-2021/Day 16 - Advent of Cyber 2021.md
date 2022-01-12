@@ -114,7 +114,7 @@ On this same code commit, you can locate the original user's real name as well.
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 17](AoC-2021_Day17.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 17](Day%2017%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

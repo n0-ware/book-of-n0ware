@@ -174,7 +174,7 @@ Bingo! `mcskidy` has a role of `admin` and the username `mcskidy`. Paste this en
 
 ***Congratulations on completing this box!***   Consider trying out some of the other commands such as `$exists` with a value of `true` for the field and `$regex` with a value of `.*` to match "anything that is there" and see what else you can get. 
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 8](Day%208%20-%20Advent%20of%20Cyber%202021.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 8](Day%2008%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

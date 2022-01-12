@@ -71,7 +71,7 @@ From the dashboard, it is clear the *HR* team is not responding for at least has
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 3](Day%203%20%20-%20Advent%20of%20Cyber%202021.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 3](Day%2003%20%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

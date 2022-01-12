@@ -45,7 +45,7 @@ Once we are successfully authenticated, we have access to the Admin dashboard an
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 4](Day%204%20%20-%20Advent%20of%20Cyber%202021.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 4](Day%2004%20%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

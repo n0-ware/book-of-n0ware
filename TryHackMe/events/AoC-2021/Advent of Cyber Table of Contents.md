@@ -10,18 +10,18 @@
 - [Day 2](Day%2002%20%20-%20Advent%20of%20Cyber%202021.md)
 	- [Cookie Manipulation](../../../knowledge-base/vulnerabilities/cookie_manipulation.md)
 	- Fooling server into allowing admin login
-- [Day 3](Day%203%20%20-%20Advent%20of%20Cyber%202021.md)
+- [Day 3](Day%2003%20%20-%20Advent%20of%20Cyber%202021.md)
 	- [Content Discovery](../../../knowledge-base/concepts/web_tech/content_discovery.md)
 	- Default usernames and passwords
 	- Insecure calling of `javascript` divulged login information
-- [Day 4](Day%204%20%20-%20Advent%20of%20Cyber%202021.md)
+- [Day 4](Day%2004%20%20-%20Advent%20of%20Cyber%202021.md)
 	- [Fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md)
 	- Weak passwords
-- [Day 5](Day%205%20-%20Advent%20of%20Cyber%202021.md)
+- [Day 5](Day%2005%20-%20Advent%20of%20Cyber%202021.md)
 	- [Cross Site Scripting](../../../knowledge-base/vulnerabilities/cross_site_scripting_xss.md)
 	- Stored XSS
 	- Password change
-- [Day 6](Day%206%20-%20Advent%20of%20Cyber%202021.md)
+- [Day 6](Day%2006%20-%20Advent%20of%20Cyber%202021.md)
 	- [Local File Inclusion](../../../knowledge-base/vulnerabilities/local_file_inclusion_LFI.md)
 	- [Log Poisoning](../../../knowledge-base/vulnerabilities/log_poisoning.md)
 	- [PHP in the URL](../../../tools_and_tricks/tricks/php_in_url.md)
@@ -29,19 +29,19 @@
 	- [python_reverse_shell](../../../exploits/reverse_shells/python/python_reverse_shell.py)
 	- [RCE](../../../knowledge-base/vulnerabilities/remote_code_execution_rce.md)
 	- Manipulating poor website design to access files
-- [Day 7](Day%207%20-%20Advent%20of%20Cyber%202021.md)
+- [Day 7](Day%2007%20-%20Advent%20of%20Cyber%202021.md)
 	- [injection](../../../knowledge-base/vulnerabilities/injection.md)
 	- [NoSQL Injection](../../../knowledge-base/vulnerabilities/nosql_injection.md)
 	- [BurpSuite](../../../tools_and_tricks/tools/red/BurpSuite.md)
 	- Databases
 	- Poor user input sanitation
-- [Day 8](Day%208%20-%20Advent%20of%20Cyber%202021.md)
+- [Day 8](Day%2008%20-%20Advent%20of%20Cyber%202021.md)
 	- [PowerShell](../../../tools_and_tricks/tools/powershell.md)
 	- [ShellBags](../../../knowledge-base/concepts/shellbags.md)
 	- [Windows Registry](../../../knowledge-base/concepts/windows_registry.md)
 	- Logs
 	- Incident Response
-- [Day 9](Day%209%20-%20Advent%20of%20Cyber%202021.md)
+- [Day 9](Day%2009%20-%20Advent%20of%20Cyber%202021.md)
 	- [Wireshark](../../../tools_and_tricks/tools/wireshark.md)
 	- Basic data mining from packets
 	- DNS, FTP, and HTTP
@@ -57,43 +57,43 @@
 	- [Nmap](../../../tools_and_tricks/tools/Nmap.md)
 	- [Network File SYstem (NFS)](../../../knowledge-base/concepts/network_file_system_nfs.md)
 	- Mounting and reading shares
-- [Day 13](AoC-2021_Day13.md)
+- [Day 13](Day%2013%20-%20Advent%20of%20Cyber%202021.md)
 	- [Windows Privesc](../../../knowledge-base/vulnerabilities/privesc.md#Windows)
 	- Abusing service misconfigurations
-- [Day 14](AoC-2021_Day14.md)
+- [Day 14](Day%2014%20-%20Advent%20of%20Cyber%202021.md)
 	- [CI/CD](../../../knowledge-base/concepts/cicd.md)
 	- Vulnerable web app
 	- Bad permissions
 	- Script abuse
 - Day 15 was a break day
-- [Day 16](AoC-2021_Day16.md)
+- [Day 16](Day%2016%20-%20Advent%20of%20Cyber%202021.md)
 	- [OSINT](../../../knowledge-base/concepts/OSINT.md)
-- [Day 17](AoC-2021_Day17.md)
+- [Day 17](Day%2017%20-%20Advent%20of%20Cyber%202021.md)
 	- [Insecure S3 Buckts](../../../knowledge-base/vulnerabilities/insecure_s3_bucket_access.md)
 		- [AWS Reconnaissance](../../../knowledge-base/vulnerabilities/insecure_s3_bucket_access.md#Reconnaissance)
 	- [Authentication](../../../knowledge-base/concepts/authentication.md)
 	- [Content discovery](../../../knowledge-base/concepts/web_tech/content_discovery.md)
 	- Poor [access control](../../../knowledge-base/concepts/access_control.md)
-- [Day 18](AoC-2021_Day18.md)
+- [Day 18](Day%2018%20-%20Advent%20of%20Cyber%202021.md)
 	- [Container images](../../../knowledge-base/concepts/container_images.md)
 	- [Docker](../../../knowledge-base/concepts/docker.md)
 	- [Content discovery](../../../knowledge-base/concepts/web_tech/content_discovery.md)
 	- Discovering hidden data inside a docker image
-- [Day 19](AoC-2021_Day19.md)
+- [Day 19](Day%2019%20-%20Advent%20of%20Cyber%202021.md)
 	- [phishing](../../../knowledge-base/concepts/phishing.md)
 	- social engineering
-- [Day 20](AoC-2021_Day20.md)
+- [Day 20](Day%2020%20-%20Advent%20of%20Cyber%202021.md)
 	- Malware Analysis
 	- [Strings CLI](../../../tools_and_tricks/useful_binaries/strings_cli.md) tool
 	- Virus Total
-- [Day 21](AoC-2021_Day21.md)
+- [Day 21](Day%2021%20-%20Advent%20of%20Cyber%202021.md)
 	- [YARA Rules](../../../knowledge-base/concepts/yara_rules.md)
 	- Detection
-- [Day 22](AoC-2021_Day22.md)
+- [Day 22](Day%2022%20-%20Advent%20of%20Cyber%202021.md)
 	- [Encoding/Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
 	- [PowerShell](../../../tools_and_tricks/tools/powershell.md)
 	- Data Exfiltration
-- [Day 23](AoC-2021_Day23.md)
+- [Day 23](Day%2023%20-%20Advent%20of%20Cyber%202021.md)
 	- [PowerShell](../../../tools_and_tricks/tools/powershell.md)
 		- [cmdlets](../../../tools_and_tricks/tools/powershell.md#command-lets)
 	- [Encoding and Decoding](../../../knowledge-base/concepts/encoding_decoding.md)

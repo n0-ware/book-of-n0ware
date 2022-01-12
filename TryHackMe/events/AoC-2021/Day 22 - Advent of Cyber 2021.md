@@ -82,7 +82,7 @@ Finally, we are told to get the last flag and hinted that the locaiton of the cl
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 23](AoC-2021_Day23.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 23](Day%2023%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

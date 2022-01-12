@@ -50,7 +50,7 @@ After waiting a minute or two for Grinch to view our comment, attempt to login w
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 6](Day%206%20-%20Advent%20of%20Cyber%202021.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 6](Day%2006%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

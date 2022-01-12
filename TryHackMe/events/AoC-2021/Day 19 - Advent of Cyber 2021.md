@@ -90,7 +90,7 @@ Here's our flag!
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 20](AoC-2021_Day20.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 20](Day%2020%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>

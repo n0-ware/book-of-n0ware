@@ -96,7 +96,7 @@ Further down, we can find some information on this files character size and max 
 
 ***Congratulations on completing this box!***  
 
-See you at the next one &mdash; [Advent of Cyber 3 Day 21](AoC-2021_Day21.md)
+See you at the next one &mdash; [Advent of Cyber 3 Day 21](Day%2021%20-%20Advent%20of%20Cyber%202021.md)
 </br>
 </br>
 </br>
