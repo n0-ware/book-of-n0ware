@@ -88,11 +88,11 @@ Simply search for the `.exe` file used shortly after the copy and you'll find th
 ### Questions-5-6
 [Top](#TOC)
  
-It looks like our attacker base64 [encoded](../../../knowledge-base/concepts/encoding_decoding.md) the `UsrClass.dat` file. We can user CyberChef locally to decode this (it is on the Desktop). 
+It looks like our attacker base64 [encoded](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md) the `UsrClass.dat` file. We can user CyberChef locally to decode this (it is on the Desktop). 
 
-`TL;DR`, **ShellBags** are artifacts within the Windows registry that maintain user preferences when viewing folders within the Windows Explorer GUI. The long on the short of it is if you view a file and delete it, the file may be gone, but the [ShellBags](../../../knowledge-base/concepts/shellbags.md) related to the file or folder may still be there, giving an analyst an idea as to what actions were taken on the computer before an attempt to delete any tracks. 
+`TL;DR`, **ShellBags** are artifacts within the Windows registry that maintain user preferences when viewing folders within the Windows Explorer GUI. The long on the short of it is if you view a file and delete it, the file may be gone, but the [ShellBags](../../../Knowledge%20Base/Concepts/Windows/Shellbags.md) related to the file or folder may still be there, giving an analyst an idea as to what actions were taken on the computer before an attempt to delete any tracks. 
 
-> According to TryHackMe, it is worth reading about `ShellBags`, a type of artifact contained in this folder and very useful for forensics. You can find more at this link [SheHacks_KE](https://shehackske.medium.com/windows-shellbags-part-1-9aae3cfaf17) and a brief snipped from the website at the [ShellBags](../../../knowledge-base/concepts/shellbags.md) note. 
+> According to TryHackMe, it is worth reading about `ShellBags`, a type of artifact contained in this folder and very useful for forensics. You can find more at this link [SheHacks_KE](https://shehackske.medium.com/windows-shellbags-part-1-9aae3cfaf17) and a brief snipped from the website at the [ShellBags](../../../Knowledge%20Base/Concepts/Windows/Shellbags.md) note. 
 
 Start by copying **all** of the data between `----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----` in the log file. It is easiest to click at the beginning or ending of the data and hold <kbd>Shift</kbd> while scrolling up to select it all. 
 

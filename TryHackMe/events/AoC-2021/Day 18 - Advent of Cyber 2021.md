@@ -22,7 +22,7 @@
 - [Question 4](#Question-4)
 
 ## Walkthrough
-In this lab we are interacting with [Docker](../../../knowledge-base/concepts/Docker.md) images hosted on AWS Elastic Container Registry. An image has been erroneously made available to the public and it is our task investigate to to understand the tooling resources Grinch Enterprises is using against us. We expect there to be some information beneficial to our cause on this image and we want to extract it
+In this lab we are interacting with [Docker](../../../Knowledge%20Base/Concepts/Docker.md) images hosted on AWS Elastic Container Registry. An image has been erroneously made available to the public and it is our task investigate to to understand the tooling resources Grinch Enterprises is using against us. We expect there to be some information beneficial to our cause on this image and we want to extract it
 
 ### Install
 
@@ -82,7 +82,7 @@ In preparation for the next steps, we want to extract this tarball with the `tar
 tar -xvf aoc.tar
 ```
 
-These are `JSON` objects that tell inform the creation of the [container image](../../../knowledge-base/concepts/Container%20Images.md) we downloaded. The document `manifest.json` is just that, a list of all the contents within the file. We can use a tool named `jq` to print these files far more cleanly than with `cat` alone. Install it with `apt install jq -y` and pipe the output of `cat` into it as below. 
+These are `JSON` objects that tell inform the creation of the [container image](../../../Knowledge%20Base/Concepts/Container%20Images.md) we downloaded. The document `manifest.json` is just that, a list of all the contents within the file. We can use a tool named `jq` to print these files far more cleanly than with `cat` alone. Install it with `apt install jq -y` and pipe the output of `cat` into it as below. 
 
 ```
 cat manifest.json | jq

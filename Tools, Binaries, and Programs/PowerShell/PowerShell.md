@@ -12,7 +12,7 @@ John Hammond's TryHackMe Advent of Cyber 3, Day 8 Walkthrough video contains an 
 Known as "cmdlets." Usually follow the format `Verb` + `-` + `Noun`. You can run "classic" `cmd.exe` commands on PowerShell, but the "power" lies in the `cmdlets`. 
 
 ## Logging
-All PowerShell commands are logged on each workstation. These are logged into the [Windows Event Log](../../knowledge-base/concepts/Windows/Windows%20Event%20Log.md) system.
+All PowerShell commands are logged on each workstation. These are logged into the [Windows Event Log](../../Knowledge%20Base/Concepts/Windows/Windows%20Event%20Log.md) system.
 ## Transcription-Logs
 PowerShell transcription logs capture the input and output of Windows PowerShell. These can be reviewed later to see what happened and when. They can be enabled by Group Policies or via configurations in the registry. 
 

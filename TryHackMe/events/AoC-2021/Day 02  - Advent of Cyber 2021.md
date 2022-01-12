@@ -12,11 +12,11 @@
 [^2]: 
 
 ## Walkthrough
-We are given a website and told it is vulnerable to [cookie manipulation](../../../knowledge-base/vulnerabilities/Cookie%20Manipulation.md). 
+We are given a website and told it is vulnerable to [cookie manipulation](../../../Knowledge%20Base/Vulnerabilities/Cookie%20Manipulation.md). 
 
 ![Vulnerable Landing Page](AoC-2021_Photos/Day_02/1.0_AoC-Day-2_12-19-21-Lading-Page.png)
 
-With no initial access to the website, we are going to create an account. Before we do this, will inspect the [cookies](../../../knowledge-base/concepts/Web%20Technologies/cookies.md) to see what changes when we do. No cookies are present before creating an account or logging in. 
+With no initial access to the website, we are going to create an account. Before we do this, will inspect the [Cookies](../../../Knowledge%20Base/Concepts/Web/Cookies.md) to see what changes when we do. No cookies are present before creating an account or logging in. 
 
 ![No Cookies](AoC-2021_Photos/Day_02/2.0_AoC-Day-2_12-20-21-No-Cookies.png)
 
@@ -28,7 +28,7 @@ While we could not create an account, we were given a cookie named `user-auth` w
 
 ![User-Auth Cookie]](AoC-2021_Photos/Day_2/4.0_AoC-Day-2_12-20-21-User-Auth-Cookie.png)
 
-To identify this cookies [encoding](../../../knowledge-base/concepts/encoding_decoding.md) we will use [CyberChef](https://gchq.github.io/CyberChef/) on GitHub. Paste the cookie into the `Input` box and drag `Magic` from the left menu into the `Recipe` pane. The output field informs us this encoded with `hexadecimal`. This can be verified by removing `Magic` and replacing it with `From Hex` to achieve the same result. 
+To identify this cookies [encoding](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md) we will use [CyberChef](https://gchq.github.io/CyberChef/) on GitHub. Paste the cookie into the `Input` box and drag `Magic` from the left menu into the `Recipe` pane. The output field informs us this encoded with `hexadecimal`. This can be verified by removing `Magic` and replacing it with `From Hex` to achieve the same result. 
 
 ![CyberChef Magic Decoding](AoC-2021_Photos/Day_02/5.0_AoC-Day-2_12-20-21-Magic-Decoding.png)
 

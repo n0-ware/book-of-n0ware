@@ -19,7 +19,7 @@
 - [Question 3](#Question-3)
 
 ## Walkthrough
-In this final box, we are exploring [post exploitation](../../../knowledge-base/methodology/Post%20Exploitation.md) techniques using [mimikatz](../../../Tools,%20Binaries,%20and%20Programs/Post-Exploitation/Password%20Harvetsing%20and%20Cracking/mimikatz.md) to pull credentials from the memory of [LSASS](../../../knowledge-base/concepts/Authentication.md#LSASS). 
+In this final box, we are exploring [post exploitation](../../../Knowledge%20Base/Methodology/Post%20Exploitation.md) techniques using [mimikatz](../../../Tools,%20Binaries,%20and%20Programs/Post-Exploitation/Password%20Harvetsing%20and%20Cracking/mimikatz.md) to pull credentials from the memory of [LSASS](../../../Knowledge%20Base/Concepts/General/Authentication.md#LSASS). 
 
 ### Questions-1-2
 [Top](#TOC)

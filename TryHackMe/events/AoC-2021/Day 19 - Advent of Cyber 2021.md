@@ -29,7 +29,7 @@
 - [Question 8](#Question-8)
 
 ## Walkthrough
-In this box, we are dealing with a [phishing](../../../knowledge-base/concepts/phishing.md) scenario where McSkidy has gotten multiple reports of attempts to phish multiple elves. One of the emails contained an attachment, formatted as a `.eml` file along with some `base64` [encoded](../../../knowledge-base/concepts/encoding_decoding.md) text. Lets investigate. 
+In this box, we are dealing with a [Phishing](../../../Knowledge%20Base/Concepts/Phishing.md) scenario where McSkidy has gotten multiple reports of attempts to phish multiple elves. One of the emails contained an attachment, formatted as a `.eml` file along with some `base64` [encoded](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md) text. Lets investigate. 
 
 > We will use the attack box for this challenge.
 
@@ -48,7 +48,7 @@ Next, we are asked to note the difference in the `From` and `Reply-to` email add
 ### Question-4
 [Top](#TOC)
 
-A common [sign of phishing](../../../knowledge-base/concepts/phishing.md#Signs) is a misspelled email, grammar error, or other surprising mistake in the body of an email. Take look at the text and see if you can spot it. 
+A common [sign of phishing](../../../Knowledge%20Base/Concepts/Phishing.md#Signs) is a misspelled email, grammar error, or other surprising mistake in the body of an email. Take look at the text and see if you can spot it. 
 
 ![Email Body](AoC-2021_Photos/Day_19/02_AoC_Day_19_01-08-22-Email-Body.png)
 
@@ -60,7 +60,7 @@ Next, we want to investigate the link to whatever website this malicious email i
 ### Question-6
 [Top](#TOC)
 
-Now, click on "More" and "View Source" to see the source code of the email. The source of an email consists of many items, including [headers](../../../knowledge-base/concepts/phishing.md#Headers). One of the headers here does not belong and seems ..."phishy."
+Now, click on "More" and "View Source" to see the source code of the email. The source of an email consists of many items, including [headers](../../../Knowledge%20Base/Concepts/Phishing.md#Headers). One of the headers here does not belong and seems ..."phishy."
 
 ![Unusual Header](AoC-2021_Photos/Day_19/03_AoC_Day_19_01-08-22-Unusual-Header.png)
 

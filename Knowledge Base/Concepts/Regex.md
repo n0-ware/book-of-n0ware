@@ -1,20 +1,9 @@
-# Grep and Extended Grep
-Grep and its cousin Extended Grep are used to match text strings to input, either from within a file or via a command piped into them. 
-## Egrep
-### Usage
-`egrep` is used when you intend to use an "extended [regular expression](../../Knowledge%20Base/Concepts/Regex.md)" beyond just a simple `string|otherstring` command via the `-E` flag with classic `grep`. It can be combined with other flags as well, and the [Regex](../../Knowledge%20Base/Concepts/Regex.md) is always wrapped in single quotes, such as `'^(linux|unix)'`.
+# Regular Expressions (regex)
 
-### Arguements
-- `-i` &mdash' Case insensitive pattern match
-- `-W` &mdash; Matches whole words
-- ` ` &mdash; 
-- ` ` &mdash; 
-- ` ` &mdash; 
-- ` ` &mdash; 
-- ` ` &mdash; 
-- ` ` &mdash; 
-- ` ` &mdash; 
+## Description
+A regular expression (regex or regexp) is a sequence of characters that specifies a search pattern inside text. These patterns are used as algorithms to search for a specific string or type of string, such as an IP address, [hash](General/Hashing.md), name, email, domain, etc. 
 
+From the security perspective, regex is very useful in parsing logs to search for specific information such as indicators of compromise or malicious domains. From the attacker's perspective, they are a helpful tool in finding information such as passwords, keys, and other credentials that may be buried within text files or source code. 
 
 ### Regex
 
@@ -48,6 +37,7 @@ Grep and its cousin Extended Grep are used to match text strings to input, eithe
 - ` ` &mdash; 
 - ` ` &mdash; 
 - ` ` &mdash; 
+
 
 
 ### Examples

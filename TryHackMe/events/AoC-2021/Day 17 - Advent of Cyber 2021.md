@@ -29,7 +29,7 @@
 - [Question 8](#Question-8)
 
 ## Walkthrough
-In this box we are tasked with investigated how The Grinch gained access to employee personal information. We know that HR recently made available an HR portal via an [Insecure AWS S3 Bucket](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md) and we suspect that it is the source of the leak the Grinch used for some extreme [content discovery](../../../knowledge-base/concepts/Web%20Technologies/content_discovery.md). 
+In this box we are tasked with investigated how The Grinch gained access to employee personal information. We know that HR recently made available an HR portal via an [Insecure AWS S3 Bucket](../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md) and we suspect that it is the source of the leak the Grinch used for some extreme [content discovery](../../../Knowledge%20Base/Concepts/Web/Content%20Discovery.md). 
 
 ### Question-1
 [Top](#TOC)
@@ -44,7 +44,7 @@ In our case, we only want the middle portion, the subdomain, domain name, and to
 
 Now we are asked to retrieve a flag from the bucket. This assumes that the bucket is accessible from anyone, with or without the proper permissions. Lets examine the URL of an S3 Bucket resource briefly. 
 
-![S3 URL Explained](../../../knowledge-base/vulnerabilities/vulnerabilities_photos/S3_URL_EXPLAINED.png)
+![S3 URL Explained](../../../Knowledge%20Base/Vulnerabilities/Photos%20(Vulnerabilities)/S3_URL_EXPLAINED.png)
 
 To attempt to access an object in the same bucket as the Christmas Tree image, let's run an `aws` CLI command, replacing `flyer.pnh` with `flag.txt`. This can also be done with `curl`
 
@@ -92,7 +92,7 @@ aws s3 cp s3://images.bestfestivalcompany.com/<FILE_TO_DOWNLOAD> . --no-sign-req
 
 > If you are ever on a system without `wget` but with `curl`, you can pipe the output of `curl` into another file using the *redirect* function `>`. e.g., `curl <COMMAND> > somefile.txt`
 
-Inside this file are a huge number of folders and files. We know we are looking for an AWS Access Key. These keys are for both [Access Control](../../../knowledge-base/concepts/Access%20Control.md) and [Authentication](../../../knowledge-base/concepts/Authentication.md) with AWS resources, including S3. 
+Inside this file are a huge number of folders and files. We know we are looking for an AWS Access Key. These keys are for both [Access Control](../../../Knowledge%20Base/Concepts/Web/Access%20Control.md) and [Authentication](../../../Knowledge%20Base/Concepts/General/Authentication.md) with AWS resources, including S3. 
 
 Since we don't know off hand what file may contain a string we are looking for, we can start by using `cat` on all of the available files and piping the output into `grep` with the filter `AKIA` to return potential keys. 
 
@@ -109,7 +109,7 @@ And there it is. We now have the Access Key to upload for this S3 Bucket.
 ### Question-5
 [Top](#TOC)
 
-To identify the account  ID an AWS Access Key belongs to, we need to perform some basic [AWS Reconnaissance](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance). The problem we have, however, is we need both the `access key` and `secret key` to create a profile on within the `aws` tool. To do this, we need to find the second key. 
+To identify the account  ID an AWS Access Key belongs to, we need to perform some basic [AWS Reconnaissance](../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance). The problem we have, however, is we need both the `access key` and `secret key` to create a profile on within the `aws` tool. To do this, we need to find the second key. 
 
 Knowing we located the first key within this directory, it is a good assumption the second key will be there as well. Run the same `cat | grep` command as before, but replace `AKIA` with `SECRET`. 
 
@@ -147,7 +147,7 @@ There is the Account ID for the Access Key in question.
 ### Question-6
 [Top](#TOC)
 
-To identify the Username belonging to this profile we created, we need a different [reconnaissance](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance) command. This one is more detailed and actually returns the information from the prior command and more, including the `Arn`, or "Amazon Resource Name" of the user. This will contain the username we want. Run the command below. 
+To identify the Username belonging to this profile we created, we need a different [reconnaissance](../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance) command. This one is more detailed and actually returns the information from the prior command and more, including the `Arn`, or "Amazon Resource Name" of the user. This will contain the username we want. Run the command below. 
 
 ```
 aws stst get-caller-identity --profile <PROFILE_NAME>
@@ -159,7 +159,7 @@ Let's move on.
 ### Question-7
 [Top](#TOC)
 
-Let's see what other resources are available for us to access in this account. First, let's list the EC2 instances that may or may not be running. Another [reconnaissance](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance) will do this for us. Run the command below. We pipe this into `grep` because the output can be quite long and we are just interested in tags at the moment. 
+Let's see what other resources are available for us to access in this account. First, let's list the EC2 instances that may or may not be running. Another [reconnaissance](../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance) will do this for us. Run the command below. We pipe this into `grep` because the output can be quite long and we are just interested in tags at the moment. 
 
 ```
 aws ec2 describe-instances --output text --profile HR | grep -i tags

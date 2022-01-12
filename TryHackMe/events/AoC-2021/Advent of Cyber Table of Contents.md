@@ -5,40 +5,40 @@
 ***<u>Days</u>***
 
 - [Day 1](Day%2001%20-%20Advent%20of%20Cyber%202021.md)
-	- [IDOR](../../../knowledge-base/vulnerabilities/Insecure%20Direct%20Object%20Reference%20(IDOR).md)
+	- [IDOR](../../../Knowledge%20Base/Vulnerabilities/Insecure%20Direct%20Object%20Reference%20(IDOR).md)
 	- Accessing restricted accounts
 - [Day 2](Day%2002%20%20-%20Advent%20of%20Cyber%202021.md)
-	- [Cookie Manipulation](../../../knowledge-base/vulnerabilities/Cookie%20Manipulation.md)
+	- [Cookie Manipulation](../../../Knowledge%20Base/Vulnerabilities/Cookie%20Manipulation.md)
 	- Fooling server into allowing admin login
 - [Day 3](Day%2003%20%20-%20Advent%20of%20Cyber%202021.md)
-	- [Content Discovery](../../../knowledge-base/concepts/Web%20Technologies/content_discovery.md)
+	- [Content Discovery](../../../Knowledge%20Base/Concepts/Web/Content%20Discovery.md)
 	- Default usernames and passwords
 	- Insecure calling of `javascript` divulged login information
 - [Day 4](Day%2004%20%20-%20Advent%20of%20Cyber%202021.md)
-	- [Fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md)
+	- [Fuzzing](../../../Knowledge%20Base/Concepts/Fuzzing.md) with [BurpSuite](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md)
 	- Weak passwords
 - [Day 5](Day%2005%20-%20Advent%20of%20Cyber%202021.md)
-	- [Cross Site Scripting](../../../knowledge-base/vulnerabilities/Cross-Site%20Scripting%20(XSS).md)
+	- [Cross Site Scripting](../../../Knowledge%20Base/Vulnerabilities/Cross-Site%20Scripting%20(XSS).md)
 	- Stored XSS
 	- Password change
 - [Day 6](Day%2006%20-%20Advent%20of%20Cyber%202021.md)
-	- [Local File Inclusion](../../../knowledge-base/vulnerabilities/Local%20File%20Inclusion%20(LFI).md)
-	- [Log Poisoning](../../../knowledge-base/vulnerabilities/Log%20Poisoning.md)
+	- [Local File Inclusion](../../../Knowledge%20Base/Vulnerabilities/Local%20File%20Inclusion%20(LFI).md)
+	- [Log Poisoning](../../../Knowledge%20Base/Vulnerabilities/Log%20Poisoning.md)
 	- [PHP in the URL](../../../Exploitation/In-URL/PHP%20in%20URL.md)
-	- [Path Traversal](../../../knowledge-base/vulnerabilities/Path%20Traversal.md)
+	- [Path Traversal](../../../Knowledge%20Base/Vulnerabilities/Path%20Traversal.md)
 	- [python_reverse_shell](../../../Exploitation/Reverse%20Shells/Python/python_reverse_shell.py)
-	- [RCE](../../../knowledge-base/vulnerabilities/Remote%20Code%20Execution.md)
+	- [RCE](../../../Knowledge%20Base/Vulnerabilities/Remote%20Code%20Execution.md)
 	- Manipulating poor website design to access files
 - [Day 7](Day%2007%20-%20Advent%20of%20Cyber%202021.md)
-	- [Injection](../../../knowledge-base/vulnerabilities/Injection.md)
-	- [NoSQL Injection](../../../knowledge-base/vulnerabilities/NoSQL%20Injection.md)
+	- [Injection](../../../Knowledge%20Base/Vulnerabilities/Injection.md)
+	- [NoSQL Injection](../../../Knowledge%20Base/Concepts/Databases/NoSQL%20Injection.md)
 	- [BurpSuite](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md)
 	- Databases
 	- Poor user input sanitation
 - [Day 8](Day%2008%20-%20Advent%20of%20Cyber%202021.md)
 	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md)
-	- [ShellBags](../../../knowledge-base/concepts/shellbags.md)
-	- [Windows Registry](../../../knowledge-base/concepts/Windows/Windows%20Registry.md)
+	- [ShellBags](../../../Knowledge%20Base/Concepts/Windows/Shellbags.md)
+	- [Windows Registry](../../../Knowledge%20Base/Concepts/Windows/Windows%20Registry.md)
 	- Logs
 	- Incident Response
 - [Day 9](Day%2009%20-%20Advent%20of%20Cyber%202021.md)
@@ -49,57 +49,57 @@
 	- [Nmap](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md)
 	- Service enumeration
 - [Day 11](Day%2011%20-%20Advent%20of%20Cyber%202021.md)
-	- [Relational Database Management Systems (RDBMS)](../../../knowledge-base/concepts/sql_rdbms.md)
+	- [Relational Database Management Systems (RDBMS)](../../../Knowledge%20Base/Concepts/Databases/Relational%20Database%20Management%20Systems.md)
 	- `sqsh` and `xp_cmdshell`
 	- SQL Database Interaction
 	- Local system enumeration with built in tools
 - [Day 12](Day%2012%20-%20Advent%20of%20Cyber%202021.md)
 	- [Nmap](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md)
-	- [Network File SYstem (NFS)](../../../knowledge-base/concepts/network_file_system_nfs.md)
+	- [Network File SYstem (NFS)](../../../Knowledge%20Base/Concepts/Network%20File%20System%20(NFS).md)
 	- Mounting and reading shares
 - [Day 13](Day%2013%20-%20Advent%20of%20Cyber%202021.md)
-	- [Windows Privesc](../../../knowledge-base/vulnerabilities/Privilege%20Escalation%20(privsec).md#Windows)
+	- [Windows Privesc](../../../Knowledge%20Base/Vulnerabilities/Privilege%20Escalation%20(privsec).md#Windows)
 	- Abusing service misconfigurations
 - [Day 14](Day%2014%20-%20Advent%20of%20Cyber%202021.md)
-	- [CI/CD](../../../knowledge-base/concepts/Continuous%20Integration%20Continuous%20Delivery%20(CICD).md)
+	- [CI/CD](../../../Knowledge%20Base/Concepts/Continuous%20Integration%20Continuous%20Delivery%20(CICD).md)
 	- Vulnerable web app
 	- Bad permissions
 	- Script abuse
 - Day 15 was a break day
 - [Day 16](Day%2016%20-%20Advent%20of%20Cyber%202021.md)
-	- [OSINT](../../../knowledge-base/concepts/OSINT.md)
+	- [OSINT](../../../Knowledge%20Base/Concepts/OSINT.md)
 - [Day 17](Day%2017%20-%20Advent%20of%20Cyber%202021.md)
-	- [Insecure S3 Buckts](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md)
-		- [AWS Reconnaissance](../../../knowledge-base/vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance)
-	- [Authentication](../../../knowledge-base/concepts/Authentication.md)
-	- [Content discovery](../../../knowledge-base/concepts/Web%20Technologies/content_discovery.md)
-	- Poor [access control](../../../knowledge-base/concepts/Access%20Control.md)
+	- [Insecure S3 Buckts](../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md)
+		- [AWS Reconnaissance](../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance)
+	- [Authentication](../../../Knowledge%20Base/Concepts/General/Authentication.md)
+	- [Content discovery](../../../Knowledge%20Base/Concepts/Web/Content%20Discovery.md)
+	- Poor [access control](../../../Knowledge%20Base/Concepts/Web/Access%20Control.md)
 - [Day 18](Day%2018%20-%20Advent%20of%20Cyber%202021.md)
-	- [Container images](../../../knowledge-base/concepts/Container%20Images.md)
-	- [Docker](../../../knowledge-base/concepts/Docker.md)
-	- [Content discovery](../../../knowledge-base/concepts/Web%20Technologies/content_discovery.md)
+	- [Container images](../../../Knowledge%20Base/Concepts/Container%20Images.md)
+	- [Docker](../../../Knowledge%20Base/Concepts/Docker.md)
+	- [Content discovery](../../../Knowledge%20Base/Concepts/Web/Content%20Discovery.md)
 	- Discovering hidden data inside a docker image
 - [Day 19](Day%2019%20-%20Advent%20of%20Cyber%202021.md)
-	- [phishing](../../../knowledge-base/concepts/phishing.md)
+	- [Phishing](../../../Knowledge%20Base/Concepts/Phishing.md)
 	- social engineering
 - [Day 20](Day%2020%20-%20Advent%20of%20Cyber%202021.md)
 	- Malware Analysis
 	- [Strings CLI](../../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/strings.md) tool
 	- Virus Total
 - [Day 21](Day%2021%20-%20Advent%20of%20Cyber%202021.md)
-	- [YARA Rules](../../../knowledge-base/concepts/YARA%20Rules.md)
+	- [YARA Rules](../../../Knowledge%20Base/Concepts/Defense/YARA%20Rules.md)
 	- Detection
 - [Day 22](Day%2022%20-%20Advent%20of%20Cyber%202021.md)
-	- [Encoding/Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
+	- [Encoding/Decoding](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md)
 	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md)
 	- Data Exfiltration
 - [Day 23](Day%2023%20-%20Advent%20of%20Cyber%202021.md)
 	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md)
 		- [cmdlets](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md#command-lets)
-	- [Encoding and Decoding](../../../knowledge-base/concepts/encoding_decoding.md)
-	- [Windows Event Log](../../../knowledge-base/concepts/Windows/Windows%20Event%20Log.md)
+	- [Encoding and Decoding](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md)
+	- [Windows Event Log](../../../Knowledge%20Base/Concepts/Windows/Windows%20Event%20Log.md)
 	- Data Exfiltration
 - [Day 24](Day%2024%20-%20Advent%20of%20Cyber%202021.md)
-	- [Hashing](../../../knowledge-base/concepts/hashing.md)
+	- [Hashing](../../../Knowledge%20Base/Concepts/General/Hashing.md)
 	- [mimikatz](../../../Tools,%20Binaries,%20and%20Programs/Post-Exploitation/Password%20Harvetsing%20and%20Cracking/mimikatz.md)
-	- [Authentication](../../../knowledge-base/concepts/Authentication.md#Windows)
+	- [Authentication](../../../Knowledge%20Base/Concepts/General/Authentication.md#Windows)

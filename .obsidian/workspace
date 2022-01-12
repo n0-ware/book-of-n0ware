@@ -20,8 +20,30 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "knowledge-base/concepts/Container Images.md",
-            "mode": "preview"
+            "file": "Knowledge Base/Concepts/Databases/Relational Database Management Systems.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "c17a86bb11602c8d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Knowledge Base/Concepts/General/Trust.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "a1d278b12049ee96",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Knowledge Base/Concepts/General/Authentication.md",
+            "mode": "source"
           }
         }
       }
@@ -79,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "knowledge-base/concepts/Container Images.md",
+                "file": "Knowledge Base/Concepts/General/Authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "knowledge-base/concepts/Container Images.md",
+                "file": "Knowledge Base/Concepts/General/Authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,17 +131,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9a7194cb3340f02f",
+  "active": "a1d278b12049ee96",
   "lastOpenFiles": [
-    "knowledge-base/concepts/Container Images.md",
-    "knowledge-base/concepts/Continuous Integration Continuous Delivery (CICD).md",
-    "Tools, Binaries, and Programs/CLI Utilities/Scratch.md",
-    "knowledge-base/vulnerabilities/Password Cracking.md",
-    "knowledge-base/vulnerabilities/Injection.md",
-    "knowledge-base/vulnerabilities/Cookie Manipulation.md",
-    "Tools, Binaries, and Programs/Information Gathering/Network Reconnaissance/Nmap.md",
-    "Tools, Binaries, and Programs/Databases/Microsoft SQL Server (MSSQL).md",
-    "Tools and Binaries/Untitled.md",
-    "TryHackMe/events/AoC-2021/Day 24 - Advent of Cyber 2021.md"
+    "Knowledge Base/Concepts/General/Authentication.md",
+    "Knowledge Base/Concepts/General/Trust.md",
+    "Knowledge Base/Concepts/Databases/Relational Database Management Systems.md",
+    "Knowledge Base/Concepts/Offensive Security/Persistence.md",
+    "Knowledge Base/Concepts/Web/Document Object Model (DOM).md",
+    "Knowledge Base/Concepts/Web/Directory Busting.md",
+    "Knowledge Base/Concepts/Web/Deserialization.md",
+    "Knowledge Base/Concepts/Web/Content Discovery.md",
+    "Knowledge Base/Concepts/Network File System (NFS).md",
+    "Tools, Binaries, and Programs/CLI Utilities/Scratch.md"
   ]
 }

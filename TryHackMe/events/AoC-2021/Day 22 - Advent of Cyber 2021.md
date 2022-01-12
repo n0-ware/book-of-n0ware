@@ -23,7 +23,7 @@
 - [Question 6](#Question-6)
 
 ## Walkthrough
-We are getting close to identifying the source of all our problems, and have found that Grinch Enterprises left a malicious document on the machine, but we cannot find the document itself. We know this document contains a malicious, obfuscated base64 encoded script that also have a secret cipher ingredient, [XOR Encoding](../../../knowledge-base/concepts/encoding_decoding.md#XOR)  with the key*decimal 35* and that we will also be dealing with [Base64 encoding](../../../knowledge-base/concepts/encoding_decoding.md#Base64). 
+We are getting close to identifying the source of all our problems, and have found that Grinch Enterprises left a malicious document on the machine, but we cannot find the document itself. We know this document contains a malicious, obfuscated base64 encoded script that also have a secret cipher ingredient, [XOR Encoding](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md#XOR)  with the key*decimal 35* and that we will also be dealing with [Base64 encoding](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md#Base64). 
 
 > This will take place on the "Attack Box." You can connect via RDP if you would like to do so. 
 
@@ -42,7 +42,7 @@ We can see that lines 12-14 contain a macro, worth investigating later. However,
 
 ![Dumped Stream](AoC-2021_Photos/Day_22/02_AoC_Day_22_01-09-22-oledump-dump.png)
 
-That is a lot of data. Fortunately, we've been given some clues. We know this is [Base64](../../../knowledge-base/concepts/encoding_decoding.md#Base64) from the `==` at the end of the string, and we are told that this is [XOR Encoding](../../../knowledge-base/concepts/encoding_decoding.md#XOR) with the secret key *decimal 35*, which converted to binary, equals `10011`. Let's take this to [CyberChef](https://gchq.github.io/CyberChef/). 
+That is a lot of data. Fortunately, we've been given some clues. We know this is [Base64](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md#Base64) from the `==` at the end of the string, and we are told that this is [XOR Encoding](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md#XOR) with the secret key *decimal 35*, which converted to binary, equals `10011`. Let's take this to [CyberChef](https://gchq.github.io/CyberChef/). 
 
 We want only the part of the string in the image after `GrinchEnterprisesIsComingForYou` starting with `ahNtw`. 
 

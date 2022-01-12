@@ -26,7 +26,7 @@
 - [Question 6](#Question-6)
 
 ## Walkthrough
-In this box, we are told that we have lost access to Santa's Reindeer Schedule stored in a [Relational Database Management System (RDBMS)](../../../knowledge-base/concepts/sql_rdbms.md) and need to not only regain access, but first find it on the system using [Nmap](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md).
+In this box, we are told that we have lost access to Santa's Reindeer Schedule stored in a [Relational Database Management System (RDBMS)](../../../Knowledge%20Base/Concepts/Databases/Relational%20Database%20Management%20Systems.md) and need to not only regain access, but first find it on the system using [Nmap](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md).
 
 > **Note:** If you are familiar with `MySQL` commands, those will not apply here. You are using `MS SQL` over `sqsh`.
 

@@ -25,7 +25,7 @@
 
 ## Walkthrough
 
-In this box, we are instructed that there is a need to analyze some unusual network traffic and also must identify an [Network File System (NFS)](../../../knowledge-base/concepts/network_file_system_nfs.md) service on an IP within our network. 
+In this box, we are instructed that there is a need to analyze some unusual network traffic and also must identify an [Network File System (NFS)](../../../Knowledge%20Base/Concepts/Network%20File%20System%20(NFS).md) service on an IP within our network. 
 ### Questions-1-2
 [Top](#TOC)
 

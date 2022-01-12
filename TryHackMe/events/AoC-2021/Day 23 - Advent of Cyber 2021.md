@@ -26,7 +26,7 @@
 - [Question 7](#Question-7)
 
 ## Walkthrough
-In this scenario, we are tasked with investigating [Windows Event Logs](../../../knowledge-base/concepts/Windows/Windows%20Event%20Log.md) to discover where a missing password went for the Elf Dome Defense system. It is suspected that a recent [phishing](../../../knowledge-base/concepts/phishing.md) attempt was successful. We need to find out what happened and what actions the actor took on the compromised PC by reviewing [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md) event logs.  
+In this scenario, we are tasked with investigating [Windows Event Logs](../../../Knowledge%20Base/Concepts/Windows/Windows%20Event%20Log.md) to discover where a missing password went for the Elf Dome Defense system. It is suspected that a recent [Phishing](../../../Knowledge%20Base/Concepts/Phishing.md) attempt was successful. We need to find out what happened and what actions the actor took on the compromised PC by reviewing [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md) event logs.  
 
 > For this scenario, we are interested in event log id's `4103` and `4014` from the provider `Microsoft-Windows-PowerShell`. This scenario will use the Attack Box. 
 
@@ -63,7 +63,7 @@ The fourth log contains a PowerShell script that details the process the actor w
 
 ![Malicious PS Script](AoC-2021_Photos/Day_23/04_AoC_Day_23_01-09-22-Malicious-Script.png)
 
-It is worth nothing that all of the strings that start with `$` are variables declared in the script. Reading through this, we can see the attacker declared variables for a file (from which they got the content of `password.txt`), an encryption key (flag 4), a secure string, and the final encrypted data payload. Further down, they used the *cmdlet* `Invoke-WebRequest` to export the encrypted data via a `curl` [POST](../../../knowledge-base/concepts/Web%20Technologies/POST.md) request to a remote IP on an obscure port (flag 3). 
+It is worth nothing that all of the strings that start with `$` are variables declared in the script. Reading through this, we can see the attacker declared variables for a file (from which they got the content of `password.txt`), an encryption key (flag 4), a secure string, and the final encrypted data payload. Further down, they used the *cmdlet* `Invoke-WebRequest` to export the encrypted data via a `curl` [POST Request](../../../Knowledge%20Base/Concepts/Web/POST%20Request.md) request to a remote IP on an obscure port (flag 3). 
 
 ### Questions-5-6
 [Top](#TOC)

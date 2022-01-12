@@ -12,7 +12,7 @@
 [^2]: THM{NO_MORE_BUTTMAS}
 
 ## Walkthrough
-In this lab, we are given a URL for a forum vulnerable to [Cross-Site Scripting](../../../knowledge-base/vulnerabilities/Cross-Site%20Scripting%20(XSS).md). Head to the URL provided in the lab to view the forum. Explore different topics, threads, links, etc. The first thing we are told to note is that every mention of *Christmas* has been changed to *Buttmas*. Clever Grinch... We need access to the Grinch's account to disable whatever is causing the change. 
+In this lab, we are given a URL for a forum vulnerable to [Cross-Site Scripting](../../../Knowledge%20Base/Vulnerabilities/Cross-Site%20Scripting%20(XSS).md). Head to the URL provided in the lab to view the forum. Explore different topics, threads, links, etc. The first thing we are told to note is that every mention of *Christmas* has been changed to *Buttmas*. Clever Grinch... We need access to the Grinch's account to disable whatever is causing the change. 
 
 ![Merry Chri...err..Buttmas!](AoC-2021_Photos/Day_05/1.0_AoC-Day-5_12-23-21-Buttmas.png)
 
@@ -26,7 +26,7 @@ Head to the forum and see if t he comments section is also vulnerable by adding 
 
 `n0_ware was <b>here</b>`
 
-The comment successfully renders the tags, informing us that whatever processing the forum has, at the very least, does not strip out `HTML` code when submitting the data to the database. Here we have a guarantee of potential vulnerability to [**Reflected Cross-Site Scripting**](../../../knowledge-base/vulnerabilities/Cross-Site%20Scripting%20(XSS).md)
+The comment successfully renders the tags, informing us that whatever processing the forum has, at the very least, does not strip out `HTML` code when submitting the data to the database. Here we have a guarantee of potential vulnerability to [**Reflected Cross-Site Scripting**](../../../Knowledge%20Base/Vulnerabilities/Cross-Site%20Scripting%20(XSS).md)
 
 ![Unsanitary Comment](AoC-2021_Photos/Day_05/3.0_AoC-Day-5_12-23-21-Unsanitary-Comment.png)
 

@@ -14,7 +14,7 @@
 ## Walkthrough
 > If you would prefer to use a personal machine for this lab, simply copy (with the built in clipboard) or re-type the short the wordlist provided for you on the attack box at `/root/Rooms/AoC3/Day4/passwords.txt` into a file on your local machine and ensure your VPN is on. 
 
-In this lab we are given a web application with a login page vulnerable o [fuzzing](../../../knowledge-base/concepts/fuzzing.md) with [BurpSuite](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md). We start by heading to the IP provided in a browser, starting BurpSuite, and enabling FoxyProxy. These are all pre-installed in the TryHackMe attack box. BurpSuite is pre-installed on Kali Linux, but a proxy for your web browser will need to be configured if you perform this lab locally.
+In this lab we are given a web application with a login page vulnerable o [Fuzzing](../../../Knowledge%20Base/Concepts/Fuzzing.md) with [BurpSuite](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md). We start by heading to the IP provided in a browser, starting BurpSuite, and enabling FoxyProxy. These are all pre-installed in the TryHackMe attack box. BurpSuite is pre-installed on Kali Linux, but a proxy for your web browser will need to be configured if you perform this lab locally.
 
 The first thing we see on the login page is a login page for *Santa's Travel Itinerary*. To fuzz or brute force a login page with BurpSuite, we first need to capture a request sent to the login screen. Enter in some dummy information, turn on your intercept within BurpSuite, and attempt to login. 
 

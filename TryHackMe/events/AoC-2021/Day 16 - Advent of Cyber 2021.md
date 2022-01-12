@@ -30,7 +30,7 @@
 
 
 ## Walkthrough
-This box is dedicated to the art of Open Source Intelligence gathering, aka [OSINT](../../../knowledge-base/concepts/OSINT.md). In this walkthrough, we will detail the shortest route I have identified to answer your question. 
+This box is dedicated to the art of Open Source Intelligence gathering, aka [OSINT](../../../Knowledge%20Base/Concepts/OSINT.md). In this walkthrough, we will detail the shortest route I have identified to answer your question. 
 
 ### Question-1
 [Top](#TOC)
@@ -59,7 +59,7 @@ Great! We have our starting point, a username available "on all platforms".
 ### Question-2
 [Top](#TOC)
 
-The next step is to see if we can locate anything interesting with that username with a simple Google search. Using [Google Dorking](../../../knowledge-base/concepts/OSINT.md#Google) we can use a simple search function to return only results with that username to start with. Type `+` before the username into Google and search. 
+The next step is to see if we can locate anything interesting with that username with a simple Google search. Using [Google Dorking](../../../Knowledge%20Base/Concepts/OSINT.md#Google) we can use a simple search function to return only results with that username to start with. Type `+` before the username into Google and search. 
 
 ![User Located](AoC-2021_Photos/Day_16/02_AoC_Day_14_01-03-22-User-Located.png)
 

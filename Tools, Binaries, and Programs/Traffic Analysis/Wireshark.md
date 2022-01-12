@@ -14,7 +14,7 @@ A full writeup of Wireshark is unfeasible and I will leave that to the experts. 
  - 
 ### Common Filters
 #### HTTP
-- `http.request.method == GET` &mdash; Filter only [GET](../../knowledge-base/concepts/Web%20Technologies/GET.md) requests. Same for [POST](../../knowledge-base/concepts/Web%20Technologies/POST.md) but substitute `GET` for `POST`. 
+- `http.request.method == GET` &mdash; Filter only [GET Request](../../Knowledge%20Base/Concepts/Web/GET%20Request.md) requests. Same for [POST Request](../../Knowledge%20Base/Concepts/Web/POST%20Request.md) but substitute `GET` for `POST`. 
 - `http.request` &mdash; Filter only `HTTP` requests
 - `contains` &mdash; Used to identify if a specific filter *contains* a string, such as `http contains "www.google.com"` or `http.user_agent contains Mozilla`.
 - `http.response.code` &mdash; Filtering for response codes

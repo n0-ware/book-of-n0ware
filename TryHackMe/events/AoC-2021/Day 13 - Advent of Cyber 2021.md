@@ -33,11 +33,11 @@ To start, either use the Attack Box or RDP into the system with the `xfreerdp` u
 xfreerdp /u:mcskidy /p:Password1 /v:<TARGET_IP>
 ```
 
-The information included in the TryHackMe walkthrough is summarized in the [Windows Privsec](../../../knowledge-base/vulnerabilities/Privilege%20Escalation%20(privsec).md#Windows) section of this note. 
+The information included in the TryHackMe walkthrough is summarized in the [Windows Privsec](../../../Knowledge%20Base/Vulnerabilities/Privilege%20Escalation%20(privsec).md#Windows) section of this note. 
 ### Privesc
 [Top](#TOC)
 
-We are told first that the *Iperius Backup Service* offers a  potential [Privilege Escalation (privsec)](../../../knowledge-base/vulnerabilities/Privilege%20Escalation%20(privsec).md#Windows) vector due to its potential to run backup tasks with admin privileges despite the local users privilege level. Open the search bar in the bottom of the screen and search `Iperius` and launch the application. 
+We are told first that the *Iperius Backup Service* offers a  potential [Privilege Escalation (privsec)](../../../Knowledge%20Base/Vulnerabilities/Privilege%20Escalation%20(privsec).md#Windows) vector due to its potential to run backup tasks with admin privileges despite the local users privilege level. Open the search bar in the bottom of the screen and search `Iperius` and launch the application. 
 
 Start a new backup tasks by clicking the left-most icon on the menu bar and configure as follows. 
 
