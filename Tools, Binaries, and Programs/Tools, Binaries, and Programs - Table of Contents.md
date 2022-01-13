@@ -1,6 +1,6 @@
 # Tools, Binaries, and Programs - Table of Contents
 ## Table of Contents
-- <a href="#cli-utils"></a>
+- <a href="#cli-utils">CLI Utilities</a>
 - [Databases](#Databases)
 - [Enumeration](#Enumeration)
 - [Exploitation](#Exploitation)
@@ -11,10 +11,9 @@
 	- [WebApps](#WebApps)
 - [Post-Exploitation](#Post-Exploitation)
 - [Scripts](#Scripts)
-- <a href="#traffic-analysis"></a>
+- <a href="#traffic-analysis">Traffic Analysis</a>
 - [Wordlists](#Wordlists)
 - [Windows](#Windows)
--
 ### CLI Utilities
 <a id="cli-utilities"></a>
 - [AWS CLI](CLI%20Utilities/AWS%20CLI.md)
