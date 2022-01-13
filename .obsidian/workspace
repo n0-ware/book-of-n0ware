@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
+                "file": "Knowledge Base/Table of Contents - Knowledge Base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
+                "file": "Knowledge Base/Table of Contents - Knowledge Base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,10 +120,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "857a488305a9f6f6",
+  "active": "73d9c74afef44838",
   "lastOpenFiles": [
-    "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
     "Knowledge Base/Table of Contents - Knowledge Base.md",
+    "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
     "Knowledge Base/Concepts/Windows/Domain (Active Directory).md",
     "Knowledge Base/Methodology/01 Methodology - Table of Contents.md",
     "Knowledge Base/Methodology/Post Exploitation.md",

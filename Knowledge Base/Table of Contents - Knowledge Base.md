@@ -4,8 +4,8 @@
 - [Exploitation](#Exploitation%20-%20Table%20of%20Contents%20Exploitation%2001%2020Exploitation%2020-%2020Table%2020of%2020Contents%20md)
 - [Methodology](#Methodology%20-%20Methodology%20Methodology%2001%2020Methodology%2020-%2020Table%2020of%2020Contents%20md)
 - [Vulnerabilities](#Vulnerabilities%20-%20Table%20of%20Contents%20Vulnerabilities%2001%2020Vulnerabilities%2020-%2020Table%2020of%2020Contents%20md)
-### _Concepts_ - [Table of Contents](Concepts/01%20Concepts%20-%20Table%20of%20Contents.md)
-#### _Shortcuts_
+### Concepts - [Table of Contents](Concepts/01%20Concepts%20-%20Table%20of%20Contents.md)
+#### <u>Shortcuts</u>
 - [Databases](#Databases)
 - [Defense](#Defense)
 - [General](#General)
@@ -13,12 +13,12 @@
 - [Web](#Web)
 - [Windows](#Windows)
 - [Unsorted](#Unsorted)
-##### _Databases_
+##### Databases
 - [NoSQL](Databases/NoSQL.md)
 - [SQL (Relational Database Management System)](Databases/Relational%20Database%20Management%20Systems.md)
-##### _Defense_
+##### Defense
 - [YARA Rules](Defense/YARA%20Rules.md)
-##### _General_
+##### General
 - [Authentication](General/Authentication.md) 
 - [Encoding and Decoding](General/Encoding%20and%20Decoding.md) 
 - [Enumeration](enumeration.md) **Empty**
@@ -27,7 +27,7 @@
 - [Trust](General/Trust.md)  **Empty**
 - [Validation](General/Validation.md)  **Empty**
 - [Vulnerability](General/Vulnerability.md) **Empty**
-##### _Offensive Security_
+##### Offensive Security
 <a id="offensive-security"></a>
 - [Persistence](Offensive%20Security/Persistence.md)
 ##### Web
