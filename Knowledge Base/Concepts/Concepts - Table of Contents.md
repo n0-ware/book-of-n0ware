@@ -7,6 +7,7 @@
 - [Web](#Web)
 - [Windows](#Windows)
 - [Unsorted](#Unsorted)
+* * *
 ##### Databases
 - [NoSQL](Databases/NoSQL.md)
 - [SQL (Relational Database Management System)](Databases/Relational%20Database%20Management%20Systems.md)
@@ -21,8 +22,7 @@
 - [Trust](General/Trust.md)  **Empty**
 - [Validation](General/Validation.md)  **Empty**
 - [Vulnerability](General/Vulnerability.md) **Empty**
-##### Offensive Security
-<a id="offensive-security"></a>
+##### Offensive Security <a id="offensive-security"></a>
 - [Persistence](Offensive%20Security/Persistence.md)
 ##### Web
 - [Access Control](Web/Access%20Control.md)  **Empty**

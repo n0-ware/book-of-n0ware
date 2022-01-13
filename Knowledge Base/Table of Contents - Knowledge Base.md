@@ -4,7 +4,8 @@
 - [Exploitation](#Exploitation%20-%20Table%20of%20Contents%20Exploitation%2001%2020Exploitation%2020-%2020Table%2020of%2020Contents%20md)
 - [Methodology](#Methodology%20-%20Methodology%20Methodology%2001%2020Methodology%2020-%2020Table%2020of%2020Contents%20md)
 - [Vulnerabilities](#Vulnerabilities%20-%20Table%20of%20Contents%20Vulnerabilities%2001%2020Vulnerabilities%2020-%2020Table%2020of%2020Contents%20md)
-### Concepts - [Table of Contents](Concepts/01%20Concepts%20-%20Table%20of%20Contents.md)
+* * *
+### Concepts - [Table of Contents](Concepts/Concepts%20-%20Table%20of%20Contents.md)
 #### Shortcuts
 - [Databases](#Databases)
 - [Defense](#Defense)
@@ -27,8 +28,7 @@
 - [Trust](General/Trust.md)  **Empty**
 - [Validation](General/Validation.md)  **Empty**
 - [Vulnerability](General/Vulnerability.md) **Empty**
-##### Offensive Security
-<a id="offensive-security"></a>
+##### Offensive Security <a id="offensive-security"></a>
 - [Persistence](Offensive%20Security/Persistence.md)
 ##### Web
 - [Access Control](Web/Access%20Control.md)  **Empty**
@@ -63,14 +63,13 @@
 - [Open Source Intelligence (OSINT)](Open%20Source%20Intelligence%20(OSINT).md)
 - [Phishing](Phishing.md)
 - [Regular Expressions (regex)](Regular%20Expressions%20(regex).md)
-### Exploitation - [Table of Contents](Exploitation/01%20Exploitation%20-%20Table%20of%20Contents.md)
+### Exploitation - [Table of Contents](Exploitation/Exploitation%20-%20Table%20of%20Contents.md)
 #### Shortcuts
 - [In-URL](#In-URL)
 - <a href="#reverse-shells">Reverse Shells</a>
 ##### In-URL
 - [PHP in URL](In-URL/PHP%20in%20URL.md)
-##### Reverse Shells
-<a id="reverse-shells"></a>
+##### Reverse Shells <a id="reverse-shells"></a>
 ###### Python
 - [python_reverse_shell](Reverse%20Shells/Python/python_reverse_shell.py)
 ### Methodology - [Table of Contents](Methodology/01%20Methodology%20-%20Table%20of%20Contents.md)
