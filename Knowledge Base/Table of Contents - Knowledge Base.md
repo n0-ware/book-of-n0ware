@@ -5,7 +5,7 @@
 - [Methodology](#Methodology%20-%20Methodology%20Methodology%2001%2020Methodology%2020-%2020Table%2020of%2020Contents%20md)
 - [Vulnerabilities](#Vulnerabilities%20-%20Table%20of%20Contents%20Vulnerabilities%2001%2020Vulnerabilities%2020-%2020Table%2020of%2020Contents%20md)
 ### Concepts - [Table of Contents](Concepts/01%20Concepts%20-%20Table%20of%20Contents.md)
-#### <u>Shortcuts</u>
+#### Shortcuts
 - [Databases](#Databases)
 - [Defense](#Defense)
 - [General](#General)

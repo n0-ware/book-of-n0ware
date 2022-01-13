@@ -1,10 +1,18 @@
 # Concepts Table of Contents
-## Databases
+#### Shortcuts
+- [Databases](#Databases)
+- [Defense](#Defense)
+- [General](#General)
+- <a href="#offensive-security">Offensive Security</a>
+- [Web](#Web)
+- [Windows](#Windows)
+- [Unsorted](#Unsorted)
+##### Databases
 - [NoSQL](Databases/NoSQL.md)
 - [SQL (Relational Database Management System)](Databases/Relational%20Database%20Management%20Systems.md)
-## Defense
+##### Defense
 - [YARA Rules](Defense/YARA%20Rules.md)
-## General
+##### General
 - [Authentication](General/Authentication.md) 
 - [Encoding and Decoding](General/Encoding%20and%20Decoding.md) 
 - [Enumeration](enumeration.md) **Empty**
@@ -13,9 +21,10 @@
 - [Trust](General/Trust.md)  **Empty**
 - [Validation](General/Validation.md)  **Empty**
 - [Vulnerability](General/Vulnerability.md) **Empty**
-## Offensive Security
+##### Offensive Security
+<a id="offensive-security"></a>
 - [Persistence](Offensive%20Security/Persistence.md)
-## Web
+##### Web
 - [Access Control](Web/Access%20Control.md)  **Empty**
 - [Content Discovery](Web/Content%20Discovery.md)
 - [Cookies](Web/Cookies.md)
@@ -32,14 +41,14 @@
 - [Sessions](Web/Sessions.md)
 - [User-Supplied Input](Web/User-Supplied%20Input.md) **Empty**
 
-## Windows
-- [Domain (Active Directory)](Domain%20(Active%20Directory.md)
+##### Windows
+- [Domain (Active Directory)](Windows/Domain%20(Active%20Directory))
 - [Dynamic Link Library (DLL)](Windows/Dynamic%20Link%20Library%20(DLL).md)
 - [Shellbags](Windows/Shellbags.md)
 - [Windows Event Log](Windows/Windows%20Event%20Log.md)
 - [Windows Registry](Windows/Windows%20Registry.md)
 
-## Unsorted
+##### Unsorted
 - [Container Images](Container%20Images.md)
 - [Continuous Integration / Continuous Deployment](Continuous%20Integration%20Continuous%20Delivery%20(CICD).md)
 - [Docker](Docker.md)

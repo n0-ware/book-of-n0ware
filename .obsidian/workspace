@@ -15,23 +15,34 @@
         }
       },
       {
-        "id": "857a488305a9f6f6",
+        "id": "bc89f76ba9c17971",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
+            "file": "Knowledge Base/Vulnerabilities/01 Vulnerabilities - Table of Contents.md",
             "mode": "source"
           }
         }
       },
       {
-        "id": "a1d278b12049ee96",
+        "id": "0eb828a702e4f5d2",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Base/Concepts/01 Concepts - Table of Contents.md",
+            "file": "Knowledge Base/Methodology/01 Methodology - Table of Contents.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "7fcc6642039d7d34",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
             "mode": "source"
           }
         }
@@ -90,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Base/Table of Contents - Knowledge Base.md",
+                "file": "Knowledge Base/Vulnerabilities/01 Vulnerabilities - Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledge Base/Table of Contents - Knowledge Base.md",
+                "file": "Knowledge Base/Vulnerabilities/01 Vulnerabilities - Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,17 +131,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "73d9c74afef44838",
+  "active": "bc89f76ba9c17971",
   "lastOpenFiles": [
+    "Knowledge Base/Vulnerabilities/01 Vulnerabilities - Table of Contents.md",
     "Knowledge Base/Table of Contents - Knowledge Base.md",
-    "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
-    "Knowledge Base/Concepts/Windows/Domain (Active Directory).md",
     "Knowledge Base/Methodology/01 Methodology - Table of Contents.md",
+    "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
+    "Knowledge Base/Concepts/01 Concepts - Table of Contents.md",
+    "Knowledge Base/Concepts/Windows/Domain (Active Directory).md",
     "Knowledge Base/Methodology/Post Exploitation.md",
     "Knowledge Base/Vulnerabilities/Remote Code Execution.md",
     "Knowledge Base/Vulnerabilities/Session Hijacking.md",
-    "Knowledge Base/Vulnerabilities/01 Vulnerabilities - Table of Contents.md",
-    "Markdown Formatting/HTML.md",
-    "Knowledge Base/Vulnerabilities/Cookie Manipulation.md"
+    "Markdown Formatting/HTML.md"
   ]
 }
