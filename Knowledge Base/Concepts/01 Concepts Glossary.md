@@ -1,10 +1,13 @@
 # Definitions Table of Contents
-## Security Concepts
+## Databases
+- [NoSQL](Databases/NoSQL.md)
+## Defense
+## General
 - [Trust](General/Trust.md)  **Empty**
 - [Validation](General/Validation.md)  **Empty**
 - [Vulnerability](General/Vulnerability.md) **Empty**
-
-## Web-Tech
+## Offensive Security
+## Web
 - [Content Discovery](Web/Content%20Discovery.md)
 - [Cookies](Web/Cookies.md)
 - [Deserialization](Web/Deserialization.md)
@@ -38,7 +41,7 @@
 - [Fuzzing](Fuzzing.md) **Empty**
 - [Hashing](General/Hashing.md)
 - [NFS](Network%20File%20System%20(NFS).md)
-- [NoSQL](Databases/NoSQL.md)
+
 - [OSINT](OSINT.md)
 - [Persistence](Offensive%20Security/Persistence.md)
 - [Phishing](Phishing.md)

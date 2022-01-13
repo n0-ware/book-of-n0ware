@@ -4,7 +4,7 @@ Tags[^2]
 
 ## TOC
 - [Description](#Description)
-- [NoSQL Injection](NoSQL%20Injection.md)
+- [NoSQL Injection](../../Vulnerabilities/NoSQL%20Injection.md)
 - [SQL vs NoSQL](#SQL%20vs%20NoSQL)
 - [Structure](#Structure)
 - [Commands](#Commands)
@@ -27,7 +27,7 @@ NoSQL databases are non-relational and come in a variety of formats[^1].
 In a document database, for example, a **collection** of users will contain various **documents** that contain various **fields** that contain **key-value** pairs used to store/access the data. 
 
 ## Injection
-See [NoSQL Injection](NoSQL%20Injection.md)
+See [NoSQL Injection](../../Vulnerabilities/NoSQL%20Injection.md)
 
 ## SQL vs NoSQL
 

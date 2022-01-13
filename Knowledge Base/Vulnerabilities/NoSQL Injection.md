@@ -9,7 +9,7 @@ Tags[^1]
 	- [Common Injection Operators](#Common%20Injection%20Operators)
 	- [Bypassing Logins](#Bypassing%20Logins)
 ## Description
-A web security vulnerability that allows attackers to control a [NoSQL](NoSQL.md) database, usually the result of unfiltered and untrusted [user supplied input](../Web/User-Supplied%20Input.md) through an application. This can lead to unauthorized information disclosure and/or the alteration of a database.
+A web security vulnerability that allows attackers to control a [NoSQL](NoSQL.md) database, usually the result of unfiltered and untrusted [user supplied input](../Concepts/Web/User-Supplied%20Input.md) through an application. This can lead to unauthorized information disclosure and/or the alteration of a database.
 
 ## Examples
 
@@ -36,7 +36,7 @@ Login page logic is similar in most databases.
 - Then, look for the supplied `username` and see if it matches the supplied `password`. 
 - If this evaluates to true, then the entry is valid and the login is granted.
 
-An example evaluated to true [query](../General/Queries.md) may be:
+An example evaluated to true [query](../Concepts/General/Queries.md) may be:
 
 ```
 > db.users.findOne({username: "admin", password: "adminpass"}) 
@@ -63,7 +63,7 @@ This same concept is applicable to the `username` field. Consider this as well, 
 It is up to you to identify where the injection can take place, such as in the URL bar or the actual input field. Enumeration is key. 
 
 ### Injecting URLs
-When dealing with [GET Request](../Web/GET%20Request.md) and [POST Request](../Web/POST%20Request.md) requests, you must match the `key:value` parameters of the URL and `[]` instead of `{}` is most circumstances. 
+When dealing with [GET Request](../Concepts/Web/GET%20Request.md) and [POST Request](../Concepts/Web/POST%20Request.md) requests, you must match the `key:value` parameters of the URL and `[]` instead of `{}` is most circumstances. 
 
 *For example:*
 - `http://vulnsitecom/search?username=ben&role=user` &mdash; Normal URL NoSQL query

@@ -22,7 +22,7 @@
 
 ## Walkthrough
 
-In this box are are going to be exploring [NoSQL Injection](../../../Knowledge%20Base/Concepts/Databases/NoSQL%20Injection.md) via a **MongoDB** [NoSQL](../../../Knowledge%20Base/Concepts/Databases/NoSQL.md) server. Begin by accessing the URL in your browser and starting an `nmap` against the server with the standard enumeration flags.
+In this box are are going to be exploring [NoSQL Injection](../../../Knowledge%20Base/Vulnerabilities/NoSQL%20Injection.md) via a **MongoDB** [NoSQL](../../../Knowledge%20Base/Concepts/Databases/NoSQL.md) server. Begin by accessing the URL in your browser and starting an `nmap` against the server with the standard enumeration flags.
 
 
 Nothing of note except for a secondary `ssh` service running on port `2222` and a `node.js` server running on port `8000` We know already that the secondary `ssh` is for practicing the beginning of the walkthrough. We may investigate the `node.js` server later. 
@@ -84,7 +84,7 @@ Here, we can quickly send requests using the same template requests but with sma
 
 ![Testing Repeater](AoC-2021_Photos/Day_07/6.0_AoC-Day-7_12-27-21-Test-Username.png)
 
-Let's try some basic [NoSQL Injection](../../../Knowledge%20Base/Concepts/Databases/NoSQL%20Injection.md) using common commands. Assuming there is an `admin` user, let's attempt to get the `password` field to evaluate to `true`. 
+Let's try some basic [NoSQL Injection](../../../Knowledge%20Base/Vulnerabilities/NoSQL%20Injection.md) using common commands. Assuming there is an `admin` user, let's attempt to get the `password` field to evaluate to `true`. 
 
 Unlike brute-force password attacks, we want to alter the `key` in the command, not just the `value`. In this case the two `keys` are `username` and `password`. The query the application is sending to the server probably looks something like 
 
@@ -132,7 +132,7 @@ For question three we are asked to enumerate the `gift search page` to list all 
 
 ![Search Test Request](AoC-2021_Photos/Day_07/11.0_AoC-Day-7_12-27-21-Search-Test-Request.png)
 
-In this intercept, we can see a `GET` request looking for `username=testrequest` where `role=user`. Using our knowledge of [NoSQL Injection](../../../Knowledge%20Base/Concepts/Databases/NoSQL%20Injection.md) commands, we can modify this to our needs. 
+In this intercept, we can see a `GET` request looking for `username=testrequest` where `role=user`. Using our knowledge of [NoSQL Injection](../../../Knowledge%20Base/Vulnerabilities/NoSQL%20Injection.md) commands, we can modify this to our needs. 
 
 Since we want to return any user that matches the `guest` role, we need to tell the search query to return any user `not equal` to something, and change the `role` to `guest`. Simply add `[$ne]` directly after `username`, select a username you know doesn't exist, and change the role request. 
 

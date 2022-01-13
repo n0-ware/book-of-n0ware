@@ -31,7 +31,7 @@
 	- Manipulating poor website design to access files
 - [Day 7](Day%2007%20-%20Advent%20of%20Cyber%202021.md)
 	- [Injection](../../../Knowledge%20Base/Vulnerabilities/Injection.md)
-	- [NoSQL Injection](../../../Knowledge%20Base/Concepts/Databases/NoSQL%20Injection.md)
+	- [NoSQL Injection](../../../Knowledge%20Base/Vulnerabilities/NoSQL%20Injection.md)
 	- [BurpSuite](../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md)
 	- Databases
 	- Poor user input sanitation
