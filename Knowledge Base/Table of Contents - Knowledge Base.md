@@ -4,21 +4,21 @@
 - [Exploitation](#Exploitation%20-%20Table%20of%20Contents%20Exploitation%2001%2020Exploitation%2020-%2020Table%2020of%2020Contents%20md)
 - [Methodology](#Methodology%20-%20Methodology%20Methodology%2001%2020Methodology%2020-%2020Table%2020of%2020Contents%20md)
 - [Vulnerabilities](#Vulnerabilities%20-%20Table%20of%20Contents%20Vulnerabilities%2001%2020Vulnerabilities%2020-%2020Table%2020of%2020Contents%20md)
-### Concepts - [Table of Contents](Concepts/01%20Concepts%20-%20Table%20of%20Contents.md)
-#### Shortcuts
+### _Concepts_ - [Table of Contents](Concepts/01%20Concepts%20-%20Table%20of%20Contents.md)
+#### _Shortcuts_
 - [Databases](#Databases)
 - [Defense](#Defense)
 - [General](#General)
-- [Offensive Security](#Offensive%20Security)
+- <a href="#offensive-security">Offensive Security</a>
 - [Web](#Web)
 - [Windows](#Windows)
 - [Unsorted](#Unsorted)
-##### Databases
+##### _Databases_
 - [NoSQL](Databases/NoSQL.md)
 - [SQL (Relational Database Management System)](Databases/Relational%20Database%20Management%20Systems.md)
-##### Defense
+##### _Defense_
 - [YARA Rules](Defense/YARA%20Rules.md)
-##### General
+##### _General_
 - [Authentication](General/Authentication.md) 
 - [Encoding and Decoding](General/Encoding%20and%20Decoding.md) 
 - [Enumeration](enumeration.md) **Empty**
@@ -27,7 +27,8 @@
 - [Trust](General/Trust.md)  **Empty**
 - [Validation](General/Validation.md)  **Empty**
 - [Vulnerability](General/Vulnerability.md) **Empty**
-##### Offensive Security
+##### _Offensive Security_
+<a id="offensive-security"></a>
 - [Persistence](Offensive%20Security/Persistence.md)
 ##### Web
 - [Access Control](Web/Access%20Control.md)  **Empty**
@@ -72,7 +73,7 @@
 <a id="reverse-shells"></a>
 ###### Python
 - [python_reverse_shell](Reverse%20Shells/Python/python_reverse_shell.py)
-### Methodology - [Methodology](Methodology/01%20Methodology%20-%20Table%20of%20Contents.md)
+### Methodology - [Table of Contents](Methodology/01%20Methodology%20-%20Table%20of%20Contents.md)
 - [Post Exploitation](Post%20Exploitation.md)
 ### Vulnerabilities - [Table of Contents](Vulnerabilities/01%20Vulnerabilities%20-%20Table%20of%20Contents.md)
 - [Cookie Manipulation](Cookie%20Manipulation.md)
