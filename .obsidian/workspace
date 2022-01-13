@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Markdown Formatting/HTML.md",
+            "file": "Knowledge Base/Table of Contents - Knowledge Base.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Base/Concepts/General/Authentication.md",
+            "file": "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
             "mode": "source"
           }
         }
@@ -31,7 +31,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Base/Concepts/01 Concepts Glossary.md",
+            "file": "Knowledge Base/Concepts/01 Concepts - Table of Contents.md",
             "mode": "source"
           }
         }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"active directory\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Markdown Formatting/HTML.md",
+                "file": "Knowledge Base/Table of Contents - Knowledge Base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Markdown Formatting/HTML.md",
+                "file": "Knowledge Base/Table of Contents - Knowledge Base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,15 +122,15 @@
   },
   "active": "73d9c74afef44838",
   "lastOpenFiles": [
+    "Knowledge Base/Table of Contents - Knowledge Base.md",
+    "Knowledge Base/Exploitation/01 Exploitation - Table of Contents.md",
+    "Knowledge Base/Concepts/Windows/Domain (Active Directory).md",
+    "Knowledge Base/Methodology/01 Methodology - Table of Contents.md",
+    "Knowledge Base/Methodology/Post Exploitation.md",
+    "Knowledge Base/Vulnerabilities/Remote Code Execution.md",
+    "Knowledge Base/Vulnerabilities/Session Hijacking.md",
+    "Knowledge Base/Vulnerabilities/01 Vulnerabilities - Table of Contents.md",
     "Markdown Formatting/HTML.md",
-    "Knowledge Base/Concepts/General/Authentication.md",
-    "Knowledge Base/Concepts/01 Concepts Glossary.md",
-    "Knowledge Base/Concepts/General/Encoding and Decoding.md",
-    "Knowledge Base/Vulnerabilities/NoSQL Injection.md",
-    "Knowledge Base/Concepts/Databases/NoSQL.md",
-    "Tools, Binaries, and Programs/CLI Utilities/Scratch.md",
-    "enumeration.md",
-    "Knowledge Base/Concepts/General/Trust.md",
-    "Knowledge Base/Concepts/Databases/Relational Database Management Systems.md"
+    "Knowledge Base/Vulnerabilities/Cookie Manipulation.md"
   ]
 }

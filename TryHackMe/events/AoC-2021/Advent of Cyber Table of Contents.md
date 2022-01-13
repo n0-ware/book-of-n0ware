@@ -24,9 +24,9 @@
 - [Day 6](Day%2006%20-%20Advent%20of%20Cyber%202021.md)
 	- [Local File Inclusion](../../../Knowledge%20Base/Vulnerabilities/Local%20File%20Inclusion%20(LFI).md)
 	- [Log Poisoning](../../../Knowledge%20Base/Vulnerabilities/Log%20Poisoning.md)
-	- [PHP in the URL](../../../Exploitation/In-URL/PHP%20in%20URL.md)
+	- [PHP in the URL](../../../Knowledge%20Base/Exploitation/In-URL/PHP%20in%20URL.md)
 	- [Path Traversal](../../../Knowledge%20Base/Vulnerabilities/Path%20Traversal.md)
-	- [python_reverse_shell](../../../Exploitation/Reverse%20Shells/Python/python_reverse_shell.py)
+	- [python_reverse_shell](../../../Knowledge%20Base/Exploitation/Reverse%20Shells/Python/python_reverse_shell.py)
 	- [RCE](../../../Knowledge%20Base/Vulnerabilities/Remote%20Code%20Execution.md)
 	- Manipulating poor website design to access files
 - [Day 7](Day%2007%20-%20Advent%20of%20Cyber%202021.md)

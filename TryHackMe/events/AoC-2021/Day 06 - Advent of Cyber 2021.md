@@ -263,7 +263,7 @@ So how about full compromise? Since we have access to the command line via a bro
 
 ![which python](AoC-2021_Photos/Day_06/27.0_AoC-Day-6_12-24-21-Which-Python.png)
 
-[Payload all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python) has some great tools on there, one of them being a [python_reverse_shell](../../../Exploitation/Reverse%20Shells/Python/python_reverse_shell.py) that works on this system (after several tries). With some quick modifications, and a listener on our hots machine, we can obtain a semi-stable shell. 
+[Payload all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python) has some great tools on there, one of them being a [python_reverse_shell](../../../Knowledge%20Base/Exploitation/Reverse%20Shells/Python/python_reverse_shell.py) that works on this system (after several tries). With some quick modifications, and a listener on our hots machine, we can obtain a semi-stable shell. 
 
 ***On your host machine***
 ```
