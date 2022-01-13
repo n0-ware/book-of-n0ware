@@ -14,8 +14,7 @@
 - <a href="#traffic-analysis">Traffic Analysis</a>
 - [Wordlists](#Wordlists)
 - [Windows](#Windows)
-### CLI Utilities
-<a id="cli-utils"></a>
+### CLI Utilities <a id="cli-utils"></a>
 - [AWS CLI](CLI%20Utilities/AWS%20CLI.md)
 - [curl](CLI%20Utilities/curl.md)
 - [Grep and Egrep](CLI%20Utilities/Grep%20and%20Egrep.md)
@@ -25,12 +24,9 @@
 ### Databases
 - [Microsoft SQL Server (MSSQL)](Databases/Microsoft%20SQL%20Server%20(MSSQL).md)
 ### Exploitation
-### File Analysis
-<a id="file-analysis"></a>
-### Information Gathering
-<a id="information-gathering"></a>
-#### Network Reconnaissance
-<a id="network-recon"></a>
+### File Analysis <a id="file-analysis"></a>
+### Information Gathering <a id="information-gathering"></a>
+#### Network Reconnaissance <a id="network-recon"></a>
 - [AutoRecon](Information%20Gathering/Network%20Reconnaissance/AutoRecon.md)
 - [Nmap](Information%20Gathering/Network%20Reconnaissance/Nmap.md)
 #### OSINT
@@ -39,8 +35,7 @@
 - [dirbuster](Information%20Gathering/Web%20Applications/dirbuster.md)
 ### Post-Exploitation
 ### Scripts
-### Traffic Analysis
-<a id="traffic-analysis"></a>
+### Traffic Analysis <a id="traffic-analysis"></a>
 ### Wordlists
 - [Seclists](Wordlists/Seclists.md)
 ### Windows
