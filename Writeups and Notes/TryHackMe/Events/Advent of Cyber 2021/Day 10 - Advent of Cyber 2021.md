@@ -28,7 +28,7 @@
 
 ## Walkthrough
 
-In this box we are tasked with a basic walkthrough of the various use cases, flags, and outputs of [Nmap](../../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md). 
+In this box, we are tasked with a basic walkthrough of the various use cases, flags, and outputs of [Nmap](../../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md). 
 
 ### Questions-1-3
 [TOC](#TOC)
@@ -37,12 +37,12 @@ To start with we are using a `TCP`-connect scan. Run `nmap -sT -p 1-100 <TARGET_
 
 ![TCP-Connect Scan](AoC-2021_Photos/Day_10/1.0_AoC-Day-10_12-28-21-sT.png)
 
-We found two ports open on the machine. The smallest being `22` and the service related to the higher port is `http`.
+We found two ports open on the machine. The smallest is `22` and the service related to the higher port is `http`.
 
 ### Question-4
 [TOC](#TOC)
  
-Next we are performing a `syn`-scan. Run the command `sudo nmap -sS -v <TARGET_IP>`. This command takes much shorter than the prior one because it is not completing the *3-way handshake*. Note the difference at the bottom of each image. 
+Next, we are performing a `syn`-scan. Run the command `sudo nmap -sS -v <TARGET_IP>`. This command takes much shorter than the prior one because it is not completing the *3-way handshake*. Note the difference at the bottom of each image. 
 
 ![SYN Scan](AoC-2021_Photos/Day_10/2.0_AoC-Day-10_12-28-21_1-sS.png)
 
@@ -67,7 +67,7 @@ With a little research on this *Apache* version (at the link provided), we find 
 ### Question-7
 [TOC](#TOC)
  
-With the fear of a possible backdoor listening on a high port, outside of the utual *Top 1000* that `nmap` scans by default, we want to scan the entire system. 
+With the fear of a possible backdoor listening on a high port, outside of the usual *Top 1000* that `nmap` scans by default, we want to scan the entire system. 
 
 Run the command `nmap -p- -T4 -v <TARGET_IP>` to scan everything with a little extra speed by using `-T4`. **This will take about 5-10 minutes depending on your connection. **
 
@@ -75,15 +75,15 @@ Run the command `nmap -p- -T4 -v <TARGET_IP>` to scan everything with a little e
 
 ![Full Port Scan](AoC-2021_Photos/Day_10/5.0_AoC-Day-10_12-28-21-p-.png)
 
-After nearly 10 minutes, the scan completed, exposing a single high port service running somewhere unusual. 
+After nearly 10 minutes, the scan was completed, exposing a single high port service running somewhere unusual. 
 ### Question-8
 [TOC](#TOC)
  
- We want to know what precisely is running there. Had we ran a version or script scan against the entire port range, we could have had an even longer wait for the results. Now that we know what specific port to scan, we can fine tune the command. Run the command `nmap -p 20212 -sV -v <TARGET_IP>` and check the results
+ We want to know what precisely is running there. Had we run a version or script scan against the entire port range, we could have had an even longer wait for the results. Now that we know what specific port to scan, we can fine-tune the command. Run the command `nmap -p 20212 -sV -v <TARGET_IP>` and check the results
  
  ![Telnet Discovered](AoC-2021_Photos/Day_10/6.0_AoC-Day-10_12-28-21-telnet.png)
  
- Unfortuantely for McSkidy, her server has a `telnet` service as a backdoor. Telnet is horribly insecure, never encrypted, and often poorly configured. This one has a password on it, but the passwords are often default, if included at all. 
+ Unfortunately for McSkidy, her server has a `telnet` service as a backdoor. Telnet is horribly insecure, never encrypted, and often poorly configured. This one has a password on it, but the passwords are often set to default if included at all. 
  
  ![Acessing Telnet](AoC-2021_Photos/Day_10/7.0_AoC-Day-10_12-28-21-telnet-access.png)
  

@@ -29,7 +29,7 @@ In this box, we are instructed that there is a need to analyze some unusual netw
 ### Questions-1-2
 [Top](#TOC)
 
-Our first task  is identifying the services on our target IP with [Nmap](../../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md). It is a windows host, so it will block scans with a ping. Run the following `Nmap`
+Our first task is identifying the services on our target IP with [Nmap](../../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Network%20Reconnaissance/Nmap.md). It is a windows host, so it will block scans with a ping. Run the following `Nmap`
 
 ```
 nmap -Pn -sV 10.10.113.135
@@ -97,7 +97,7 @@ We have to files on this share. Let's use `less` to view the first 10 lines of e
 
 Lastly, we want to access the forgotten *SSH authentication key*. This will be an `id_rsa` file most likely. Finding this file will require mounting and listing the files in the other shares. Keep in mind the file may be hidden. 
 
-Move out of the `tmp1` directory and create a new temporary directory for each of the remaining two shares. Mount each of these to your system  and enumerate the contents of these shares. This can be done with two easy commands
+Move out of the `tmp1` directory and create a new temporary directory for each of the remaining two shares. Mount each of these to your system and enumerate the contents of these shares. This can be done with two easy commands
 
 ```
 mkdir admin-local && mount <TARGET_IP>:/admin-files admin-local
@@ -109,9 +109,9 @@ The second command returns no output, indicating a successful mount.
 
 ![Mounting Remaining Shares](AoC-2021_Photos/Day_12/07_AoC-Day-12_12-29-21-Mounting-Remaining-Shares.png)
 
-Navigate to this directory until you locate the `id_rsa` file in question. To generate the proper flag for this bod, we need the `md5sum` command. Use this with the name of the file. 
+Navigate to this directory until you locate the `id_rsa` file in question. To generate the proper flag for this quesiton, we need the `md5sum` command. Use this with the name of the file. 
 
-The `cut` command here is used to strip the unnecessary content from the output, with `-d " "` specifying a *space* as the delimiter and `-f1` returning just the first field.
+The [`cut`](../../../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/cut.md) command here is used to strip the unnecessary content from the output, with `-d " "` specifying a *space* as the delimiter and `-f1` returning just the first field.
 
 ```
 md5sum id_rsa | cut -d " " -f1

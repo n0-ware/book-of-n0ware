@@ -9,7 +9,7 @@
 -  Flag[^2]
 
 [^1]: #xss #webapp #injection #owasp #storedxss 
-[^2]: THM{NO_MORE_BUTTMAS}
+[^2]: *Flag 1:* `THM{NO_MORE_BUTTMAS}`  
 
 ## Walkthrough
 In this lab, we are given a URL for a forum vulnerable to [Cross-Site Scripting](../../../../Knowledge%20Base/Vulnerabilities/Cross-Site%20Scripting%20(XSS).md). Head to the URL provided in the lab to view the forum. Explore different topics, threads, links, etc. The first thing we are told to note is that every mention of *Christmas* has been changed to *Buttmas*. Clever Grinch... We need access to the Grinch's account to disable whatever is causing the change. 
@@ -22,7 +22,7 @@ Fortunately, McSkidy has access to the forum with the credentials `McSkidy:passw
 
 ![Password Change](AoC-2021_Photos/Day_05/2.0_AoC-Day-5_12-23-21-Password-Change.png)
 
-Head to the forum and see if t he comments section is also vulnerable by adding a comment with some `HTML` tags in the text. 
+Head to the forum and see if the comments section is also vulnerable by adding a comment with some `HTML` tags in the text. 
 
 `n0_ware was <b>here</b>`
 
@@ -34,7 +34,7 @@ You can also see this **stored** on the source code of the web page.
 
 ![Stored in Source](AoC-2021_Photos/Day_05/4.0_AoC-Day-5_12-23-21-Stored-in-Source.png)
 
-So far, we have identified a URL on this page vulnerable to XSS, and have confirmed the comments page is vulnerable to *Stored* XSS. Lets combine the two by submitting a comment with a malicious script that calls the vulnerable URL in a script. When the web page renders this script, it will do so in the context of the user viewing the web page. The hope is that the Grinch (or any unsuspecting user) will view the comment and thus reset their password. 
+So far, we have identified a URL on this page vulnerable to XSS, and have confirmed the comments page is vulnerable to *Stored* XSS. Let's combine the two by submitting a comment with a malicious script that calls the vulnerable URL in a script. When the web page renders this script, it will do so in the context of the user viewing the web page. The hope is that the Grinch (or any unsuspecting user) will view the comment and thus reset their password. 
 
 Post the following comment. The `fetch` here tells the browser to make a network request to the specified URL.
 
@@ -44,7 +44,7 @@ The commend board won't render any text. View the source code of the web page to
 
 ![Password Change XSS](AoC-2021_Photos/Day_05/5.0_AoC-Day-5_12-23-21-Password-Change-XSS.png)
 
-After waiting a minute or two for Grinch to view our comment, attempt to login with their credentials `grinch:pass123`. Success! We have access to Grinch's account. On the settings page, we find the malicious plugin Grinch enabled. Disable it to solve the problem. 
+After waiting for a minute or two for Grinch to view our comment, attempt to login with their credentials `grinch:pass123`. Success! We have access to Grinch's account. On the settings page, we find the malicious plugin Grinch enabled. Disable it to solve the problem. 
 
 ![Flag!](AoC-2021_Photos/Day_05/6.0_AoC-Day-5_12-23-21-Malicious-Plugin.png)
 

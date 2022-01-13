@@ -9,10 +9,12 @@
 -  Flag[^2]
 
 [^1]: #authentication #brokenaccesscontrol #insecuredesign #contentdiscovery #webapp 
-[^2]: THM{ADM1N_AC3SS}
+[^2]: *Question 1:* `admin`  
+					*Question 2:* `administrator`
+					*Question 3:* `THM{ADM1N_AC3SS}`  
 
 ## Walkthrough
-We are given a website vulnerable to enumeration to attempt directory busting and authentication brute forcing. 
+We are given a website vulnerable to enumeration to attempt directory busting and authentication brute-forcing. 
 
 ![Landing Page](AoC-2021_Photos/Day_03/1.0_AoC-Day-3_12-22-21-Landing-Page.png)
 
@@ -28,11 +30,11 @@ Quickly, `dirb` identifies the directory `/admin` as the admin dashboard.
 
 ![Admin Dashboard](AoC-2021_Photos/Day_03/3.0_AoC-Day-3_12-22-21-Admin-Dashboard.png)
 
-Some basic manual guessing and we are able to find a valid admin login using the combination `administrator:administrator`. 
+Some basic manual guessing and we can find a valid admin login using the combination `administrator:administrator`. 
 
 ![Successful Login](AoC-2021_Photos/Day_03/4.0_AoC-Day-3_12-22-21-admin-login-default-creds.png)
 
-While inspecting the target with [BurpSuite's](../../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md), we can also identify that when loading the `/admin` page, it also calls a `javascript` function `/admin/loginpage.js`. Investigating this script plainly gives out the administrator username and password. 
+While inspecting the target with [BurpSuite's](../../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/BurpSuite.md), we can also identify that when loading the `/admin` page, it also calls a `javascript` function `/admin/loginpage.js`. Investigating this script clearly gives out the administrator username and password. 
 
 ![Admin Page Calling JavaScript](AoC-2021_Photos/Day_03/5.0_AoC-Day-3_12-22-21-Admin-Calling-Javascript.png)
 

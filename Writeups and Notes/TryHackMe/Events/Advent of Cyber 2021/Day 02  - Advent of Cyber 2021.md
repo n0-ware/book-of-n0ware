@@ -9,7 +9,12 @@
 
 
 [^1]: #cookies #authentication #webapp #encoding #hexe
-[^2]: 
+[^2]: *Question 1:* `user-auth`  
+					*Question 2:* `hexadecimal`
+					*Question 3:* `JSON`  
+					*Question 4:* `7b636f6d70616e793a2022546865204265737420466573746976616c20436f6d70616e79222c206973726567697374657265643a2254727565222c20757365726e616d653a2261646d696e227d` 
+					*Question 5:* `HR`  
+					*Question 6:* `Application`  
 
 ## Walkthrough
 We are given a website and told it is vulnerable to [cookie manipulation](../../../../Knowledge%20Base/Vulnerabilities/Cookie%20Manipulation.md). 

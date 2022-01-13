@@ -31,9 +31,9 @@
 ## Walkthrough
 
 ### Setup
-We are going to setup this box a little different as the URL we are given is awkward and this box requires a lot of URL manipulation. If you have never modified the `/etc/hosts` file before, you will learn how now. 
+We are going to set up this box a little differently. The reason is, the URL we are given is awkward and this box requires a lot of URL manipulation. If you have never modified the `/etc/hosts` file before, you will learn how now. 
 
-You can "map" custom URL/IP address combinations on the `/etc/hosts` file any time you want. For example. I could tie `www.Il0veh4ck1ng.com` to the IP address of `www.TryHackMe.com` in my hosts file and my system will know to send me to TryHackMe when I type `www.il0veh4ck1ng.com` into the browser. This is because the system uses `/etc/hosts` before any other `DNS` query. 
+You can "map" custom URL/IP address combinations on the `/etc/hosts` file any time you want. For example. I could tie `www.Il0veh4ck1ng.com` to the IP address of `www.TryHackMe.com` in my `hosts` file and my system will know to send me to TryHackMe when I type `www.il0veh4ck1ng.com` into the browser. This is because the system uses `/etc/hosts` before any other `DNS` query. 
 
 Type `sudo nano /etc/hosts` to edit the file. On the first available line, type the IP address of your TryHackMe target, followed by a tab, then a domain name of your choosing. See below for an example. 
 
@@ -56,7 +56,7 @@ Attempting to replace the current file `error.txt` with something of our own pro
 
 ![PHP Error](AoC-2021_Photos/Day_06/2.0_AoC-Day-6_12-23-21-PHP-Error.png)
 
-We substitute a file query `notafile.txt` and we got a really nice error. We now know a few things:
+We substitute a file query `notafile.txt` and we got a nice error. We now know a few things:
 - It uses the `PHP` function `include` in the code. 
 - The path for `include` is `./usr/lib/php5.2/lib/php` in `/var/www/html/index.php`.
 
@@ -68,7 +68,7 @@ More on `PHP` wrappers here &mdash; [PHP Documentation - Wrappers](https://www.p
 
 ![Reading /etc/passwd with PHP filter](AoC-2021_Photos/Day_06/3.0_AoC-Day-6_12-23-21-etc-passwd.png)
 
-Ironically, this `PHP` function is not required. All we needed was some [Path Traversal](../../../../Knowledge%20Base/Vulnerabilities/Path%20Traversal.md) to make this work as well. Knowing we are in the `/var/www/html` directory, lets swap `error.txt` with `../../../etc/passwd` and see if that works as well. 
+Ironically, this `PHP` function is not required. All we needed was some [Path Traversal](../../../../Knowledge%20Base/Vulnerabilities/Path%20Traversal.md) to make this work as well. Knowing we are in the `/var/www/html` directory, let's swap `error.txt` with `../../../etc/passwd` and see if that works as well. 
 
 `https://aoc6.com/index.php?err=../../../etc/passwd`
 
@@ -82,11 +82,11 @@ We are asked to get the `/etc/flag` file using **LFI**. Submit a similar request
 
 ### Question-3
 [Top](#TOC)
-We are then asked to find the flag within the source code of `index.php` attempting to read this in the same manner produces an error. This is because the file we are trying to read *is* code and the web page will try to execute it rather than displaying it. 
+We are then asked to find the flag within the source code of `index.php` attempting to read this, in the same manner, which produces an error. This is because the file we are trying to read *is* code and the web page will try to execute it rather than display it. 
 
 ![Error Reading index.php](AoC-2021_Photos/Day_06/6.0_AoC-Day-6_12-23-21-Error-Reading-index-php.png)
 
-The `/etc/flag` file was just text, not wrapped in `PHP` code, so we did not need to apply any additional functions with `filter`. If you want to read actual source-code, you'll need to encode it, otherwise, the server will produce either run the code or produce the error attempting to run the code. This is where arguments added to the `php://filter` command come in. 
+The `/etc/flag` file was just text, not wrapped in `PHP` code, so we did not need to apply any additional functions with `filter`. If you want to read the actual source code, you'll need to encode it, otherwise, the server will produce either run the code or produce the error attempting to run the code. This is where arguments added to the `php://filter` command come in. 
 
 <u>**Two of the options for this scenario:**</u>
 - `http://aoc6.com/index.php?err=php://filter/read=string.rot13/resource=index.php`
@@ -100,7 +100,7 @@ Here is an example using `filter/read=string.rot13`
 
 The `rot13` string simply reproduces the standard message on the screen. Using [CyberChef](https://gchq.github.io/CyberChef/) we can decode the `base64` [encoded](../../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md) string. 
 
-> You can decode in a number of tools, including Zap, Burp, and even on the command line with the `base64 --decode` command.. 
+> You can decode in many tools, including Zap, Burp, and even on the command line with the `base64 --decode` command. 
 
 ![Second Flag CLI Decode](AoC-2021_Photos/Day_06/8.0_AoC-Day-6_12-23-21-Decode-On-CLI.png)
 
@@ -117,7 +117,7 @@ Next, we are told McSkidy lost his password. If you look again at the decoded `i
 
 ![PHP Includes a Creds File](AoC-2021_Photos/Day_06/10.0_AoC-Day-6_12-23-21-Creds.png)
 
-A well coded web page will not allow us to browse there, but we may be able to access it through a `PHP` **LFI**. Let's try and render this in the same way as we did with the `index.php` file. We'll use the `base64` version of the filter command. 
+A well-coded web page will not allow us to browse there, but we may be able to access it through a `PHP` **LFI**. Let's try and render this in the same way as we did with the `index.php` file. We'll use the `base64` version of the filter command. 
 
 `php://filter/convert.base64-encode/resource=./includes/creds.php`
 
@@ -137,13 +137,13 @@ Heading back to the *Home* page and logging in with McSkidy's credentials, we ar
 ### Question-6
 [Top](#TOC)
 
-For the last task, we are asked to retrieve the hostname of the webserver. To help, we are given the location of web app logs all reminded that the application logs all user requests, and only those that are authorized can read the log file. To get the hotsname, we need to combine **LFI** with an **RCE** to access the log files page. The location of the log file is `./includes/logs/app_access.log`. 
+For the last task, we are asked to retrieve the hostname of the webserver. To help, we are given the location of web app logs all reminded that the application logs all user requests, and only those that are authorized can read the log file. To get the hostname, we need to combine **LFI** with an **RCE** to access the log files page. The location of the log file is `./includes/logs/app_access.log`. 
 
 In the case of log files, this is called [log poisoning](../../../../Knowledge%20Base/Vulnerabilities/Log%20Poisoning.md), a technique used to gain **RCE** on a web server by injecting a malicious payload into a log then accessing that log file to run the payload. 
 
 > See the link for more details
 
-First, lets confirm access to the log file with **LFI**. We can do this via *McSkidy's* login page, [Path Traversal](../../../../Knowledge%20Base/Vulnerabilities/Path%20Traversal.md) or the **PHP Filter** from before, modified with the location of the logs. 
+First, let's confirm access to the log file with **LFI**. We can do this via *McSkidy's* login page, [Path Traversal](../../../../Knowledge%20Base/Vulnerabilities/Path%20Traversal.md) or the **PHP Filter** from before, modified with the location of the logs. 
 
 ##### McSkidy's Log Access
 Log in as *McSkidy* and head to the log page. 
@@ -164,7 +164,7 @@ Log out and try the other two.
 
 First, note that the format of the log file  &mdash; `user:ip:USER-Agent:Page`. **This is important**. We need to know what the log file is capturing. We can control certain aspects of our interaction with the server, and anything we can customize is to our advantage.
 
-WIth that settled let's try some log manipulation. Let's see what happens if we use [log poisoning](../../../../Knowledge%20Base/Vulnerabilities/Log%20Poisoning.md) to send a custom `curl` request with a modified `User-Agent` field to the server. Login again as *McSkidy* (his logs are easy to read on the log access page). Reset the logs, then run a command like the following with whatever text you choose.
+With that settled let's try some log manipulation. Let's see what happens if we use [log poisoning](../../../../Knowledge%20Base/Vulnerabilities/Log%20Poisoning.md) to send a custom `curl` request with a modified `User-Agent` field to the server. Login again as *McSkidy* (his logs are easy to read on the log access page). Reset the logs, then run a command like the following with whatever text you choose.
 
 > Remember that I changed the IP TryHackMe gave me to `www.aoc6.com`
 
@@ -178,7 +178,7 @@ Log poisoning proof of concept is successful!
 
 > In the best scenario, this is for testing or retrieving data. In our scenario, it is for malicious code. `curl` has a bit of a learning code, but it allows you to entirely customize an `HTTP` request. 
 
-Now, let's see what happens when we send some `PHP` code to the server. Ideally, it will render on the **server side** and display that code on the **client side**. This is where, as a developer, you need *excellent* [user input](../../../../Knowledge%20Base/Concepts/Web/User-Supplied%20Input.md) validation, and not just on input fields, but on anything the user can control.
+Now, let's see what happens when we send some `PHP` code to the server. Ideally, it will render on the **server-side** and display that code on the **client-side**. This is where, as a developer, you need *excellent* [user input](../../../../Knowledge%20Base/Concepts/Web/User-Supplied%20Input.md) validation, and not just on input fields, but on anything the user can control.
 
 Do another curl command, but include the code below in place of text. 
 
@@ -188,9 +188,9 @@ Check the logs again by refreshing the page.
 
 ![Server Side Execution](AoC-2021_Photos/Day_06/19.0_AoC-Day-6_12-24-21-Server-Side-Execution-No-Client.png)
 
-So, where's the code? Notice two things. First, we have the `User-Agent` field from our first test log in the first red box. Next to the arrow, where our second test log's `User-Agent` should be is nothing. **This is great news**. This means that on the **server side** our code was executed, but it was not displayed on the **client side**. 
+So, where's the code? Notice two things. First, we have the `User-Agent` field from our first test log in the first red box. Next to the arrow, where our second test log's `User-Agent` should be is nothing. **This is great news**. This means that on the **server-side** our code was executed, but it was not displayed on the **client-side**. 
 
-***This is successful RCE on the remote server***. But how do we view the code? Let's escape the typical user interface and access the log file directly via either the [Path Traversal](#Path%20Traversal) or [PHP Filter Wrapper](#PHP%20Filter%20Wrapper) method. First, log out, the session we  have as *McSkidy* will prevent our **LFI**. 
+***This is a successful RCE on the remote server***. But how do we view the code? Let's escape the typical user interface and access the log file directly via either the [Path Traversal](#Path%20Traversal) or [PHP Filter Wrapper](#PHP%20Filter%20Wrapper) method. First, log out, the session we have as *McSkidy* will prevent our **LFI**. 
 
 ![PHP Visible on the Client Side](AoC-2021_Photos/Day_06/20.0_AoC-Day-6_12-24-21-PHP-Client-Side.png)
 
@@ -198,7 +198,7 @@ There's our code! Use a <kbd>ctrl</kbd>+<kbd>f</kbd> to find the `hostname` fiel
 
 ![Server Hostname](AoC-2021_Photos/Day_06/21.0_AoC-Day-6_12-24-21-Server-Hostname.png)
 
-That's it! All that is left is the bonus or attempt to exploit the box further and get an shell on the box. 
+That's it! All that is left is the bonus or attempt to exploit the box further and get a shell on the box. 
 
 ***Congratulations on completing this box!***  
 
@@ -215,7 +215,7 @@ To view your current session, you need to see the browser's developer tools and 
 
 ![PHPSESSID](AoC-2021_Photos/Day_06/22.0_AoC-Day-6_12-26-21-PHPSESSID.png)
 
-When ready, enter the username `<?php phpinfo();?>` with some password and hit enter. Of course, this is not a username, so not authentication, but we have submitted our code. 
+When ready, enter the username `<?php phpinfo();?>` with some password and hit enter. Of course, this is not a username, so no authentication, but we have submitted our code. 
 
 ![Corrputing a Session](AoC-2021_Photos/Day_06/23.0_AoC-Day-6_12-26-21-Corrupting-Session-Username.png)
 
@@ -242,7 +242,7 @@ To break this down....
 - `echo` will tell the system to print some random value to know that we have code execution
 - `;` is a delimiter to separate two statements. 
 - `system(\$_GET)` is the classic `PHP` backdoor, setting it up to that when we make a `GET` request with a parameter we can get any code execution that we want. We need to escape the `$` with `\` for it to work with `curl`. 
-- `['cmd']` is the parameter we want executed. It can be anything, as we will tell the server what we to substitute for `cmd` later in the URL parameter we use for **RCE**
+- `['cmd']` is the parameter we want to be executed. It can be anything, as we will tell the server what we to substitute for `cmd` later in the URL parameter we use for **RCE**
 
 > The spaces are intentional
 
@@ -263,7 +263,7 @@ So how about full compromise? Since we have access to the command line via a bro
 
 ![which python](AoC-2021_Photos/Day_06/27.0_AoC-Day-6_12-24-21-Which-Python.png)
 
-[Payload all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python) has some great tools on there, one of them being a [python_reverse_shell](../../../../Knowledge%20Base/Exploitation/Reverse%20Shells/Python/python_reverse_shell.py) that works on this system (after several tries). With some quick modifications, and a listener on our hots machine, we can obtain a semi-stable shell. 
+[Payload all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python) has some great tools on there, one of them being a [python_reverse_shell](../../../../Knowledge%20Base/Exploitation/Reverse%20Shells/Python/python_reverse_shell.py) that works on this system (after several tries). With some quick modifications and a listener on our hots machine, we can obtain a semi-stable shell. 
 
 ***On your host machine***
 ```

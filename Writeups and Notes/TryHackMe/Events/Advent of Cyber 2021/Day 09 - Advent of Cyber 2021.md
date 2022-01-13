@@ -12,7 +12,7 @@
 [^2]: *Question 1:* `login`  
 					*Question 2:* `McSkidy:Christmas2021!`   
 					*Question 3:* `TryHackMe-UserAgent-THM{d8ab1be969825f2c5c937aec23d55bc9}`  
-					*Question 4:*  `THM{dd63a80bf9fdd21aabbf70af7438c257}`  
+					*Question 4:*  `THM{dd63a80bf9fdd21aabbf70af7438c257}` 
 					*Question 5:* `TryH@ckM3!`  
 					*Question 6:* `STOR`  
 					*Question 7:* `123^-^321`  
@@ -34,9 +34,9 @@ Once Wireshark starts, click `File` > `Open` and select `AoC3.pcap` to begin you
 
 ### Question-1
 
-The first question asks us what directory if found on the web server. Packets that deal with typical user interaction with a web server will require an `http` requests in them at the very least. Enter this in the filter bar and press enter 
+The first question asks us what directory is found on the webserver. Packets that deal with typical user interaction with a web server will require `http` requests in them at the very least. Enter this in the filter bar and press enter 
 
-We can immediately see that someone is attempting to enumerate the web server. Why? There are a number of `404 Not Found` messages in the `Info` column. 
+We can immediately see that someone is attempting to enumerate the webserver. Why? There are several `404 Not Found` messages in the `Info` column. 
 
 ![404 Status Codes](AoC-2021_Photos/Day_09/1.0_AoC-Day-9_12-28-21-404-Errors.png)
 
@@ -48,7 +48,7 @@ Enter this in the Wireshark filter bar.
 http.request.method == GET
 ```
 
-We can see a cleaner picture of all the `GET` requests, and again we see the request for `/admin`. We knew this failed, however, and the question asks what directory was **found** on the server. If the directory is found, it will return a status code of `200`. We can filter for this with `http.response.code == 200`. Combine these two filters like below. We use `||` for `OR` to return both results. Without it, we would not be able to see the `GET` request that corresponds to the status code.
+We can see a clearer picture of all the `GET` requests, and again we see the request for `/admin`. We knew this failed, however, and the question asks what directory was **found** on the server. If the directory is found, it will return a status code of `200`. We can filter for this with `http.response.code == 200`. Combine these two filters like below. We use `||` for `OR` to return both results. Without it, we would not be able to see the `GET` request that corresponds to the status code.
 
 ```
 http.request.method == GET || http.response.code == 200
@@ -74,7 +74,7 @@ There are only 3 `POST` requests of interest. The first thing we notice inspecti
 
 ![Flag in User Agent](AoC-2021_Photos/Day_09/3.0_AoC-Day-9_12-28-21-Flag-in-UserAgent.png)
 
-If you scroll down to the field `HTML Form URL Encoded:....` and expand it, you can see the form data the user submitted and note a password and username.
+If you scroll down to the field `HTML Form URL Encoded:....` and expand it, you can see the form data the user-submitted and note a password and username.
 
 ![McSkidy Login Form](AoC-2021_Photos/Day_09/4.0_AoC-Day-9_12-28-21-Username-Password.png)
 
@@ -82,7 +82,7 @@ The `username:password` combination is the answer we need for question 2.
 
 ### Question-3
 
-To view the flag we found in the `User-Agent` flag more cleanly, we can use a Wireshark utility named *"Follow Stream"*. Right click the packet you selected and choose  `Follow` > `TCP Stream`. 
+To view the flag we found in the `User-Agent` flag more cleanly, we can use a Wireshark utility named *"Follow Stream"*. Right-click the packet you selected and choose  `Follow` > `TCP Stream`. 
 
 ![Follow TCP Stream](AoC-2021_Photos/Day_09/5.0_AoC-Day-9_12-28-21-Follow-Stream.png)
 
@@ -114,7 +114,7 @@ Right-click and follow the `UDP` stream to copy the flag and answer question 4
 
 #### A note on the TryHackMe guide...
 
-We are told to look for packets that query the TryHackMe server with a domain name `packet.tryhackme.com.` Use the filter`dns` to find these packets. 
+We are told to look for packets that query the TryHackMe server with a domain name `packet.tryhackme.com.` Use the filter `dns` to find these packets. 
 
 The first packet visible looks like the one we want. It is a `Standard query` with the type `AAAA`. In the `Info` column we can see this data. It also has what is called a `Transaction ID`, referenced by the `0x....` information. Your IDs may vary, mine is `0xb46b`. 
 
@@ -124,7 +124,7 @@ I have highlighted the matches here. Instead of clicking around, it is far easy 
 
 ### Questions-5-6
 
-The next question asks us to dig a password out of an `FTP` session. The thing to know about `FTP` is that people assume it only operates on one port, `21`, but there are actually two standard ports, `20` and `21`. This is because `FTP` separates user commands and data onto two ports. In Wireshark, these two filters are `ftp` and `ftp-dat`. The first is used to see user commands, the second for extracting and viewing data. 
+The next question asks us to dig a password out of an `FTP` session. The thing to know about `FTP` is that people assume it only operates on one port, `21`, but there are two standard ports, `20` and `21`. This is because `FTP` separates user commands and data into two ports. In Wireshark, these two filters are `ftp` and `ftp-dat`. The first is used to see user commands, the second is for extracting and viewing data. 
 
 Start with the filter `FTP` and you'll immediately see the username and password in the info column. You can also see this in the packet details pane. 
 
@@ -134,7 +134,7 @@ In this same image, we can see the command used to add the file `secret.txt` to 
 
 ### Question-7
 
-The final question asks us for the actual data stored in `secret.txt`. You can either follow the `TCP` stream of the session, starting with the login or the command used to store the file. Alternatively, change your filter to `ftp-data` and look under the `Line-based text data` sub-tree to find the flag. 
+The final question asks us for the actual data stored in `secret.txt`. You can either follow the `TCP` stream of the session, starting with the login, or the command used to store the file. Alternatively, change your filter to `ftp-data` and look under the `Line-based text data` sub-tree to find the flag. 
 
 ![FTP Flag](AoC-2021_Photos/Day_09/11.0_AoC-Day-9_12-28-21-Final-Flag.png)
 

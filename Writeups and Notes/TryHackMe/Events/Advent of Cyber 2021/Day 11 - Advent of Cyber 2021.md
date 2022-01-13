@@ -1,4 +1,4 @@
-# TryHackMe - Advent of Cyber 2021 - Day X
+# TryHackMe - Advent of Cyber 2021 - Day 11
 ## Where are the Reindeers? (Networking)
 > Edward Hartmann
 > December 28, 2021
@@ -40,7 +40,7 @@ Firstly, we need to find the server. Since we don't know what port the service i
 ### Question-2
 [Top](#TOC)
 
-With the service located, we need to login. Using an interactive database shell called `sqsh` (*swkish*), we can access the server over the command-line. Run the command `sqsh -S <TARGET_IP> -U sa -P t7uLKzddQzVjVFJp` where `-S` is the target IP, `-U` is the username, and `-P` is the password. If successful we will get a prompt similar to a terminal but in different syntax.
+With the service located, we need to log in. Using an interactive database shell called `sqsh` (*swkish*), we can access the server over the command line. Run the command `sqsh -S <TARGET_IP> -U sa -P t7uLKzddQzVjVFJp` where `-S` is the target IP, `-U` is the username, and `-P` is the password. If successful we will get a prompt similar to a terminal but in a different syntax.
 
 > The "*prompt*" is what you see right before your cursor
 
@@ -52,7 +52,7 @@ With the service located, we need to login. Using an interactive database shell 
 Now that we have access and confirmed it is a [Microsoft SQL Server (MS SQL)l](../../../../Tools,%20Binaries,%20and%20Programs/Databases/Microsoft%20SQL%20Server%20(MSSQL).md) server, let's get some information. Note that after each query we type, you must follow it with `go` and that each query itself ends with a `;`. Otherwise, it will continue expecting more on the same query. 
 
 First, the DB Admin told us the `reindeer` database contains three tables &mdash; 
-- `mames`
+- `names`
 - `presents
 - `schedule`  
 
@@ -70,7 +70,7 @@ And there you have it, our buddy *Rudolph* at number 9.
 ### Question-4
 [Top](#TOC)
 
-For this question we are asked to get some data from the `schedule` table. Using the same syntax, we are going to swap `names` for `schedule` in the `table_name` portion of the query. Run the command `SELECT * FROM reindeer.dbo.schedule` and view the output. We don't need the `id` or `notes` field here, so trim the command down to `SELECT date,destination FROM reindeer.dbo.schedule`
+For this question, we are asked to get some data from the `schedule` table. Using the same syntax, we are going to swap `names` for `schedule` in the `table_name` portion of the query. Run the command `SELECT * FROM reindeer.dbo.schedule` and view the output. We don't need the `id` or `notes` field here, so trim the command down to `SELECT date,destination FROM reindeer.dbo.schedule`
 
 ![December 7th Destination](AoC-2021_Photos/Day_11/05_AoC-Day-11_12-28-21-Dec7-Destination.png)
 
@@ -78,7 +78,7 @@ There we go, a nice clean output.
 ### Question-5
 [Top](#TOC)
 
-Now we are asked how many "Power Bank" presents we need. Taking a guess at standard column names, we can run the query `SELECT quantity,name FROM reindeer.dbo.presents WHERE name = 'Power Bank';` and view the output. 
+Now we are asked how many "Power Bank" presents we need. Guessing standard column names, we can run the query `SELECT quantity,name FROM reindeer.dbo.presents WHERE name = 'Power Bank';` and view the output. 
 
 > Quotes in most `SQL` systems are single, not double. &mdash; `'` vs `"`. 
 
@@ -87,7 +87,7 @@ Now we are asked how many "Power Bank" presents we need. Taking a guess at stand
 ### Question-6
 [Top](#TOC)
 
-Now we need to see if we can get some information off the server itself. We are told that some **MS SQL** servers have `xp_cmdshell` enabled for us to run commands somewhat like a command-prompt. Each command has the syntax `xp_cmdshell 'COMMAND'`. `whoami`, for example, runs on this server. 
+Now we need to see if we can get some information off the server itself. We are told that some **MS SQL** servers have `xp_cmdshell` enabled for us to run commands somewhat like a command prompt. Each command has the syntax `xp_cmdshell 'COMMAND'`. `whoami`, for example, runs on this server. 
 
 ```
 xp_cmdshell 'whoami'

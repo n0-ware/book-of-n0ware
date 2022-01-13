@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools, Binaries, and Programs/CLI Utilities/cut.md",
+            "file": "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Advent of Cyber Table of Contents.md",
             "mode": "source"
           }
         }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools, Binaries, and Programs/CLI Utilities/cut.md",
+                "file": "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Advent of Cyber Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools, Binaries, and Programs/CLI Utilities/cut.md",
+                "file": "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Advent of Cyber Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,15 +133,15 @@
   },
   "active": "bc89f76ba9c17971",
   "lastOpenFiles": [
-    "Tools, Binaries, and Programs/CLI Utilities/cut.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Advent of Cyber Table of Contents.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 01 - Advent of Cyber 2021.md",
     "Knowledge Base/Concepts/Concepts - Table of Contents.md",
-    "Knowledge Base/Concepts/General/Queries.md",
-    "Knowledge Base/Table of Contents - Knowledge Base.md",
-    "Knowledge Base/Methodology/01 Methodology - Table of Contents.md",
-    "Knowledge Base/Exploitation/Exploitation - Table of Contents.md",
-    "Tools, Binaries, and Programs/Tools, Binaries, and Programs - Table of Contents.md",
-    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 12 - Advent of Cyber 2021.md",
-    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 13 - Advent of Cyber 2021.md",
-    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 14 - Advent of Cyber 2021.md"
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 02  - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 03  - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 04  - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 06 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 05 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 08 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 07 - Advent of Cyber 2021.md"
   ]
 }

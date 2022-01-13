@@ -9,7 +9,10 @@
 -  Flag[^2]
 
 [^1]: #idor #webapp 
-[^2]: THM{AOC_IDOR_2B34BHI3}
+[^2]: *Question 1:* `The Boss!`  
+					*Question 2:* `Build Manager`
+					*Question 3:* `Mischief Manager`  
+					*Question 4:* `THM{AOC_IDOR_2B34BHI3}`  
 
 ## Walkthrough
 We are given an [IDOR](../../../../Knowledge%20Base/Vulnerabilities/Insecure%20Direct%20Object%20Reference%20(IDOR).md) vulnerable website. Navigating to the *Your Activity* page shows a vulnerable URL. 
