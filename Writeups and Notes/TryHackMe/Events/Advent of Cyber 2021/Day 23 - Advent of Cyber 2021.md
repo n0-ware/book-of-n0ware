@@ -28,7 +28,7 @@
 ## Walkthrough
 In this scenario, we are tasked with investigating [Windows Event Logs](../../../../Knowledge%20Base/Concepts/Windows/Windows%20Event%20Log.md) to discover where a missing password went for the Elf Dome Defense system. It is suspected that a recent [Phishing](../../../../Knowledge%20Base/Concepts/Phishing.md) attempt was successful. We need to find out what happened and what actions the actor took on the compromised PC by reviewing [PowerShell](../../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md) event logs.  
 
-> For this scenario, we are interested in event log id's `4103` and `4014` from the provider `Microsoft-Windows-PowerShell`. This scenario will use the Attack Box. 
+> For this scenario, we are interested in event log IDs `4103` and `4014` from the provider `Microsoft-Windows-PowerShell`. This scenario will use the Attack Box. 
 
 ### Question-1
 [Top](#TOC)
@@ -37,11 +37,11 @@ Fortunately, we know the time range the event took place during. Start by launch
 
 ![Search Parameters](AoC-2021_Photos/Day_23/01_AoC_Day_23_01-09-22-Searching-Event-Log.png)
 
-With this filter in place, we have only the logs showing for that date and related to PowerShell that contain the string `http` in their description. IF the logs are in descending order of `Event TIme`, you can see the story of events pertaining to this search. Investigate the first log. 
+With this filter in place, we have only the logs showing for that date and related to PowerShell that contain the string `http` in their description. IF the logs are in descending order of `Event TIme`, you can see the story of events about this search. Investigate the first log. 
 
 ![Using wget to Download Exploit](AoC-2021_Photos/Day_23/02_AoC_Day_23_01-09-22-Getting-CVE.png)
 
-This log identifies a commant, `wget`, being used to pull down the exploit known as [PrintNightmare LPE](https://github.com/calebstewart/CVE-2021-1675) from the creators GitHub repository. Quoting from the "readme" file on this page...
+This log identifies a command, `wget`, being used to pull down the exploit known as [PrintNightmare LPE](https://github.com/calebstewart/CVE-2021-1675) from the creators GitHub repository. Quoting from the "readme" file on this page...
 
 *"This PowerShell script performs local privilege escalation (LPE) with the PrintNightmare attack technique.""*
 
@@ -50,7 +50,7 @@ Reading further down under [Usage](https://github.com/calebstewart/CVE-2021-1675
 ### Question-2
 [Top](#TOC)
 
-If you have properly investigate the command, you'll be able to see the name of the default admin user created by default. User this for the second flag.  
+If you have properly investigated the command, you'll be able to see the name of the default admin user created by default. User this for the second flag.  
 
 ![Default Admin User](AoC-2021_Photos/Day_23/03_AoC_Day_23_01-09-22-Admin-User-Name.png)
 
@@ -59,16 +59,16 @@ If you have properly investigate the command, you'll be able to see the name of 
 
 For us to find the IP and port that the actor called out to, we need to investigate some additional logs. We are aware the password went missing, so we can assume there was some sort of data exfiltration and deletion that took place. 
 
-The fourth log contains a PowerShell script that details the process the actor went through to not only encrypt the `password.txt` file, but exfiltrate it to a remote IP address. Find this log and locate the answers to *Quesiton 3 and Question 4*
+The fourth log contains a PowerShell script that details the process the actor went through to not only encrypt the `password.txt` file but exfiltrate it to a remote IP address. Find this log and locate the answers to *Question 3 and Question 4*
 
 ![Malicious PS Script](AoC-2021_Photos/Day_23/04_AoC_Day_23_01-09-22-Malicious-Script.png)
 
-It is worth nothing that all of the strings that start with `$` are variables declared in the script. Reading through this, we can see the attacker declared variables for a file (from which they got the content of `password.txt`), an encryption key (flag 4), a secure string, and the final encrypted data payload. Further down, they used the *cmdlet* `Invoke-WebRequest` to export the encrypted data via a `curl` [POST Request](../../../../Knowledge%20Base/Concepts/Web/POST%20Request.md) request to a remote IP on an obscure port (flag 3). 
+It is worth noting that all of the strings that start with `$` are variables declared in the script. Reading through this, we can see the attacker declared variables for a file (from which they got the content of `password.txt`), an encryption key (flag 4), a secure string, and the final encrypted data payload. Further down, they used the *cmdlet* `Invoke-WebRequest` to export the encrypted data via a `curl` [POST Request](../../../../Knowledge%20Base/Concepts/Web/POST%20Request.md) request to a remote IP on an obscure port (flag 3). 
 
 ### Questions-5-6
 [Top](#TOC)
 
-Furthering our investigation, we want to determine how the Elf's password file was deleted and see if we can potentially recover it. The next log file contains some interesting data to note for later. While the previous one contained the script, this log contains the data related to the *execution* of the script. Note the `value` field, this is the encrypted data, for which we fortunately have a key. It also has the value for flag 3. More on that later...
+Furthering our investigation, we want to determine how the Elf's password file was deleted and see if we can potentially recover it. The next log file contains some interesting data to note for later. While the previous one contained the script, this log contains the data related to the *execution* of the script. Note the `value` field, this is the encrypted data, for which we, fortunately, have a key. It also has the value for flag 3. More on that later...
 
 ![Encrypted Value](AoC-2021_Photos/Day_23/05_AoC_Day_23_01-09-22-Encrypted-Value.png)
 

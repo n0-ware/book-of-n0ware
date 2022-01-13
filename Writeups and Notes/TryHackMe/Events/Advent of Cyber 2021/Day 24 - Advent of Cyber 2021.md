@@ -24,7 +24,7 @@ In this final box, we are exploring [post exploitation](../../../../Knowledge%20
 ### Questions-1-2
 [Top](#TOC)
 
-Start out by navigating to the directory of `mimiktaz` noted in the instructions and running the program with the command `mimikatz`. You should now have a command prompt proceeded with `#`. 
+Start by navigating to the directory of `mimiktaz` noted in the instructions and running the program with the command `mimikatz`. You should now have a command prompt proceeded with `#`. 
 
 From here, we want to capture what credentials we can from memory using the `sekurlsa` module. Run the command:
 
@@ -51,7 +51,7 @@ echo "NTML_HASH_HERE" > hash.txt
 
 Now, we need to tell `john` how to crack this password. For this, we are going to use the `rockyou.txt` database available on all Kali systems in `/usr/share/wordlists/`. If you have not already, unzip it with `gunzip`. 
 
-Once you have unzipped the worldlist and echoed the hash into `hash.txt`, run the command:
+Once you have unzipped the wordlist and echoed the hash into `hash.txt`, run the command:
 
 ```
 john --format=NT -w=/usr/share/wordlists/rockyou.txt hash.txt --pot=output.txt

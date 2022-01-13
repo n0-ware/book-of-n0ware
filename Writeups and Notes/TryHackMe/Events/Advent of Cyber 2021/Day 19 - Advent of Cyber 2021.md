@@ -1,7 +1,7 @@
 # TryHackMe - Advent of Cyber 2021 - Day 19
 ## Something Phishy is Going On (Blue Teaming)
 > Edward Hartmann
-> Janury 8, 2022
+> January 8, 2022
 
 ***<u>Refs/Links:</u>***
 - [Advent of Cyber 2021 TOC](Advent%20of%20Cyber%20Table%20of%20Contents.md)  
@@ -48,14 +48,14 @@ Next, we are asked to note the difference in the `From` and `Reply-to` email add
 ### Question-4
 [Top](#TOC)
 
-A common [sign of phishing](../../../../Knowledge%20Base/Concepts/Phishing.md#Signs) is a misspelled email, grammar error, or other surprising mistake in the body of an email. Take look at the text and see if you can spot it. 
+A common [sign of phishing](../../../../Knowledge%20Base/Concepts/Phishing.md#Signs) is a misspelled email, grammar error, or another surprising mistake in the body of an email. Take look at the text and see if you can spot it. 
 
 ![Email Body](AoC-2021_Photos/Day_19/02_AoC_Day_19_01-08-22-Email-Body.png)
 
 ### Question-5
 [Top](#TOC)
 
-Next, we want to investigate the link to whatever website this malicious email is sending us to. Right-click the button and choose to copy the link. This is the answer this this question. 
+Next, we want to investigate the link to whatever website this malicious email is sending us to. Right-click the button and choose to copy the link. This is the answer to this question. 
 
 ### Question-6
 [Top](#TOC)
@@ -67,7 +67,7 @@ Now, click on "More" and "View Source" to see the source code of the email. The 
 ### Question-7
 [Top](#TOC)
 
-McSkidy has received a number of "artifacts" from other phishing emails sent to TBFC and has saved them on the desktop. Open that file and investigate them. Open `attachment.txt` and locate the name of the attachment. 
+McSkidy has received several "artifacts" from other phishing emails sent to TBFC and has saved them on the desktop. Open that file and investigate them. Open `attachment.txt` and locate the name of the attachment. 
 
 ![Attachment Name](AoC-2021_Photos/Day_19/04_AoC_Day_19_01-08-22-Attachment-Name.png)
 

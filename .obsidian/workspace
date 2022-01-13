@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Repository Table of Contents.md",
+            "file": "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 13 - Advent of Cyber 2021.md",
             "mode": "source"
           }
         }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Repository Table of Contents.md",
+                "file": "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 13 - Advent of Cyber 2021.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Repository Table of Contents.md",
+                "file": "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 13 - Advent of Cyber 2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,15 +133,15 @@
   },
   "active": "bc89f76ba9c17971",
   "lastOpenFiles": [
-    "Repository Table of Contents.md",
-    "Writeups and Notes/Evolve-OSCP/Evolve OSCP Bootcamp - Table of Contents.md",
-    "Writeups and Notes/HackTheBox/HackTheBox - Table of Contents.md",
-    "Writeups and Notes/PWK/PWK - Table of Contents.md",
-    "Writeups and Notes/TryHackMe/TryHackMe - Table of Contents.md",
-    "Knowledge Base/Table of Contents - Knowledge Base.md",
-    "Knowledge Base/Concepts/01 Concepts - Table of Contents.md",
-    "Tools, Binaries, and Programs/Tools, Binaries, and Programs - Table of Contents.md",
-    "Knowledge Base/Vulnerabilities/01 Vulnerabilities - Table of Contents.md",
-    "Knowledge Base/Methodology/01 Methodology - Table of Contents.md"
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 13 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 14 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 16 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 17 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 18 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 19 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 20 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 21 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 22 - Advent of Cyber 2021.md",
+    "Writeups and Notes/TryHackMe/Events/Advent of Cyber 2021/Day 23 - Advent of Cyber 2021.md"
   ]
 }

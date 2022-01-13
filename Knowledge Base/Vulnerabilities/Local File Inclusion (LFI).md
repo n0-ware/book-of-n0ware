@@ -110,7 +110,7 @@ The `PHP` wrapper *filter*  is used in **LFI** to read the actual `PHP` page con
 
 With `/etc/passwd`, we are dealing with text, **not** `PHP` code, so it should render on the **client-side** for us without issue. If you want to read *actual* source-code, you'll need to encode it while filtering. Otherwise, the server will either produce an error as it tries to run it, or just run the code, or maybe both. See this example from [TryHackMe's Advent of Cyber 3 Day 6 challenge](https://tryhackme.com/room/adventofcyber3)
 
-![Error Reading index.php](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021'/AoC-2021_Photos/Day_06/6.0_AoC-Day-6_12-23-21-Error-Reading-index-php.png)
+![Error Reading index.php](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021/AoC-2021_Photos/Day_06/6.0_AoC-Day-6_12-23-21-Error-Reading-index-php.png)
 
 We need to encode this file as it is read with filter so the web page cannot run it and we can decode it somewhere else to read it. 
 
@@ -118,11 +118,11 @@ Executing the command `php://filter/read=string.rot13/resource` or `php://filter
 
 Below is another example from the same TryHackMe room referenced above.
 
-![Filter with Read String](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021'/AoC-2021_Photos/Day_06/7.0_AoC-Day-6_12-23-21-Filter-Read-String.png)
+![Filter with Read String](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021/AoC-2021_Photos/Day_06/7.0_AoC-Day-6_12-23-21-Filter-Read-String.png)
 
 There is even potential to paste **encoded** `PHP` code and use a wrapper to decode it on the web page, possibly leading to [Remote Code Execution](Remote%20Code%20Execution.md) using a piece of code like `page.php?file=data://text/plain;base64,SSBhbSBhbiBSQ0UK==`
 
-![PHP Encoded RCE](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021'/AoC-2021_Photos/Day_06/11.0_AoC-Day-6_12-23-21-PHP-Encoded-RCE.png)
+![PHP Encoded RCE](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021/AoC-2021_Photos/Day_06/11.0_AoC-Day-6_12-23-21-PHP-Encoded-RCE.png)
 
 > More wrappers can be found here &mdash; [PHP Documentation - Wrappers](https://www.php.net/manual/en/wrappers.php.php) 
 

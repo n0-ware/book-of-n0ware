@@ -30,7 +30,7 @@ We are getting close to identifying the source of all our problems, and have fou
 ### Questions-1-4
 [Top](#TOC)
 
-To start with, I chose to move the `Santa_Claus_Naughty_List_2021.doc` into the `Tools > oledump....` folder for more easier analysis. Once this is done, run the command:
+To start with, I chose to move the `Santa_Claus_Naughty_List_2021.doc` into the `Tools > oledump....` folder for easier analysis. Once this is done, run the command:
 
 ```
 oledump.py Santa_Claus_Naughty_List_2021.doc
@@ -76,7 +76,7 @@ oledump.py -s 7 -d Santa_Claus_Naughty_List_2021.doc
 ### Question-6
 [Top](#TOC)
 
-Finally, we are told to get the last flag and hinted that the locaiton of the clue is given to us in the deobfuscated [PowerShell](../../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md) script. The script they are referring to is the dump from `stream 8` we already analyzed. Recall that it was attempting to extract files from the `Pictures/Grinch2021` directory? Head there and you'll see a `PNG` file that contains our flag. 
+Finally, we are told to get the last flag and hinted that the location of the clue is given to us in the deobfuscated [PowerShell](../../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md) script. The script they are referring to is the dump from `stream 8` we already analyzed. Recall that it was attempting to extract files from the `Pictures/Grinch2021` directory? Head there and you'll see a `PNG` file that contains our flag. 
 
 ![Final Flag](AoC-2021_Photos/Day_22/06_AoC_Day_20_01-09-22-Final-Flag.png)
 

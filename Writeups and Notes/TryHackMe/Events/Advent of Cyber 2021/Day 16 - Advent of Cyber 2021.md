@@ -35,7 +35,7 @@ This box is dedicated to the art of Open Source Intelligence gathering, aka [Ope
 ### Question-1
 [Top](#TOC)
 
-Firstly, we are given a ransomware note in a language that you (likely) cannot read. The first goal should be to translate the note via [Google Translate]https://translate.google.com/). Paste in the ransomware text below and it will auto detect the language and output the translation in English or your language of choice. 
+Firstly, we are given a ransomware note in a language that you (likely) cannot read. The first goal should be to translate the note via [Google Translate]https://translate.google.com/). Paste in the ransomware text below and it will auto-detect the language and output the translation in English or your language of choice. 
 
 ```
 !!! ВАЖНЫЙ !!!
@@ -63,7 +63,7 @@ The next step is to see if we can locate anything interesting with that username
 
 ![User Located](AoC-2021_Photos/Day_16/02_AoC_Day_14_01-03-22-User-Located.png)
 
-Just like that we are able to find an account on one service and a post that looks a lot like our culprit claiming McSkidy will be defeated. Unfortunately, none of these are the answer we are looking for at a glance, though they are useful later. Try searching with a well known site for quick public conversations and political diatribes to see if you can find the answer
+Just like that, we can find an account on one service, and a post that looks a lot like our culprit claiming McSkidy will be defeated. Unfortunately, none of these is the answer we are looking for at a glance, though they are useful later. Try searching with a well-known site for quick public conversations and political diatribes to see if you can find the answer
 
 > A little birdy gave me the **hint** to this one. 
 
@@ -71,7 +71,7 @@ Just like that we are able to find an account on one service and a post that loo
 ### Question-3
 [Top](#TOC)
 
-Once you locate the social media profile of the Neighborhood Grinch, you'll see that they provide a cryptographic key for a self verification that is the answer to *Question 3*
+Once you locate the social media profile of the Neighborhood Grinch, you'll see that they provide a cryptographic key for a self-verification that is the answer to *Question 3*
 
 ![Account Located](AoC-2021_Photos/Day_16/03_AoC_Day_14_01-03-22-Account-Located.png)
 
@@ -90,7 +90,7 @@ After verifying the website this user belongs to in the image above and confirmi
 ### Question-6
 [Top](#TOC)
 
-Identifying the location of the BTC address leak is as simple as viewing the verifications in the account history. Click the BTC address in the users account and you will see a history of this user. 
+Identifying the location of the BTC address leak is as simple as viewing the verifications in the account history. Click the BTC address in the user's account and you will see a history of this user. 
 
 ![User History](AoC-2021_Photos/Day_16/05_AoC_Day_14_01-03-22-User-History.png)
 

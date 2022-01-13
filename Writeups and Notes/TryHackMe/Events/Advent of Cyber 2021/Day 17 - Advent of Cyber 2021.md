@@ -29,20 +29,20 @@
 - [Question 8](#Question-8)
 
 ## Walkthrough
-In this box we are tasked with investigated how The Grinch gained access to employee personal information. We know that HR recently made available an HR portal via an [Insecure AWS S3 Bucket](../../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md) and we suspect that it is the source of the leak the Grinch used for some extreme [content discovery](../../../../Knowledge%20Base/Concepts/Web/Content%20Discovery.md). 
+In this box, we are tasked with investigating how The Grinch gained access to employee personal information. We know that HR recently made available an HR portal via an [Insecure AWS S3 Bucket](../../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md) and we suspect that it is the source of the leak the Grinch used for some extreme [content discovery](../../../../Knowledge%20Base/Concepts/Web/Content%20Discovery.md). 
 
 ### Question-1
 [Top](#TOC)
-The first question asks us to identify the website the HR team used to send out their announcement. To find the source of any image, simple right-click and choose "Copy image address." Paste the copied text anywhere to view the URL of the image. I have pasted it into the browser URL bar. 
+The first question asks us to identify the website the HR team used to send out their announcement. To find the source of any image, simply right-click and choose "Copy image address." Paste the copied text anywhere to view the URL of the image. I have pasted it into the browser URL bar. 
 
 ![Finding Image Source](AoC-2021_Photos/Day_17/01_AoC_Day_17_01-05-22-Image-Source.png)
 
-In our case, we only want the middle portion, the subdomain, domain name, and top level domain of the URL. `example.example.xyz`. 
+In our case, we only want the middle portion, the subdomain, domain name, and top-level domain of the URL. `example.example.xyz`. 
 
 ### Question-2
 [Top](#TOC)
 
-Now we are asked to retrieve a flag from the bucket. This assumes that the bucket is accessible from anyone, with or without the proper permissions. Lets examine the URL of an S3 Bucket resource briefly. 
+Now we are asked to retrieve a flag from the bucket. This assumes that the bucket is accessible from anyone, with or without the proper permissions. Let's examine the URL of an S3 Bucket resource briefly. 
 
 ![S3 URL Explained](../../../../Knowledge%20Base/Vulnerabilities/Photos%20(Vulnerabilities)/S3_URL_EXPLAINED.png)
 
@@ -79,7 +79,7 @@ As you can see, using the AWS CLI creates a much cleaner output than simply usin
 ### Question-4
 [Top](#TOC)
 
-Once you've identified the proper file, download it and unzip the file in order to view the contents. This can also be done with `aws s3 cp` or `wget`. We don't use `curl` on this occasion because we actually want to download the file, not simply return text confirming it exists. 
+Once you've identified the proper file, download it and unzip the file to view the contents. This can also be done with `aws s3 cp` or `wget`. We don't use `curl` on this occasion because we want to download the file, not simply return text confirming it exists. 
 
 ```
 aws s3 cp s3://images.bestfestivalcompany.com/<FILE_TO_DOWNLOAD> . --no-sign-request
@@ -147,7 +147,7 @@ There is the Account ID for the Access Key in question.
 ### Question-6
 [Top](#TOC)
 
-To identify the Username belonging to this profile we created, we need a different [reconnaissance](../../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance) command. This one is more detailed and actually returns the information from the prior command and more, including the `Arn`, or "Amazon Resource Name" of the user. This will contain the username we want. Run the command below. 
+To identify the Username belonging to this profile we created, we need a different [reconnaissance](../../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance) command. This one is more detailed and returns the information from the prior command and more, including the `Arn`, or "Amazon Resource Name" of the user. This will contain the username we want. Run the command below. 
 
 ```
 aws stst get-caller-identity --profile <PROFILE_NAME>
@@ -173,7 +173,7 @@ At the bottom, we find the name of the instance we are looking for.
 
 The final question tasks with finding some information contained in the [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) service. Nearly without exception, each AWS service has corresponding `aws` commands, this is no exception. 
 
-You can do some web research to learn how to use the command, or run `aws secretsmanager help` to get started. The command we are looking for first is `list-secrets`. Many `aws` commands have "sub-commands" that can be ran with them, as we saw with `ec2 describe-instances`. Run the command below. 
+You can do some web research to learn how to use the command, or run `aws secretsmanager help` to get started. The command we are looking for first is `list-secrets`. Many `aws` commands have "sub-commands" that can be run with them, as we saw with `ec2 describe-instances`. Run the command below. 
 
 ```
 aws secretsmanager list-secrets --profile <PROFILE_NAME>

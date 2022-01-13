@@ -22,7 +22,7 @@
 - [Question 4](#Question-4)
 
 ## Walkthrough
-In this lab we are interacting with [Docker](../../../../Knowledge%20Base/Concepts/Docker.md) images hosted on AWS Elastic Container Registry. An image has been erroneously made available to the public and it is our task investigate to to understand the tooling resources Grinch Enterprises is using against us. We expect there to be some information beneficial to our cause on this image and we want to extract it
+In this lab we are interacting with [Docker](../../../../Knowledge%20Base/Concepts/Docker.md) images hosted on AWS Elastic Container Registry. An image has been erroneously made available to the public and it is our task to investigate to understand the tooling resources Grinch Enterprises is using against us. We expect there to be some information beneficial to our cause on this image and we want to extract it
 
 ### Install
 
@@ -51,7 +51,7 @@ The first question asks us what command we would use to list the container image
 
 See the result of this command in the image above.
 
-We can `run` the docker image and begin using as a proper container that simulates a shell with the following command. The input field of this particular shell starts with a `$` and you can see the commands ran noted in the image. 
+We can `run` the docker image and begin using it as a proper container that simulates a shell with the following command. The input field of this particular shell starts with a `$` and you can see the commands ran noted in the image. 
 
 ```
 docker run -it public.ecr.aws/h0w1j9u3/grinch-aoc

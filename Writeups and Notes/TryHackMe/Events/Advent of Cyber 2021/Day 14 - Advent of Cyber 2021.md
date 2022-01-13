@@ -29,7 +29,7 @@ The landing page of our target IP address gives us an image of The Grinch waitin
 
 ![Landing Page](AoC-2021_Photos/Day_14/01_AoC_Day_14_01-02-22-Landing.png)
 
-From here, with nothing else visible on the page, enumeration is the next logical step. For locating hidden directories on websites, we can use [dirbuster](../../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/dirbuster.md) via the `dirb` command and use a basic word list. I am using one of the many built in *Kali* word lists in the `dirb` folder &mdash; `common.txt`. Run the following command. 
+From here, with nothing else visible on the page, enumeration is the next logical step. For locating hidden directories on websites, we can use [dirbuster](../../../../Tools,%20Binaries,%20and%20Programs/Information%20Gathering/Web%20Applications/dirbuster.md) via the `dirb` command and use a basic word list. I am using one of the many built-in *Kali* word lists in the `dirb` folder &mdash; `common.txt`. Run the following command. 
 
 ```
 dirb https://<TARGET_IP> /usr/share/wordlists/dirb/common.txt
@@ -62,14 +62,14 @@ Once on the system, a quick listing of the contents of our home directory turns 
 
 ![Enumerating Users](AoC-2021_Photos/Day_14/06_AoC_Day_14_01-02-22-Enumerate-Users.png)
 
-The obvious user of interest is `thegrinch`. Let's see what we an access on this user. Change to this users home directory run `ls`. We see both a `loot` directory and a directory named `scripts`. Moving into scripts and listing the files with `ls -l` tells us that all of the scripts are owned by root and that we only have access to one of them, the `loot.sh` script. This can be seen via the lack of `r` or `w` or `x` on the permissions line after the first set of three in the command output. 
+The obvious user of interest is `thegrinch`. Let's see what we can access on this user. Change to this user's home directory run `ls`. We see both a `loot` directory and a directory named `scripts`. Moving into scripts and listing the files with `ls -l` tells us that all of the scripts are owned by root and that we only have access to one of them, the `loot.sh` script. This can be seen via the lack of `r` or `w` or `x` on the permissions line after the first set of three in the command output. 
 
 ![Listing the scripts Directory](AoC-2021_Photos/Day_14/07_AoC_Day_14_01-02-22-Listing-Scripts-Directory.png)
 
 ### Question-3
 [Top](#TOC)
 
-The output of this `ls` tells us two things. First, we can read, write, and execute to this script. Second, this script has admin privileges as it is owned by the `root` user. If you `cat` the script, you'll also see this is the script responsible for the output on the `ls.html` page and the `<iframe>` we see on the admin page. This script is listing the `loot` directory and writing the output to `ls.html`. 
+The output of this `ls` tells us two things. First, we can read, write, and execute this script. Second, this script has admin privileges as it is owned by the `root` user. If you `cat` the script, you'll also see this is the script responsible for the output on the `ls.html` page and the `<iframe>` we see on the admin page. This script is listing the `loot` directory and writes the output to `ls.html`. 
 
 ![loot.sh](AoC-2021_Photos/Day_14/08_AoC_Day_14_01-02-22-loot.png)
 
@@ -81,16 +81,16 @@ To edit this file in a way it outputs the information we need for *Question 3*, 
 cat /etc/shadow > /var/www/html/ls.html
 ```
 
-We still cannot execute `loot.sh`, but we can use the browser to execute it for us. Navigate back to the `admin` page in your browser and refresh until you have output like the image below. 
+We still cannot execute `loot.sh`, but we can use the browser to execute it for us. Navigate back to the `admin` page in your browser and refresh until you have an output like the image below. 
 
 ![Contents of /etc/shadow](AoC-2021_Photos/Day_14/09_AoC_Day_14_01-02-22-Pepper-Hash.png)
 
-Just like that we have read the contents of a `root` owned file using a hosted script. Go ahead and use this to answer *Question 3*
+Just like that, we have read the contents of a `root` owned file using a hosted script. Go ahead and use this to answer *Question 3*
 
 ### Question-4
 [Top](#TOC)
 
-Now that we know the `loot.sh` file can be abused, edit the code in a similar fashion to list out the contents of the other `sh` files we cannot read on the command line. You can do this one at a time, or customize the `loot.sh` file to do it all at once. 
+Now that we know the `loot.sh` file can be abused, similarly edit the code to list out the contents of the other `sh` files we cannot read on the command line. You can do this one at a time, or customize the `loot.sh` file to do it all at once. 
 
 ```
 #!/bin/bash
@@ -108,7 +108,7 @@ Add this code and wait a few minutes. You should get the output below if success
 
 This can be hard to read all on one line with no breaks, but essentially, the `$reesponse` variable is given a value that results in a `curl` command that returns the contents of `ls.html`. If there is a file `remindme.txt` in that list, the script returns the value `ELFSareFAST` to `pass.html`. 
 
-Using this password, we can login as `thegrinch` with the command `su -l thegrinch`
+Using this password, we can log in as `thegrinch` with the command `su -l thegrinch`
 
 ![Logging in as The Grinch](AoC-2021_Photos/Day_14/11_AoC_Day_14_01-02-22-TheGrinch-User.png)
 

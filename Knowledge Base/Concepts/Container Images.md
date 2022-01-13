@@ -5,11 +5,11 @@ Container Images represent a potential vulnerability if they contain information
 - `manifest.json` &mdash; The "manifest" is a list of container image layers that compose the final container image. !
 - `Config` &mdash; References the file that details the underlying configuration commands used to build the image. 
 
-![](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021'/AoC-2021_Photos/Day_18/04_AoC_Day_18_01-06-22-extract-and-manifest-print.png)
+![](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021/AoC-2021_Photos/Day_18/04_AoC_Day_18_01-06-22-extract-and-manifest-print.png)
 
 These files represent the various container image layers. Inspecting the layers of a `config` file will tell us how the image was built. 
 
-![](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021'/AoC-2021_Photos/Day_18/05_AoC_Day_18_01-06-22-github-repo-clone.png)
+![](../../Writeups%20and%20Notes/TryHackMe/Events/Advent%20of%20Cyber%202021/AoC-2021_Photos/Day_18/05_AoC_Day_18_01-06-22-github-repo-clone.png)
 
 The first layer of the manifest configuration file details the final image configuration as it is intended to run on the host booting the container. However, the next section of curly braces has much more robust information. 
 

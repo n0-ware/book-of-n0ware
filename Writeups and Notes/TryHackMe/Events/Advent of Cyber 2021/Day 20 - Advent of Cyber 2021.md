@@ -27,13 +27,13 @@
 
 ## Walkthrough
 
-In this box, we are in a situation where McSkidy has been forwarded a payroll file that may be suspicious because we do not recognize the elf it belongs to. It is up to us to investigate the file, determine if it is safe, or if it is a piece of malware designed to do harm to TBFC. 
+In this box, we are in a situation where McSkidy has been forwarded a payroll file that may be suspicious because we do not recognize the elf it belongs to. It is up to us to investigate the file, determine if it is safe, or if it is a piece of malware designed to harm TBFC. 
 
 > This lab will take place on the attack box. 
 ### Questions-1-2
 [Top](#TOC)
 
-The first thing one should do when about to interact with an unknown file is identify its type using the Linux command `file`. The most basic is is simply `file <target>`. On the command like, navigate to `~/Desktop` and run the command below and note the output. 
+The first thing one should do when about to interact with an unknown file is identify its type using the Linux command `file`. The most basic is is simply `file <target>`. On the command line, navigate to `~/Desktop` and run the command below and note the output. 
 
 ```
 file testfile
@@ -43,7 +43,7 @@ file testfile
 
 Some Google searching tells us this is a legitimate filetype, developed to test the responsiveness of antivirus systems without actually containing real malware. Read more [here](https://en.wikipedia.org/wiki/EICAR_test_file)
 
-But, this could be incorrect. Let's see if we can find some identifieable data contained in the file with the [strings](../../../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/strings.md) command. Run this on the file now. 
+But, this could be incorrect. Let's see if we can find some identifiable data contained in the file with the [strings](../../../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/strings.md) command. Run this on the file now. 
 
 ```
 strings testfile
@@ -56,7 +56,7 @@ Copy this string in for your first flag. Remember the output from the first comm
 ### Question-3
 [Top](#TOC)
 
-Next, we are asked to find the files "hash" value and submit it to [VirusTotal](https://www.virustotal.com/gui/home/upload) for analysis. We can assume they want the `md5` hash here as VT usually works with `md5`hashes. Run the command below to easily strip out everything but the hash value
+Next, we are asked to find the file "hash" value and submit it to [VirusTotal](https://www.virustotal.com/gui/home/upload) for analysis. We can assume they want the `md5` hash here as VT usually works with `md5`hashes. Run the command below to easily strip out everything but the hash value
 
 ```
 md5sum testfile | cut -d " " -f1
@@ -76,7 +76,7 @@ Use this date as your next flag.
 ### Question-4
 [Top](#TOC)
 
-The next question asks us to find the designation given it by Microsoft. Head back to the "Detection" tab and scroll down to find it. 
+The next question asks us to find the designation given by Microsoft. Head back to the "Detection" tab and scroll down to find it. 
 
 ![MS Designation](AoC-2021_Photos/Day_20/06_AoC_Day_20_01-08-22-MS-Designation.png)
 
@@ -90,7 +90,7 @@ Doing a little research is common on Malware. Head to the [link](https://www.eic
 ### Question-6
 [Top](#TOC)
 
-Further down, we can find some information on this files character size and max allowed limit. Read on and see if you can answer *Question 6*. 
+Further down, we can find some information on this file's character size and max allowed limit. Read on and see if you can answer *Question 6*. 
 
 ![Character Limit](AoC-2021_Photos/Day_20/08_AoC_Day_20_01-08-22-CharacterTotal.png)
 
