@@ -36,7 +36,7 @@
 	- Databases
 	- Poor user input sanitation
 - [Day 8](Day%2008%20-%20Advent%20of%20Cyber%202021.md)
-	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md)
+	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md)
 	- [ShellBags](../../../Knowledge%20Base/Concepts/Windows/Shellbags.md)
 	- [Windows Registry](../../../Knowledge%20Base/Concepts/Windows/Windows%20Registry.md)
 	- Logs
@@ -91,11 +91,11 @@
 	- Detection
 - [Day 22](Day%2022%20-%20Advent%20of%20Cyber%202021.md)
 	- [Encoding/Decoding](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md)
-	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md)
+	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md)
 	- Data Exfiltration
 - [Day 23](Day%2023%20-%20Advent%20of%20Cyber%202021.md)
-	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md)
-		- [cmdlets](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md#command-lets)
+	- [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md)
+		- [cmdlets](../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md#command-lets)
 	- [Encoding and Decoding](../../../Knowledge%20Base/Concepts/General/Encoding%20and%20Decoding.md)
 	- [Windows Event Log](../../../Knowledge%20Base/Concepts/Windows/Windows%20Event%20Log.md)
 	- Data Exfiltration

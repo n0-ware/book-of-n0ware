@@ -26,7 +26,7 @@
 - [Question 7](#Question-7)
 
 ## Walkthrough
-In this scenario, we are tasked with investigating [Windows Event Logs](../../../Knowledge%20Base/Concepts/Windows/Windows%20Event%20Log.md) to discover where a missing password went for the Elf Dome Defense system. It is suspected that a recent [Phishing](../../../Knowledge%20Base/Concepts/Phishing.md) attempt was successful. We need to find out what happened and what actions the actor took on the compromised PC by reviewing [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md) event logs.  
+In this scenario, we are tasked with investigating [Windows Event Logs](../../../Knowledge%20Base/Concepts/Windows/Windows%20Event%20Log.md) to discover where a missing password went for the Elf Dome Defense system. It is suspected that a recent [Phishing](../../../Knowledge%20Base/Concepts/Phishing.md) attempt was successful. We need to find out what happened and what actions the actor took on the compromised PC by reviewing [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md) event logs.  
 
 > For this scenario, we are interested in event log id's `4103` and `4014` from the provider `Microsoft-Windows-PowerShell`. This scenario will use the Attack Box. 
 
@@ -45,7 +45,7 @@ This log identifies a commant, `wget`, being used to pull down the exploit known
 
 *"This PowerShell script performs local privilege escalation (LPE) with the PrintNightmare attack technique.""*
 
-Reading further down under [Usage](https://github.com/calebstewart/CVE-2021-1675#usage), we see this is ran by first calling the PowerShell [cmdlet](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md#command-lets)  `Invoke-Module` followed with a second command to create an admin user with a new password in the local admin group. The second command is the answer to the first question. 
+Reading further down under [Usage](https://github.com/calebstewart/CVE-2021-1675#usage), we see this is ran by first calling the PowerShell [cmdlet](../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md#command-lets)  `Invoke-Module` followed with a second command to create an admin user with a new password in the local admin group. The second command is the answer to the first question. 
 
 ### Question-2
 [Top](#TOC)

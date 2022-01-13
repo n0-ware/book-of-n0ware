@@ -37,7 +37,7 @@
 - [Question 12](#Question-12)
 ## Walkthrough
 
-In this scenario, Santa's laptop has gone missing, and all we have access to are some [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/PowerShell/PowerShell.md) transcription logs and an analysis machine. 
+In this scenario, Santa's laptop has gone missing, and all we have access to are some [PowerShell](../../../Tools,%20Binaries,%20and%20Programs/Windows/PowerShell.md) transcription logs and an analysis machine. 
 
 > Either start the attack box or login via your own VM through `RDP` using `xfreerdp` &mdash; `xfreerdp /u:Administrator /p:grinch123! /v:YOUR_IP_HERE`
 
