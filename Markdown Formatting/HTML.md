@@ -147,7 +147,7 @@
 	
 ## Documents
 ### Anchors
-- `<a href="#windows-authentication">Top</a>`
-- `<a id="windows-authentication" description="Explanation of Windows authentication methods">`
+- `<a href="#top">Top</a>` &mdash; Can be left empty to be invisible
+- `<a id="top"></a>` &mdash; Can be left empty to be invisible
 	
-e.g.: <a href="#windows-authentication">Top</a>
+e.g.: <a href="#top">Top</a>
