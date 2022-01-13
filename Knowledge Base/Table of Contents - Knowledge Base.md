@@ -5,7 +5,7 @@
 - [Methodology](#Methodology%20-%20Methodology%20Methodology%2001%2020Methodology%2020-%2020Table%2020of%2020Contents%20md)
 - [Vulnerabilities](#Vulnerabilities%20-%20Table%20of%20Contents%20Vulnerabilities%2001%2020Vulnerabilities%2020-%2020Table%2020of%2020Contents%20md)
 ### Concepts - [Table of Contents](Concepts/01%20Concepts%20-%20Table%20of%20Contents.md)
-### Shortcuts
+#### Shortcuts
 - [Databases](#Databases)
 - [Defense](#Defense)
 - [General](#General)
@@ -13,12 +13,12 @@
 - [Web](#Web)
 - [Windows](#Windows)
 - [Unsorted](#Unsorted)
-### Databases
+##### Databases
 - [NoSQL](Databases/NoSQL.md)
 - [SQL (Relational Database Management System)](Databases/Relational%20Database%20Management%20Systems.md)
-### Defense
+##### Defense
 - [YARA Rules](Defense/YARA%20Rules.md)
-### General
+##### General
 - [Authentication](General/Authentication.md) 
 - [Encoding and Decoding](General/Encoding%20and%20Decoding.md) 
 - [Enumeration](enumeration.md) **Empty**
@@ -27,9 +27,9 @@
 - [Trust](General/Trust.md)  **Empty**
 - [Validation](General/Validation.md)  **Empty**
 - [Vulnerability](General/Vulnerability.md) **Empty**
-### Offensive Security
+##### Offensive Security
 - [Persistence](Offensive%20Security/Persistence.md)
-### Web
+##### Web
 - [Access Control](Web/Access%20Control.md)  **Empty**
 - [Content Discovery](Web/Content%20Discovery.md)
 - [Cookies](Web/Cookies.md)
@@ -46,14 +46,14 @@
 - [Sessions](Web/Sessions.md)
 - [User-Supplied Input](Web/User-Supplied%20Input.md) **Empty**
 
-### Windows
+##### Windows
 - [Domain (Active Directory)](Windows/Domain%20(Active%20Directory))
 - [Dynamic Link Library (DLL)](Windows/Dynamic%20Link%20Library%20(DLL).md)
 - [Shellbags](Windows/Shellbags.md)
 - [Windows Event Log](Windows/Windows%20Event%20Log.md)
 - [Windows Registry](Windows/Windows%20Registry.md)
 
-### Unsorted
+##### Unsorted
 - [Container Images](Container%20Images.md)
 - [Continuous Integration / Continuous Deployment](Continuous%20Integration%20Continuous%20Delivery%20(CICD).md)
 - [Docker](Docker.md)
@@ -63,14 +63,14 @@
 - [Phishing](Phishing.md)
 - [Regular Expressions (regex)](Regular%20Expressions%20(regex).md)
 ### Exploitation - [Table of Contents](Exploitation/01%20Exploitation%20-%20Table%20of%20Contents.md)
-### Shortcuts
+#### Shortcuts
 - [In-URL](#In-URL)
 - <a href="#reverse-shells">Reverse Shells</a>
-### In-URL
+##### In-URL
 - [PHP in URL](In-URL/PHP%20in%20URL.md)
-### Reverse Shells
+##### Reverse Shells
 <a id="reverse-shells"></a>
-#### Python
+###### Python
 - [python_reverse_shell](Reverse%20Shells/Python/python_reverse_shell.py)
 ### Methodology - [Methodology](Methodology/01%20Methodology%20-%20Table%20of%20Contents.md)
 - [Post Exploitation](Post%20Exploitation.md)
