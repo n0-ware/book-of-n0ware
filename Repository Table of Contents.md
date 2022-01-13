@@ -2,9 +2,10 @@
 
 
 ### Writeups Table of Contents
-- [TryHackMe](TryHackMe/TryHackMe%20-%20Glossary.md)
-- [PEN200/PWK/OSCP](OSCP/01%20OSCP%20-%20Glossary.md)
-- [Hack The Box](HackTheBox/01%20HackTheBox%20-%20Table%20of%20Contents.md)
+- [TryHackMe](Writeups%20and%20Notes/TryHackMe/TryHackMe%20-%20Table%20of%20Contents.md)
+- [Evolve OSCP](Writeups%20and%20Notes/Evolve-OSCP/Evolve%20OSCP%20Bootcamp%20-%20Table%20of%20Contents.md)
+- [PEN200/PWK/OSCP](Writeups%20and%20Notes/PWK/PWK%20-%20Table%20of%20Contents.md)
+- [Hack The Box](Writeups%20and%20Notes/HackTheBox/HackTheBox%20-%20Table%20of%20Contents.md)
 
 ### Knowledge and Tools
 - [Knowledge Base](Knowledge%20Base/Table%20of%20Contents%20-%20Knowledge%20Base.md)
