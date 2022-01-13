@@ -1,5 +1,5 @@
 # Directory
-<a id="#top"></a>
+<a id="top"></a>
 - [Tables](#Tables)
 	- [Rowspan](#Rowspan)
 	- [Colspan](#Colspan)
