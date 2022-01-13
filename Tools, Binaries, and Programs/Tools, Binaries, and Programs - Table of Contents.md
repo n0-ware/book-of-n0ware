@@ -15,7 +15,7 @@
 - [Wordlists](#Wordlists)
 - [Windows](#Windows)
 ### CLI Utilities
-<a id="cli-utilities"></a>
+<a id="cli-utils"></a>
 - [AWS CLI](CLI%20Utilities/AWS%20CLI.md)
 - [curl](CLI%20Utilities/curl.md)
 - [Grep and Egrep](CLI%20Utilities/Grep%20and%20Egrep.md)
