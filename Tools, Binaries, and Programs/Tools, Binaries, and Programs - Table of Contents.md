@@ -2,7 +2,6 @@
 ## Table of Contents
 - <a href="#cli-utils">CLI Utilities</a>
 - [Databases](#Databases)
-- [Enumeration](#Enumeration)
 - [Exploitation](#Exploitation)
 - <a href="#file-analysis">File Analysis</a>
 - <a href="#information-gathering">Information Gathering</a>
@@ -14,6 +13,9 @@
 - <a href="#traffic-analysis">Traffic Analysis</a>
 - [Wordlists](#Wordlists)
 - [Windows](#Windows)
+
+* * *
+
 ### CLI Utilities <a id="cli-utils"></a>
 - [AWS CLI](CLI%20Utilities/AWS%20CLI.md)
 - [curl](CLI%20Utilities/curl.md)
