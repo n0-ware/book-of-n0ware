@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knowledge Base/Vulnerabilities/NoSQL Injection.md",
+            "file": "Markdown Formatting/HTML.md",
             "mode": "source"
           }
         }
@@ -79,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge Base/Vulnerabilities/NoSQL Injection.md",
+                "file": "Markdown Formatting/HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledge Base/Vulnerabilities/NoSQL Injection.md",
+                "file": "Markdown Formatting/HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,15 +111,15 @@
   },
   "active": "73d9c74afef44838",
   "lastOpenFiles": [
+    "Markdown Formatting/HTML.md",
+    "Knowledge Base/Concepts/General/Authentication.md",
+    "Knowledge Base/Concepts/General/Encoding and Decoding.md",
+    "Knowledge Base/Concepts/01 Concepts Glossary.md",
     "Knowledge Base/Vulnerabilities/NoSQL Injection.md",
     "Knowledge Base/Concepts/Databases/NoSQL.md",
     "Tools, Binaries, and Programs/CLI Utilities/Scratch.md",
-    "Knowledge Base/Concepts/01 Concepts Glossary.md",
     "enumeration.md",
-    "Knowledge Base/Concepts/General/Authentication.md",
     "Knowledge Base/Concepts/General/Trust.md",
-    "Knowledge Base/Concepts/Databases/Relational Database Management Systems.md",
-    "Knowledge Base/Concepts/Offensive Security/Persistence.md",
-    "Knowledge Base/Concepts/Web/Document Object Model (DOM).md"
+    "Knowledge Base/Concepts/Databases/Relational Database Management Systems.md"
   ]
 }

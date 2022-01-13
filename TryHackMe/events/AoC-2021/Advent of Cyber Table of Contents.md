@@ -67,7 +67,7 @@
 	- Script abuse
 - Day 15 was a break day
 - [Day 16](Day%2016%20-%20Advent%20of%20Cyber%202021.md)
-	- [OSINT](../../../Knowledge%20Base/Concepts/OSINT.md)
+	- [Open Source Intelligence (OSINT)](../../../Knowledge%20Base/Concepts/Open%20Source%20Intelligence%20(OSINT).md)
 - [Day 17](Day%2017%20-%20Advent%20of%20Cyber%202021.md)
 	- [Insecure S3 Buckts](../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md)
 		- [AWS Reconnaissance](../../../Knowledge%20Base/Vulnerabilities/Insecure%20S3%20Buckets.md#Reconnaissance)
