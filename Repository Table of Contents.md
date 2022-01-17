@@ -3,7 +3,6 @@
 
 ### Writeups Table of Contents
 - [TryHackMe](Writeups%20and%20Notes/TryHackMe/TryHackMe%20-%20Table%20of%20Contents.md)
-- [Evolve OSCP](Writeups%20and%20Notes/Evolve-OSCP/Evolve%20OSCP%20Bootcamp%20-%20Table%20of%20Contents.md)
 - [PEN200/PWK/OSCP](Writeups%20and%20Notes/PWK/PWK%20-%20Table%20of%20Contents.md)
 - [Hack The Box](Writeups%20and%20Notes/HackTheBox/HackTheBox%20-%20Table%20of%20Contents.md)
 
