@@ -15,7 +15,7 @@
 
 
 ## Description
-[Cross-Site Scripting](Cross-Site%20Scripting%20(XSS).md), or *XSS*, is classified as an injection attack according to the [*OWASP Top 10 2021*](https://owasp.org/www-project-top-ten/). XSS involves *injecting* malicious JavaScript into a web application with the hope that it is executed by other users. 
+Cross-Site Scripting, or *XSS*, is classified as an [Injection](Injection.md) attack according to the [*OWASP Top 10 2021*](https://owasp.org/www-project-top-ten/). XSS involves *injecting* malicious JavaScript into a web application with the hope that it is executed by other users. 
 
 Achieving XSS on a target can lead to multiple outcomes, including:
 - Stealing cookies for [session hijacking](Session%20Hijacking.md)
