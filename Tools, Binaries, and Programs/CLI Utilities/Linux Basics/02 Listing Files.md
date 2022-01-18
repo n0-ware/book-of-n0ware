@@ -5,6 +5,7 @@
 
 In these examples, `linux` is both the user and the hostname. 
 
+
 ## ls
 
 You list files in a directory with the `ls` command:

@@ -4,6 +4,13 @@
 
 [^1]: #head #cat #more #tail #less
 
+## Table of Contents
+- [cat](#cat)
+- [more](#more)
+- [less](#less)
+- [head](#head)
+- [tail](#tail)
+
 ## cat
 
 The `cat` command reads out a files contents, regardless of how much is ine the file. 

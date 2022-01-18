@@ -3,6 +3,16 @@
 ###### Tags[^1]
 
 [^1]: #linux #fundamentals #mkdir #touch #rm #filemanagement
+## Table of Contents
+- [touch](#touch)
+- [rm](#rm)
+- [mkdir](#mkdir)
+- [mv](#mv)
+- [cp](#cp)
+- [cat](#cat)
+- [ln](#ln)
+	- [Softlink](#Softlink)
+	- [Hardlink](#Hardlink)
 
 ## touch
 

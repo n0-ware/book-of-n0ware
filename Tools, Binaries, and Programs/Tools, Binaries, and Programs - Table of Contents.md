@@ -22,7 +22,7 @@
 - [cut](CLI%20Utilities/cut.md)
 - [Grep and Egrep](CLI%20Utilities/Grep%20and%20Egrep.md)
 - [jq](CLI%20Utilities/jq.md)
-- [sed](CLI%20Utilities/sed.md)
+- [sed](CLI%20Utilities/Linux%20Basics/sed.md)
 - [strings](CLI%20Utilities/strings.md)
 ### Databases
 - [Microsoft SQL Server (MSSQL)](Databases/Microsoft%20SQL%20Server%20(MSSQL).md)

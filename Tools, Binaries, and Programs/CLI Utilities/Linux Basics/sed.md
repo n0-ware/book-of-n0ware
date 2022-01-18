@@ -1,14 +1,14 @@
-## Sed Usage
-Good explanation &mdash; https://linuxhint.com/sed_remove_whitespace/
+# Sed 
+###### Good explanation &mdash; https://linuxhint.com/sed_remove_whitespace/
 
-##### Basic Syntax
+## Basic Syntax
 - `sed`
 - `/s` &mdash; substitution expression
 - `REGEXP` &mdash; regular expression to match
 - `replacement` &mdash; replacement string
 - `flags` &mdash; any flags to modify the command
 
-##### Regular expressions
+## Regular expressions
 
 Some of the regular expressions we will use here are:
 
@@ -17,7 +17,28 @@ Some of the regular expressions we will use here are:
 -   **+** matches one or more occurrences of the preceding character
 -   **\*** matches zero or more occurrences of the preceding character.
 
-##### Example
+### Example
+
+***Fix repeat typos in a file***
+*Linux* is mispelled as "Linx"
+```
+┌──(kali㉿kali)-[~/Documents/GitHub]
+└─$ cat i_love_linux.txt                             
+I love Linx. Linx is the best operating system. Linx is the greatest because Linx is open source
+If I had to use Windows, I'd dual boot Linx. Linx Linx Linx, I could write a song about Linx
+                                                                                     
+┌──(kali㉿kali)-[~/Documents/GitHub]
+└─$ cat i_love_linux.txt | sed 's/Linx/Linux/g' > i_love_linux2.txt
+
+
+┌──(kali㉿kali)-[~/Documents/GitHub]
+└─$ cat i_love_linux2.txt                                          
+I love Linux. Linux is the best operating system. Linux is the greatest because Linux is open source
+If I had to use Windows, I'd dual boot Linux. Linux Linux Linux, I could write a song about Linux
+
+```
+
+- `/g` makes it global
 
 **_Trim the white space from a cookie:_**
 ```
