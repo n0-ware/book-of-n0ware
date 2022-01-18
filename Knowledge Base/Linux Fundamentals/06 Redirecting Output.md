@@ -15,7 +15,7 @@ In *Linux*, there are three data streams by default
 - **STDERR (2)** &mdash; The *standard error* is for error messages, also printed to the terminal by default
 
 ## Piping and Redirection
-These are the means that a user may connect the three streams between different programs and files, allowing them to point data wherever they want it to flow. For example, it is commin practice to pipe the ***STDOUT*** of one program, like `echo` or `cat`, into the ***STDIN*** of another program, something like [Grep and Egrep](../Grep%20and%20Egrep.md) or[cut](../cut.md). 
+These are the means that a user may connect the three streams between different programs and files, allowing them to point data wherever they want it to flow. For example, it is commin practice to pipe the ***STDOUT*** of one program, like `echo` or `cat`, into the ***STDIN*** of another program, something like [Grep and Egrep](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Grep%20and%20Egrep.md) or[cut](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/cut.md). 
 
 There are several symbols for piping and redirection. 
 

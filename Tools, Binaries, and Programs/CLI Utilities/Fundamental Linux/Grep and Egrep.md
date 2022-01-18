@@ -2,7 +2,7 @@
 Grep and its cousin Extended Grep are used to match text strings to input, either from within a file or via a command piped into them. 
 
 ## Grep
-`grep` us used to search text and files for a given string or[Regular Expressions (regex)](../../Knowledge%20Base/Concepts/Regular%20Expressions%20(regex).md). 
+`grep` us used to search text and files for a given string or[Regular Expressions (regex)](../../../Knowledge%20Base/Concepts/Regular%20Expressions%20(regex).md). 
 
 ### Usage
 
@@ -59,7 +59,7 @@ Shortened
 
 ## Egrep
 ### Usage
-`egrep` is used when you intend to use an "extended [regular expression](../../Knowledge%20Base/Concepts/Regular%20Expressions%20(regex).md)" beyond just a simple `string|otherstring` command via the `-E` flag with classic `grep`. It can be combined with other flags as well, and the [Regular Expressions (regex)](../../Knowledge%20Base/Concepts/Regular%20Expressions%20(regex).md) is always wrapped in single quotes, such as `'^(linux|unix)'`.
+`egrep` is used when you intend to use an "extended [regular expression](../../../Knowledge%20Base/Concepts/Regular%20Expressions%20(regex).md)" beyond just a simple `string|otherstring` command via the `-E` flag with classic `grep`. It can be combined with other flags as well, and the [Regular Expressions (regex)](../../../Knowledge%20Base/Concepts/Regular%20Expressions%20(regex).md) is always wrapped in single quotes, such as `'^(linux|unix)'`.
 
 ### Arguements
 - `-i` &mdash' Case insensitive pattern match
@@ -75,7 +75,7 @@ Shortened
 
 ### Regex
 
-See [Regular Expressions (regex)](../../Knowledge%20Base/Concepts/Regular%20Expressions%20(regex).md)
+See [Regular Expressions (regex)](../../../Knowledge%20Base/Concepts/Regular%20Expressions%20(regex).md)
 
 
 ### Examples
