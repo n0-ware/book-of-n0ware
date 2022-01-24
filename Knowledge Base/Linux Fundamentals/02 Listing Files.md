@@ -54,7 +54,7 @@ drwxr-xr-x 27 linux linux 4096 Jan 17 20:03 ..
 -rw-r--r--  1 linux linux    0 Jan 17 20:03 .hiddenfile.txt
 ```
 
-Use `-R` to list files recusively. 
+Use `-R` to list files recursively. 
 
 ```
 linux@linux:~$ls -lR

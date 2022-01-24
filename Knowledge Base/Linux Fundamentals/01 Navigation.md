@@ -75,7 +75,7 @@ A ***relative*** reference is a file or directory reference "relative" to the cu
 	/...
 ```
 
-To move from `Documents` to `Downloads`, for example use the syntax:
+To move from `Documents` to `Downloads`, for example, use the syntax:
 
 ```
 linux@linux:~$cd ../Downloads
@@ -87,7 +87,7 @@ To reference a file in the `Downloads` directory, the syntax is similar:
 linux@linux:~$file ../Downloads/somefile.txt
 ```
 
-The `~` symbol represents the users home directory, `/home/linux`. You may use this in ***relative*** references. To navigate to `Documents` from anywhere, the syntax is:
+The `~` symbol represents the user's home directory, `/home/linux`. You may use this in ***relative*** references. To navigate to `Documents` from anywhere, the syntax is:
 
 ```
 linux@linux:~$cd ~/Documents

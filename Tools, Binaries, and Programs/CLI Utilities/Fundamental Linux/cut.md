@@ -7,7 +7,7 @@
 ## Arguments:
 - `-d "delimiter"` &mdash; Sets a "delimiter."
 - `-f (field number)` &mdash; Specifies the field to cut 
-- `-b` &mdash;Extract specific bytes. Ranges specified with a `-`. A number followed by a or preceded by a `-` specifies "from # to end or from beginning to dash."" Tabs/spaces are treated as 1 byte
+- `-b` &mdash;Extract specific bytes. Ranges are specified with a `-`. A number followed by a or preceded by a `-` specifies "from # to end or from beginning to dash."" Tabs/spaces are treated as 1 byte
 	- `cut -b 1,2,3 file.txt` 
 	- `cut -b 1-3,5-7 file.txt`
 	- `cut -b 3- file.txt` 

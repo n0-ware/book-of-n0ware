@@ -12,7 +12,7 @@
 
 Some of the regular expressions we will use here are:
 
--   **^** matches start of the line
+-   **^** matches the start of the line
 -   **$** matches **the end of line**
 -   **+** matches one or more occurrences of the preceding character
 -   **\*** matches zero or more occurrences of the preceding character.
@@ -20,7 +20,7 @@ Some of the regular expressions we will use here are:
 ### Example
 
 ***Fix repeat typos in a file***
-*Linux* is mispelled as "Linx"
+*Linux* is misspelled as "Linx"
 ```
 ┌──(kali㉿kali)-[~/Documents/GitHub]
 └─$ cat i_love_linux.txt                             

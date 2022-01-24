@@ -19,7 +19,7 @@ When using `nano`, there are a few commands to know
 - <kbd>ctrl</kbd>+<kbd>U</kbd> &mdash; Pastes what was previously cut. Can do this many times. 
 
 There are several arguments to use with `nano`:
-- `-B` &mdash; Creates a backup. Appends `~` to the end of the file using the same nam,e 
+- `-B` &mdash; Creates a backup. Appends `~` to the end of the file using the same name
 - `-F` &mdash; Read the file into a new buffer by default (creates a new file)
 - `-l` &mdash; Include line numbers
 - `-m` &mdash; Enables mouse support

@@ -10,12 +10,12 @@
 	- [Pipe](#Pipe)
 ## Streams
 In *Linux*, there are three data streams by default
-- **STDIN (0)** &mdash; The *standard input* on which data is fed into a program. Basically, the part of the terminal that accepts our input
-- **STDOUT (1)** &mdash; The *standard output* in the opposite, essentially how data is printed by a program, in most cases, what we see on the terminal
+- **STDIN (0)** &mdash; The *standard input* on which data is fed into a program. Essentially, the part of the terminal that accepts our input
+- **STDOUT (1)** &mdash; The *standard-output* in the opposite, essentially how data is printed by a program, in most cases, what we see on the terminal
 - **STDERR (2)** &mdash; The *standard error* is for error messages, also printed to the terminal by default
 
 ## Piping and Redirection
-These are the means that a user may connect the three streams between different programs and files, allowing them to point data wherever they want it to flow. For example, it is commin practice to pipe the ***STDOUT*** of one program, like `echo` or `cat`, into the ***STDIN*** of another program, something like [Grep and Egrep](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Grep%20and%20Egrep.md) or[cut](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/cut.md). 
+These are the means that a user may connect the three streams between different programs and files, allowing them to point data wherever they want it to flow. For example, it is common practice to pipe the ***STDOUT*** of one program, like `echo` or `cat`, into the ***STDIN*** of another program, something like [Grep and Egrep](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Grep%20and%20Egrep.md) or[cut](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/cut.md). 
 
 There are several symbols for piping and redirection. 
 
@@ -91,7 +91,7 @@ Create a file
 
 ### Append
 
-Like `>`, a double `>>` "appends" the output to the end of the target file, avoding any overwriting that may occur with a single `>`. 
+Like `>`, a double `>>` "appends" the output to the end of the target file, avoiding any overwriting that may occur with a single `>`. 
 
 ```
 ┌──(kali㉿kali)-[~/test]
@@ -110,12 +110,12 @@ Second Line
                                                                                      
 ┌──(kali㉿kali)-[~/test]
 └─$ cat dont_overwriteme.txt 
-Overwite
+Overwrite
 ```
 
 ### Read
 
-The opposite symbol, `<`, lets us "read in" data from a file. Using the `wc` command tests the byte-count, among other things, of a file. 
+The opposite symbol, `<`, lets us "read in" data from a file. Using the `wc` command tests the byte count, among other things, of a file. 
 
 ```
 ┌──(kali㉿kali)-[~/test]
@@ -192,7 +192,7 @@ drwxr-xr-x 27 kali kali 4096 Jan 17 23:40 ..
 
 ```
 
-Imagine we want to list only unique lines in a log. We can do this by piping into `uniq`. Or, let's say we want to sort the contents of a directory alphabetically, we can use `sort`. 
+Imagine we want to list unique lines in a log. We can do this by piping into `uniq`. Or, let's say we want to sort the contents of a directory alphabetically, we can use `sort`. 
 
 ```
 ┌──(kali㉿kali)-[~/test]

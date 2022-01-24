@@ -15,6 +15,23 @@ For this reason, all accounts that can be should be low privileged, as there is 
 ## Linux
 [Top](#Directory)
 
+### setuid
+[setuid](../Linux%20Fundamentals/11%20File%20Permissions.md#setuid)
+#### Using "find" 
+[find](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/find.md)  
+***Root-owned [setuid](../../../Knowledge%20Base/Linux%20Fundamentals/11%20File%20Permissions.md#setuid) binaries***
+```
+find / -user root -perm -4000
+```
+*With write permissions*
+```
+find / -user root -perm -4400
+```
+***Root-owned [setgid](../../../Knowledge%20Base/Linux%20Fundamentals/11%20File%20Permissions.md#setgid) binaries***
+```
+find / -user root -perm -2000
+```
+
 
 ## Windows
 [Top](#Directory)

@@ -93,7 +93,7 @@ newfilename.txt
 
 ## cp
 
-You can copy a file with `cp`. This creates a file with the exact same contents but with a different name. Linux will not warn you if you are about to overwrite a file. 
+You can copy a file with `cp`. This creates a file with the same contents but with a different name. Linux will not warn you if you are about to overwrite a file. 
 
 ```
 ┌──(kali㉿kali)-[~/test]
@@ -176,7 +176,7 @@ Bye everyone
 ```
 
 ### Hardlink
-To create a "hardlink" we use `ln` without any arguments. A hardlink actually copies the file, and it will remain after we delete it. 
+To create a "hardlink" we use `ln` without any arguments. A "hardlink" copies the file as it is changed, and it will remain after we delete it. 
 
 ```
 ┌──(kali㉿kali)-[~/test]

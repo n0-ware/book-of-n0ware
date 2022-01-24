@@ -58,7 +58,7 @@ Special characters:
 
 Linux will colorize the output if using *Z Shell*
 
-![diff -c](../../../../book-of-n0ware/Tools,%20Binaries,%20and%20Programs/Photos%20(Tools)/diff%20with%20-c.png)
+![](../../Photos%20(Tools)/diff%20with%20-c.png)
 
 ***Diff with unified format***
 ```

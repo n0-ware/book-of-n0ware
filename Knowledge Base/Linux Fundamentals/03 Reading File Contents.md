@@ -13,14 +13,14 @@
 
 ## cat
 
-The `cat` command reads out a files contents, regardless of how much is ine the file. 
+The `cat` command reads out the contents of a file, regardless of how much is in the file. 
 
 ```
 linux@linux:~$cat file.txt
 This is a file with text inside
 ```
 
-There are several useful outputs. The argument `-n` prints each word on its own line:
+There are several useful outputs. The argument `-n` prints each word on a new line:
 
 ```
 linux@linux:~$cat file.txt
@@ -44,7 +44,7 @@ The `less` command allows for both forward and backward navigation, listing the 
 
 ## head
 
-The `head` command prints the top `N` lines of a file, specified with the `-n` flag. It defaults to the first ten lines witout an argument. For example. 
+The `head` command prints the top `N` lines of a file, specified with the `-n` flag. It defaults to the first ten lines without an argument. For example. 
 
 ```
 linux@linux:~$head -n 3 file.txt

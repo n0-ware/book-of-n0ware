@@ -1,7 +1,7 @@
 # Awk
 ## Description
 
-The command `awk` is actually represents an entire programming language built for processing text. It has found a home as a toool for extracting data from files and is very useful in writing reports. `awk` is extremely powerful, and learning the full functionality of `awk` will take some time and practice. 
+The command `awk` actually represents an entire programming language built for processing text. It has found a home as a tool for extracting data from files and is very useful in writing reports. `awk` is extremely powerful, and learning the full functionality of `awk` will take some time and practice. 
 
 ## Arguments
 
@@ -9,7 +9,7 @@ All of the scripting in `awk` takes place within the ``' '``   after any flags. 
 - `-F` &mdash; The "field" seperator
 - `'{print $1, $2, $etc...}'` &mdash; Outputs the resulting text based on the associated field seperator. 
 - `'BEGIN{ }'` &mdash' Begin rules are executed once before the first input record is read.
-	- `ORS=` is a common rule and stands for `Output Records Seperator` and will replace the standard "new line" record seperator with your choice. 
+	- `ORS=` is a common rule and stands for `Output Records Separator and will replace the standard "new line" record separator with your choice. 
 	- `OFS=` will replace the output field separator with something of your choosing. Commonly used with `-F`. 
 - `'END { }'` &mdash; Conversely, End rules are executed at the end after all input is read
 
@@ -58,7 +58,7 @@ service account-id resource-type resource-id
 9
 ```
 
-***Print the last octet, comma separated***
+***Print the last octet, comma-separated***
 ```
 ┌──(kali㉿kali)-[~/Documents/GitHub]
 └─$ cat ip_list.txt| awk -F "." 'BEGIN {ORS=" "}; {print $4}' 

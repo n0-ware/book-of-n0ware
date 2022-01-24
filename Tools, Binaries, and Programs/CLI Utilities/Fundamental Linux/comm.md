@@ -1,10 +1,10 @@
 # comm
 ## Description
 
-The `comm` command is used to compare text files, printing to screen the lines in each file that are unique. `comm` can be compared to [`diff`](diff.md), but `comm` is far more simple. This is excellent for comparing two similar lists, log files, and so on. It displays the information in three columns. The first is unique to the first list, the second unique to t he second, and the third is items that are shared. 
+The `comm` command is used to compare text files, printing to screen the lines in each file that are unique. `comm` can be compared to [`diff`](diff.md), but `comm` is far more simple. This is excellent for comparing two similar lists, log files, and so on. It displays the information in three columns. The first is unique to the first list, the second is unique to the second, and the third is items that are shared. 
 
 ## Examples 
-The `-n` flag can supress any of the culumns, where `n` is any column numbers, 1-3. 
+The `-n` flag can suppress any of the columns, where `n` is any column numbers, 1-3. 
 
 ***Comparing User Lists***
 ```
