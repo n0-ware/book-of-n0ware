@@ -18,7 +18,7 @@ For this reason, all accounts that can be should be low privileged, as there is 
 ### setuid
 [setuid](../Linux%20Fundamentals/11%20File%20Permissions.md#setuid)
 #### Using "find" 
-[find](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/find.md)  
+[find](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/find.md)  
 ***Root-owned [setuid](../../../Knowledge%20Base/Linux%20Fundamentals/11%20File%20Permissions.md#setuid) binaries***
 ```
 find / -user root -perm -4000
@@ -62,7 +62,7 @@ Identifying privsec attack vectors can be done manually or with automated tools.
 
 #### Local Commands
 - `net users` &mdash; Lists users on the target system
-- `systeminfo | findstr /B /C: "OS Name"/C: "OS Version"` &mdash; Lists OS information for further privsec information gathering. 
+- `systeminfo | findstr /B /C:"OS Name"/C:"OS Version"` &mdash; Lists OS information for further privsec information gathering. See [systeminfo](../../Tools,%20Binaries,%20and%20Programs/Windows/Fundamental%20Windows%20CLI/systeminfo.md) and [findstr](../../Tools,%20Binaries,%20and%20Programs/Windows/Fundamental%20Windows%20CLI/findstr.md)
 - `wmic service list` &mdash; Identifies services installed on the target system
 ## Information Gathering
 #windows #linux #privsec

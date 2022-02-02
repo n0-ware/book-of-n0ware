@@ -87,11 +87,11 @@ Knowing these values allows for the various combinations of permissions, for exa
 
 There is only one possible way of reaching every number between 1 and 7, making it easy to determine which combination of permissions each number stands for. 
 
-Use this in combination with the [chmod](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/chmod.md) command to adjust user permissions. 
+Use this in combination with the [chmod](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/chmod.md) command to adjust user permissions. 
 
 #### Changing Permissions <a id="change-perms"></a>
 
-File permissions are managed with the `chmod` command. See [chmod](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/chmod.md)
+File permissions are managed with the `chmod` command. See [chmod](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/chmod.md)
 
 ### Owners and Groups <a id="owner-group"></a>
 
@@ -106,7 +106,7 @@ The "owner" is who the first set of `rwx` applies to, the group the second, and 
 
 #### Changing Owners and Groups <a id="change-og"></a>
 
-File membership, or the "owner" and "group," is managed by the `chown` command. See [chown](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/chown.md)
+File membership, or the "owner" and "group," is managed by the `chown` command. See [chown](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/chown.md)
 
 ### Special Permissions <a id="special-perms"></a>
 
@@ -114,7 +114,7 @@ Two special permissions apply to the e**x**ecutable permission of files. They ar
 
 The purpose of this bit is to allow ***any*** user to execute the file with the permissions of the owner or the owner's group, depending on which set of permissions the `s` appears in. This may be handy if I, as a low privileged user, need to give access to a benign executable to someone else but don't want to share my password or increase their level of permissions. 
 
-Consider if this is applied to sensitive files or binaries, like those used to manage the file system or add users, like `/etc/passwd` or [useradd](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#useradd). If anyone can access a file designed to fundamentally alter the system or create their own user, that can lead to a  major security breach. A low-privileged user able to create a user could create their own user with higher privileges. Consider if any user could use the [visudo](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/visudo.md) command, they could alter the "sudoer" privileges for anyone. 
+Consider if this is applied to sensitive files or binaries, like those used to manage the file system or add users, like `/etc/passwd` or [useradd](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#useradd). If anyone can access a file designed to fundamentally alter the system or create their own user, that can lead to a  major security breach. A low-privileged user able to create a user could create their own user with higher privileges. Consider if any user could use the [visudo](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/visudo.md) command, they could alter the "sudoer" privileges for anyone. 
 
 #### setuid
 

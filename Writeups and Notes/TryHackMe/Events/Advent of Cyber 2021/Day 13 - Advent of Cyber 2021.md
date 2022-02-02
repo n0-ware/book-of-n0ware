@@ -131,7 +131,7 @@ systeminfo | findstr /B /C:"OS Version"
 ### Questions-3-4
 [Top](#TOC)
 
-For questions about the services that are running, we want `wmic service list`. But we have a problem...there is a **huge** list of services. Part of learning to use commands is learning the power of those commands. With a little research (such as [here](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/findstr)) you can learn more about the `findstr` command used earlier to find the `OS Name` and `OS Version` and modify it to our needs. 
+For questions about the services that are running, we want the [wmic](../../../../../course-notes/Tools,%20Binaries,%20and%20Programs/Windows/wmic.md) command  `wmic service list`. But we have a problem...there is a **huge** list of services. Part of learning to use commands is learning the power of those commands. With a little research (such as [here](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/findstr)) you can learn more about the `findstr` command used earlier to find the `OS Name` and `OS Version` and modify it to our needs. 
 
 With `findstr`, we can ignore the case of the string we are searching for with `/i` and use a `regex` search by adding the `/r` flag. The regex we want is `.backup.`. Each `.` stands for a *wildcard* character, meaning all the line needs to contain is `backup` and it will return in the output. 
 

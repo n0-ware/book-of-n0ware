@@ -17,13 +17,13 @@
 * * *
 
 ### CLI Utilities <a id="cli-utils"></a>
-- [AWS CLI](CLI%20Utilities/AWS%20CLI.md)
-- [curl](CLI%20Utilities/curl.md)
-- [cut](CLI%20Utilities/Fundamental%20Linux/cut.md)
-- [Grep and Egrep](CLI%20Utilities/Fundamental%20Linux/Grep%20and%20Egrep.md)
-- [jq](CLI%20Utilities/jq.md)
-- [sed](CLI%20Utilities/Fundamental%20Linux/sed.md)
-- [strings](CLI%20Utilities/strings.md)
+- [AWS CLI](Linux%20CLI%20Utilities/AWS%20CLI.md)
+- [curl](Linux%20CLI%20Utilities/curl.md)
+- [cut](Linux%20CLI%20Utilities/Fundamental%20Linux/cut.md)
+- [Grep and Egrep](Linux%20CLI%20Utilities/Fundamental%20Linux/Grep%20and%20Egrep.md)
+- [jq](Linux%20CLI%20Utilities/jq.md)
+- [sed](Linux%20CLI%20Utilities/Fundamental%20Linux/sed.md)
+- [strings](Linux%20CLI%20Utilities/strings.md)
 ### Databases
 - [Microsoft SQL Server (MSSQL)](Databases/Microsoft%20SQL%20Server%20(MSSQL).md)
 ### Exploitation

@@ -20,31 +20,31 @@
 - <a href="#user-groups">User Groups</a>
 - <a href="#whoami">Whoami</a>
 
-- [Linux User Management](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md)
+- [Linux User Management](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md)
 
 <a href="# "></a>
 <a id=" "></a>
 ### Creating a User <a id="create"></a>
 
-See [useradd](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#useradd)
+See [useradd](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#useradd)
 
 ### Deleting a User <a id="delete"></a>
 
-See  [userdel](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#userdel)
+See  [userdel](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#userdel)
 ### Managing User Accounts <a id="accounts"></a>
 
-See [usermod](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#usermod)
+See [usermod](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#usermod)
 
 ### Managing User Passwords <a id="password"></a>
 
-See [passwd](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#passwd) or [chage](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#chage)
+See [passwd](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#passwd) or [chage](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/Linux%20User%20Management.md#chage)
 ### Details on Linux Users <a id="details"></a>
 
 The most common authentication schemes, and therefore storage of general user data, on a Linux System, is the combination of `/etc/passwd/` and `/etc/shadow` files. 
 
 The `passwd` file stores information about the users and is designed to be world-readable as many utilities depend on reading it for a variety of reasons. To protect the sensitive authentication information, `passwd` stores a reference to the user's password that is actually contained in the `shadow` file as a "fingerprint" or [hash](../Concepts/General/Hashing.md) of the user's password. The `shadow` file is only accessible by high-privileged users. 
 
-All of the details in these files are separated by colons `:`, which is very handy for separating with [cut](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/cut.md) and [awk](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/awk.md).
+All of the details in these files are separated by colons `:`, which is very handy for separating with [cut](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/cut.md) and [awk](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/awk.md).
 
 
 **Here are examples of the two. ** 

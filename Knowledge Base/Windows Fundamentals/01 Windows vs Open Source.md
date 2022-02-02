@@ -1,0 +1,25 @@
+# Windows vs Open Source
+###### Tags[^1] 
+
+At their core, *Windows* and *Linux* serve the same purpose. They are both operating systems, they are intended for use by end-users and enterprises, they run programs and services, are customizable to your needs, and even share many of the same programs. Within those similarities, however, is a vast swath of differences that fundamentally change how they specialize, who uses them, and how we interact with them. 
+
+> Need to add to this bullet list, or otherwise change. Build directly from PEN-100. Bullet names changed
+
+***Open and Free vs Closed and Paid*** &mdash; Possible the most important and most distinctive difference is the nature of the codebase. With *Linux*, the entire code base is available to all, and anyone can see it. *Windows*, on the other hand, is "closed-source" and the code is proprietary, known only to the developers and owned by the company. The result is that *Linux* is owned by the community, developed and maintained by the same community, and entirely free in the vast majority of circumstances, excepting some particular enterprise distributions. *Windows*, on the other hand, is entirely paid.
+
+***Central vs Community Development*** &mdash; The result of open source development is that it takes a community of decentralized developers to improve and maintain *Linux*, a concept known as the *benevolent dictatorship*, where the community is subject to the final decision of a few developers, but it remains an open community resembling a massive and decentralized "town hall." *Windows* is the exact opposite, where all authorship and development is maintained strictly under the *Microsoft* banner, despite the many developers who contribute. The organization gets the final say, every time. 
+
+***Organization of Privileges*** &mdash; On *Linux*, the highest privileges are maintained by the *root* user and it has complete system control. Similarly, on *Windows* the *administrator* account has the highest privilege level. One major difference here is that *Windows* uses the concept of "system accounts" that are not users, but run under the content of `NT AUTHORITY/SYSTEM`. Attackers are fond of these accounts, as they often run with administrator privileges. 
+
+***Filesystem Organization*** &mdash; The [Filesystem](../Linux%20Fundamentals/16%20Managing%20Memory%20and%20Disk.md#Filesystem) on *Linux* uses the concept of "everything is a file." Each file has a place, and entire additional filesystems can be represented by a single file on the system. The `/` or `root` directory is the start, and everything follows a tree structure from there. Quite literally everything is a file, from external devices to USB sticks. 
+
+Within *Windows*, "drives" and "devices" are the structure of choice. *Drives* have a letter, with `C:/` usually representing the main "boot drive," and devices are recognized as what they are. Additional drives are given another letter, whether it is an external RAID system or a USB stick. Each device represents its own directory tree and lacks a `root` location. The device itself is essentially the root. 
+***Path and Syntax*** &mdash; The simple difference here is that on *Linux* the system is organized with forwarding slashes, `/`, and on *Windows*, we use backslashes, `\`. Secondly, *Linux* is a case-sensitive filesystem, whereas *Windows* is not. On *Linux*, `DOCUMENTS`, and `Documents` are different files, but on *Windows*, they are the same. 
+
+***Core Configurations*** &mdash; *Windows* uses the "registry" as its configuration management system for both applications and the system as a whole, including users. *Linux* uses two files: `/etc` and `/proc`. The `etc` directory manages application configurations, and `proc` is related to the kernel of the OS.
+
+***Command Line vs GUI Priority*** &mdash; Stemming from the earliest days of its design, *Linux* was designed with a "command line first" mentality, prioritizing the functionality of that over the user interface. *Windows*, designed with flexibility and a pleasing interface, has always been designed around an attractive user interface via the GUI, making it very popular in both enterprise and end-user markets. 
+
+***Purpose-Built vs Compatibility*** &mdash; *Linux* distributions tend to be purpose-built for a specific situation, such as *Ubuntu* for end-users, and *Kali* for pentesters. *Windows*, on the other hand, offers a single (more or less) operating system that can be customized as needed, will work equally well in a variety of situations, and is cross-compatible with an innumerable amount of software. Furthermore, *Windows* is very focused on backward compatibility, making it an excellent long-term operating system. This does cause challenges, as backward compatibility can cause issues related to security, delaying or preventing the implementation of new features. However, the paid nature of *Windows* ensures a robust and well-funded team of developers, laser-focused on improving the operating system as time goes on. 
+
+[^1]: #linux #windows #fundamental 

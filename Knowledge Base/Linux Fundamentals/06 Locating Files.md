@@ -56,4 +56,4 @@ For example, we can find the location of any "Metasploit" database files:
 
 ### find
 
-The `find` command is much more extensive than `locate`. See [find](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/find.md) for more details. 
+The `find` command is much more extensive than `locate`. See [find](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/find.md) for more details. 

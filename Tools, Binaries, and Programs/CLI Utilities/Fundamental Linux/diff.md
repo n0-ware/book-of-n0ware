@@ -2,7 +2,7 @@
 
 ## Description
 
-With the `diff` command, you can identify the differences between two files. `diff` can be compared to [`comm`](../../../../course-notes/Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/comm.md), except `diff` is more complex and had more functionality. 
+With the `diff` command, you can identify the differences between two files. `diff` can be compared to [`comm`](../../../../course-notes/Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/comm.md), except `diff` is more complex and had more functionality. 
 
 ## Syntax
 `diff` compares the *first* file to the *second* for the sake of special characters. 

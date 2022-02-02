@@ -1,7 +1,7 @@
 # Linux Log Files
 Nearly everything that happens on a system is either recoded by default or can be configured to record, in a log file. Security professionals and system administrators alike must become familiar with log files as a resource for managing the security of their systems, searching for information in logs, or even covering your tracks in a penetration testing engagement. 
 
-Most logs cannot be read without *root* permissions, requiring [sudo](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/sudo.md) access for non-*root* users. 
+Most logs cannot be read without *root* permissions, requiring [sudo](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/sudo.md) access for non-*root* users. 
 
 ### Types
 
@@ -73,7 +73,7 @@ Some logs are special in that they do require a particular command to read.
 
 #### who
 
- One such is the `wtmp` file, requiring the [who](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/who.md) command to read. 
+ One such is the `wtmp` file, requiring the [who](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/who.md) command to read. 
 
 ```
 ┌──(root💀kali)-[/var/log]
@@ -132,7 +132,7 @@ Jan 23 19:57:23 kali systemd[1]: apache2.service: Deactivated successfully.
 Jan 23 19:57:23 kali systemd[1]: Stopped The Apache HTTP Server.
 ```
 
-You can filter the output of `journalctl` with the `-u [service]` flag, and they are visible in reverse order (new first) with the `-r` flag. You can monitor `journalctl` in a similar way to [watch](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/watch.md) with the `-f` flag. 
+You can filter the output of `journalctl` with the `-u [service]` flag, and they are visible in reverse order (new first) with the `-r` flag. You can monitor `journalctl` in a similar way to [watch](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/watch.md) with the `-f` flag. 
 
 #### dmesg
 

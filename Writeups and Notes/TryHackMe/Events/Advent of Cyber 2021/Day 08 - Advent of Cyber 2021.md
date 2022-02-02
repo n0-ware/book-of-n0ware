@@ -60,7 +60,7 @@ In the log, named `PowerShell_transcript.LAPTOP.k_dg27us.20211128153538`, we see
 
 ![New Admin User s4nta](AoC-2021_Photos/Day_08/3.0_AoC-Day-8_12-27-21-Add-Backdoor-User.png)
 
-If you scroll down further, you can see the actor confirmed this via the `wmic` command to check the `sid` or `security group identifier` field. 
+If you scroll down further, you can see the actor confirmed this via the [wmic](../../../../../course-notes/Tools,%20Binaries,%20and%20Programs/Windows/wmic.md) command to check the `sid` or `security group identifier` field. 
 
 ### Question-3
 [Top](#TOC)

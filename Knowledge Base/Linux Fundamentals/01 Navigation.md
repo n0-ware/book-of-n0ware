@@ -6,7 +6,7 @@
 In these examples, `linux` is both the user and the hostname. 
 
 ## cd
-Stands for **change directory** and is the *Linux* command used to change from one directory to another. The syntax can be **absolute** or **relative**. 
+Stands for **change directory** and is the *Linux* command used to change from one directory to another. The syntax can be [absolute](#absolute) or [relative](#relative). 
 
 **Syntax**
 ```

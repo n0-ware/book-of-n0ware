@@ -1,5 +1,5 @@
 # Scheduling Tasks
-In *Linux*, it is possible to schedule [jobs](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/jobs.md) to run at intervals, with various privileges, and to various purposes. These "jobs" can be simple or complex, from complex chains to simple copying of logs. The tool *Linux* uses as a "job-scheduler" is `Cron`.
+In *Linux*, it is possible to schedule [jobs](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/jobs.md) to run at intervals, with various privileges, and to various purposes. These "jobs" can be simple or complex, from complex chains to simple copying of logs. The tool *Linux* uses as a "job-scheduler" is `Cron`.
 
 ## Cron
 
@@ -62,7 +62,7 @@ An example addition to the "crontab" to create a backup of the `/etc/passwd` dir
 ```
 Specific user "crontabs" are often kept in the `/var/spool/cron/crontabs` directory and are another location to investigate from both the blue and red perspectives. 
 
-Use the `crontab` command to view and edit a users crontab directly:
+Use the [crontab](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/crontab.md) command to view and edit a users crontab directly:
 
 ```
 ┌──(kali㉿kali)-[~]

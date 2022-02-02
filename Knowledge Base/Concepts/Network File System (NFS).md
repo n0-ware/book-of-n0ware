@@ -6,6 +6,8 @@ Available drives, files, and folders are referred to as *mounted/mounts* or *sha
 
 Due to its functionality and commonality on systems, it is also a vulnerable point of attack if not properly secured.
 
+See [Filesystem](../Linux%20Fundamentals/16%20Managing%20Memory%20and%20Disk.md#Filesystem) for more information on the *Linux* filesystem in relation to *NFS*. 
+
 ## Commands
 - `showmount` &mdash; Show the mounted files on the target
 	- `-e or --exports` &mdash; Show the NFS server's export list

@@ -66,7 +66,7 @@ Another example, reviewing the `tcpdump` situation, is running a packet capture 
 [1]  + running    sudo tcpdump -i eth0 -w capture.pcap
 ```
 
-The [jobs](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/jobs.md) command allows us view the commands that are currently running. 
+The [jobs](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/jobs.md) command allows us view the commands that are currently running. 
 
 ```
 ┌──(kali㉿kali)-[~]
@@ -77,7 +77,7 @@ The [jobs](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental
 
 ### Foreground
 
-To bring a command back from the "background", we use the [fg](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/fg.md) command to bring a job back into the "foreground." Commands are terminated with the terminal shortcut <kbd>ctrl</kbd>+<kbd>c</kbd>.
+To bring a command back from the "background", we use the [fg](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/fg.md) command to bring a job back into the "foreground." Commands are terminated with the terminal shortcut <kbd>ctrl</kbd>+<kbd>c</kbd>.
 
 Pairing the `fg` command with the number of the job you want to bring back is how we manage this. For example, to bring back the `tcpdump` command above, we use:
 
@@ -87,13 +87,13 @@ Pairing the `fg` command with the number of the job you want to bring back is ho
 [1]  + running    sudo tcpdump -i eth0 -w capture.pcap
 ```
 
-See [fg](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/fg.md) for more information and syntax on the "foreground" command. In short, there are multiple ways to bring commands to the foreground, including by the name or order of jobs. 
+See [fg](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/fg.md) for more information and syntax on the "foreground" command. In short, there are multiple ways to bring commands to the foreground, including by the name or order of jobs. 
 
 ### Status
 
-There are a lot of processes going on at once in a *Linux* system. Two of the ways you can manage them are with the `ps` command and `top` command. While [top](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/top.md) is mostly used for viewing processes by the system resources they consume, `ps` is more useful for viewing the processes in an organized fashion. We are going to discuss `ps` here. 
+There are a lot of processes going on at once in a *Linux* system. Two of the ways you can manage them are with the `ps` command and `top` command. While [top](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/top.md) is mostly used for viewing processes by the system resources they consume, `ps` is more useful for viewing the processes in an organized fashion. We are going to discuss `ps` here. 
 
-[ps](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/ps.md) stands for *process status* and has a great deal of complexity built into it. In short, it can be used for viewing a system-wide list of running processes, easily categorized by user, name, threads, and so on. 
+[ps](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/ps.md) stands for *process status* and has a great deal of complexity built into it. In short, it can be used for viewing a system-wide list of running processes, easily categorized by user, name, threads, and so on. 
 
 Some of the more important fields of `ps` are
 
@@ -155,7 +155,7 @@ A useful command-line feature is the ability to monitor files and commands in re
 
 ### Tail
 
-The [tail](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/tail.md) command is used to monitor files, often displaying the updated contents as it changes with `tail -f`. Below, I started a local `apache2` server and accessed it over `localhost`. 
+The [tail](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/tail.md) command is used to monitor files, often displaying the updated contents as it changes with `tail -f`. Below, I started a local `apache2` server and accessed it over `localhost`. 
 
 ```
 ┌──(root💀kali)-[/var/log/apache2]
@@ -165,11 +165,11 @@ The [tail](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental
 127.0.0.1 - - [21/Jan/2022:09:26:09 -0500] "GET /favicon.ico HTTP/1.1" 404 487 "http://127.0.0.1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36"
 ```
 
-There are other flags available to change its functionality available on the `man` page or at [tail](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/tail.md). 
+There are other flags available to change its functionality available on the `man` page or at [tail](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/tail.md). 
 
 ### Watch
 
-The [watch](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/watch.md) command is used to set commands that run at regular intervals. While the default is every 2 seconds, this can be changed with the `-n` flag. 
+The [watch](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/watch.md) command is used to set commands that run at regular intervals. While the default is every 2 seconds, this can be changed with the `-n` flag. 
 
 For example, to set `cp` to run every 5 seconds to copy a `tcpdump` capture file as a backup, we use the syntax below. 
 

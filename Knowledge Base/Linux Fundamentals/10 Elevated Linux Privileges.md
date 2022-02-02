@@ -11,13 +11,13 @@
 <a id=""></a>
 
 **Related:**
-- [sudo](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/sudo.md)
-- [su](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/su.md)
-- [visudo](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/visudo.md)
+- [sudo](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/sudo.md)
+- [su](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/su.md)
+- [visudo](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/visudo.md)
 
 ### Sudoers <a id="sudoers"></a>
 
-The users in linux that have elevated privileges are considered "sudoers." These users have either full or partial use of the `sudo` command (see [sudo](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/sudo.md)) to run commands that either intrinsically or through configuration require elevated privileges. 
+The users in linux that have elevated privileges are considered "sudoers." These users have either full or partial use of the `sudo` command (see [sudo](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/sudo.md)) to run commands that either intrinsically or through configuration require elevated privileges. 
 
 Note that `sudo` can be used to perform commands as another user than root, see the link for more arguments related to the `sudo` command, including listing sudoers 
 
@@ -35,7 +35,7 @@ The list of "sudoers" is kept in the `/etc/sudoers` file, which is protected and
 -r--r----- 1 root root 1585 Dec 18 08:55 /etc/sudoers
 ```
 
-To edit this file, you must use the [visudo](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/visudo.md) command. There are a lot of options in this file, but two of the most important sections are the defaults information at the top of the file. Editing the `secure_path` file allows you to specify the `$PATH` variable that the [sudo](../../Tools,%20Binaries,%20and%20Programs/CLI%20Utilities/Fundamental%20Linux/sudo.md) command uses when ran. 
+To edit this file, you must use the [visudo](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/visudo.md) command. There are a lot of options in this file, but two of the most important sections are the defaults information at the top of the file. Editing the `secure_path` file allows you to specify the `$PATH` variable that the [sudo](../../Tools,%20Binaries,%20and%20Programs/Linux%20CLI%20Utilities/Fundamental%20Linux/sudo.md) command uses when ran. 
 ```
 #
 # This file MUST be edited with the 'visudo' command as root.

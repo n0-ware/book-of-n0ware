@@ -4,7 +4,10 @@
 
 A "session" is a set or group of user interactions within a website or other application that take place within a given time frame relevant to a given user. This can include multiple page views comprising multiple events, interactions, transactions, etc.
 
-## Establishing and Maintaining Sessions
+## Session Layer
+Connections between communications are maintained at the [Layer 5 - Session Layer](../Networking%20Fundamentals/00%20Template.md#Layer%205%20-%20Session%20Layer%20-%20Data) in the OSI Model. 
+
+## Web Sessions
 A "session ID" is required to maintain a session. 
 ### Cookies
 
