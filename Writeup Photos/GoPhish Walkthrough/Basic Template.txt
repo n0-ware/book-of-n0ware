@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title></title>
+</head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1001.0">
+<p>Hello {{.FirstName}},</p>
+
+<p>Congratulations!</p>
+
+<p>You have won an all-expenses-paid trip to n0_ware!&nbsp;</p>
+
+<p>Only the first 100 people to claim their trip will qualify, so be sure to click <a href="{{.URL}}">here</a> to claim your once-in-a-lifetime experience!</p>
+
+<p>Cheers...see you in no_ware!</p>
+
+<p>{{.Tracker}}</p>
+</body>
+</html>

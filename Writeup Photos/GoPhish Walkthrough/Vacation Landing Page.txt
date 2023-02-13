@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <style >
+body {
+    background-color: #dddddd;
+}
+.center {
+  margin: auto;
+  width:8%;
+  padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: Comic Sans MS;
+}
+</style>    
+	    <title></title>
+    </head>
+    
+
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1013.0"><!-- [if (mso 16)]>
+
+    <style type="text/css">
+    a {text-decoration: none;}
+    </style>
+    <![endif]--><!-- [if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]-->
+    <h1>Welcome to Vacations Plus!</h1>
+<img alt="Make your Vacation Dreams a Reality" class="center" style="height:600; width:500" src="https://rbroow.stripocdn.email/content/guids/bannerImgGuid/images/75291616619982153.png" style="display: block;" title="Make your Vacation Dreams a Reality" width="700"/>
+
+<form action="https://www.nist.gov/news-events/news/2018/06/youve-been-phished" method="post" name="form" class="form">
+<div class="center">    
+    <label>E-Mail:</label><br/>
+    <input type="text"/><br/>
+    <label for="lname">Password:</label><br/>
+    <input type="password"/><br/>
+    <input value="Submit" type="button"></input>
+</div>
+<br/>
+</form>
+
+
+</body></html>

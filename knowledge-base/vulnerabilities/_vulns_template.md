@@ -1,7 +1,0 @@
-# V
-
-## Description
-
-## Finding
-
-## Examples
