@@ -1,0 +1,207 @@
+{
+  "recentFiles": [
+    {
+      "basename": "CloudFlare Logs - S3 with SQS",
+      "path": "- Projects/Logging/LogStash/CloudFlare Logs - S3 with SQS.md"
+    },
+    {
+      "basename": "Installing and Configuring LogStash",
+      "path": "- Projects/Logging/LogStash/Installing and Configuring LogStash.md"
+    },
+    {
+      "basename": "S3 with SQS Logging - Via CloudFlare",
+      "path": "- Projects/Logging/Notable Methods/S3 with SQS Logging - Via CloudFlare.md"
+    },
+    {
+      "basename": "Scratch Process",
+      "path": "- Projects/Logging/LogStash/Logstash File Structure Mockup/Scratch Process.md"
+    },
+    {
+      "basename": "Policies Required",
+      "path": "- Projects/Logging/LogStash/Logstash File Structure Mockup/etc/Policies Required.md"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass - Part 1",
+      "path": "- Projects/Databases/pgAdmin/pgAdmin on Portainer with pgPass - Part 1.md"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass - Part 1 (For Github)",
+      "path": "- Projects/Databases/pgAdmin/pgAdmin on Portainer with pgPass - Part 1 (For Github).md"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass - Part 1 (Reformat)",
+      "path": "- Projects/Databases/pgAdmin/pgAdmin on Portainer with pgPass - Part 1 (Reformat).md"
+    },
+    {
+      "basename": "Security Priorities to JIRA",
+      "path": "- Projects/Security Priorities to JIRA.md"
+    },
+    {
+      "basename": "Identity Center Scratchpad",
+      "path": "- Projects/AWS/Identity Center Scratchpad.md"
+    },
+    {
+      "basename": "IAM Restructure",
+      "path": "- Projects/AWS/Archive/IAM Restructure.md"
+    },
+    {
+      "basename": "AWS CLI",
+      "path": "- Projects/AWS/AWS CLI.md"
+    },
+    {
+      "basename": "Collector Configurations",
+      "path": "- Projects/Logging/LogScale/Collector Configurations.md"
+    },
+    {
+      "basename": "Production Token and Repo Tracking",
+      "path": "- Projects/Logging/LogScale/Production Token and Repo Tracking.md"
+    },
+    {
+      "basename": "LogScale Basics",
+      "path": "- Projects/Logging/LogScale/LogScale Basics.md"
+    },
+    {
+      "basename": "Logging CloudWatch Log Groups with CloudFormation",
+      "path": "- Projects/Logging/LogScale/Logging CloudWatch Log Groups with CloudFormation.md"
+    },
+    {
+      "basename": "1Pass Events API Beat - Filebeat",
+      "path": "- Projects/Logging/LogStash/1Pass Events API Beat - Filebeat.md"
+    },
+    {
+      "basename": "Microsoft 365 Audit Logs - Filebeat",
+      "path": "- Projects/Logging/LogStash/Microsoft 365 Audit Logs - Filebeat.md"
+    },
+    {
+      "basename": "1_LogStash_LogScale_SQS-S3",
+      "path": "- Projects/Logging/Notable Methods/Photos/1_LogStash_LogScale_SQS-S3.png"
+    },
+    {
+      "basename": "Ingesting VPC Flow - S3",
+      "path": "- Projects/Logging/LogStash/Ingesting VPC Flow - S3.md"
+    },
+    {
+      "basename": "1_Falcon_Spotlight",
+      "path": "- Projects/Logging/LogStash/Photos/1_Falcon_Spotlight.png"
+    },
+    {
+      "basename": "1_LogStash_LogScale",
+      "path": "- Projects/Logging/LogStash/Photos/1_LogStash_LogScale.png"
+    },
+    {
+      "basename": "+ LogStash Map of Content",
+      "path": "- Projects/Logging/LogStash/+ LogStash Map of Content.md"
+    },
+    {
+      "basename": "Managing pgAdmin",
+      "path": "- Projects/Databases/Managing pgAdmin.md"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass - Part 2",
+      "path": "- Projects/Databases/pgAdmin on Portainer with pgPass - Part 2.md"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass - Part 1",
+      "path": "- Projects/Databases/pgAdmin on Portainer with pgPass - Part 1.md"
+    },
+    {
+      "basename": "1_DockerOnPortainer",
+      "path": "- Projects/Databases/Photos/1_DockerOnPortainer.png"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass - Part 1 (For Github)",
+      "path": "- Projects/Databases/pgAdmin on Portainer with pgPass - Part 1 (For Github).md"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass - Part 2 (for Github)",
+      "path": "- Projects/Databases/pgAdmin on Portainer with pgPass - Part 2 (for Github).md"
+    },
+    {
+      "basename": "Configuring Azure OAuth2 (Archive)",
+      "path": "- Projects/Databases/Archive/Configuring Azure OAuth2 (Archive).md"
+    },
+    {
+      "basename": "PGAdmin - Database Queries, Populating, Automation",
+      "path": "- Projects/Databases/Archive/PGAdmin - Database Queries, Populating, Automation.md"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass - Part 2 - In Home Dir",
+      "path": "- Projects/Databases/Archive/pgAdmin on Portainer with pgPass - Part 2 - In Home Dir.md"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass - Part 1 - In Home Dir",
+      "path": "- Projects/Databases/Archive/pgAdmin on Portainer with pgPass - Part 1 - In Home Dir.md"
+    },
+    {
+      "basename": "Drawing 2024-02-13 10.29.excalidraw",
+      "path": "9 Auxiliary/Excalidraw/Drawing 2024-02-13 10.29.excalidraw.md"
+    },
+    {
+      "basename": "pgAdmin on Portainer - Condensed",
+      "path": "- Projects/Databases/pgAdmin on Portainer - Condensed.md"
+    },
+    {
+      "basename": "pgAdmin_Part2_12",
+      "path": "- Projects/Databases/Photos/pgAdmin_Part2_12.png"
+    },
+    {
+      "basename": "pgAdmin_Part2_11",
+      "path": "- Projects/Databases/Photos/pgAdmin_Part2_11.png"
+    },
+    {
+      "basename": "pgAdmin_Part2_1",
+      "path": "- Projects/Databases/Photos/pgAdmin_Part2_1.png"
+    },
+    {
+      "basename": "pgAdmin Over TLS",
+      "path": "- Projects/Databases/Archive/pgAdmin Over TLS.md"
+    },
+    {
+      "basename": "Falcon Host Groups",
+      "path": "- Projects/CrowdStrike/Falcon Host Groups.md"
+    },
+    {
+      "basename": "PGAdmin Server Deployment (Archive)",
+      "path": "- Projects/Databases/Archive/PGAdmin Server Deployment (Archive).md"
+    },
+    {
+      "basename": "pgAdmin on Portainer with pgPass  - Backup",
+      "path": "- Projects/Databases/Archive/pgAdmin on Portainer with pgPass  - Backup.md"
+    },
+    {
+      "basename": "8_DockerOnPortainer",
+      "path": "- Projects/Databases/Photos/8_DockerOnPortainer.png"
+    },
+    {
+      "basename": "Metricbeat Config",
+      "path": "- Projects/Logging/Beats/Metricbeat/Metricbeat Config.md"
+    },
+    {
+      "basename": "+ LogScale Map of Content",
+      "path": "- Projects/Logging/LogScale/+ LogScale Map of Content.md"
+    },
+    {
+      "basename": "Drawing 2023-09-27 10.02.excalidraw",
+      "path": "9 Auxiliary/Excalidraw/Drawing 2023-09-27 10.02.excalidraw.md"
+    },
+    {
+      "basename": "AWS Account Integration",
+      "path": "- Projects/CrowdStrike/CSPM Module/AWS Account Integration.md"
+    },
+    {
+      "basename": "AWS Systems Manager for EC2",
+      "path": "- Projects/CrowdStrike/CSPM Module/AWS Systems Manager for EC2.md"
+    },
+    {
+      "basename": "AWS Integrations",
+      "path": "- Projects/CrowdStrike/CSPM Module/AWS Integrations.md"
+    },
+    {
+      "basename": "Spotlight",
+      "path": "- Projects/CrowdStrike/Spotlight.md"
+    }
+  ],
+  "omittedPaths": [],
+  "maxLength": null,
+  "openType": "tab"
+}
