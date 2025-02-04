@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Wed Feb 23 20:53:35 2022 as: nmap -vvv -oA james_http_vulns -p 1080 -sTCV 10.50.144.129
+# Ports scanned: TCP(1;1080) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.50.144.129 ()	Status: Up
+Host: 10.50.144.129 ()	Ports: 1080/open/tcp//http//Thin httpd 1.5.1 (codename Straight Razor)/
+# Nmap done at Wed Feb 23 20:53:41 2022 -- 1 IP address (1 host up) scanned in 6.67 seconds

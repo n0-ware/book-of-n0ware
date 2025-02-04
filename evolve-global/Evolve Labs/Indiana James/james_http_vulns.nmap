@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Wed Feb 23 20:53:35 2022 as: nmap -vvv -oA james_http_vulns -p 1080 -sTCV 10.50.144.129
+Nmap scan report for 10.50.144.129
+Host is up, received echo-reply ttl 64 (0.0010s latency).
+Scanned at 2022-02-23 20:53:35 UTC for 6s
+
+PORT     STATE SERVICE REASON  VERSION
+1080/tcp open  http    syn-ack Thin httpd 1.5.1 (codename Straight Razor)
+|_http-favicon: Unknown favicon MD5: BAEFB5D4FD5460C6A572D90827CA117E
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: thin 1.5.1 codename Straight Razor
+|_http-title: MailCatcher
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 23 20:53:41 2022 -- 1 IP address (1 host up) scanned in 6.67 seconds

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Wed Feb 23 20:53:35 2022 as: nmap -vvv -oA james_http_vulns -p 1080 -sTCV 10.50.144.129 -->
+<nmaprun scanner="nmap" args="nmap -vvv -oA james_http_vulns -p 1080 -sTCV 10.50.144.129" start="1645649615" startstr="Wed Feb 23 20:53:35 2022" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="1080"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1645649615"/>
+<taskend task="NSE" time="1645649615"/>
+<taskbegin task="NSE" time="1645649615"/>
+<taskend task="NSE" time="1645649615"/>
+<taskbegin task="NSE" time="1645649615"/>
+<taskend task="NSE" time="1645649615"/>
+<taskbegin task="Ping Scan" time="1645649615"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.50.144.129" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1645649615" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1645649615"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1645649615"/>
+<taskbegin task="Connect Scan" time="1645649615"/>
+<taskend task="Connect Scan" time="1645649615" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1645649615"/>
+<taskend task="Service scan" time="1645649621" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1645649621"/>
+<taskend task="NSE" time="1645649621"/>
+<taskbegin task="NSE" time="1645649621"/>
+<taskend task="NSE" time="1645649621"/>
+<taskbegin task="NSE" time="1645649621"/>
+<taskend task="NSE" time="1645649621"/>
+<host starttime="1645649615" endtime="1645649621"><status state="up" reason="echo-reply" reason_ttl="64"/>
+<address addr="10.50.144.129" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="1080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Thin httpd" version="1.5.1" extrainfo="codename Straight Razor" method="probed" conf="10"><cpe>cpe:/a:macournoyer:thin:1.5.1</cpe></service><script id="http-favicon" output="Unknown favicon MD5: BAEFB5D4FD5460C6A572D90827CA117E"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="thin 1.5.1 codename Straight Razor"><elem>thin 1.5.1 codename Straight Razor</elem>
+</script><script id="http-title" output="MailCatcher"><elem key="title">MailCatcher</elem>
+</script></port>
+</ports>
+<times srtt="1005" rttvar="3781" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1645649621"/>
+<taskend task="NSE" time="1645649621"/>
+<taskbegin task="NSE" time="1645649621"/>
+<taskend task="NSE" time="1645649621"/>
+<taskbegin task="NSE" time="1645649621"/>
+<taskend task="NSE" time="1645649621"/>
+<runstats><finished time="1645649621" timestr="Wed Feb 23 20:53:41 2022" summary="Nmap done at Wed Feb 23 20:53:41 2022; 1 IP address (1 host up) scanned in 6.67 seconds" elapsed="6.67" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

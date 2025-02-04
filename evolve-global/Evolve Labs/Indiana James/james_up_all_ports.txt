@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Wed Feb 23 20:30:47 2022 as: nmap -p- -Pn -oN james_up_all_ports.txt 10.50.144.129
+Nmap scan report for 10.50.144.129
+Host is up (0.00094s latency).
+Not shown: 65526 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+110/tcp  open  pop3
+119/tcp  open  nntp
+1000/tcp open  cadlock
+1080/tcp open  socks
+4555/tcp open  rsip
+5432/tcp open  postgresql
+
+# Nmap done at Wed Feb 23 20:30:49 2022 -- 1 IP address (1 host up) scanned in 1.29 seconds

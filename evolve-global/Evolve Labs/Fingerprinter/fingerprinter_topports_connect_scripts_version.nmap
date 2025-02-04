@@ -1,0 +1,100 @@
+# Nmap 7.92 scan initiated Mon Feb 21 19:38:21 2022 as: nmap -sCTV -oA fingerprinter_topports_connect_scripts_version -p- -T4 -vvv --reason -Pn 10.50.159.208
+Nmap scan report for 10.50.159.208
+Host is up, received user-set (0.020s latency).
+Scanned at 2022-02-21 19:38:33 CST for 427s
+Not shown: 65518 filtered tcp ports (no-response), 1 filtered tcp ports (host-unreach)
+PORT      STATE SERVICE    REASON  VERSION
+22/tcp    open  ssh        syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 c9:90:6d:75:6c:58:df:b3:b6:26:92:8f:86:db:02:fd (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZxnbh4+39p+pI7tebZATMHbJS/FYLSOe5BvUfHRoL1F41vsevm4QSSG9aIDGogqvYGGvUSzO0+KMkPuG1U1dmO3Vzxp9OxKNaGE7TjZXGKgMMJRNI/m/q9z1uVAOdpycuVWQgpPjVnJSz3mJ7xllPauOa+hVgjtvjlUxToX9Qxxf28zH/Se7aAUlGinSzCRh09B9rzhRCifiE2eHZh8R+MiPGJmh76e/TeSXDceVwrevwTZa0HLxTrUv6x1q2hrKf6GeclH289uwqfIx+muD+EuSRdGi/9+vmsShqgjLCCGVsUnN8LRGBVySaeqFhCH9zJARebWsSq79ugHDIk7YJ
+|   256 ea:ef:c8:37:85:70:e7:49:cc:b5:5e:30:b4:1c:b3:f9 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHi8arnFR7xJrCLoE0F+qQFtRYxbB2QH1gTv4GUzUPWzh7ECLBgTHfm7kLGMVPp5VpQ0gVtg+9NkpW1+fy5mHT4=
+|   256 cf:63:19:22:4b:5f:3e:71:f1:b2:29:a9:ec:19:5a:06 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILwXNM0ckXGWlrWRtZbLfmmuhdrHP6M0aPhGEejhl6Sf
+25/tcp    open  smtp-proxy syn-ack Avast! anti-virus smtp proxy (cannot connect to 10.50.159.208)
+|_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: connection closed
+110/tcp   open  pop3-proxy syn-ack Avast! anti-virus pop3 proxy (cannot connect to 10.50.159.208)
+119/tcp   open  nntp-proxy syn-ack Avast! anti-virus NNTP proxy (cannot connect to 10.50.159.208)
+143/tcp   open  imap-proxy syn-ack Avast! anti-virus IMAP proxy (cannot connect to 10.50.159.208)
+|_imap-capabilities: CAPABILITY
+465/tcp   open  tcpwrapped syn-ack
+|_smtp-commands: Couldn't establish connection on port 465
+563/tcp   open  tcpwrapped syn-ack
+587/tcp   open  smtp-proxy syn-ack Avast! anti-virus smtp proxy (cannot connect to 10.50.159.208)
+|_smtp-commands: SMTP EHLO nmap.scanme.org: failed to receive data: connection closed
+993/tcp   open  tcpwrapped syn-ack
+995/tcp   open  tcpwrapped syn-ack
+8778/tcp  open  http       syn-ack nginx 1.10.3 (Ubuntu)
+|_http-server-header: nginx/1.10.3 (Ubuntu)
+|_http-title: Welcome to nginx!
+| http-methods: 
+|_  Supported Methods: GET HEAD
+18089/tcp open  unknown    syn-ack
+| fingerprint-strings: 
+|   GenericLines, NULL: 
+|     Welcome to Dancing Telnet Server.
+|     ______ _ _____ ____ __ __ ______
+|     \x20\x20 / /| ____|| | / ____| / __ \x20| / || ____|
+|     \x20\x20 /\x20 / / | |__ | | | | | | | || \x20 / || |__
+|     \x20/ / / | __| | | | | | | | || |/| || __|
+|     \x20 /\x20 / | |____ | |____ | |____ | |__| || | | || |____
+|_    |______||______| _____| ____/ |_| |_||______|
+22543/tcp open  ftp        syn-ack pyftpdlib 1.5.6
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|  Connected to: 10.50.159.208:22543
+|  Waiting for username.
+|  TYPE: ASCII; STRUcture: File; MODE: Stream
+|  Data connection closed.
+|_End of status.
+25666/tcp open  mysql      syn-ack MySQL (unauthorized)
+44411/tcp open  http       syn-ack Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+54289/tcp open  http       syn-ack nginx 1.10.3 (Ubuntu)
+|_http-server-header: nginx/1.10.3 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-title: phpinfo()
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port18089-TCP:V=7.92%I=7%D=2/21%Time=62143F6D%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,1A0,"\nWelcome\x20to\x20Dancing\x20Telnet\x20Server\.\n\x20__\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20__\x20______\x20\x20_\x20\x20\x20\x20
+SF:\x20\x20\x20\x20_____\x20\x20\x20____\x20\x20\x20__\x20\x20__\x20\x20__
+SF:____\n\x20\\\x20\\\x20\x20\x20\x20\x20\x20\x20\x20/\x20/\|\x20\x20____\
+SF:|\|\x20\|\x20\x20\x20\x20\x20\x20/\x20____\|\x20/\x20__\x20\\\x20\|\x20
+SF:\x20\\/\x20\x20\|\|\x20\x20____\|\n\x20\x20\\\x20\\\x20\x20/\\\x20\x20/
+SF:\x20/\x20\|\x20\|__\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20
+SF:\x20\x20\x20\x20\|\x20\|\x20\x20\|\x20\|\|\x20\\\x20\x20/\x20\|\|\x20\|
+SF:__\n\x20\x20\x20\\\x20\\/\x20\x20\\/\x20/\x20\x20\|\x20\x20__\|\x20\x20
+SF:\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x2
+SF:0\|\x20\|\|\x20\|\\/\|\x20\|\|\x20\x20__\|\n\x20\x20\x20\x20\\\x20\x20/
+SF:\\\x20\x20/\x20\x20\x20\|\x20\|____\x20\|\x20\|____\x20\|\x20\|____\x20
+SF:\|\x20\|__\|\x20\|\|\x20\|\x20\x20\|\x20\|\|\x20\|____\n\x20\x20\x20\x2
+SF:0\x20\\/\x20\x20\\/\x20\x20\x20\x20\|______\|\|______\|\x20\\_____\|\x2
+SF:0\\____/\x20\|_\|\x20\x20\|_\|\|______\|\n\n\xc2\xa7\x20")%r(GenericLin
+SF:es,1A6,"\nWelcome\x20to\x20Dancing\x20Telnet\x20Server\.\n\x20__\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20__\x20______\x20\x20_\x20\x20\x20\x20\
+SF:x20\x20\x20\x20_____\x20\x20\x20____\x20\x20\x20__\x20\x20__\x20\x20___
+SF:___\n\x20\\\x20\\\x20\x20\x20\x20\x20\x20\x20\x20/\x20/\|\x20\x20____\|
+SF:\|\x20\|\x20\x20\x20\x20\x20\x20/\x20____\|\x20/\x20__\x20\\\x20\|\x20\
+SF:x20\\/\x20\x20\|\|\x20\x20____\|\n\x20\x20\\\x20\\\x20\x20/\\\x20\x20/\
+SF:x20/\x20\|\x20\|__\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\
+SF:x20\x20\x20\x20\|\x20\|\x20\x20\|\x20\|\|\x20\\\x20\x20/\x20\|\|\x20\|_
+SF:_\n\x20\x20\x20\\\x20\\/\x20\x20\\/\x20/\x20\x20\|\x20\x20__\|\x20\x20\
+SF:|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20
+SF:\|\x20\|\|\x20\|\\/\|\x20\|\|\x20\x20__\|\n\x20\x20\x20\x20\\\x20\x20/\
+SF:\\x20\x20/\x20\x20\x20\|\x20\|____\x20\|\x20\|____\x20\|\x20\|____\x20\
+SF:|\x20\|__\|\x20\|\|\x20\|\x20\x20\|\x20\|\|\x20\|____\n\x20\x20\x20\x20
+SF:\x20\\/\x20\x20\\/\x20\x20\x20\x20\|______\|\|______\|\x20\\_____\|\x20
+SF:\\____/\x20\|_\|\x20\x20\|_\|\|______\|\n\n\xc2\xa7\x20\xc2\xa7\x20\xc2
+SF:\xa7\x20");
+Service Info: OSs: Linux, Windows; CPE: cpe:/o:linux:linux_kernel, cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Feb 21 19:45:40 2022 -- 1 IP address (1 host up) scanned in 438.89 seconds

@@ -1,0 +1,75 @@
+# Nmap 7.91 scan initiated Wed Feb 23 20:37:52 2022 as: nmap -p- -Pn -O -sCTV -vvv --reason -oN james_version_connect_script_os.txt 10.50.144.129 ls
+Failed to resolve "ls".
+Failed to resolve "ls".
+Nmap scan report for 10.50.144.129
+Host is up, received user-set (0.0010s latency).
+Scanned at 2022-02-23 20:37:52 UTC for 25s
+Not shown: 65526 closed ports
+Reason: 65526 conn-refused
+PORT     STATE SERVICE     REASON  VERSION
+22/tcp   open  ssh         syn-ack OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 53:5c:b7:b2:4e:e9:b3:c7:1b:1d:da:27:2b:06:e5:97 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBALH4owGFOTOXoOLlh0WuZyOFQfreBTfvSFjgLA2wPQ4Nl3ozv1h7Ob/dcocmm7IhnOAADJPIyNMycQTRRKj0qO56rBMo2dS8NkS8v+iz21NtJanwC7A6BizXNZN0OFmp/kMndUOvFbKjcDpVuRa0KKrqq7EAJD3SIVgIh0WtD1czAAAAFQDJMKxM/Jw/xt4jLN+ch3uKj3uSWQAAAIEArisRI5nUVUsIDdfUphgN83UF3hEuz+/h1oGr3wxXEDhT0CWPRyofDexASVtE/DosrFb133EpBI9m7lCMpZQx5LYer4+D5zDtxKRyYqF+qNBSD3iLK6GR0zu+S/swCuaclUNJ1AKGo0ZybkCAOIYnLWY9ESoUeXi1/OvvylmetX0AAACBAJzrTlAbh0Dnomk8mUONELUQcjdMcMRwOUZIEKMjeQ3Ekz9f/0GdzpN3D2fOCfxnRjDUkvc/put2nblwCuZtVDchroUJfbLLt76XRxAcCsUF5QPGupRdN9vNXc/yqgeonrZquk2v9ML9Gd+a7dmrOc+F54Z0uhjWz0sHUv+Y9BEP
+|   2048 6d:09:03:4d:59:b5:e7:64:4e:4e:d0:43:db:a8:eb:e3 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCY+Cxo7NtMxMmSho1NAwCwdw++OIcVhgVG1ZGDja61bYLNRKBuxJRGDI6098qf8dw7Ik/WKY4aOh+XZpkpOjh2PwQO2vNcoYR/PwNRQ+XnyK38DiD/ASa0jhKCdzTh78RQ3DgKIVR7rhN8vg+rD3PMd7nIKVc+KGqXqsAI9jvjeyDNAIei+kNkB7eH2zFfLlKzNUQVPBSmkhPuMozRNwH3uaxdD51eZ1mAK1ckbZZ71QmMa/d04Ymoo0JX44NekEntcdtR9mFcIbXKVTk2hNBrTC1e+8zckjjWTeBS9GfDe4AE9ptgqT+3xKnnEhs1AGM1pHUyNut0MmeSnBrnAcL
+|   256 20:47:a1:eb:cb:31:1f:9e:d2:f2:d3:20:1e:4a:02:78 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFZaCY0MytHTbUfCFO8ah17U+mNJbd1UuWHyTwgWt2SeQkIhj462yb5cCXBtoijBFpxn/MI7YTAaiK/1/1Tk8os=
+|   256 21:91:19:0f:fa:23:75:5e:10:09:cf:24:be:01:2a:6c (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDSaw00XTQDTaG2it2RkDEqj/mfOpg/hvKIR7xY7bZgH
+25/tcp   open  smtp        syn-ack JAMES smtpd 2.3.2
+|_smtp-commands: localhost Hello nmap.scanme.org (10.50.131.180 [10.50.131.180]), PIPELINING, ENHANCEDSTATUSCODES, 
+80/tcp   open  http        syn-ack Apache httpd 2.4.7
+| http-ls: Volume /
+| SIZE  TIME              FILENAME
+| -     2019-02-06 18:02  html/
+| -     2019-02-06 18:03  mail/
+|_
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Index of /
+110/tcp  open  pop3        syn-ack JAMES pop3d 2.3.2
+119/tcp  open  nntp        syn-ack JAMES nntpd (posting ok)
+1000/tcp open  http        syn-ack Gunicorn 19.8.1
+|_http-favicon: Unknown favicon MD5: 3E3383619966F3BE5CC636EDD1D0B8B6
+| http-methods: 
+|_  Supported Methods: HEAD OPTIONS GET
+|_http-server-header: gunicorn/19.8.1
+| http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_Requested resource was http://10.50.144.129:1000/login?next=%2F
+1080/tcp open  http        syn-ack Thin httpd 1.5.1 (codename Straight Razor)
+|_http-favicon: Unknown favicon MD5: BAEFB5D4FD5460C6A572D90827CA117E
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: thin 1.5.1 codename Straight Razor
+|_http-title: MailCatcher
+4555/tcp open  james-admin syn-ack JAMES Remote Admin 2.3.2
+5432/tcp open  postgresql  syn-ack PostgreSQL DB 9.3.21 - 9.3.25
+|_ssl-date: TLS randomness does not represent time
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.10 - 3.13
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=2/23%OT=22%CT=1%CU=43284%PV=Y%DS=1%DC=I%G=Y%TM=62169B3
+OS:9%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=109%TI=Z%CI=I%II=I%TS=8)OPS
+OS:(O1=M2301ST11NW7%O2=M2301ST11NW7%O3=M2301NNT11NW7%O4=M2301ST11NW7%O5=M23
+OS:01ST11NW7%O6=M2301ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68
+OS:DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M2301NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A
+OS:=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%
+OS:Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=
+OS:A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=
+OS:Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%
+OS:T=40%CD=S)
+
+Uptime guess: 0.012 days (since Wed Feb 23 20:20:22 2022)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Hosts: localhost, 127.0.0.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Failed to resolve "ls".
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 23 20:38:17 2022 -- 1 IP address (1 host up) scanned in 25.57 seconds

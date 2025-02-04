@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Mon Feb 21 19:38:21 2022 as: nmap -sCTV -oA fingerprinter_topports_connect_scripts_version -p- -T4 -vvv -&#45;reason -Pn 10.50.159.208 -->
+<nmaprun scanner="nmap" args="nmap -sCTV -oA fingerprinter_topports_connect_scripts_version -p- -T4 -vvv -&#45;reason -Pn 10.50.159.208" start="1645493901" startstr="Mon Feb 21 19:38:21 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1645493901"/>
+<taskend task="NSE" time="1645493901"/>
+<taskbegin task="NSE" time="1645493901"/>
+<taskend task="NSE" time="1645493901"/>
+<taskbegin task="NSE" time="1645493901"/>
+<taskend task="NSE" time="1645493901"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1645493901"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1645493913"/>
+<taskbegin task="Connect Scan" time="1645493913"/>
+<taskprogress task="Connect Scan" time="1645493944" percent="14.32" remaining="186" etc="1645494130"/>
+<taskprogress task="Connect Scan" time="1645493974" percent="30.79" remaining="138" etc="1645494111"/>
+<taskprogress task="Connect Scan" time="1645494004" percent="45.55" remaining="109" etc="1645494113"/>
+<taskprogress task="Connect Scan" time="1645494037" percent="57.33" remaining="93" etc="1645494129"/>
+<taskprogress task="Connect Scan" time="1645494067" percent="74.07" remaining="54" etc="1645494121"/>
+<taskend task="Connect Scan" time="1645494119" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1645494119"/>
+<taskend task="Service scan" time="1645494252" extrainfo="16 services on 1 host"/>
+<taskbegin task="NSE" time="1645494252"/>
+<taskend task="NSE" time="1645494267"/>
+<taskbegin task="NSE" time="1645494267"/>
+<taskprogress task="NSE" time="1645494298" percent="89.06" remaining="4" etc="1645494302"/>
+<taskprogress task="NSE" time="1645494328" percent="97.66" remaining="2" etc="1645494329"/>
+<taskend task="NSE" time="1645494340"/>
+<taskbegin task="NSE" time="1645494340"/>
+<taskend task="NSE" time="1645494340"/>
+<host starttime="1645493913" endtime="1645494340"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.50.159.208" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65519">
+<extrareasons reason="no-response" count="65518" proto="tcp" ports="1-21,23-24,26-109,111-118,120-142,144-464,466-562,564-586,588-992,994,996-8777,8779-18088,18090-22542,22544-25665,25667-44410,44412-50091,50093-54288,54290-65535"/>
+<extrareasons reason="host-unreach" count="1" proto="tcp" ports="50092"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 c9:90:6d:75:6c:58:df:b3:b6:26:92:8f:86:db:02:fd (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZxnbh4+39p+pI7tebZATMHbJS/FYLSOe5BvUfHRoL1F41vsevm4QSSG9aIDGogqvYGGvUSzO0+KMkPuG1U1dmO3Vzxp9OxKNaGE7TjZXGKgMMJRNI/m/q9z1uVAOdpycuVWQgpPjVnJSz3mJ7xllPauOa+hVgjtvjlUxToX9Qxxf28zH/Se7aAUlGinSzCRh09B9rzhRCifiE2eHZh8R+MiPGJmh76e/TeSXDceVwrevwTZa0HLxTrUv6x1q2hrKf6GeclH289uwqfIx+muD+EuSRdGi/9+vmsShqgjLCCGVsUnN8LRGBVySaeqFhCH9zJARebWsSq79ugHDIk7YJ&#xa;  256 ea:ef:c8:37:85:70:e7:49:cc:b5:5e:30:b4:1c:b3:f9 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHi8arnFR7xJrCLoE0F+qQFtRYxbB2QH1gTv4GUzUPWzh7ECLBgTHfm7kLGMVPp5VpQ0gVtg+9NkpW1+fy5mHT4=&#xa;  256 cf:63:19:22:4b:5f:3e:71:f1:b2:29:a9:ec:19:5a:06 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILwXNM0ckXGWlrWRtZbLfmmuhdrHP6M0aPhGEejhl6Sf"><table>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">c9906d756c58dfb3b626928f86db02fd</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDZxnbh4+39p+pI7tebZATMHbJS/FYLSOe5BvUfHRoL1F41vsevm4QSSG9aIDGogqvYGGvUSzO0+KMkPuG1U1dmO3Vzxp9OxKNaGE7TjZXGKgMMJRNI/m/q9z1uVAOdpycuVWQgpPjVnJSz3mJ7xllPauOa+hVgjtvjlUxToX9Qxxf28zH/Se7aAUlGinSzCRh09B9rzhRCifiE2eHZh8R+MiPGJmh76e/TeSXDceVwrevwTZa0HLxTrUv6x1q2hrKf6GeclH289uwqfIx+muD+EuSRdGi/9+vmsShqgjLCCGVsUnN8LRGBVySaeqFhCH9zJARebWsSq79ugHDIk7YJ</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">eaefc8378570e749ccb55e30b41cb3f9</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHi8arnFR7xJrCLoE0F+qQFtRYxbB2QH1gTv4GUzUPWzh7ECLBgTHfm7kLGMVPp5VpQ0gVtg+9NkpW1+fy5mHT4=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">cf6319224b5f3e71f1b229a9ec195a06</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILwXNM0ckXGWlrWRtZbLfmmuhdrHP6M0aPhGEejhl6Sf</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp-proxy" product="Avast! anti-virus smtp proxy" extrainfo="cannot connect to 10.50.159.208" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="smtp-commands" output="SMTP EHLO nmap.scanme.org: failed to receive data: connection closed"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3-proxy" product="Avast! anti-virus pop3 proxy" extrainfo="cannot connect to 10.50.159.208" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="119"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="nntp-proxy" product="Avast! anti-virus NNTP proxy" extrainfo="cannot connect to 10.50.159.208" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap-proxy" product="Avast! anti-virus IMAP proxy" extrainfo="cannot connect to 10.50.159.208" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="imap-capabilities" output="CAPABILITY"/></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/><script id="smtp-commands" output="Couldn&apos;t establish connection on port 465"/></port>
+<port protocol="tcp" portid="563"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp-proxy" product="Avast! anti-virus smtp proxy" extrainfo="cannot connect to 10.50.159.208" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="smtp-commands" output="SMTP EHLO nmap.scanme.org: failed to receive data: connection closed"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="8778"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.3" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.3</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-server-header" output="nginx/1.10.3 (Ubuntu)"><elem>nginx/1.10.3 (Ubuntu)</elem>
+</script><script id="http-title" output="Welcome to nginx!"><elem key="title">Welcome to nginx!</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="18089"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" servicefp="SF-Port18089-TCP:V=7.92%I=7%D=2/21%Time=62143F6D%P=x86_64-pc-linux-gnu%r(NULL,1A0,&quot;\nWelcome\x20to\x20Dancing\x20Telnet\x20Server\.\n\x20__\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20__\x20______\x20\x20_\x20\x20\x20\x20\x20\x20\x20\x20_____\x20\x20\x20____\x20\x20\x20__\x20\x20__\x20\x20______\n\x20\\\x20\\\x20\x20\x20\x20\x20\x20\x20\x20/\x20/\|\x20\x20____\|\|\x20\|\x20\x20\x20\x20\x20\x20/\x20____\|\x20/\x20__\x20\\\x20\|\x20\x20\\/\x20\x20\|\|\x20\x20____\|\n\x20\x20\\\x20\\\x20\x20/\\\x20\x20/\x20/\x20\|\x20\|__\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\|\x20\|\|\x20\\\x20\x20/\x20\|\|\x20\|__\n\x20\x20\x20\\\x20\\/\x20\x20\\/\x20/\x20\x20\|\x20\x20__\|\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\|\x20\|\|\x20\|\\/\|\x20\|\|\x20\x20__\|\n\x20\x20\x20\x20\\\x20\x20/\\\x20\x20/\x20\x20\x20\|\x20\|____\x20\|\x20\|____\x20\|\x20\|____\x20\|\x20\|__\|\x20\|\|\x20\|\x20\x20\|\x20\|\|\x20\|____\n\x20\x20\x20\x20\x20\\/\x20\x20\\/\x20\x20\x20\x20\|______\|\|______\|\x20\\_____\|\x20\\____/\x20\|_\|\x20\x20\|_\|\|______\|\n\n\xc2\xa7\x20&quot;)%r(GenericLines,1A6,&quot;\nWelcome\x20to\x20Dancing\x20Telnet\x20Server\.\n\x20__\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20__\x20______\x20\x20_\x20\x20\x20\x20\x20\x20\x20\x20_____\x20\x20\x20____\x20\x20\x20__\x20\x20__\x20\x20______\n\x20\\\x20\\\x20\x20\x20\x20\x20\x20\x20\x20/\x20/\|\x20\x20____\|\|\x20\|\x20\x20\x20\x20\x20\x20/\x20____\|\x20/\x20__\x20\\\x20\|\x20\x20\\/\x20\x20\|\|\x20\x20____\|\n\x20\x20\\\x20\\\x20\x20/\\\x20\x20/\x20/\x20\|\x20\|__\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\|\x20\|\|\x20\\\x20\x20/\x20\|\|\x20\|__\n\x20\x20\x20\\\x20\\/\x20\x20\\/\x20/\x20\x20\|\x20\x20__\|\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\x20\x20\x20\|\x20\|\x20\x20\|\x20\|\|\x20\|\\/\|\x20\|\|\x20\x20__\|\n\x20\x20\x20\x20\\\x20\x20/\\\x20\x20/\x20\x20\x20\|\x20\|____\x20\|\x20\|____\x20\|\x20\|____\x20\|\x20\|__\|\x20\|\|\x20\|\x20\x20\|\x20\|\|\x20\|____\n\x20\x20\x20\x20\x20\\/\x20\x20\\/\x20\x20\x20\x20\|______\|\|______\|\x20\\_____\|\x20\\____/\x20\|_\|\x20\x20\|_\|\|______\|\n\n\xc2\xa7\x20\xc2\xa7\x20\xc2\xa7\x20&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GenericLines, NULL: &#xa;    Welcome to Dancing Telnet Server.&#xa;    ______ _ _____ ____ __ __ ______&#xa;    \x20\x20 / /| ____|| | / ____| / __ \x20| / || ____|&#xa;    \x20\x20 /\x20 / / | |__ | | | | | | | || \x20 / || |__&#xa;    \x20/ / / | __| | | | | | | | || |/| || __|&#xa;    \x20 /\x20 / | |____ | |____ | |____ | |__| || | | || |____&#xa;    |______||______| _____| ____/ |_| |_||______|"><elem key="GenericLines, NULL">&#xa;    Welcome to Dancing Telnet Server.&#xa;    ______ _ _____ ____ __ __ ______&#xa;    \x20\x20 / /| ____|| | / ____| / __ \x20| / || ____|&#xa;    \x20\x20 /\x20 / / | |__ | | | | | | | || \x20 / || |__&#xa;    \x20/ / / | __| | | | | | | | || |/| || __|&#xa;    \x20 /\x20 / | |____ | |____ | |____ | |__| || | | || |____&#xa;    |______||______| _____| ____/ |_| |_||______|</elem>
+</script></port>
+<port protocol="tcp" portid="22543"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="pyftpdlib" version="1.5.6" method="probed" conf="10"><cpe>cpe:/a:giampaolo_rodola:pyftpdlib</cpe></service><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa; Connected to: 10.50.159.208:22543&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status."><elem key="STAT">&#xa;FTP server status:&#xa; Connected to: 10.50.159.208:22543&#xa; Waiting for username.&#xa; TYPE: ASCII; STRUcture: File; MODE: Stream&#xa; Data connection closed.&#xa;End of status.</elem>
+</script></port>
+<port protocol="tcp" portid="25666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+<port protocol="tcp" portid="44411"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="54289"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.3" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.3</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-server-header" output="nginx/1.10.3 (Ubuntu)"><elem>nginx/1.10.3 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="phpinfo()"><elem key="title">phpinfo()</elem>
+</script></port>
+</ports>
+<times srtt="19516" rttvar="7290" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1645494340"/>
+<taskend task="NSE" time="1645494340"/>
+<taskbegin task="NSE" time="1645494340"/>
+<taskend task="NSE" time="1645494340"/>
+<taskbegin task="NSE" time="1645494340"/>
+<taskend task="NSE" time="1645494340"/>
+<runstats><finished time="1645494340" timestr="Mon Feb 21 19:45:40 2022" summary="Nmap done at Mon Feb 21 19:45:40 2022; 1 IP address (1 host up) scanned in 438.89 seconds" elapsed="438.89" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
